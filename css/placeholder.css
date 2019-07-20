@@ -1,133 +1,157 @@
-body, h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: aquamarine;
-    border-bottom: 6px solid;
-    border-color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  border-bottom: 6px solid;
+  border-color: #2e5077;
 }
 
 img {
-    width: 150px;
-    height: 150px;
+  width: 200px;
+  height: 200px;
 }
 
 section {
-    height: fit-content;
-    padding: 24px;
-    margin: 0 auto;
-    /* max-width: 600px;*/
+  height: fit-content;
+  padding: 24px;
+  margin: 0 auto;
+  /* max-width: 600px;*/
 }
 
-
-
 #project-section {
-    background-color: bisque;
+  background-color: bisque;
 }
 
 .section-title {
-    text-align: center;
-    margin: 24px;
-    font-size: 48px;
+  text-align: center;
+  margin: 24px;
+  font-size: 64px;
+  font-family: "Bangers", cursive;
+  color: #ffa630;
 }
 
 .subsection-title {
-    font-size: 32px;
-    display: block;
-    margin-top: 24px;
+  font-size: 40px;
+  display: block;
+  margin-top: 24px;
+  color: #5f8dc2;
+  font-family: "Mouse Memoirs", sans-serif;
 }
 
 .description-container {
-    display: flex;
-    padding-top: 32px;
+  display: flex;
+  padding-top: 32px;
 }
 
 .fact-image {
-    width: 100%;
-    height: 200px;
+  width: 100%;
+  height: 200px;
+}
+
+.breathe-logo {
+  width: 120px;
+  height: 110px;
+}
+
+.igem-logo {
+  width: 110px;
+  height: 110px;
 }
 
 .portrait-photo {
-    width: 100%;
-    height: 200px;
+  width: 100%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
-
-
 #team-section {
-    background-color: #b8f1ba;
+  background-color: #b8f1ba;
 }
 
 #team-members-title {
-    text-align: center;
-    margin-top: 36px;
-    margin-bottom: 12px;
+  text-align: center;
+  margin-top: 36px;
+  margin-bottom: 12px;
 }
 
 #team-members-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .member-component {
-    width: 450px;
-    padding: 12px;
+  width: 450px;
+  padding: 12px;
 }
 
 .member-photo {
-    float: left;
+  float: left;
 }
 
 .member-name {
-    font-size: 20px;
+  font-size: 20px;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .member-bio {
-    font-size: 15px;
+  font-size: 15px;
+  font-family: "Neuton", serif;
 }
 
 #team-collabs-title {
-    text-align: center;
-    margin-top: 36px;
-    margin-bottom: 12px;
+  text-align: center;
+  margin-top: 36px;
+  margin-bottom: 12px;
 }
 
 #team-collabs-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .collab-component {
-    width: 300px;
-    padding: 12px;
+  width: 300px;
+  padding: 12px;
 }
 
 .collab-photo {
-    float: left;
-    width: 100px;
-    height: 100px;
+  float: left;
+  width: 100px;
+  height: 100px;
 }
 
 .collab-name {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .collab-bio {
-    font-size: 12px;
+  font-size: 12px;
+}
+
+.header-title {
+  font-size: 14px;
+  font-family: "Rubik Mono One", sans-serif;
+  text-align: center;
+  align-items: center;
 }
 
 #sponsorships-container {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: gray;
-}
-
-.sponsorship-img {
-
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
 }

@@ -12,25 +12,6 @@ body {
   font-size: 18px;
 }
 
-header {
-  display: flex;
-  justify-content: end;
-  width: 100%;
-  background-color: white;
-  border-bottom: 6px solid;
-  background-color: #333333;
-  height: 96px;
-}
-
-header {
-  color: white;
-}
-
-
-.title-container {
-  color: white;
-}
-
 .arrow-content{
   height: 96px;
 }
@@ -157,56 +138,30 @@ section {
   font-size: 12px;
 }
 
-.header-title {
-  font-size: 14px;
-  font-family: "Rubik Mono One", sans-serif;
-  text-align: center;
-  align-items: center;
-}
-
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  background-color: rgb(100, 100, 100);
-}
-
-#sponsorships-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 640px;
-}
-
-#sponsorships-container img {
-  height: 1.5em;
-  margin: 0.5em;
-}
-
-#contact-us {
-  float: right;
-  width: 9em;
-  padding: 0.5em 0;
-  margin: 16px;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  border-left: solid black 4px;
-}
-
-#contact-us img {
-  height: 32px;
-  opacity: 0.3;
-}
-
-@media only screen and (min-width: 640px) {
+@media only screen and (max-width: 719px) {
   body {
     font-size: 24px;
   }
+
+  #desktop-menu {
+    display: none;
+  }
+
+  #mobile-menu {
+    display: flex;
+  }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 720px) {
   body {
-    font-size: 30px;
+    font-size: 24px;
+  }
+
+  #desktop-menu {
+    display: flex;
+  }
+
+  #mobile-menu {
+    display: none;
   }
 }

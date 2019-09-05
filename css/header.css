@@ -1,6 +1,6 @@
 header {
   color: white;
-  background-color: #123456;
+  background-color: var(--dark-blue);
   display: flex;
   width: 100%;
 }

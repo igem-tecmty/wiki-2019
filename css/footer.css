@@ -3,7 +3,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(100, 100, 100);
+    background-color: var(--iGEM-dark-blue);
     padding: 8px;
 }
   
@@ -11,7 +11,6 @@ footer {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 640px;
 }
   
 #sponsorships-container img {

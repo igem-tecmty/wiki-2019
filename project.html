@@ -22,7 +22,7 @@
 
   <body>
 
-    <header id="desktop-menu" style="background-color: var(--iGEM-dark-orange)">
+    <header id="desktop-menu" style="background-color: var(--iGEM-dark-blue)">
       <div id="header-content-container">
         <div id="logo-container">
           <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo"/>
@@ -76,7 +76,7 @@
       </div>
     </header>
 
-    <header id="mobile-menu" style="background-color: var(--iGEM-dark-orange)">
+    <header id="mobile-menu" style="background-color: var(--iGEM-dark-blue)">
       <!--Navbar-->
       <nav class="navbar navbar-light light-blue lighten-4">
 
@@ -124,18 +124,19 @@
 
 
     <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ ------->
+    
 
     
-    <div class="portrait-container container-fluid" style="background-color: black;">
+    <div class="portrait-container container-fluid" style="background-color: var(--iGEM-aqua);">
       <h2 class="section-title">PROJECT</h2>
-      <img src="img/portrait/model.jpg" class="portrait-photo"/>
+      <img src="img/portrait/model.jpg" class="portrait-photo" style="opacity: 0.35"/>
     </div>
 
     <div id="project-content" class="main-content container">
       <div class="row" style="margin-top: 48px;">
 
         <aside class="col-sm-12 col-md-3 col-lg-2">
-          <div class="index-menu sticky-top">
+          <div class="index-menu sticky-top aqua" style="border-color: var(--iGEM-aqua);">
             <ul class="">
               <a>Subtítulo vrgas 01</a>
             </ul>
@@ -151,10 +152,10 @@
           </div>
         </aside>
 
-        <section class="subsection-container offset-1 col-sm-12 col-md-8 col-lg-9">
+        <section class="subsection-container md-offset-1 col-sm-12 col-md-8 col-lg-9">
 
           <article class="container">
-            <h3 class="row col-md-12 subsection-title">Subtítulo vrgas sikomono</h3>
+            <h3 class="row col-md-12 subsection-title aqua">Subtítulo vrgas sikomono</h3>
             <div class="row mt-4">
               <p class="col-md-8 description-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -186,7 +187,7 @@
           </article>
 
           <article class="container">
-            <h3 class="row col-md-12 subsection-title">Otro subtítulo más vrgas</h3>
+            <h3 class="row col-md-12 subsection-title aqua">Otro subtítulo más vrgas</h3>
             <div class="row mt-4">
               <p class="col-md-8 col-md-offset-1 description-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -239,15 +240,13 @@
 
     <!------------------------    HASTA ACÁ      ----------------------->
 
-    <footer>
-      <div id="sponsorships-container" style="width: 100%; justify-content: space-around;">
-        <img src="img/sponsors/idt.png" class="sponsorship-img" />
-        <img src="img/sponsors/twist.png" class="sponsorship-img" />
-        <img src="img/sponsors/ctr.png" class="sponsorship-img" />
-        <img src="img/sponsors/accesolab.png" class="sponsorship-img" />
-        <img src="img/sponsors/neb.png" class="sponsorship-img" />
-        <img src="img/sponsors/dibico.png" class="sponsorship-img" />
-      </div>
+    <footer id="sponsorships-container" >
+      <img src="img/sponsors/idt.png" class="sponsorship-img" />
+      <img src="img/sponsors/twist.png" class="sponsorship-img" />
+      <img src="img/sponsors/ctr.png" class="sponsorship-img" />
+      <img src="img/sponsors/accesolab.png" class="sponsorship-img" />
+      <img src="img/sponsors/neb.png" class="sponsorship-img" />
+      <img src="img/sponsors/dibico.png" class="sponsorship-img" />
     </footer>
   
     <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
@@ -258,11 +257,12 @@
         $(".navbar-collapse").removeClass('show');
       });
 
+      /* MAINTAIN PORTRAIG IMAGE SET */
       $(window).on('load', function(){
         var newHeight = 320 - $(document).scrollTop();
         $(".portrait-photo").height(newHeight);
         var positionAdjust = ($(window).width() - 320)/2;
-        $(".portrait-photo").css("object-position", "0px -" + positionAdjust + "px");
+        // $(".portrait-photo").css("object-position", "0px -" + positionAdjust + "px");
       });
 
       $(window).scroll(function(){

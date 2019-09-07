@@ -5,27 +5,24 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
-
     <link rel="stylesheet" href="css/template.css" type="text/css" />
     <link rel="stylesheet" href="css/header.css" type="text/css" />
     <link rel="stylesheet" href="css/footer.css" type="text/css" />
     <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     
-    <script
-      language="JavaScript"
-      type="text/javascript"
-      src="js/jquery-3.4.1.min.js"
-    ></script>
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js" ></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
 
-    <header id="desktop-menu">
+    <header id="desktop-menu" style="background-color: var(--iGEM-dark-orange)">
       <div id="header-content-container">
         <div id="logo-container">
           <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo"/>
@@ -61,16 +58,6 @@
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
         </div>
-        <div id="results-dropdown" class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            RESULTS
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </div>
         <div id="human-dropdown" class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             HUMAN
@@ -83,13 +70,13 @@
         </div>
         <div id="human-dropdown" class="dropdown">
             <button class="btn btn-secondary" type="button">
-              AWARDS
+              CONTACT
             </button>
         </div>
       </div>
     </header>
 
-    <header id="mobile-menu">
+    <header id="mobile-menu" style="background-color: var(--iGEM-dark-orange)">
       <!--Navbar-->
       <nav class="navbar navbar-light light-blue lighten-4">
 
@@ -111,13 +98,19 @@
           <!-- Links -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" href="#">Team<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link text-white" href="#">Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link text-white" href="#">Parts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Human</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
             </li>
           </ul>
           <!-- Links -->
@@ -132,58 +125,122 @@
 
     <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ ------->
 
-    <h2 class="section-title">PROJECT</h2>
+    
+    <div class="portrait-container container-fluid" style="background-color: black;">
+      <h2 class="section-title">PROJECT</h2>
+      <img src="img/portrait/model.jpg" class="portrait-photo"/>
+    </div>
 
-    <section class="subsection-container">
-      <h3 class="subsection-title">Subtítulo vrgas sikomono</h3>
+    <div id="project-content" class="main-content container">
+      <div class="row" style="margin-top: 48px;">
 
-      <div class="description-container">
-        <h4 class="description-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </h4>
-        <img src="" class="description-image" />
+        <aside class="col-sm-12 col-md-3 col-lg-2">
+          <div class="index-menu sticky-top">
+            <ul class="">
+              <a>Subtítulo vrgas 01</a>
+            </ul>
+            <ul>
+              <a>Subtítulo vrgas 02</a>
+            </ul>
+            <ul>
+              <a>Subtítulo vrgas 03</a>
+            </ul>
+            <ul>
+              <a>Subtítulo vrgas 04</a>
+            </ul>
+          </div>
+        </aside>
+
+        <section class="subsection-container offset-1 col-sm-12 col-md-8 col-lg-9">
+
+          <article class="container">
+            <h3 class="row col-md-12 subsection-title">Subtítulo vrgas sikomono</h3>
+            <div class="row mt-4">
+              <p class="col-md-8 description-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </p>
+              <img src="https://2019.igem.org/wiki/images/b/b3/Hp_cycle.svg" class="col-md-4 description-image" />
+            </div>
+      
+            <div class="row mt-4">
+              <img src="http://2011.igem.org/wiki/images/thumb/7/77/Cam_Overexpression_Construct.png/600px-Cam_Overexpression_Construct.png" class="col-md-4 description-image" />
+              <p class="col-md-8 description-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+              </p>
+            </div>
+      
+            <img src="https://2011.igem.org/wiki/images/c/cd/Oscillator5.png" class="row col-md-12 mt-5" />
+
+            <p class="row col-md-12 mt-4 description-text">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+            </p>
+          </article>
+
+          <article class="container">
+            <h3 class="row col-md-12 subsection-title">Otro subtítulo más vrgas</h3>
+            <div class="row mt-4">
+              <p class="col-md-8 col-md-offset-1 description-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </p>
+              <img class="col-md-3" style="height: 160px;" src="https://wcs.smartdraw.com/biology-diagram/examples/bacteria-diagram.png?bn=1510011149" class="description-image" />
+            </div>
+      
+            <h4 class="row col-md-12">Subsubtítulo no tan vrgas</h4>
+            <div class="row mt-4">
+              <p class="col-md-12 description-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </p>
+            </div>
+      
+            <div class="row mt-4">
+              <img src="" class="description-image" />
+              <p class="col-md-8 description-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+              </p>
+            </div>
+      
+            <div class="description-container">
+              <img src="" class="fact-image" />
+            </div>
+      
+            <div class="row mt-4">
+              <p class="description-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+              </p>
+            </div>
+          </article>
+
+        </section>
+
       </div>
 
-      <div class="description-container">
-        <h4 class="description-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </h4>
-      </div>
-
-      <div class="description-container">
-        <img src="" class="description-image" />
-        <h4 class="description-text">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
-        </h4>
-      </div>
-
-      <div class="description-container">
-        <img src="" class="fact-image" />
-      </div>
-
-      <div class="description-container">
-        <h4 class="description-text">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
-        </h4>
-      </div>
-    </section>
+    </div>
 
     <!------------------------    HASTA ACÁ      ----------------------->
 
     <footer>
-      <div id="sponsorships-container">
+      <div id="sponsorships-container" style="width: 100%; justify-content: space-around;">
         <img src="img/sponsors/idt.png" class="sponsorship-img" />
         <img src="img/sponsors/twist.png" class="sponsorship-img" />
         <img src="img/sponsors/ctr.png" class="sponsorship-img" />
@@ -191,24 +248,26 @@
         <img src="img/sponsors/neb.png" class="sponsorship-img" />
         <img src="img/sponsors/dibico.png" class="sponsorship-img" />
       </div>
-
-      <div id="contact-us" class="contact-info">
-        <h4>Contact Us</h4>
-        <a><img src="img/icons/facebook.png"></img></a>
-        <a><img src="img/icons/twitter.png"></img></a>
-        <a><img src="img/icons/instagram.png"></img></a>
-        <a><img src="img/icons/mail.png"></img></a>
-        <h6>Av. Eugenio Garza Sada 2501</h6>
-        <h6>64849 Monterrey, Mexico</h6>
-      </div>
     </footer>
-
+  
     <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
     <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
 
     <script>
       $(".navbar-toggler").on('blur', function() {
         $(".navbar-collapse").removeClass('show');
+      });
+
+      $(window).on('load', function(){
+        var newHeight = 320 - $(document).scrollTop();
+        $(".portrait-photo").height(newHeight);
+        var positionAdjust = ($(window).width() - 320)/2;
+        $(".portrait-photo").css("object-position", "0px -" + positionAdjust + "px");
+      });
+
+      $(window).scroll(function(){
+        var newHeight = 320 - $(document).scrollTop();
+        $(".portrait-photo").height(newHeight);
       });
     </script>
   </body>

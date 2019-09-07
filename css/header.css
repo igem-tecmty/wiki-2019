@@ -1,12 +1,13 @@
 header {
   color: white;
-  background-color: var(--dark-blue);
+  background-color: var(--iGEM-dark-blue);
+  position: fixed;
+  z-index: 5;
   display: flex;
   width: 100%;
-}
-
-#desktop-menu {
-  height: 96px;
+  height: 72px;
+  font-family: 'Manjari', sans-serif;
+  box-shadow: 0px 0px 8px black;
 }
 
 #header-content-container {
@@ -18,7 +19,6 @@ header {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  font-family: 'Manjari', sans-serif;
 }
 
 #header-content-container > div {
@@ -27,9 +27,15 @@ header {
   max-width: 128px;
 }
 
-header .main-logo {
+.navbar-brand {
+  padding: 0;
+  margin: 0 4px;
+  height: 72px;
+}
+
+.main-logo {
+  padding: 8px;
   height: 64px;
-  width: 64px;
 }
 
 header #logo-container {
@@ -53,20 +59,10 @@ header .dropdown button {
   background-color: var(--primary);
 }
 
-#mobile-menu {
-    height: 72px;
-}
-
 #mobile-menu .navbar {
     width: 100%;
     color: white;
     padding: 0;
-}
-
-#mobile-menu img {
-    width: 64px;
-    height: 64px;
-    padding: 4px;
 }
 
 #mobile-title {
@@ -79,8 +75,11 @@ header .dropdown button {
     margin: 8px;
 }
 
-.navbar-nav {
-    background-color: #12345680;
+.navbar-collapse {
+  z-index: 2;
+  background-color: var(--iGEM-dark-blue);
+  margin-top: -2px;
+  color: white;
 }
 
 .nav-item:hover {

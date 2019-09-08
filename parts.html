@@ -1,55 +1,217 @@
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>iGEM Tec-Monterrey / Project</title>
 
-<head>
-    <meta charset="utf-8">
-    <title>iGEM Tec-Monterrey / Parts</title>
-    
-	<link rel="stylesheet" href="css/template.css" type="text/css" />
-	<link rel="stylesheet" href="css/placeholder.css" type="text/css" />
-	<script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
+    <link rel="stylesheet" href="css/template.css" type="text/css" />
+    <link rel="stylesheet" href="css/header.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manjari&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="js/jquery-3.4.1.min.js"
+    ></script>
 
-    <header id="main-header">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-        <img src="">
-        <div id="title-container">
-            <h1>Tec-Monterrey</h1>
-            <h2>BREATH-IN</h2>
+  <body>
+    <header id="desktop-menu" style="background-color: var(--iGEM-dark-blue)">
+      <div id="header-content-container">
+        <div id="logo-container">
+          <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo" />
         </div>
-        <img src="">
-
+        <span class="filler"></span>
+        <div id="team-dropdown" class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            TEAM
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <div id="project-dropdown" class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            PROJECT
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <div id="parts-dropdown" class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            PARTS
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <div id="human-dropdown" class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            HUMAN
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <div id="human-dropdown" class="dropdown">
+          <button class="btn btn-secondary" type="button">
+            CONTACT
+          </button>
+        </div>
+      </div>
     </header>
-    
 
-    <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ -------> 
+    <header id="mobile-menu" style="background-color: var(--iGEM-dark-blue)">
+      <!--Navbar-->
+      <nav class="navbar navbar-light light-blue lighten-4">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">
+          <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo" />
+          <span id="mobile-title">BREATHE-IN</span>
+        </a>
 
-    
-    
-    <!------------------------    HASTA ACÁ      ----------------------->
-    <footer>
-      <div id="sponsorships-container">
-        <img src="img/sponsors/idt.png" class="sponsorship-img" />
-        <img src="img/sponsors/twist.png" class="sponsorship-img" />
-        <img src="img/sponsors/ctr.png" class="sponsorship-img" />
-        <img src="img/sponsors/accesolab.png" class="sponsorship-img" />
-        <img src="img/sponsors/neb.png" class="sponsorship-img" />
-        <img src="img/sponsors/dibico.png" class="sponsorship-img" />
-      </div>
-  
-      <div id="contact-us" class="contact-info">
-        <h4>Contact Us</h4>
-        <a><img src="img/icons/facebook.png"></img></a>
-        <a><img src="img/icons/twitter.png"></img></a>
-        <a><img src="img/icons/instagram.png"></img></a>
-        <a><img src="img/icons/mail.png"></img></a>
-        <h6>Av. Eugenio Garza Sada 2501</h6>
-        <h6>64849 Monterrey, Mexico</h6>
-      </div>
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler toggler-example"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="text-white"><i class="material-icons"> menu </i></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#"
+                >Team<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Parts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Human</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+          <!-- Links -->
+        </div>
+        <!-- Collapsible content -->
+      </nav>
+      <!--/.Navbar-->
+    </header>
+
+    <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ ------->
+
+    <div
+      class="portrait-container container-fluid"
+      style="background-color: var(--iGEM-green);"
+    >
+      <h2 class="section-title">PARTS</h2>
+      <img
+        src="img/portrait/model5.jpg"
+        class="portrait-photo"
+        style="opacity: 0.35"
+      />
+    </div>
+    <footer id="sponsorships-container">
+      <img src="img/sponsors/idt.png" class="sponsorship-img" />
+      <img src="img/sponsors/twist.png" class="sponsorship-img" />
+      <img src="img/sponsors/ctr.png" class="sponsorship-img" />
+      <img src="img/sponsors/accesolab.png" class="sponsorship-img" />
+      <img src="img/sponsors/neb.png" class="sponsorship-img" />
+      <img src="img/sponsors/dibico.png" class="sponsorship-img" />
     </footer>
-</body>
 
+    <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
+
+    <script>
+      $(".navbar-toggler").on("blur", function() {
+        $(".navbar-collapse").removeClass("show");
+      });
+
+      /* MAINTAIN PORTRAIG IMAGE SET */
+      $(window).on("load", function() {
+        var newHeight = 320 - $(document).scrollTop();
+        $(".portrait-photo").height(newHeight);
+        var positionAdjust = ($(window).width() - 320) / 2;
+        // $(".portrait-photo").css("object-position", "0px -" + positionAdjust + "px");
+      });
+
+      $(window).scroll(function() {
+        var newHeight = 320 - $(document).scrollTop();
+        $(".portrait-photo").height(newHeight);
+      });
+    </script>
+  </body>
 </html>

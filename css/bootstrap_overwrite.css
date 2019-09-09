@@ -1,5 +1,6 @@
 :root {
-    --iGEM-dark-blue: #2e5077;
+    --iGEM-dark-blue: rgb(46, 80, 119);
+    --iGEM-dark-blue-transparent: #2e5077a0;
     --iGEM-green: #90cf49;
     --iGEM-dark-green: rgb(102, 144, 54);
     --iGEM-aqua: #4fa1a9;
@@ -55,3 +56,18 @@
 .nav-link {
     color: white;
 }
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    background-color: #00000000;
+    border-color: #00000000;
+}
+
+.show>.btn-secondary.dropdown-toggle {
+  background-color: #00000040;
+  border-color: #00000040;
+}
+

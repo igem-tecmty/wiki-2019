@@ -20,9 +20,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-  <body>
+  <body class="blue">
 
-    <header id="desktop-menu" style="background-color: var(--iGEM-dark-blue)">
+    <header id="desktop-menu">
       <div id="header-content-container">
         <div id="logo-container">
           <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo"/>
@@ -33,9 +33,12 @@
             TEAM
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Team</a>
+            <a class="dropdown-item" href="#">Collabs</a>
+            <a class="dropdown-item" href="#">Mentors</a>
+            <a class="dropdown-item" href="#">Max Medina</a>
+            <a class="dropdown-item" href="#">Again Max Medina</a>
+            <a class="dropdown-item" href="#">Max <3</a>
           </div>
         </div>
         <div id="project-dropdown" class="dropdown">
@@ -68,7 +71,7 @@
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
         </div>
-        <div id="human-dropdown" class="dropdown">
+        <div id="contact-dropdown" class="dropdown">
             <button class="btn btn-secondary" type="button">
               CONTACT
             </button>
@@ -76,7 +79,7 @@
       </div>
     </header>
 
-    <header id="mobile-menu" style="background-color: var(--iGEM-dark-blue)">
+    <header id="mobile-menu">
       <!--Navbar-->
       <nav class="navbar navbar-light light-blue lighten-4">
 
@@ -96,23 +99,52 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent1">
       
           <!-- Links -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#">Team<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Parts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Human</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contact</a>
-            </li>
-          </ul>
+          <div id="team-dropdown" class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              TEAM
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Team</a>
+              <a class="dropdown-item" href="#">Collabs</a>
+              <a class="dropdown-item" href="#">Mentors</a>
+              <a class="dropdown-item" href="#">Max Medina</a>
+            </div>
+          </div>
+          <div id="project-dropdown" class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PROJECT
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <div id="parts-dropdown" class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PARTS
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <div id="human-dropdown" class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              HUMAN PRACTICE
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <div id="contact-dropdown" class="dropdown">
+              <button class="btn btn-secondary" type="button">
+                CONTACT
+              </button>
+          </div>
           <!-- Links -->
       
         </div>
@@ -127,7 +159,8 @@
     
 
     
-    <div class="portrait-container container-fluid" style="background-color: var(--iGEM-aqua);">
+    <div class="portrait-container container-fluid"
+      data-height="420">
       <h2 class="section-title">PROJECT</h2>
       <img src="img/portrait/model.jpg" class="portrait-photo" style="opacity: 0.35"/>
     </div>
@@ -136,26 +169,15 @@
       <div class="row" style="margin-top: 48px;">
 
         <aside class="col-sm-12 col-md-3 col-lg-2">
-          <div class="index-menu sticky-top aqua" style="border-color: var(--iGEM-aqua);">
-            <ul class="">
-              <a>Subtítulo vrgas 01</a>
-            </ul>
-            <ul>
-              <a>Subtítulo vrgas 02</a>
-            </ul>
-            <ul>
-              <a>Subtítulo vrgas 03</a>
-            </ul>
-            <ul>
-              <a>Subtítulo vrgas 04</a>
-            </ul>
+          <div class="index-menu sticky-top">
+            <!-- El javascript creará los index por nosotros -->
           </div>
         </aside>
 
         <section class="subsection-container md-offset-1 col-sm-12 col-md-8 col-lg-9">
 
           <article class="container">
-            <h3 class="row col-md-12 subsection-title aqua">Subtítulo vrgas sikomono</h3>
+            <h3 class="row col-md-12 subsection-title">Subtítulo vrgas sikomono</h3>
             <div class="row mt-4">
               <p class="col-md-8 description-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -167,8 +189,10 @@
             </div>
       
             <div class="row mt-4">
-              <img src="http://2011.igem.org/wiki/images/thumb/7/77/Cam_Overexpression_Construct.png/600px-Cam_Overexpression_Construct.png" class="col-md-4 description-image" />
-              <p class="col-md-8 description-text">
+              <div class="col-sm-12 col-md-4 img-wrapper">
+                <img src="http://2011.igem.org/wiki/images/thumb/7/77/Cam_Overexpression_Construct.png/600px-Cam_Overexpression_Construct.png" class="description-image" />
+              </div>
+              <p class="col-sm-12 col-md-8 description-text">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa qui officia deserunt mollit anim id est
@@ -187,7 +211,49 @@
           </article>
 
           <article class="container">
-            <h3 class="row col-md-12 subsection-title aqua">Otro subtítulo más vrgas</h3>
+            <h3 class="row col-md-12 subsection-title">Otro subtítulo más vrgas</h3>
+            <div class="row mt-4">
+              <p class="col-md-8 col-md-offset-1 description-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </p>
+              <img class="col-md-3" style="height: 160px;" src="https://wcs.smartdraw.com/biology-diagram/examples/bacteria-diagram.png?bn=1510011149" class="description-image" />
+            </div>
+      
+            <h4 class="row col-md-12">Subsubtítulo no tan vrgas</h4>
+            <div class="row mt-4">
+              <p class="col-md-12 description-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </p>
+            </div>
+      
+            <div class="row mt-4 col-md-12">
+              <img src="" class="description-image" />
+              <p class="col-md-8 description-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+              </p>
+            </div>
+      
+            <div class="row mt-4 col-md-12">
+              <p class="description-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+              </p>
+            </div>
+          </article>
+
+          <article class="container">
+            <h3 class="row col-md-12 subsection-title">Aún más vrgas</h3>
             <div class="row mt-4">
               <p class="col-md-8 col-md-offset-1 description-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -253,22 +319,92 @@
     <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
 
     <script>
-      $(".navbar-toggler").on('blur', function() {
-        $(".navbar-collapse").removeClass('show');
-      });
+      var headerHeight = $("header").height();
+      var portraitHeight = $(".portrait-container").data("height");
+      var pageColor = 'var(--iGEM-dark-blue)';
 
-      /* MAINTAIN PORTRAIG IMAGE SET */
+      var scrollHeights = [];
+
       $(window).on('load', function(){
-        var newHeight = 320 - $(document).scrollTop();
-        $(".portrait-photo").height(newHeight);
-        var positionAdjust = ($(window).width() - 320)/2;
+        checkPortraitHeight();
+        checkHeaderColor();
+        $(".portrait-container").height(Math.min(window.screen.width, portraitHeight));
+        createScrollHeights();
+        createIndex();
+        // var positionAdjust = ($(window).width() - portraitHeight)/2;
         // $(".portrait-photo").css("object-position", "0px -" + positionAdjust + "px");
       });
 
       $(window).scroll(function(){
-        var newHeight = 320 - $(document).scrollTop();
-        $(".portrait-photo").height(newHeight);
+        $(".navbar-collapse").removeClass('show');
+        checkPortraitHeight();
+        checkHeaderColor();
+        checkIndexMenu();
       });
+
+      $(".main-content").click(function() {
+        $(".navbar-collapse").removeClass('show');
+      });
+      $(".portrait-photo").click(function() {
+        $(".navbar-collapse").removeClass('show');
+      });
+
+      function createScrollHeights() {
+        scrollHeights.push(portraitHeight);
+        if (window.screen.width < 768) {
+          scrollHeights[0] += $("aside").height() + 96;
+        }
+        $("article").each(function() {
+          scrollHeights[scrollHeights.length-1]
+          scrollHeights.push(
+            scrollHeights[scrollHeights.length-1] +
+            $(this).height() + 
+            parseInt($(this).css("margin-top")));
+        });
+        console.log(scrollHeights);
+      }
+
+      function createIndex() {
+        const indexMenu = $(".index-menu");
+        $("article").each(function(i) {
+          indexMenu.append(`
+            <ul class="index-section" onclick="window.scrollTo(0, ${scrollHeights[i] + 4});">
+              <a>
+                ${$(this).find(".subsection-title").text()}
+              </a>
+            </ul>
+          `);
+        });
+      }
+
+      /* MAINTAIN PORTRAIG IMAGE SET */
+      function checkPortraitHeight() {
+        var height = Math.min(window.screen.width, portraitHeight);
+        var newHeight = height - $(document).scrollTop();
+        $(".portrait-photo").height(newHeight);
+      }
+
+      function checkHeaderColor() {
+        var opacity = $(document).scrollTop()/(portraitHeight - headerHeight);
+        $("header").css('background-color', `rgba(46, 80, 119, ${opacity})`);
+      }
+
+      function checkIndexMenu() {
+        var elements = document.getElementsByClassName("index-section");
+        for(var i=0; i<elements.length; i++) {
+          e = elements[i];
+          var h = $(document).scrollTop();
+          if (h >= scrollHeights[i] && h < scrollHeights[i+1]) {
+            e.className = "index-section current-index";
+          } else if (h > scrollHeights[i+1]) {
+            e.className = "index-section visited-index";
+          } else if (h < scrollHeights[i]) {
+            e.className = "index-section not-visited-index";
+          } else if (i+1 == elements.length) {
+            e.className = "index-section current-index";
+          }
+        }
+      } 
     </script>
   </body>
 </html>

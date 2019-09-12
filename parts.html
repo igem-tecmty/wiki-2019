@@ -36,8 +36,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-  <body>
-    <header id="desktop-menu" style="background-color: var(--iGEM-dark-blue)">
+  <body class="green">
+    <header id="desktop-menu">
       <div id="header-content-container">
         <div id="logo-container">
           <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo" />
@@ -55,9 +55,12 @@
             TEAM
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Team</a>
+            <a class="dropdown-item" href="#">Collabs</a>
+            <a class="dropdown-item" href="#">Mentors</a>
+            <a class="dropdown-item" href="#">Max Medina</a>
+            <a class="dropdown-item" href="#">Again Max Medina</a>
+            <a class="dropdown-item" href="#">Max <3</a>
           </div>
         </div>
         <div id="project-dropdown" class="dropdown">
@@ -111,7 +114,7 @@
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
         </div>
-        <div id="human-dropdown" class="dropdown">
+        <div id="contact-dropdown" class="dropdown">
           <button class="btn btn-secondary" type="button">
             CONTACT
           </button>
@@ -119,7 +122,7 @@
       </div>
     </header>
 
-    <header id="mobile-menu" style="background-color: var(--iGEM-dark-blue)">
+    <header id="mobile-menu">
       <!--Navbar-->
       <nav class="navbar navbar-light light-blue lighten-4">
         <!-- Navbar brand -->
@@ -144,25 +147,80 @@
         <!-- Collapsible content -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent1">
           <!-- Links -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#"
-                >Team<span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Parts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Human</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contact</a>
-            </li>
-          </ul>
+          <div id="team-dropdown" class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              TEAM
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Team</a>
+              <a class="dropdown-item" href="#">Collabs</a>
+              <a class="dropdown-item" href="#">Mentors</a>
+              <a class="dropdown-item" href="#">Max Medina</a>
+            </div>
+          </div>
+          <div id="project-dropdown" class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              PROJECT
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <div id="parts-dropdown" class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              PARTS
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <div id="human-dropdown" class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              HUMAN PRACTICE
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <div id="contact-dropdown" class="dropdown">
+            <button class="btn btn-secondary" type="button">
+              CONTACT
+            </button>
+          </div>
           <!-- Links -->
         </div>
         <!-- Collapsible content -->
@@ -172,10 +230,7 @@
 
     <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ ------->
 
-    <div
-      class="portrait-container container-fluid"
-      style="background-color: var(--iGEM-green);"
-    >
+    <div class="portrait-container container-fluid" data-height="420">
       <h2 class="section-title">PARTS</h2>
       <img
         src="img/portrait/model5.jpg"
@@ -183,6 +238,7 @@
         style="opacity: 0.35"
       />
     </div>
+
     <footer id="sponsorships-container">
       <img src="img/sponsors/idt.png" class="sponsorship-img" />
       <img src="img/sponsors/twist.png" class="sponsorship-img" />
@@ -196,22 +252,90 @@
     <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
 
     <script>
-      $(".navbar-toggler").on("blur", function() {
-        $(".navbar-collapse").removeClass("show");
-      });
-
-      /* MAINTAIN PORTRAIG IMAGE SET */
+      var headerHeight = $("header").height();
+      var portraitHeight = $(".portrait-container").data("height");
+      var pageColor = "var(--iGEM-dark-blue)";
+      var scrollHeights = [];
       $(window).on("load", function() {
-        var newHeight = 320 - $(document).scrollTop();
-        $(".portrait-photo").height(newHeight);
-        var positionAdjust = ($(window).width() - 320) / 2;
+        checkPortraitHeight();
+        checkHeaderColor();
+        $(".portrait-container").height(
+          Math.min(window.screen.width, portraitHeight)
+        );
+        createScrollHeights();
+        createIndex();
+        // var positionAdjust = ($(window).width() - portraitHeight)/2;
         // $(".portrait-photo").css("object-position", "0px -" + positionAdjust + "px");
       });
-
       $(window).scroll(function() {
-        var newHeight = 320 - $(document).scrollTop();
-        $(".portrait-photo").height(newHeight);
+        $(".navbar-collapse").removeClass("show");
+        checkPortraitHeight();
+        checkHeaderColor();
+        checkIndexMenu();
       });
+      $(".main-content").click(function() {
+        $(".navbar-collapse").removeClass("show");
+      });
+      $(".portrait-photo").click(function() {
+        $(".navbar-collapse").removeClass("show");
+      });
+      function createScrollHeights() {
+        scrollHeights.push(portraitHeight);
+        if (window.screen.width < 768) {
+          scrollHeights[0] += $("aside").height() + 96;
+        }
+        $("article").each(function() {
+          scrollHeights[scrollHeights.length - 1];
+          scrollHeights.push(
+            scrollHeights[scrollHeights.length - 1] +
+              $(this).height() +
+              parseInt($(this).css("margin-top"))
+          );
+        });
+        console.log(scrollHeights);
+      }
+      function createIndex() {
+        const indexMenu = $(".index-menu");
+        $("article").each(function(i) {
+          indexMenu.append(`
+            <ul class="index-section" onclick="window.scrollTo(0, ${scrollHeights[
+              i
+            ] + 4});">
+              <a>
+                ${$(this)
+                  .find(".subsection-title")
+                  .text()}
+              </a>
+            </ul>
+          `);
+        });
+      }
+      /* MAINTAIN PORTRAIG IMAGE SET */
+      function checkPortraitHeight() {
+        var height = Math.min(window.screen.width, portraitHeight);
+        var newHeight = height - $(document).scrollTop();
+        $(".portrait-photo").height(newHeight);
+      }
+      function checkHeaderColor() {
+        var opacity = $(document).scrollTop() / (portraitHeight - headerHeight);
+        $("header").css("background-color", `rgba(46, 80, 119, ${opacity})`);
+      }
+      function checkIndexMenu() {
+        var elements = document.getElementsByClassName("index-section");
+        for (var i = 0; i < elements.length; i++) {
+          e = elements[i];
+          var h = $(document).scrollTop();
+          if (h >= scrollHeights[i] && h < scrollHeights[i + 1]) {
+            e.className = "index-section current-index";
+          } else if (h > scrollHeights[i + 1]) {
+            e.className = "index-section visited-index";
+          } else if (h < scrollHeights[i]) {
+            e.className = "index-section not-visited-index";
+          } else if (i + 1 == elements.length) {
+            e.className = "index-section current-index";
+          }
+        }
+      }
     </script>
   </body>
 </html>

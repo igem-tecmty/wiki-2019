@@ -53,6 +53,7 @@ aside {
 .current-index {
   font-weight: bold;
   filter: brightness(75%);
+  border-left: 4px solid;
 }
 
 .index-section:hover {
@@ -83,61 +84,24 @@ article {
   filter: brightness(75%);
 }
 
-.orange .portrait-container {
-  background-color: var(--iGEM-orange);
-}
-.orange .subsection-title, .orange .current-index {
-  color: var(--iGEM-orange);
-}
-.orange .index-menu {
-  border-color: var(--iGEM-orange);
-}
-
-.aqua .portrait-container {
-  background-color: var(--iGEM-aqua);
-}
-.aqua .subsection-title, .aqua .current-index {
-  color: var(--iGEM-aqua);
-}
-.aqua .index-menu {
-  border-color: var(--iGEM-aqua);
-}
-
-.green .portrait-container {
-  background-color: var(--iGEM-green);
-}
-.green .subsection-title, .green .current-index {
-  color: var(--iGEM-green);
-}
-.green .index-menu {
-  border-color: var(--iGEM-green);
-}
-
-.blue .portrait-container {
-  background-color: var(--iGEM-light-blue);
-}
-.blue .subsection-title, .blue .current-index {
-  color: var(--iGEM-light-blue);
-}
-.blue .index-menu {
-  border-color: var(--iGEM-light-blue);
-}
-
 .img-wrapper img {
   max-width: 100%;
 }
 
 .index-menu {
+  height: fit-content;
+  padding: 0;
   padding-top: 6em;
   z-index: 1;
-  border-bottom: 4px solid;
   font-size: 18px;
   color: black;
 }
 
-.index-menu ul {
+.index-menu > ul {
   padding-left: 0;
   font-family: 'Manjari', sans-serif;
+  margin: 0;
+  padding: 0.5em;
 }
 
 .breathe-logo {
@@ -228,7 +192,10 @@ article {
     font-size: 36px;
   }
   .index-menu {
-    padding: 2em 0;
+    position: unset;
+    padding: 1em 0;
+    margin: 1em;
+    border-bottom: solid 4px;
   }
 }
 

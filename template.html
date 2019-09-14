@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>iGEM Tec-Monterrey / Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
@@ -9,39 +9,27 @@
     <link rel="stylesheet" href="css/header.css" type="text/css" />
     <link rel="stylesheet" href="css/footer.css" type="text/css" />
     <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+    <link rel="stylesheet" href="css/colors.css" type="text/css" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Manjari&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
 
-    <script
-      language="JavaScript"
-      type="text/javascript"
-      src="js/jquery-3.4.1.min.js"
-    ></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   </head>
 
-  <body class="orange">
+  <!-- Possible colors: ("blue" | "orange" | "aqua" | "green" | "black") -->
+  <body class="blue">
+
     <header id="desktop-menu">
       <div id="header-content-container">
-        <div id="logo-container">
+
+        <!-- Logo Breathe-In -->
+        <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
           <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo" />
-        </div>
+        </a>
+        
         <span class="filler"></span>
         <div id="team-dropdown" class="dropdown">
           <button
@@ -129,12 +117,11 @@
     </header>
 
     <header id="mobile-menu">
-      <!--Navbar-->
       <nav class="navbar navbar-light light-blue lighten-4">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">
+
+        <!-- Logo Breathe-In -->
+        <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
           <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo" />
-          <span id="mobile-title">BREATHE-IN</span>
         </a>
 
         <!-- Collapse button -->
@@ -147,7 +134,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="text-white"><i class="material-icons"> menu </i></span>
+          <span class="text-white"><i class="material-icons">menu</i></span>
         </button>
 
         <!-- Collapsible content -->
@@ -242,16 +229,190 @@
       <!--/.Navbar-->
     </header>
 
-    <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ ------->
+    <!-------------------------------------------------------------->
+    <!------- EL CONTENIDO QUE SE PUEDE EDITAR COMIENZA AQUÍ ------->
+    <!-------------------------------------------------------------->
 
+    <!-------     IMAGEN TÍTULO SUPERIOR     ------->
     <div class="portrait-container container-fluid" data-height="420">
-      <h2 class="section-title">TEMPLATE</h2>
+      <h2 class="section-title">SECTION TITLE</h2>
       <img
-        src="img/portrait/model.jpg"
+        src="img/wapos.jpeg"
         class="portrait-photo"
-        style="opacity: 0.35"
-      />
+        style="opacity: 0.35"/>
     </div>
+
+
+
+    <div id="project-content" class="main-content container">
+      <div class="row" style="margin-top: 48px;">
+
+        <!-----------       INDICE DE LA IZQUIERDA       ----------->
+        <aside class="col-sm-12 col-md-3 col-lg-2 index-menu sticky-top">
+          <!----  El javascript creará los index por nosotros   ---->
+        </aside>
+
+
+
+        <!------- CONTENIDO COMPLETO INFORMACIÓN ------->
+        <section class="subsection-container md-offset-1 col-sm-12 col-md-8 col-lg-9">
+
+          <!-----    INSERTA CADA SUBTEMA COMO UN <article>    ----->
+
+          <article class="container">
+            <!-----    SUBTÍTULO DE LA SECCIÓN <h3>    ----->
+            <h3 class="row col-md-12 subsection-title">Subtitle 01</h3>
+
+            <!-----    Cada <div> es una fila/párrafo    ----->
+
+            <div class="row mt-4">
+              <p class="col-md-9 description-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor ncididunt ut labore et dolore magna aliqua.
+                Id neque aliquam vestibulum morbi blandit cursus risus at ultrices.
+                Parturient montes nascetur ridiculus mus mauris vitae. 
+              </p>
+              <img src="https://2019.igem.org/wiki/images/b/b3/Hp_cycle.svg" class="col-md-3 description-image" />
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-sm-12 col-md-4 img-wrapper">
+                <img
+                  src="http://2011.igem.org/wiki/images/thumb/7/77/Cam_Overexpression_Construct.png/600px-Cam_Overexpression_Construct.png"
+                  class="description-image"
+                />
+              </div>
+              <p class="col-sm-12 col-md-8 description-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+      
+            <div class="row mt-4">
+              <img src="https://2011.igem.org/wiki/images/c/cd/Oscillator5.png" class="row col-md-12 mt-5" />
+            </div>
+
+            <div class="row mt-4">
+              <p class="col-md-12 description-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+              </p>
+            </div>
+          </article>
+
+          <article class="container">
+            <h3 class="row col-md-12 subsection-title">
+              Subtitle 02
+            </h3>
+            <div class="row mt-4">
+              <p class="col-md-8 col-md-offset-1 description-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <img
+                class="col-md-3"
+                style="height: 160px;"
+                src="https://wcs.smartdraw.com/biology-diagram/examples/bacteria-diagram.png?bn=1510011149"
+                class="description-image"
+              />
+            </div>
+
+            <h4 class="row col-md-12">Subsubtítulo no tan vrgas</h4>
+            <div class="row mt-4">
+              <p class="col-md-12 description-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+
+            <div class="row mt-4 col-md-12">
+              <img src="" class="description-image" />
+              <p class="col-md-8 description-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+
+            <div class="row mt-4 col-md-12">
+              <p class="description-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+          </article>
+
+          <article class="container">
+            <h3 class="row col-md-12 subsection-title">Subtitle 03</h3>
+            <div class="row mt-4">
+              <p class="col-md-8 col-md-offset-1 description-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <img
+                class="col-md-3"
+                style="height: 160px;"
+                src="https://wcs.smartdraw.com/biology-diagram/examples/bacteria-diagram.png?bn=1510011149"
+                class="description-image"
+              />
+            </div>
+
+            <h4 class="row col-md-12">Inner subtitle</h4>
+            <div class="row mt-4">
+              <p class="col-md-12 description-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+
+            <div class="row mt-4">
+              <img src="" class="description-image" />
+              <p class="col-md-8 description-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+
+            <div class="description-container">
+              <img src="" class="fact-image" />
+            </div>
+
+            <div class="row mt-4">
+              <p class="col-md-12 description-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+          </article>
+          <!----------------    Y TERMINA HASTA ACÁ      ----------------->
+
+        </section>
+      </div>
+    </div>
+    
+    <!-------------------------------------------------------------->
+    <!------- EL CONTENIDO QUE SE PUEDE EDITAR TERMINA AQUÍ -------->
+    <!-------------------------------------------------------------->
+
 
     <footer id="sponsorships-container">
       <img src="img/sponsors/idt.png" class="sponsorship-img" />
@@ -265,91 +426,6 @@
     <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
     <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
 
-    <script>
-      var headerHeight = $("header").height();
-      var portraitHeight = $(".portrait-container").data("height");
-      var pageColor = "var(--iGEM-dark-blue)";
-      var scrollHeights = [];
-      $(window).on("load", function() {
-        checkPortraitHeight();
-        checkHeaderColor();
-        $(".portrait-container").height(
-          Math.min(window.screen.width, portraitHeight)
-        );
-        createScrollHeights();
-        createIndex();
-        // var positionAdjust = ($(window).width() - portraitHeight)/2;
-        // $(".portrait-photo").css("object-position", "0px -" + positionAdjust + "px");
-      });
-      $(window).scroll(function() {
-        $(".navbar-collapse").removeClass("show");
-        checkPortraitHeight();
-        checkHeaderColor();
-        checkIndexMenu();
-      });
-      $(".main-content").click(function() {
-        $(".navbar-collapse").removeClass("show");
-      });
-      $(".portrait-photo").click(function() {
-        $(".navbar-collapse").removeClass("show");
-      });
-      function createScrollHeights() {
-        scrollHeights.push(portraitHeight);
-        if (window.screen.width < 768) {
-          scrollHeights[0] += $("aside").height() + 96;
-        }
-        $("article").each(function() {
-          scrollHeights[scrollHeights.length - 1];
-          scrollHeights.push(
-            scrollHeights[scrollHeights.length - 1] +
-              $(this).height() +
-              parseInt($(this).css("margin-top"))
-          );
-        });
-        console.log(scrollHeights);
-      }
-      function createIndex() {
-        const indexMenu = $(".index-menu");
-        $("article").each(function(i) {
-          indexMenu.append(`
-            <ul class="index-section" onclick="window.scrollTo(0, ${scrollHeights[
-              i
-            ] + 4});">
-              <a>
-                ${$(this)
-                  .find(".subsection-title")
-                  .text()}
-              </a>
-            </ul>
-          `);
-        });
-      }
-      /* MAINTAIN PORTRAIG IMAGE SET */
-      function checkPortraitHeight() {
-        var height = Math.min(window.screen.width, portraitHeight);
-        var newHeight = height - $(document).scrollTop();
-        $(".portrait-photo").height(newHeight);
-      }
-      function checkHeaderColor() {
-        var opacity = $(document).scrollTop() / (portraitHeight - headerHeight);
-        $("header").css("background-color", `rgba(46, 80, 119, ${opacity})`);
-      }
-      function checkIndexMenu() {
-        var elements = document.getElementsByClassName("index-section");
-        for (var i = 0; i < elements.length; i++) {
-          e = elements[i];
-          var h = $(document).scrollTop();
-          if (h >= scrollHeights[i] && h < scrollHeights[i + 1]) {
-            e.className = "index-section current-index";
-          } else if (h > scrollHeights[i + 1]) {
-            e.className = "index-section visited-index";
-          } else if (h < scrollHeights[i]) {
-            e.className = "index-section not-visited-index";
-          } else if (i + 1 == elements.length) {
-            e.className = "index-section current-index";
-          }
-        }
-      }
-    </script>
+    <script src="js/placeholder.js"></script>
   </body>
 </html>

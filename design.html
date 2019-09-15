@@ -36,11 +36,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-  <body class="orange">
+  <body class="blue">
     <header id="desktop-menu">
       <div id="header-content-container">
         <div id="logo-container">
-          <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo" />
+          <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
         </div>
         <span class="filler"></span>
         <div id="team-dropdown" class="dropdown">
@@ -133,8 +133,7 @@
       <nav class="navbar navbar-light light-blue lighten-4">
         <!-- Navbar brand -->
         <a class="navbar-brand" href="#">
-          <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo" />
-          <span id="mobile-title">BREATHE-IN</span>
+          <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
         </a>
 
         <!-- Collapse button -->
@@ -242,16 +241,17 @@
       <!--/.Navbar-->
     </header>
 
-    <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ ------->
-
     <div class="portrait-container container-fluid" data-height="420">
-      <h2 class="section-title">TEMPLATE</h2>
+      <h2 class="section-title">DESIGN</h2>
       <img
-        src="img/portrait/model.jpg"
+        src="img/portrait/model5.jpg"
         class="portrait-photo"
         style="opacity: 0.35"
       />
     </div>
+
+    <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ ------->
+    <!------------------------    HASTA ACÁ      ----------------------->
 
     <footer id="sponsorships-container">
       <img src="img/sponsors/idt.png" class="sponsorship-img" />
@@ -312,16 +312,16 @@
         const indexMenu = $(".index-menu");
         $("article").each(function(i) {
           indexMenu.append(`
-            <ul class="index-section" onclick="window.scrollTo(0, ${scrollHeights[
-              i
-            ] + 4});">
-              <a>
-                ${$(this)
-                  .find(".subsection-title")
-                  .text()}
-              </a>
-            </ul>
-          `);
+              <ul class="index-section" onclick="window.scrollTo(0, ${scrollHeights[
+                i
+              ] + 4});">
+                <a>
+                  ${$(this)
+                    .find(".subsection-title")
+                    .text()}
+                </a>
+              </ul>
+            `);
         });
       }
       /* MAINTAIN PORTRAIG IMAGE SET */

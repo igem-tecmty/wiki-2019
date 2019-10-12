@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>iGEM Tec-Monterrey / Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
@@ -9,39 +9,27 @@
     <link rel="stylesheet" href="css/header.css" type="text/css" />
     <link rel="stylesheet" href="css/footer.css" type="text/css" />
     <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+    <link rel="stylesheet" href="css/colors.css" type="text/css" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Manjari&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
 
-    <script
-      language="JavaScript"
-      type="text/javascript"
-      src="js/jquery-3.4.1.min.js"
-    ></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   </head>
 
-  <body class="blue">
+  <!-- Possible colors: ("blue" | "orange" | "aqua" | "green" | "black") -->
+  <body class="green">
+
     <header id="desktop-menu">
       <div id="header-content-container">
-        <div id="logo-container">
-          <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
-        </div>
+
+        <!-- Logo Breathe-In -->
+        <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
+          <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo" />
+        </a>
+        
         <span class="filler"></span>
         <div id="team-dropdown" class="dropdown">
           <button
@@ -129,11 +117,11 @@
     </header>
 
     <header id="mobile-menu">
-      <!--Navbar-->
       <nav class="navbar navbar-light light-blue lighten-4">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">
-          <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
+
+        <!-- Logo Breathe-In -->
+        <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
+          <img src="img/logos/logo_BREATHE_plain.png" class="main-logo" />
         </a>
 
         <!-- Collapse button -->
@@ -146,7 +134,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="text-white"><i class="material-icons"> menu </i></span>
+          <span class="text-white"><i class="material-icons">menu</i></span>
         </button>
 
         <!-- Collapsible content -->
@@ -241,17 +229,164 @@
       <!--/.Navbar-->
     </header>
 
+    <!-------------------------------------------------------------->
+    <!------- EL CONTENIDO QUE SE PUEDE EDITAR COMIENZA AQUÍ ------->
+    <!-------------------------------------------------------------->
+
+    <!-------     IMAGEN TÍTULO SUPERIOR     ------->
     <div class="portrait-container container-fluid" data-height="420">
-      <h2 class="section-title">DESIGN</h2>
+      <h1 class="section-title">DESIGN</h1>
       <img
-        src="img/portrait/model5.jpg"
+        src="img/portrait/model3.jpg"
         class="portrait-photo"
-        style="opacity: 0.35"
-      />
+        style="opacity: 0.35"/>
     </div>
 
-    <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ ------->
-    <!------------------------    HASTA ACÁ      ----------------------->
+
+
+    <div id="project-content" class="main-content container">
+      <div class="row" style="margin-top: 48px;">
+
+        <!-----------       INDICE DE LA IZQUIERDA       ----------->
+        <aside class="col-sm-12 col-md-3 col-lg-2 index-menu sticky-top">
+          <!----  El javascript creará los index por nosotros   ---->
+        </aside>
+
+
+
+        <!------- CONTENIDO COMPLETO INFORMACIÓN ------->
+        <section class="subsection-container md-offset-1 col-sm-12 col-md-8 col-lg-9">
+
+          <div id="intro-text" class="col-md-12" style="margin-top: 96px;">
+            <p class="description-text">
+              Our main goal is to develop a device that, using Whole Cell Biosensors,
+              implements a discarding system to find metabolites of interest. At the same time,
+              we want to apply the discoverings found on these with an actual real life illness
+
+
+              
+              Since our main goal is to reduce the possibility of bacterial infections on CF patients,
+              we developed a two step plan work which consists of a mucolytic treatment and whole-cell
+              biosensors that facilitate the discovery of new antibiotics.
+              <br><br>
+              Thus we established two objectives:
+              <ol>
+                <li class="mb-2">
+                  To produce a recombinant protein (sialidase) able to reduce mucus viscosity
+                  in CF patients using a sfGFP that helps secrete the sialidase out of the cell,
+                  facilitating the recovery process.
+                </li>
+                <li>
+                    To produce 5 whole cell biosensors able to detect the mechanism of
+                    action of unknown compounds with possible antibiotic properties. 
+                </li>
+              </ol>
+            </p>
+          </div>
+
+          <!-----    INSERTA CADA SUBTEMA COMO UN <article>    ----->
+
+          <article class="container">
+            <!-----    SUBTÍTULO DE LA SECCIÓN <h3>    ----->
+            <h3 class="row col-md-12 subsection-title">Whole cell biosensors designs</h3>
+
+            <!-----    Cada <div> es una fila/párrafo    ----->
+
+            <p>
+              Each biosensor produces a different fluorescent signal depending
+              on the mechanism of action that the substance is affecting, interrupting
+              the biosynthesis of essential molecules for the cell, such as DNA, RNA, etc. 
+            </p>
+
+            <div class="row mt-4">
+              <p class="col-sm-12 col-md-7">
+                First, we looked for the main promoters that control transcription when
+                <span class="font-italic">B. subtilis</span> is under stress due to antibiotic exposure,
+                each of them induces a different type of self defense mechanism,
+                the chosen promoters are listed:                
+              </p>
+              <div class="col-sm-12 col-md-5">
+                <table id="promoters" class="table">
+                  <thread>
+                    <th scope="col">Promoter</th>
+                    <th scope="col">Mechanism of action</th>
+                  </thread>
+                  <tr>
+                    <td>helD</td>
+                    <td>Protein Synthesis</td>
+                  </tr>
+                  <tr>
+                    <td>bmrC</td>
+                    <td>Fatty acid biosynthesis</td>
+                  </tr>
+                  <tr>
+                    <td>yorB</td>
+                    <td>DNA biosynthesis</td>
+                  </tr>
+                  <tr>
+                    <td>fabHB</td>
+                    <td>RNA biosynthesis</td>
+                  </tr>
+                  <tr>
+                    <td>ypuA</td>
+                    <td>Cell wall synthesis</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-md-6 col-sm-12" style="border-right: 2px solid var(--iGEM-light-black)">
+                <img class="col-md-12" src="https://2011.igem.org/wiki/images/c/cd/Oscillator5.png"/>
+                <p>
+                  Once these biosensors are created, they will be used during field
+                  research when researchers suspect of the presence of a new antibiotic.
+                  However, further analysis will be required to determine if the antibiotics
+                  are indeed new or not. To address this, our team has developed a microfluidic
+                  device that will encapsulate actinomycetes (the most antibiotic-producing bacteria)
+                  by droplets with the biosensor.
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-12 mt-6" style="margin-top: 9em;">
+                <p>
+                  Once a fluorescent signal is produced, the droplet
+                  will be destroyed with electrospray by a mass spectrophotometer to detect all the
+                  signals of the present compounds. A comparison with a library of the signals of the
+                  already known compounds will be made, and if a peak in the measurement does not match,
+                  then it could be a potential new antibiotic. Considering that the production of the GFP
+                  by <span class="font-italic">B. subtilis</span> may be too low due to the stress the bacteria is being subjected to,
+                  we will also use an amplification cascade to magnify the signal of the fluorescent protein.
+                </p>
+              </div>
+            </div>
+      
+          </article>
+          <article class="container">
+            <!-----    SUBTÍTULO DE LA SECCIÓN <h3>    ----->
+            <h3 class="row col-md-12 subsection-title">Whole cell biosensors designs</h3>
+
+            <!-----    Cada <div> es una fila/párrafo    ----->
+
+            <div class="row mt-4">
+              <p class="col-sm-12 col-md-7">
+                First, we looked for the main promoters that control transcription when
+                <span class="font-italic">B. subtilis</span> is under stress due to antibiotic exposure,
+                each of them induces a different type of self defense mechanism,
+                the chosen promoters are listed:                
+              </p>
+            </div>
+
+          </article>
+          <!----------------    Y TERMINA HASTA ACÁ      ----------------->
+
+        </section>
+      </div>
+    </div>
+    
+    <!-------------------------------------------------------------->
+    <!------- EL CONTENIDO QUE SE PUEDE EDITAR TERMINA AQUÍ -------->
+    <!-------------------------------------------------------------->
+
 
     <footer id="sponsorships-container">
       <img src="img/sponsors/idt.png" class="sponsorship-img" />
@@ -265,91 +400,6 @@
     <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
     <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
 
-    <script>
-      var headerHeight = $("header").height();
-      var portraitHeight = $(".portrait-container").data("height");
-      var pageColor = "var(--iGEM-dark-blue)";
-      var scrollHeights = [];
-      $(window).on("load", function() {
-        checkPortraitHeight();
-        checkHeaderColor();
-        $(".portrait-container").height(
-          Math.min(window.screen.width, portraitHeight)
-        );
-        createScrollHeights();
-        createIndex();
-        // var positionAdjust = ($(window).width() - portraitHeight)/2;
-        // $(".portrait-photo").css("object-position", "0px -" + positionAdjust + "px");
-      });
-      $(window).scroll(function() {
-        $(".navbar-collapse").removeClass("show");
-        checkPortraitHeight();
-        checkHeaderColor();
-        checkIndexMenu();
-      });
-      $(".main-content").click(function() {
-        $(".navbar-collapse").removeClass("show");
-      });
-      $(".portrait-photo").click(function() {
-        $(".navbar-collapse").removeClass("show");
-      });
-      function createScrollHeights() {
-        scrollHeights.push(portraitHeight);
-        if (window.screen.width < 768) {
-          scrollHeights[0] += $("aside").height() + 96;
-        }
-        $("article").each(function() {
-          scrollHeights[scrollHeights.length - 1];
-          scrollHeights.push(
-            scrollHeights[scrollHeights.length - 1] +
-              $(this).height() +
-              parseInt($(this).css("margin-top"))
-          );
-        });
-        console.log(scrollHeights);
-      }
-      function createIndex() {
-        const indexMenu = $(".index-menu");
-        $("article").each(function(i) {
-          indexMenu.append(`
-              <ul class="index-section" onclick="window.scrollTo(0, ${scrollHeights[
-                i
-              ] + 4});">
-                <a>
-                  ${$(this)
-                    .find(".subsection-title")
-                    .text()}
-                </a>
-              </ul>
-            `);
-        });
-      }
-      /* MAINTAIN PORTRAIG IMAGE SET */
-      function checkPortraitHeight() {
-        var height = Math.min(window.screen.width, portraitHeight);
-        var newHeight = height - $(document).scrollTop();
-        $(".portrait-photo").height(newHeight);
-      }
-      function checkHeaderColor() {
-        var opacity = $(document).scrollTop() / (portraitHeight - headerHeight);
-        $("header").css("background-color", `rgba(46, 80, 119, ${opacity})`);
-      }
-      function checkIndexMenu() {
-        var elements = document.getElementsByClassName("index-section");
-        for (var i = 0; i < elements.length; i++) {
-          e = elements[i];
-          var h = $(document).scrollTop();
-          if (h >= scrollHeights[i] && h < scrollHeights[i + 1]) {
-            e.className = "index-section current-index";
-          } else if (h > scrollHeights[i + 1]) {
-            e.className = "index-section visited-index";
-          } else if (h < scrollHeights[i]) {
-            e.className = "index-section not-visited-index";
-          } else if (i + 1 == elements.length) {
-            e.className = "index-section current-index";
-          }
-        }
-      }
-    </script>
+    <script src="js/placeholder.js"></script>
   </body>
 </html>

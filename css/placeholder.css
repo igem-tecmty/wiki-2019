@@ -1,10 +1,4 @@
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
@@ -82,6 +76,7 @@ article {
   font-weight: bold;
   display: block;
   filter: brightness(75%);
+  margin-bottom: 0.5em;
 }
 
 .img-wrapper img {
@@ -162,6 +157,14 @@ article {
   justify-content: space-evenly;
 }
 
+table#promoters {
+  margin-top: -8px;
+}
+
+table#promoters th {
+  border-bottom: 2px solid #dee2e6;
+}
+
 .collab-component {
   width: 300px;
   padding: 12px;
@@ -182,14 +185,11 @@ article {
 }
 
 @media only screen and (max-width: 719px) {
-  body, p {
-    font-size: 18px;
-  }
   .section-title {
     font-size: 64px;
   }
   .subsection-title {
-    font-size: 36px;
+    font-size: 30px;
   }
   .index-menu {
     position: unset;
@@ -200,9 +200,6 @@ article {
 }
 
 @media only screen and (min-width: 720px) {
-  body, p {
-    font-size: 18px;
-  }
   .section-title {
     font-size: 96px;
   }

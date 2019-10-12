@@ -1,7 +1,7 @@
 var headerHeight = $("header").height();
-var portraitHeight = $(".portrait-container").data("height");
-var pageColor = "var(--iGEM-dark-blue)";
+var portraitHeight = $(".portrait-container").data("height") || $(".landing-video").height();
 var scrollHeights = [];
+
 $(window).on("load", function() {
     checkPortraitHeight();
     checkHeaderColor();
@@ -15,18 +15,20 @@ $(window).on("load", function() {
 });
 $(window).scroll(function() {
     $(".navbar-collapse").removeClass("show");
-        checkPortraitHeight();
-        checkHeaderColor();
-        checkIndexMenu();
-    });
-    $(".main-content").click(function() {
-        $(".navbar-collapse").removeClass("show");
-    });
-    $(".portrait-photo").click(function() {
+    checkPortraitHeight();
+    checkHeaderColor();
+    checkIndexMenu();
+});
+$(".main-content").click(function() {
+    $(".navbar-collapse").removeClass("show");
+});
+$(".portrait-photo").click(function() {
     $(".navbar-collapse").removeClass("show");
 });
 function createScrollHeights() {
     scrollHeights.push(portraitHeight);
+    scrollHeights[0] += $('#intro-text').height() || 0;
+    scrollHeights[0] += parseInt($('#intro-text').css("margin-top")) || 0;
     if (window.screen.width < 768) {
         scrollHeights[0] += $("aside").height() + 96;
     }
@@ -53,15 +55,17 @@ function createIndex() {
         `);
     });
 }
+
 /* MAINTAIN PORTRAIG IMAGE SET */
 function checkPortraitHeight() {
     var height = Math.min(window.screen.width, portraitHeight);
     var newHeight = height - $(document).scrollTop();
     $(".portrait-photo").height(newHeight);
+    $(".landing-video").height(newHeight);
 }
 function checkHeaderColor() {
     var opacity = $(document).scrollTop() / (Math.min(window.screen.width, portraitHeight) - headerHeight);
-    $("header").css("background-color", `rgba(46, 80, 119, ${opacity})`);
+    $("header").css("background-color", `rgba(6, 15, 41, ${opacity})`);
 }
 function checkIndexMenu() {
     var elements = document.getElementsByClassName("index-section");

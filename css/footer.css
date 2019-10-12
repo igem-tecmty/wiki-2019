@@ -5,6 +5,7 @@ footer {
     justify-content: space-around;
     background-color: var(--iGEM-dark-blue);
     padding: 8px;
+    margin-top: 96px;
 }
   
 #sponsorships-container {

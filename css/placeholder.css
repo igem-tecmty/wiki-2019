@@ -151,6 +151,20 @@ article {
   margin-bottom: 12px;
 }
 
+#parrafo-alan {
+  text-align: center;
+}
+
+.index-button {
+  width: 500px;
+  height: 500px;
+  font-family: var(--iGEM-font-title);
+}
+
+.div-info {
+
+}
+
 #team-collabs-container {
   display: flex;
   flex-wrap: wrap;

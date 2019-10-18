@@ -250,106 +250,27 @@
       />
     </div>
 
-    <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ ------->
-    <!------------------------    HASTA ACÁ      ----------------------->
 
-    <footer id="sponsorships-container">
-      <img src="img/sponsors/idt.png" class="sponsorship-img" />
-      <img src="img/sponsors/twist.png" class="sponsorship-img" />
-      <img src="img/sponsors/ctr.png" class="sponsorship-img" />
-      <img src="img/sponsors/accesolab.png" class="sponsorship-img" />
-      <img src="img/sponsors/neb.png" class="sponsorship-img" />
-      <img src="img/sponsors/dibico.png" class="sponsorship-img" />
+    <footer class="d-flex flex-wrap justify-content-around">
+      <img src="https://2019.igem.org/wiki/images/thumb/1/1f/T--Tec-Monterrey--sponsors-acceso-lab.png/320px-T--Tec-Monterrey--sponsors-acceso-lab.png" />
+      <img src="https://2019.igem.org/wiki/images/thumb/d/d6/T--Tec-Monterrey--sponsors-arfq.png/262px-T--Tec-Monterrey--sponsors-arfq.png" />
+      <img src="https://2019.igem.org/wiki/images/b/bd/T--Tec-Monterrey--sponsors-benchmark.png" />
+      <img src="https://2019.igem.org/wiki/images/thumb/0/0a/T--Tec-Monterrey--sponsors-biolabs.png/320px-T--Tec-Monterrey--sponsors-biolabs.png" />
+      <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-cofepris.png" />
+      <img src="https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--sponsors-congreso-nuevo-leon.png" />
+      <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-ctr.png" />
+      <img src="https://2019.igem.org/wiki/images/a/ac/T--Tec-Monterrey--sponsors-dibico.png" />
+      <img src="https://2019.igem.org/wiki/images/thumb/9/9b/T--Tec-Monterrey--sponsors-idt.png/320px-T--Tec-Monterrey--sponsors-idt.png" />
+      <img src="https://2019.igem.org/wiki/images/d/db/T--Tec-Monterrey--sponsors-imss.png" />
+      <img src="" />
+      <img src="https://2019.igem.org/wiki/images/thumb/c/cf/T--Tec-Monterrey--sponsors-itesm.png/320px-T--Tec-Monterrey--sponsors-itesm.png" />
+      <img src="https://2019.igem.org/wiki/images/b/b7/T--Tec-Monterrey--sponsors-scintia.png" />
+      <img src="https://2019.igem.org/wiki/images/f/ff/T--Tec-Monterrey--sponsors-snap-gene.png" />
+      <img src="https://2019.igem.org/wiki/images/thumb/f/f0/T--Tec-Monterrey--sponsors-twist.png/320px-T--Tec-Monterrey--sponsors-twist.png" />
     </footer>
 
     <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
     <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
-
-    <script>
-      var headerHeight = $("header").height();
-      var portraitHeight = $(".portrait-container").data("height");
-      var pageColor = "var(--iGEM-dark-blue)";
-      var scrollHeights = [];
-      $(window).on("load", function() {
-        checkPortraitHeight();
-        checkHeaderColor();
-        $(".portrait-container").height(
-          Math.min(window.screen.width, portraitHeight)
-        );
-        createScrollHeights();
-        createIndex();
-        // var positionAdjust = ($(window).width() - portraitHeight)/2;
-        // $(".portrait-photo").css("object-position", "0px -" + positionAdjust + "px");
-      });
-      $(window).scroll(function() {
-        $(".navbar-collapse").removeClass("show");
-        checkPortraitHeight();
-        checkHeaderColor();
-        checkIndexMenu();
-      });
-      $(".main-content").click(function() {
-        $(".navbar-collapse").removeClass("show");
-      });
-      $(".portrait-photo").click(function() {
-        $(".navbar-collapse").removeClass("show");
-      });
-      function createScrollHeights() {
-        scrollHeights.push(portraitHeight);
-        if (window.screen.width < 768) {
-          scrollHeights[0] += $("aside").height() + 96;
-        }
-        $("article").each(function() {
-          scrollHeights[scrollHeights.length - 1];
-          scrollHeights.push(
-            scrollHeights[scrollHeights.length - 1] +
-              $(this).height() +
-              parseInt($(this).css("margin-top"))
-          );
-        });
-        console.log(scrollHeights);
-      }
-      function createIndex() {
-        const indexMenu = $(".index-menu");
-        $("article").each(function(i) {
-          indexMenu.append(`
-              <ul class="index-section" onclick="window.scrollTo(0, ${scrollHeights[
-                i
-              ] + 4});">
-                <a>
-                  ${$(this)
-                    .find(".subsection-title")
-                    .text()}
-                </a>
-              </ul>
-            `);
-        });
-      }
-      /* MAINTAIN PORTRAIG IMAGE SET */
-      function checkPortraitHeight() {
-        var height = Math.min(window.screen.width, portraitHeight);
-        var newHeight = height - $(document).scrollTop();
-        $(".portrait-photo").height(newHeight);
-      }
-      function checkHeaderColor() {
-        var opacity = $(document).scrollTop() / (portraitHeight - headerHeight);
-        $("header").css("background-color", `rgba(46, 80, 119, ${opacity})`);
-      }
-      function checkIndexMenu() {
-        var elements = document.getElementsByClassName("index-section");
-        for (var i = 0; i < elements.length; i++) {
-          e = elements[i];
-          var h = $(document).scrollTop();
-          if (h >= scrollHeights[i] && h < scrollHeights[i + 1]) {
-            e.className = "index-section current-index";
-          } else if (h > scrollHeights[i + 1]) {
-            e.className = "index-section visited-index";
-          } else if (h < scrollHeights[i]) {
-            e.className = "index-section not-visited-index";
-          } else if (i + 1 == elements.length) {
-            e.className = "index-section current-index";
-          }
-        }
-      }
-    </script>
+    <script src="js/placeholder.js"></script>
   </body>
 </html>

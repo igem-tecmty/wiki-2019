@@ -1,0 +1,434 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>iGEM Tec-Monterrey / Project</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
+    <link rel="stylesheet" href="css/template.css" type="text/css" />
+    <link rel="stylesheet" href="css/header.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manjari&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="js/jquery-3.4.1.min.js"
+    ></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body class="aqua">
+    <header id="desktop-menu">
+      <div id="header-content-container">
+        <div id="logo-container">
+          <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
+        </div>
+        <span class="filler"></span>
+        <div id="team-dropdown" class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            TEAM
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Members</a>
+            <a class="dropdown-item" href="#">Attributions</a>
+            <a class="dropdown-item" href="#">Collabs</a>
+            <a class="dropdown-item" href="#">Sponsors</a>
+            <a class="dropdown-item" href="#">Gallery</a>
+          </div>
+        </div>
+        <div id="project-dropdown" class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            PROJECT
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Description</a>
+            <a class="dropdown-item" href="#">Design</a>
+            <a class="dropdown-item" href="#">Notebook & Protocols</a>
+            <a class="dropdown-item" href="#">Experiments</a>
+            <a class="dropdown-item" href="#">Demonstrate</a>
+            <a class="dropdown-item" href="#">Model</a>
+            <a class="dropdown-item" href="#">Safety</a>
+          </div>
+        </div>
+        <div id="parts-dropdown" class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            PARTS
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Parts Overview</a>
+            <a class="dropdown-item" href="#">Basic Parts</a>
+            <a class="dropdown-item" href="#">Improved Parts</a>
+            <a class="dropdown-item" href="#">Composite Parts</a>
+            <a class="dropdown-item" href="#">Part Collection</a>
+          </div>
+        </div>
+        <div id="human-dropdown" class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            HUMAN
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Human Practices</a>
+            <a class="dropdown-item" href="#">Integrated human</a>
+            <a class="dropdown-item" href="#">Public Engagement</a>
+            <a class="dropdown-item" href="#">LATAM Meetup</a>
+          </div>
+        </div>
+        <div id="contact-dropdown" class="dropdown">
+          <button class="btn btn-secondary" type="button">
+            CONTACT
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <header id="mobile-menu">
+      <!--Navbar-->
+      <nav class="navbar navbar-light light-blue lighten-4">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">
+          <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
+        </a>
+
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler toggler-example"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="text-white"><i class="material-icons"> menu </i></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <!-- Links -->
+          <div id="team-dropdown" class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              TEAM
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Members</a>
+              <a class="dropdown-item" href="#">Attributions</a>
+              <a class="dropdown-item" href="#">Collabs</a>
+              <a class="dropdown-item" href="#">Sponsors</a>
+              <a class="dropdown-item" href="#">Gallery</a>
+            </div>
+          </div>
+          <div id="project-dropdown" class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              PROJECT
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Description</a>
+              <a class="dropdown-item" href="#">Design</a>
+              <a class="dropdown-item" href="#">Notebook & Protocols</a>
+              <a class="dropdown-item" href="#">Experiments</a>
+              <a class="dropdown-item" href="#">Demonstrate</a>
+              <a class="dropdown-item" href="#">Model</a>
+              <a class="dropdown-item" href="#">Safety</a>
+            </div>
+          </div>
+          <div id="parts-dropdown" class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              PARTS
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Parts Overview</a>
+              <a class="dropdown-item" href="#">Basic Parts</a>
+              <a class="dropdown-item" href="#">Improved Parts</a>
+              <a class="dropdown-item" href="#">Composite Parts</a>
+              <a class="dropdown-item" href="#">Part Collection</a>
+            </div>
+          </div>
+          <div id="human-dropdown" class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              HUMAN
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Human Practices</a>
+              <a class="dropdown-item" href="#">Integrated human</a>
+              <a class="dropdown-item" href="#">Public Engagement</a>
+              <a class="dropdown-item" href="#">LATAM Meetup</a>
+            </div>
+          </div>
+          <div id="contact-dropdown" class="dropdown">
+            <button class="btn btn-secondary" type="button">
+              CONTACT
+            </button>
+          </div>
+          <!-- Links -->
+        </div>
+        <!-- Collapsible content -->
+      </nav>
+      <!--/.Navbar-->
+    </header>
+
+    <div class="portrait-container container-fluid" data-height="420">
+      <h2 class="section-title">COLLABS</h2>
+      <img
+        src="img/portrait/model5.jpg"
+        class="portrait-photo"
+        style="opacity: 0.35"
+      />
+    </div>
+
+    <div id="project-content" class="main-content container">
+      <div class="row" style="margin-top: 48px;">
+
+        <section class="subsection-container md-offset-1 col-sm-12 col-md-12 col-lg-12">
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">iGEM Tec-Chihuahua</h2>
+            <p class="description-text">
+              Many people think that we are at the beginning of the post-antibiotic era
+              due to antimicrobial resistance, which has become a serious problem all around
+              the world in the last decades. This resistance reduces the effectiveness of
+              medications and bacterial infections become more frequent, long-lasting and harder to attack.
+              Bacterial resistance has reached such an uncontrolled level that now bacteria like
+              Acinetobacter and Pseudomonas have become super-resistant.
+              This means that they are almost immune to all antibiotics used to fight them and are
+              especially dangerous in hospitals and health care centers.
+            </p>
+          </article>
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">Project focus</h2>
+
+            <p class="description-text">
+              To raise awareness about the great impact that antibiotic resistance has on the life
+              quality of people, we decided to focus our project on a disease in which super-bacteria
+              have severe repercussions. This disease is Cystic Fibrosis (CF) and about 80% of deaths
+              are caused by these microorganisms [––––].
+              CF is the most common hereditary disease affecting white people of northern European ancestry,
+              having 1 in 2000–3000 births. (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5408469/)
+              Diagnosed patients experience an accumulation of viscous mucus within their lungs,
+              pancreas and digestive tract, giving place to an approximate life expectancy of 37.5 years
+              (18, in Mexico). [–––]
+              CF patients are especially susceptible to bacterial infections, mainly those caused by
+              Pseudomonas aeruginosa, because the mucus provides the perfect environment for theirproliferation and prevents them from being easily expelled. 
+            </p>
+
+          </article>
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">Working plan</h2>
+
+            <p class="description-text">
+              Having these concerns in mind, iGEM team Tec-Monterrey 2019 came up with
+              a working plan which consists in the development of a platform that allows 
+              us to find new antibiotics for the treatment against Pseudomonas aeruginosa. 
+              However, in order for the antibiotic to work properly, it is necessary to contribute 
+              to its diffusion through the mucus. Thus, to achieve this objective we propose 5 
+              different whole-cell biosensors that may facilitate the discovery of new antibiotics 
+              followed up by a mucolytic that reduces the viscosity of CF patients' mucus. 
+            </p>
+
+          </article>
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">Main objectives:</h2>
+
+            <p class="description-text">
+              Therefore we established two main objectives:
+            </p>
+
+            <ul>
+              <li class="mb-2">
+                To produce 5 whole cell biosensors able to detect the mechanism of
+                action of unknown compounds with possible antibiotic properties. 
+              </li>
+              <li>
+                To produce a recombinant protein (sialidase) able to reduce mucus
+                viscosity in CF patients using a sfGFP that helps secrete the sialidase
+                out of the cell, facilitating the recovery process.
+              </li>
+            </ul>
+
+          </article>
+          <!----------------    Y TERMINA HASTA ACÁ      ----------------->
+
+        </section>
+      </div>
+    </div>
+
+    <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ ------->
+    <!------------------------    HASTA ACÁ      ----------------------->
+
+    <footer id="sponsorships-container">
+      <img src="img/sponsors/idt.png" class="sponsorship-img" />
+      <img src="img/sponsors/twist.png" class="sponsorship-img" />
+      <img src="img/sponsors/ctr.png" class="sponsorship-img" />
+      <img src="img/sponsors/accesolab.png" class="sponsorship-img" />
+      <img src="img/sponsors/neb.png" class="sponsorship-img" />
+      <img src="img/sponsors/dibico.png" class="sponsorship-img" />
+    </footer>
+
+    <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
+
+    <script>
+      var headerHeight = $("header").height();
+      var portraitHeight = $(".portrait-container").data("height");
+      var pageColor = "var(--iGEM-dark-blue)";
+      var scrollHeights = [];
+      $(window).on("load", function() {
+        checkPortraitHeight();
+        checkHeaderColor();
+        $(".portrait-container").height(
+          Math.min(window.screen.width, portraitHeight)
+        );
+        createScrollHeights();
+        createIndex();
+        // var positionAdjust = ($(window).width() - portraitHeight)/2;
+        // $(".portrait-photo").css("object-position", "0px -" + positionAdjust + "px");
+      });
+      $(window).scroll(function() {
+        $(".navbar-collapse").removeClass("show");
+        checkPortraitHeight();
+        checkHeaderColor();
+        checkIndexMenu();
+      });
+      $(".main-content").click(function() {
+        $(".navbar-collapse").removeClass("show");
+      });
+      $(".portrait-photo").click(function() {
+        $(".navbar-collapse").removeClass("show");
+      });
+      function createScrollHeights() {
+        scrollHeights.push(portraitHeight);
+        if (window.screen.width < 768) {
+          scrollHeights[0] += $("aside").height() + 96;
+        }
+        $("article").each(function() {
+          scrollHeights[scrollHeights.length - 1];
+          scrollHeights.push(
+            scrollHeights[scrollHeights.length - 1] +
+              $(this).height() +
+              parseInt($(this).css("margin-top"))
+          );
+        });
+        console.log(scrollHeights);
+      }
+      function createIndex() {
+        const indexMenu = $(".index-menu");
+        $("article").each(function(i) {
+          indexMenu.append(`
+              <ul class="index-section" onclick="window.scrollTo(0, ${scrollHeights[
+                i
+              ] + 4});">
+                <a>
+                  ${$(this)
+                    .find(".subsection-title")
+                    .text()}
+                </a>
+              </ul>
+            `);
+        });
+      }
+      /* MAINTAIN PORTRAIG IMAGE SET */
+      function checkPortraitHeight() {
+        var height = Math.min(window.screen.width, portraitHeight);
+        var newHeight = height - $(document).scrollTop();
+        $(".portrait-photo").height(newHeight);
+      }
+      function checkHeaderColor() {
+        var opacity = $(document).scrollTop() / (portraitHeight - headerHeight);
+        $("header").css("background-color", `rgba(46, 80, 119, ${opacity})`);
+      }
+      function checkIndexMenu() {
+        var elements = document.getElementsByClassName("index-section");
+        for (var i = 0; i < elements.length; i++) {
+          e = elements[i];
+          var h = $(document).scrollTop();
+          if (h >= scrollHeights[i] && h < scrollHeights[i + 1]) {
+            e.className = "index-section current-index";
+          } else if (h > scrollHeights[i + 1]) {
+            e.className = "index-section visited-index";
+          } else if (h < scrollHeights[i]) {
+            e.className = "index-section not-visited-index";
+          } else if (i + 1 == elements.length) {
+            e.className = "index-section current-index";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

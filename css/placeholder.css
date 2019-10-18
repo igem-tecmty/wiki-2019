@@ -8,21 +8,13 @@ h6 {
   margin: 0;
 }
 
-body {
-  font-size: 18px;
+.main-content {
+  font-size: 20px;
 }
 
-h3 {
-  font-family: "Manjari", sans-serif;
-}
+h2 { font-family: 'Manjari', sans-serif; }
 
-h4 {
-  font-family: "Lato";
-  font-size: 1.5em;
-  margin-top: 1em;
-}
-
-.arrow-content {
+.arrow-content{
   height: 96px;
 }
 
@@ -42,8 +34,15 @@ h4 {
   filter: grayscale(100%);
 }
 
+.portrait-photo.team-photo {
+  opacity: 1;
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
 aside {
   padding: 0 24px;
+  font-size: 0.9em;
 }
 
 .visited-index {
@@ -78,10 +77,14 @@ article {
 }
 
 .subsection-title {
-  font-size: 48px;
+  font-size: 2em;
   font-weight: bold;
   display: block;
   filter: brightness(75%);
+  margin-bottom: 0.5em;
+}
+
+.inner-section-title {
   margin-bottom: 0.5em;
 }
 
@@ -94,8 +97,8 @@ article {
   padding: 0;
   padding-top: 6em;
   z-index: 1;
-  font-size: 18px;
   color: black;
+  line-height: 1em;
 }
 
 .index-menu > ul {
@@ -116,45 +119,52 @@ article {
   padding: 8px;
 }
 
-#team-section {
-  background-color: #b8f1ba;
-}
-
-#team-members-title {
+#team-content h2 {
+  margin-top: 64px;
   text-align: center;
-  margin-top: 36px;
-  margin-bottom: 12px;
+}
+#team-content h2 {
+  margin-top: 64px;
 }
 
-#team-members-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.member-component {
-  width: 450px;
-  padding: 12px;
-}
-
-.member-photo {
-  float: left;
-}
-
-.member-name {
-  font-size: 20px;
-  font-family: "Barlow Condensed", sans-serif;
-}
-
-.member-bio {
-  font-size: 15px;
-  font-family: "Neuton", serif;
-}
-
-#team-collabs-title {
+#description-nav-buttons > div {
   text-align: center;
-  margin-top: 36px;
-  margin-bottom: 12px;
+  border: solid 6px;
+  border-radius: 16px;
+  margin: 0 16px;
+  padding: 16px;
+  box-shadow: 4px 4px 16px;
+}
+
+.people-component {
+  font-family: "Lato";
+  margin: 16px;
+  text-align: center;
+}
+.people-component img { width: inherit; }
+.people-component .name {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.member-component { width: 100px; }
+.member-component > .name{
+  font-size: 1em;
+  margin-top: 8px;
+  font-weight: bold;
+}
+.member-component > h5 {
+  font-size: 0.6em;
+}
+
+.member-component.attribution {
+  width: 360px;
+  text-align: left;
+}
+.member-component.attribution img {
+  width: 100px;
+  height: 100px;
+  margin-right: 8px;
 }
 
 .description-text1 {
@@ -250,58 +260,63 @@ background-size: 100%; */
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
-table#promoters {
-  margin-top: -8px;
+.member-component.attribution p {
+  font-size: 0.6em;
 }
 
-table#promoters th {
-  border-bottom: 2px solid #dee2e6;
+.instructor-component {
+  width: 320px;
+  text-align: left;
+}
+.instructor-component > img {
+  width: 75px;
+  height: 75px;
+  margin-right: 8px;
+}
+
+.advisor-component {
+  font-size: 0.8em;
+  text-align: center;
+  width: 150px;
+}
+.advisor-component > img {
+  width: 75px;
+  height: 75px;
 }
 
 .collab-component {
-  width: 300px;
-  padding: 12px;
-}
-
-.collab-photo {
-  float: left;
   width: 100px;
-  height: 100px;
+  font-size: 0.8em;
+}
+.collab-component img {
+  width: 75px;
+  height: 75px;
+}
+.collab-component > h4 {
+  margin-top: 4px;
 }
 
-.collab-name {
-  font-size: 16px;
+.thank-container {
+  height: 32px;
+  width: 480px;
+  margin: 16px;
+}
+.thank-container > img {
+  height: inherit;
+  margin-right: 16px;
 }
 
-.collab-bio {
-  font-size: 12px;
+table#promoters th {  border-bottom: 2px solid #dee2e6; }
+
+#div-info {
+  background-image: url("../img/portrait/model.jpg");
 }
 
 @media only screen and (max-width: 719px) {
-  .section-title {
-    font-size: 64px;
-  }
-  .subsection-title {
-    font-size: 30px;
-  }
   .index-menu {
     position: unset;
     padding: 1em 0;
     margin: 1em;
     border-bottom: solid 4px;
   }
-}
-
-@media only screen and (min-width: 720px) {
-  .section-title {
-    font-size: 96px;
-  }
-  .subsection-title {
-    font-size: 48px;
-  }
-}
-
-#div-info {
-  background-image: url("../img/portrait/model.jpg");
 }

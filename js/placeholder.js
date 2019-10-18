@@ -1,6 +1,5 @@
 var headerHeight = $("header").height();
-var portraitHeight =
-  $(".portrait-container").data("height") || $(".landing-video").height();
+var portraitHeight = $(".portrait-container").data("height");
 var scrollHeights = [];
 
 $(window).on("load", function () {
@@ -11,21 +10,23 @@ $(window).on("load", function () {
   );
   createScrollHeights();
   createIndex();
-  // var positionAdjust = ($(window).width() - portraitHeight)/2;
-  // $(".portrait-photo").css("object-position", "0px -" + positionAdjust + "px");
 });
+
 $(window).scroll(function () {
   $(".navbar-collapse").removeClass("show");
   checkPortraitHeight();
   checkHeaderColor();
   checkIndexMenu();
 });
+
 $(".main-content").click(function () {
   $(".navbar-collapse").removeClass("show");
 });
+
 $(".portrait-photo").click(function () {
   $(".navbar-collapse").removeClass("show");
 });
+
 function createScrollHeights() {
   scrollHeights.push(portraitHeight);
   scrollHeights[0] += $("#intro-text").height() || 0;
@@ -42,6 +43,7 @@ function createScrollHeights() {
     );
   });
 }
+
 function createIndex() {
   const indexMenu = $(".index-menu");
   $("article").each(function (i) {
@@ -61,32 +63,30 @@ function createIndex() {
 
 /* MAINTAIN PORTRAIG IMAGE SET */
 function checkPortraitHeight() {
-  var height = Math.min(window.screen.width, portraitHeight);
-  var newHeight = height - $(document).scrollTop();
-  $(".portrait-photo").height(newHeight);
-  $(".landing-video").height(newHeight);
+    const newHeight = Math.min(window.screen.width, portraitHeight) - $(document).scrollTop();
+    $(".portrait-photo").height(newHeight);
 }
+
 function checkHeaderColor() {
-  var opacity =
-    $(document).scrollTop() /
-    (Math.min(window.screen.width, portraitHeight) - headerHeight);
-  $("header").css("background-color", `rgba(6, 15, 41, ${opacity})`);
+    const opacity = $(document).scrollTop() / (Math.min(window.screen.width, portraitHeight) - $("header").height());
+    $("header").css("background-color", `rgba(6, 15, 41, ${opacity})`);
 }
+
 function checkIndexMenu() {
-  var elements = document.getElementsByClassName("index-section");
-  for (var i = 0; i < elements.length; i++) {
-    e = elements[i];
-    var h = $(document).scrollTop();
-    if (h >= scrollHeights[i] && h < scrollHeights[i + 1]) {
-      e.className = "index-section current-index";
-    } else if (h > scrollHeights[i + 1]) {
-      e.className = "index-section visited-index";
-    } else if (h < scrollHeights[i]) {
-      e.className = "index-section not-visited-index";
-    } else if (i + 1 == elements.length) {
-      e.className = "index-section current-index";
+    const elements = document.getElementsByClassName("index-section");
+    for (let i = 0; i < elements.length; i++) {
+        e = elements[i];
+        const h = $(document).scrollTop();
+        if (h >= scrollHeights[i] && h < scrollHeights[i + 1]) {
+        e.className = "index-section current-index";
+        } else if (h > scrollHeights[i + 1]) {
+        e.className = "index-section visited-index";
+        } else if (h < scrollHeights[i]) {
+        e.className = "index-section not-visited-index";
+        } else if (i + 1 == elements.length) {
+        e.className = "index-section current-index";
+        }
     }
-  }
 }
 
 $("#antibiotic-div")
@@ -118,11 +118,3 @@ $("#mucolitic-div")
     $("#front-card3").show();
     $("#back-card3").hide();
   });
-
-
-  /* CHAT
-HOLIIII
-
-
-
-*/

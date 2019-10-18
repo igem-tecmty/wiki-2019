@@ -20,7 +20,7 @@
   </head>
 
   <!-- Possible colors: ("blue" | "orange" | "aqua" | "green" | "black") -->
-  <body class="green">
+  <body>
 
     <header id="desktop-menu">
       <div id="header-content-container">
@@ -229,68 +229,34 @@
       <!--/.Navbar-->
     </header>
 
-    <!-------------------------------------------------------------->
-    <!------- EL CONTENIDO QUE SE PUEDE EDITAR COMIENZA AQUÍ ------->
-    <!-------------------------------------------------------------->
-
-    <!-------     IMAGEN TÍTULO SUPERIOR     ------->
-    <div class="portrait-container container-fluid" data-height="420">
+    <div class="portrait-container container-fluid green" data-height="420">
       <h1 class="section-title">DESIGN</h1>
       <img
-        src="img/portrait/model3.jpg"
+        src="https://2019.igem.org/wiki/images/b/b8/T--Tec-Monterrey--portrait-design.jpg"
         class="portrait-photo"
         style="opacity: 0.35"/>
     </div>
 
-
-
-    <div id="project-content" class="main-content container">
+    <div id="design-content" class="main-content container green">
       <div class="row" style="margin-top: 48px;">
 
-        <!-----------       INDICE DE LA IZQUIERDA       ----------->
         <aside class="col-sm-12 col-md-3 col-lg-2 index-menu sticky-top">
           <!----  El javascript creará los index por nosotros   ---->
         </aside>
 
-
-
-        <!------- CONTENIDO COMPLETO INFORMACIÓN ------->
         <section class="subsection-container md-offset-1 col-sm-12 col-md-8 col-lg-9">
 
           <div id="intro-text" class="col-md-12" style="margin-top: 96px;">
             <p class="description-text">
-              Our main goal is to develop a device that, using Whole Cell Biosensors,
-              implements a discarding system to find metabolites of interest. At the same time,
-              we want to apply the discoverings found on these with an actual real life illness
-
-
-              
-              Since our main goal is to reduce the possibility of bacterial infections on CF patients,
-              we developed a two step plan work which consists of a mucolytic treatment and whole-cell
-              biosensors that facilitate the discovery of new antibiotics.
-              <br><br>
-              Thus we established two objectives:
-              <ol>
-                <li class="mb-2">
-                  To produce a recombinant protein (sialidase) able to reduce mucus viscosity
-                  in CF patients using a sfGFP that helps secrete the sialidase out of the cell,
-                  facilitating the recovery process.
-                </li>
-                <li>
-                    To produce 5 whole cell biosensors able to detect the mechanism of
-                    action of unknown compounds with possible antibiotic properties. 
-                </li>
-              </ol>
+              Since our main goal consists in the development of a microfluidic
+              platform that allows us to find new antibiotics for the treatment
+              against Pseudomonas aeruginosa we designed the following working plan
+              concerning the whole cell biosensors and the mucolytic.
             </p>
           </div>
 
-          <!-----    INSERTA CADA SUBTEMA COMO UN <article>    ----->
-
           <article class="container">
-            <!-----    SUBTÍTULO DE LA SECCIÓN <h3>    ----->
-            <h3 class="row col-md-12 subsection-title">Whole cell biosensors designs</h3>
-
-            <!-----    Cada <div> es una fila/párrafo    ----->
+            <h2 class="row col-md-12 subsection-title">Microfluidic platform designs</h2>
 
             <p>
               Each biosensor produces a different fluorescent signal depending
@@ -306,7 +272,7 @@
                 the chosen promoters are listed:                
               </p>
               <div class="col-sm-12 col-md-5">
-                <table id="promoters" class="table">
+                <table id="promoters" class="table" style="margin-top: -8px;">
                   <thread>
                     <th scope="col">Promoter</th>
                     <th scope="col">Mechanism of action</th>
@@ -361,12 +327,9 @@
             </div>
       
           </article>
+
           <article class="container">
-            <!-----    SUBTÍTULO DE LA SECCIÓN <h3>    ----->
-            <h3 class="row col-md-12 subsection-title">Whole cell biosensors designs</h3>
-
-            <!-----    Cada <div> es una fila/párrafo    ----->
-
+            <h2 class="row col-md-12 subsection-title">Whole cell biosensors designs</h2>
             <div class="row mt-4">
               <p class="col-sm-12 col-md-7">
                 First, we looked for the main promoters that control transcription when
@@ -377,7 +340,6 @@
             </div>
 
           </article>
-          <!----------------    Y TERMINA HASTA ACÁ      ----------------->
 
         </section>
       </div>
@@ -388,13 +350,16 @@
     <!-------------------------------------------------------------->
 
 
-    <footer id="sponsorships-container">
-      <img src="img/sponsors/idt.png" class="sponsorship-img" />
-      <img src="img/sponsors/twist.png" class="sponsorship-img" />
-      <img src="img/sponsors/ctr.png" class="sponsorship-img" />
-      <img src="img/sponsors/accesolab.png" class="sponsorship-img" />
-      <img src="img/sponsors/neb.png" class="sponsorship-img" />
-      <img src="img/sponsors/dibico.png" class="sponsorship-img" />
+    <footer class="d-flex flex-wrap justify-content-around">
+      <img src="" />
+      <img src="" />
+      <img src="" />
+      <img src="" />
+      <img src="" />
+      <img src="" />
+      <img src="" />
+      <img src="" />
+      <img src="" />
     </footer>
 
     <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>

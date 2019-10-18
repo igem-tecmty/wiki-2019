@@ -1,50 +1,10 @@
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
     background-color: var(--iGEM-dark-blue);
     padding: 8px;
-    margin-top: 96px;
+    margin-top: 192px;
 }
   
-#sponsorships-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-  
-#sponsorships-container img {
-    height: 1.5em;
-    margin: 0.5em;
-}
-
-.sponsorship-img {
-width: 100px;
-height: 40px;
-}
-
-.sponsorship-img2 {
-    width: 100px;
-    height: 30px;
-    }
-
-.sponsorship-img3 {
-    width: 90px;
-    height: 20px;
-    }    
-  
-#contact-us {
-    float: right;
-    width: 9em;
-    padding: 0.5em 0;
-    margin: 16px;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    border-left: solid black 4px;
-}
-  
-#contact-us img {
+footer > img {
     height: 32px;
-    opacity: 0.3;
+    margin: 0.5em;
 }

@@ -1,48 +1,145 @@
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>iGEM Tec-Monterrey / Project</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+      <link rel="stylesheet" href="css/resetter.css" type="text/css" />
+      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+      <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
+      <link rel="stylesheet" href="css/template.css" type="text/css" />
+      <link rel="stylesheet" href="css/header.css" type="text/css" />
+      <link rel="stylesheet" href="css/footer.css" type="text/css" />
+      <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+      <link rel="stylesheet" href="css/colors.css" type="text/css" />
+  
+      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
+  
+      <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    </head>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
-    <link rel="stylesheet" href="css/template.css" type="text/css" />
-    <link rel="stylesheet" href="css/header.css" type="text/css" />
-    <link rel="stylesheet" href="css/footer.css" type="text/css" />
-    <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+<body>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Manjari&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
-      rel="stylesheet"
-    />
+  <header id="desktop-menu" style="box-shadow: unset;">
+    <div id="header-content-container">
 
-    <script
-      language="JavaScript"
-      type="text/javascript"
-      src="js/jquery-3.4.1.min.js"
-    ></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-
-  <body class="aqua">
-    <header id="desktop-menu">
-      <div id="header-content-container">
-        <div id="logo-container">
-          <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo" />
+      <!-- Logo Breathe-In -->
+      <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
+        <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo" />
+      </a>
+      
+      <span class="filler"></span>
+      <div id="team-dropdown" class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          TEAM
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Members</a>
+          <a class="dropdown-item" href="#">Attributions</a>
+          <a class="dropdown-item" href="#">Collabs</a>
+          <a class="dropdown-item" href="#">Sponsors</a>
+          <a class="dropdown-item" href="#">Gallery</a>
         </div>
-        <span class="filler"></span>
+      </div>
+      <div id="project-dropdown" class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          PROJECT
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Description</a>
+          <a class="dropdown-item" href="#">Design</a>
+          <a class="dropdown-item" href="#">Notebook & Protocols</a>
+          <a class="dropdown-item" href="#">Experiments</a>
+          <a class="dropdown-item" href="#">Demonstrate</a>
+          <a class="dropdown-item" href="#">Model</a>
+          <a class="dropdown-item" href="#">Safety</a>
+        </div>
+      </div>
+      <div id="parts-dropdown" class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          PARTS
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Parts Overview</a>
+          <a class="dropdown-item" href="#">Basic Parts</a>
+          <a class="dropdown-item" href="#">Improved Parts</a>
+          <a class="dropdown-item" href="#">Composite Parts</a>
+          <a class="dropdown-item" href="#">Part Collection</a>
+        </div>
+      </div>
+      <div id="human-dropdown" class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          HUMAN
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Human Practices</a>
+          <a class="dropdown-item" href="#">Integrated human</a>
+          <a class="dropdown-item" href="#">Public Engagement</a>
+          <a class="dropdown-item" href="#">LATAM Meetup</a>
+        </div>
+      </div>
+      <div id="contact-dropdown" class="dropdown">
+        <button class="btn btn-secondary" type="button">
+          CONTACT
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <header id="mobile-menu" style="box-shadow: unset;">
+    <nav class="navbar navbar-light light-blue lighten-4">
+
+      <!-- Logo Breathe-In -->
+      <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
+        <img src="img/logos/logo_BREATHE_plain.png" class="main-logo" />
+      </a>
+
+      <!-- Collapse button -->
+      <button
+        class="navbar-toggler toggler-example"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent1"
+        aria-controls="navbarSupportedContent1"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="text-white"><i class="material-icons">menu</i></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <!-- Links -->
         <div id="team-dropdown" class="dropdown">
           <button
             class="btn btn-secondary dropdown-toggle"
@@ -125,541 +222,287 @@
             CONTACT
           </button>
         </div>
+        <!-- Links -->
       </div>
-    </header>
-
-    <header id="mobile-menu">
-      <!--Navbar-->
-      <nav class="navbar navbar-light light-blue lighten-4">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">
-          <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo" />
-          <span id="mobile-title">BREATHE-IN</span>
-        </a>
-
-        <!-- Collapse button -->
-        <button
-          class="navbar-toggler toggler-example"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent1"
-          aria-controls="navbarSupportedContent1"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="text-white"><i class="material-icons"> menu </i></span>
-        </button>
-
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-          <!-- Links -->
-          <div id="team-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              TEAM
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Members</a>
-              <a class="dropdown-item" href="#">Attributions</a>
-              <a class="dropdown-item" href="#">Collabs</a>
-              <a class="dropdown-item" href="#">Sponsors</a>
-              <a class="dropdown-item" href="#">Gallery</a>
-            </div>
-          </div>
-          <div id="project-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              PROJECT
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Description</a>
-              <a class="dropdown-item" href="#">Design</a>
-              <a class="dropdown-item" href="#">Notebook & Protocols</a>
-              <a class="dropdown-item" href="#">Experiments</a>
-              <a class="dropdown-item" href="#">Demonstrate</a>
-              <a class="dropdown-item" href="#">Model</a>
-              <a class="dropdown-item" href="#">Safety</a>
-            </div>
-          </div>
-          <div id="parts-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              PARTS
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Parts Overview</a>
-              <a class="dropdown-item" href="#">Basic Parts</a>
-              <a class="dropdown-item" href="#">Improved Parts</a>
-              <a class="dropdown-item" href="#">Composite Parts</a>
-              <a class="dropdown-item" href="#">Part Collection</a>
-            </div>
-          </div>
-          <div id="human-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              HUMAN
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Human Practices</a>
-              <a class="dropdown-item" href="#">Integrated human</a>
-              <a class="dropdown-item" href="#">Public Engagement</a>
-              <a class="dropdown-item" href="#">LATAM Meetup</a>
-            </div>
-          </div>
-          <div id="contact-dropdown" class="dropdown">
-            <button class="btn btn-secondary" type="button">
-              CONTACT
-            </button>
-          </div>
-          <!-- Links -->
-        </div>
-        <!-- Collapsible content -->
-      </nav>
-      <!--/.Navbar-->
-    </header>
+      <!-- Collapsible content -->
+    </nav>
+    <!--/.Navbar-->
+  </header>
 
     <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ ------->
 
     <div class="portrait-container container-fluid" data-height="420">
-      <h2 class="section-title">TEAM</h2>
       <img
         src="img/portrait/model6.jpg"
-        class="portrait-photo"
-        style="opacity: 0.35"
+        class="portrait-photo team-photo"
       />
     </div>
+
     <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ ------->
-    <div id="team-content">
-      <h3 id="team-members-title" class="subsection-title">Team members</h3>
+    <div id="team-content" class="main-content container">
 
-      <section id="team-members-container">
-        <div class="member-component">
-          <img src="img/abril.png" class="member-photo" />
-          <h4 class="member-name">Abril Diosdado</h4>
-          <h5 class="member-bio">
-            Biotechnology engineering, 7th semester
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit.
-            </span>
+      <h2 class="subsection-title blue">Team members</h2>
+      <section id="team-members-container" class="d-flex justify-content-around flex-wrap">
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/2/2a/T--Tec-Monterrey--team-abril.png/240px-T--Tec-Monterrey--team-abril.png" />
+          <h4 class="name">Abril Diosdado</h4>
+          <h5>
+            Biotechnology engineering
           </h5>
         </div>
 
-        <div class="member-component">
-          <img src="img/adrian.png" class="member-photo" />
-          <h4 class="member-name">Adrián Hernández</h4>
-          <h5 class="member-bio">
-            Biotechnology engineering, 7th semester
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit.
-            </span>
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/7/7a/T--Tec-Monterrey--team-adrian.png/240px-T--Tec-Monterrey--team-adrian.png" />
+          <h4 class="name">Adrián Hernández</h4>
+          <h5>
+            Biotechnology engineering
           </h5>
         </div>
 
-        <div class="member-component">
-          <img src="img/alan.png" class="member-photo" />
-          <h4 class="member-name">Alan Anaya</h4>
-          <h5 class="member-bio">
-            Nanotechnology and Chemical Sciences Engineering, 5th Semester
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-            </span>
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/7/76/T--Tec-Monterrey--team-alan.png/240px-T--Tec-Monterrey--team-alan.png" />
+          <h4 class="name">Alan Anaya</h4>
+          <h5>
+            Nanotechnology and Chemical Sciences Engineering
           </h5>
         </div>
 
-        <div class="member-component">
-          <img src="img/ana.png" class="member-photo" />
-          <h4 class="member-name">Ana Macias</h4>
-          <h5 class="member-bio">
-            Communication, 3rd Semester ????
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit.
-            </span>
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/4/43/T--Tec-Monterrey--team-ana.png/240px-T--Tec-Monterrey--team-ana.png" />
+          <h4 class="name">Ana Macías</h4>
+          <h5>
+            Communication
           </h5>
         </div>
 
-        <div class="member-component">
-          <img src="img/damian.png" class="member-photo" />
-          <h4 class="member-name">Damian Espinoza</h4>
-          <h5 class="member-bio">
-            Biomedical Engineering, 5th Semester
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit.
-            </span>
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/a/ac/T--Tec-Monterrey--team-nufo.png/240px-T--Tec-Monterrey--team-nufo.png" />
+          <h4 class="name">Arnulfo Juárez</h4>
+          <h5>
+            Biotechnology engineering
           </h5>
         </div>
 
-        <div class="member-component">
-          <img src="img/daniel.png" class="member-photo" />
-          <h4 class="member-name">Daniel Cuellar</h4>
-          <h5 class="member-bio">
-            Innovation and Development Engineering, 3rd Semester
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit.
-            </span>
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/3/34/T--Tec-Monterrey--team-damn.png/240px-T--Tec-Monterrey--team-damn.png" />
+          <h4 class="name">Damian Espinoza</h4>
+          <h5>
+            Biomedical Engineering
           </h5>
         </div>
 
-        <div class="member-component">
-          <img src="img/david.png" class="member-photo" />
-          <h4 class="member-name">David Díaz</h4>
-          <h5 class="member-bio">
-            Nanotechnology and Chemical Sciences Engineering, 3rd Semester
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-            </span>
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/d/d9/T--Tec-Monterrey--team-daniel.png/240px-T--Tec-Monterrey--team-daniel.png" />
+          <h4 class="name">Daniel Cuellar</h4>
+          <h5>
+            Innovation and Development Engineering
           </h5>
         </div>
 
-        <div class="member-component">
-          <img src="img/diego.png" class="member-photo" />
-          <h4 class="member-name">Diego Estrada</h4>
-          <h5 class="member-bio">
-            Computer Tecnhnologies Engineering, 3rd Semester
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit.
-            </span>
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/d/d7/T--Tec-Monterrey--team-david.png/240px-T--Tec-Monterrey--team-david.png" />
+          <h4 class="name">David Díaz</h4>
+          <h5>
+            Nanotechnology and Chemical Sciences Engineering
           </h5>
         </div>
 
-        <div class="member-component">
-          <img src="img/eugenio.png" class="member-photo" />
-          <h4 class="member-name">Eugenio Guzmán</h4>
-          <h5 class="member-bio">
-            Biotechnology engineering, 3rd semester
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit.
-            </span>
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/3/36/T--Tec-Monterrey--team-diego.png/240px-T--Tec-Monterrey--team-diego.png" />
+          <h4 class="name">Diego Estrada</h4>
+          <h5>
+            Computer Tecnhnologies Engineering
           </h5>
         </div>
 
-        <div class="member-component">
-          <img src="img/fer.png" class="member-photo" />
-          <h4 class="member-name">Fernanda Velázquez</h4>
-          <h5 class="member-bio">
-            Biotechnology engineering, 3rd semester
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit.
-            </span>
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/6/69/T--Tec-Monterrey--team-fernanda.png/240px-T--Tec-Monterrey--team-fernanda.png" />
+          <h4 class="name">Fernanda Velázquez</h4>
+          <h5>
+            Biotechnology engineering
           </h5>
         </div>
 
-        <div class="member-component">
-          <img src="img/guillermo.png" class="member-photo" />
-          <h4 class="member-name">Guillermo Wells</h4>
-          <h5 class="member-bio">
-            Biotechnology engineering, 7th semester
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit.
-            </span>
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/8/89/T--Tec-Monterrey--team-gigi.png/240px-T--Tec-Monterrey--team-gigi.png" />
+          <h4 class="name">Guillermo Wells</h4>
+          <h5>
+            Biotechnology engineering
           </h5>
         </div>
 
-        <div class="member-component">
-          <img src="img/ivonne.png" class="member-photo" />
-          <h4 class="member-name">Ivonne Lomelí</h4>
-          <h5 class="member-bio">
-            Nanotechnology and Chemical Sciences Engineering, 3rd Semester
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernaturmagg
-            </span>
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/1/16/T--Tec-Monterrey--team-ivonne.png/240px-T--Tec-Monterrey--team-ivonne.png" />
+          <h4 class="name">Ivonne Lomelí</h4>
+          <h5>
+            Nanotechnology and Chemical Sciences Engineering
           </h5>
         </div>
 
-        <div class="member-component">
-          <img src="img/maggie.png" class="member-photo" />
-          <h4 class="member-name">Margarita Escobar</h4>
-          <h5 class="member-bio">
-            Nanotechnology and Chemical Sciences Engineering, 3rd Semester
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-            </span>
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/f/f5/T--Tec-Monterrey--team-maggie.png/240px-T--Tec-Monterrey--team-maggie.png" />
+          <h4 class="name">Margarita Escobar</h4>
+          <h5>
+            Nanotechnology and Chemical Sciences Engineering
           </h5>
         </div>
 
-        <div class="member-component">
-          <img src="img/nufo.png" class="member-photo" />
-          <h4 class="member-name">Jose Arnulfo Juárez</h4>
-          <h5 class="member-bio">
-            Biotechnology engineering, 7th semester
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit.
-            </span>
-          </h5>
-        </div>
-
-        <div class="member-component">
-          <img src="img/riyad.png" class="member-photo" />
-          <h4 class="member-name">Riyad Vera</h4>
-          <h5 class="member-bio">
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/8/8c/T--Tec-Monterrey--team-riyad.png/240px-T--Tec-Monterrey--team-riyad.png" />
+          <h4 class="name">Riyad Vera</h4>
+          <h5>
             Chemical Engineering, 3rd Semester
           </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit.
-            </span>
-          </h5>
         </div>
 
-        <div class="member-component">
-          <img src="img/rosy.png" class="member-photo" />
-          <h4 class="member-name">Rosalina Zesati</h4>
-          <h5 class="member-bio">
-            Biotechnology Engineering, 5th Semester
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit.
-            </span>
-          </h5>
-        </div>
-
-        <div class="member-component">
-          <img src="img/shani.png" class="member-photo" />
-          <h4 class="member-name">Shani Leyva</h4>
-          <h5 class="member-bio">
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/c/ca/T--Tec-Monterrey--team-shani.png/240px-T--Tec-Monterrey--team-shani.png" />
+          <h4 class="name">Shani Leyva</h4>
+          <h5>
             Biotechnology engineering, 5th semester
           </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit.
-            </span>
-          </h5>
         </div>
 
-        <div class="member-component">
-          <img src="img/vale.png" class="member-photo" />
-          <h4 class="member-name">Valeria Betancourt</h4>
-          <h5 class="member-bio">
+        <div class="people-component member-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/a/a9/T--Tec-Monterrey--team-vale.png/240px-T--Tec-Monterrey--team-vale.png" />
+          <h4 class="name">Valeria Betancourt</h4>
+          <h5>
             Nanotechnology and Chemical Sciences Engineering, 3rd Semester
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam.
-            </span>
-          </h5>
-          <h5 class="member-bio">
-            <span class="notbold">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-            </span>
           </h5>
         </div>
       </section>
 
-      <h3 id="team-collabs-title" class="subsection-title">Collabs</h3>
-
-      <section id="team-collabs-container">
-        <div class="collab-component">
-          <img src="" class="collab-photo" />
-          <h4 class="collab-name">
-            Duis aute irure dolor in reprehenderit in voluptate
-          </h4>
-          <h5 class="collab-bio">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt.
-          </h5>
-          <h5 class="collab-bio">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt.
-          </h5>
+      <h2 class="subsection-title orange">Instructors</h2>
+      <section id="instructors-container" class="d-flex justify-content-around flex-wrap">
+        
+        <div class="people-component instructor-component d-flex">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <div>
+            <h4 class="name">Ph.D. Cuauhtémoc Licona Cassani</h4>
+            <h5>Primary PI</h5>
+          </div>
         </div>
-
-        <div class="collab-component">
-          <img src="" class="collab-photo" />
-          <h4 class="collab-name">
-            Duis aute irure dolor in reprehenderit in voluptate
-          </h4>
-          <h5 class="collab-bio">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt.
-          </h5>
-          <h5 class="collab-bio">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt.
-          </h5>
+        
+        <div class="people-component instructor-component d-flex">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <div>
+            <h4 class="name">Ph.D. Héctor Alejandro Cabrera Fuentes</h4>
+            <h5>Primary PI</h5>
+          </div>
         </div>
-
-        <div class="collab-component">
-          <img src="" class="collab-photo" />
-          <h4 class="collab-name">
-            Duis aute irure dolor in reprehenderit in voluptate
-          </h4>
-          <h5 class="collab-bio">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt.
-          </h5>
-          <h5 class="collab-bio">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt.
-          </h5>
+        
+        <div class="people-component instructor-component d-flex">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <div>
+            <h4 class="name">MSc. César Iván Ortiz Alcaraz</h4>
+            <h5>Secondary PI</h5>
+          </div>
         </div>
+        
+        <div class="people-component instructor-component d-flex">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <div>
+            <h4 class="name">Ph.D. Héctor Castañeda</h4>
+            <h5>Secundary PI</h5>
+          </div>
+        </div>
+        
+        <div class="people-component instructor-component d-flex">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <div>
+            <h4 class="name">Ph.D. Jesús Hernández-Pérez</h4>
+            <h5>Secondary PI</h5>
+          </div>
+        </div>
+        
+        <div class="people-component instructor-component d-flex">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <div>
+            <h4 class="name">Ph.D. Teresa Vargas-Cortéz</h4>
+            <h5>Secondary PI</h5>
+          </div>
+        </div>
+        
+      </section>
+
+      <h2 class="subsection-title green">Advisors</h2>
+      <section id="instructors-container" class="d-flex justify-content-around flex-wrap">
+        
+        <div class="people-component advisor-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <h4 class="name">Ph.D. Jose Manuel Aguilar Yáñez</h4>
+        </div>
+        
+        <div class="people-component advisor-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <h4 class="name">MSc. Ricardo Camilo Chávez Martínez</h4>
+        </div>
+        
+        <div class="people-component advisor-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <h4 class="name">Ph.D. Sara Margarita Aguilar Garza</h4>
+        </div>
+        
+        <div class="people-component advisor-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <h4 class="name">Ing. Yamile Minerva Castellanos Morales</h4>
+        </div>
+        
+        <div class="people-component advisor-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <h4 class="name">Ing. Martha Carolina Elizondo Cantú</h4>
+        </div>
+        
+        <div class="people-component advisor-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <h4 class="name">Ph.D. Teresa Vargas-Cortéz</h4>
+        </div>
+        
+      </section>
+
+      <h2 class="subsection-title aqua">Collabs</h2>
+      <section id="instructors-container" class="d-flex justify-content-around flex-wrap">
+        
+        <div class="people-component collab-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <h4 class="name">Ángel Raus</h4>
+        </div>
+        
+        <div class="people-component collab-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <h4 class="name">Diana Casas</h4>
+        </div>
+        
+        <div class="people-component collab-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <h4 class="name">Elena Domínguez</h4>
+        </div>
+        
+        <div class="people-component collab-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <h4 class="name">Eugenio Guzmán</h4>
+        </div>
+        
+        <div class="people-component collab-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <h4 class="name">Jorge de la Garza</h4>
+        </div>
+        
+        <div class="people-component collab-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <h4 class="name">Pablo Beutelspacher</h4>
+        </div>
+        
+        <div class="people-component collab-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <h4 class="name">Rosalina Zesati</h4>
+        </div>
+        
+        <div class="people-component collab-component">
+          <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+          <h4 class="name">Mauricio Miranda</h4>
+        </div>
+        
       </section>
     </div>
 
@@ -676,91 +519,6 @@
     <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
     <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
 
-    <script>
-      var headerHeight = $("header").height();
-      var portraitHeight = $(".portrait-container").data("height");
-      var pageColor = "var(--iGEM-dark-blue)";
-      var scrollHeights = [];
-      $(window).on("load", function() {
-        checkPortraitHeight();
-        checkHeaderColor();
-        $(".portrait-container").height(
-          Math.min(window.screen.width, portraitHeight)
-        );
-        createScrollHeights();
-        createIndex();
-        // var positionAdjust = ($(window).width() - portraitHeight)/2;
-        // $(".portrait-photo").css("object-position", "0px -" + positionAdjust + "px");
-      });
-      $(window).scroll(function() {
-        $(".navbar-collapse").removeClass("show");
-        checkPortraitHeight();
-        checkHeaderColor();
-        checkIndexMenu();
-      });
-      $(".main-content").click(function() {
-        $(".navbar-collapse").removeClass("show");
-      });
-      $(".portrait-photo").click(function() {
-        $(".navbar-collapse").removeClass("show");
-      });
-      function createScrollHeights() {
-        scrollHeights.push(portraitHeight);
-        if (window.screen.width < 768) {
-          scrollHeights[0] += $("aside").height() + 96;
-        }
-        $("article").each(function() {
-          scrollHeights[scrollHeights.length - 1];
-          scrollHeights.push(
-            scrollHeights[scrollHeights.length - 1] +
-              $(this).height() +
-              parseInt($(this).css("margin-top"))
-          );
-        });
-        console.log(scrollHeights);
-      }
-      function createIndex() {
-        const indexMenu = $(".index-menu");
-        $("article").each(function(i) {
-          indexMenu.append(`
-            <ul class="index-section" onclick="window.scrollTo(0, ${scrollHeights[
-              i
-            ] + 4});">
-              <a>
-                ${$(this)
-                  .find(".subsection-title")
-                  .text()}
-              </a>
-            </ul>
-          `);
-        });
-      }
-      /* MAINTAIN PORTRAIG IMAGE SET */
-      function checkPortraitHeight() {
-        var height = Math.min(window.screen.width, portraitHeight);
-        var newHeight = height - $(document).scrollTop();
-        $(".portrait-photo").height(newHeight);
-      }
-      function checkHeaderColor() {
-        var opacity = $(document).scrollTop() / (portraitHeight - headerHeight);
-        $("header").css("background-color", `rgba(46, 80, 119, ${opacity})`);
-      }
-      function checkIndexMenu() {
-        var elements = document.getElementsByClassName("index-section");
-        for (var i = 0; i < elements.length; i++) {
-          e = elements[i];
-          var h = $(document).scrollTop();
-          if (h >= scrollHeights[i] && h < scrollHeights[i + 1]) {
-            e.className = "index-section current-index";
-          } else if (h > scrollHeights[i + 1]) {
-            e.className = "index-section visited-index";
-          } else if (h < scrollHeights[i]) {
-            e.className = "index-section not-visited-index";
-          } else if (i + 1 == elements.length) {
-            e.className = "index-section current-index";
-          }
-        }
-      }
-    </script>
+    <script src="js/placeholder.js"></script>
   </body>
 </html>

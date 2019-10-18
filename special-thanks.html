@@ -1,0 +1,356 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/resetter.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
+    <link rel="stylesheet" href="css/template.css" type="text/css" />
+    <link rel="stylesheet" href="css/header.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+    <link rel="stylesheet" href="css/colors.css" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
+
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  </head>
+
+  <!-- Possible colors: ("blue" | "orange" | "aqua" | "green" | "black") -->
+  <body class="blue">
+
+    <header id="desktop-menu">
+      <div id="header-content-container">
+
+        <!-- Logo Breathe-In -->
+        <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
+          <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo" />
+        </a>
+        
+        <span class="filler"></span>
+        <div id="team-dropdown" class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            TEAM
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Members</a>
+            <a class="dropdown-item" href="#">Attributions</a>
+            <a class="dropdown-item" href="#">Collaborations</a>
+            <a class="dropdown-item" href="#">Special thanks</a>
+            <a class="dropdown-item" href="#">Gallery</a>
+          </div>
+        </div>
+        <div id="project-dropdown" class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            PROJECT
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Description</a>
+            <a class="dropdown-item" href="#">Design</a>
+            <a class="dropdown-item" href="#">Notebook & Protocols</a>
+            <a class="dropdown-item" href="#">Experiments</a>
+            <a class="dropdown-item" href="#">Demonstrate</a>
+            <a class="dropdown-item" href="#">Model</a>
+            <a class="dropdown-item" href="#">Safety</a>
+          </div>
+        </div>
+        <div id="parts-dropdown" class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            PARTS
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Parts Overview</a>
+            <a class="dropdown-item" href="#">Basic Parts</a>
+            <a class="dropdown-item" href="#">Improved Parts</a>
+            <a class="dropdown-item" href="#">Composite Parts</a>
+            <a class="dropdown-item" href="#">Part Collection</a>
+          </div>
+        </div>
+        <div id="human-dropdown" class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            HUMAN
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Human Practices</a>
+            <a class="dropdown-item" href="#">Integrated human</a>
+            <a class="dropdown-item" href="#">Public Engagement</a>
+            <a class="dropdown-item" href="#">LATAM Meetup</a>
+          </div>
+        </div>
+        <div id="contact-dropdown" class="dropdown">
+          <button class="btn btn-secondary" type="button">
+            CONTACT
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <header id="mobile-menu">
+      <nav class="navbar navbar-light light-blue lighten-4">
+
+        <!-- Logo Breathe-In -->
+        <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
+          <img src="img/logos/logo_BREATHE_plain.png" class="main-logo" />
+        </a>
+
+        <!-- Collapse button -->
+        <button
+          class="navbar-toggler toggler-example"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="text-white"><i class="material-icons">menu</i></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <!-- Links -->
+          <div id="team-dropdown" class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              TEAM
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Members</a>
+              <a class="dropdown-item" href="#">Attributions</a>
+              <a class="dropdown-item" href="#">Collaborations</a>
+              <a class="dropdown-item" href="#">Special thanks</a>
+              <a class="dropdown-item" href="#">Gallery</a>
+            </div>
+          </div>
+          <div id="project-dropdown" class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              PROJECT
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Description</a>
+              <a class="dropdown-item" href="#">Design</a>
+              <a class="dropdown-item" href="#">Notebook & Protocols</a>
+              <a class="dropdown-item" href="#">Experiments</a>
+              <a class="dropdown-item" href="#">Demonstrate</a>
+              <a class="dropdown-item" href="#">Model</a>
+              <a class="dropdown-item" href="#">Safety</a>
+            </div>
+          </div>
+          <div id="parts-dropdown" class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              PARTS
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Parts Overview</a>
+              <a class="dropdown-item" href="#">Basic Parts</a>
+              <a class="dropdown-item" href="#">Improved Parts</a>
+              <a class="dropdown-item" href="#">Composite Parts</a>
+              <a class="dropdown-item" href="#">Part Collection</a>
+            </div>
+          </div>
+          <div id="human-dropdown" class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              HUMAN
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Human Practices</a>
+              <a class="dropdown-item" href="#">Integrated human</a>
+              <a class="dropdown-item" href="#">Public Engagement</a>
+              <a class="dropdown-item" href="#">LATAM Meetup</a>
+            </div>
+          </div>
+          <div id="contact-dropdown" class="dropdown">
+            <button class="btn btn-secondary" type="button">
+              CONTACT
+            </button>
+          </div>
+          <!-- Links -->
+        </div>
+        <!-- Collapsible content -->
+      </nav>
+      <!--/.Navbar-->
+    </header>
+
+    <!-------------------------------------------------------------->
+    <!------- EL CONTENIDO QUE SE PUEDE EDITAR COMIENZA AQUÍ ------->
+    <!-------------------------------------------------------------->
+
+    <!-------     IMAGEN TÍTULO SUPERIOR     ------->
+    <div class="portrait-container container-fluid" data-height="420">
+      <h1 class="section-title">SPECIAL THANKS</h1>
+      <img
+        src="https://2019.igem.org/wiki/images/b/b8/T--Tec-Monterrey--portrait-design.jpg"
+        class="portrait-photo"
+        style="opacity: 0.35"/>
+    </div>
+
+
+
+    <div
+      class="main-content container d-flex flex-wrap justify-content-start"
+      style="margin-top: 48px;">
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ph.D. Adrián Eguía Gallardo</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Dr. Albino Rivas</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ing. Alejandro Espinosa</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ph.D Alfredo Martínez Jimenez</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>MSc. Berenice Enriquez López</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ph.D Cristina Reynaga</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ph.D Edgar Acuña González</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ph.D Elsa Nancy Garza Treviño</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>QBP. Erika Yasmín Leal López</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ph.D. José González Valdez</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ph.D. Jorge Alejandro Benavides Lozano</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ph.D. Julio Noriega Velasco</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ph.D Karla Oyuky Juárez Moreno</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ph.D Marco Antonio Rito Palomares</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ph.D Massoud Madadelahi</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ph.D. Maximiliano Medina-Ramírez</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ph.D Moisés Santillán Zerón</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ph.D Rocío Ortíz López</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Dip. Rosa Isela Castro Flores</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>MSc. Sergio Gallegos</span>
+      </div>
+      <div class="row thank-container">
+        <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+        <span>Ph.D Shabir Hassan</span>
+      </div>
+    </divclass="main-content>
+    
+    <!-------------------------------------------------------------->
+    <!------- EL CONTENIDO QUE SE PUEDE EDITAR TERMINA AQUÍ -------->
+    <!-------------------------------------------------------------->
+
+
+    <footer id="sponsorships-container">
+      <img src="img/sponsors/idt.png" class="sponsorship-img" />
+      <img src="img/sponsors/twist.png" class="sponsorship-img" />
+      <img src="img/sponsors/ctr.png" class="sponsorship-img" />
+      <img src="img/sponsors/accesolab.png" class="sponsorship-img" />
+      <img src="img/sponsors/neb.png" class="sponsorship-img" />
+      <img src="img/sponsors/dibico.png" class="sponsorship-img" />
+    </footer>
+
+    <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
+
+    <script src="js/placeholder.js"></script>
+  </body>
+</html>

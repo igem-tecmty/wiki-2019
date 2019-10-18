@@ -3,6 +3,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="stylesheet" href="css/resetter.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
     <link rel="stylesheet" href="css/template.css" type="text/css" />
@@ -229,131 +230,162 @@
       <!--/.Navbar-->
     </header>
 
-    <!-------------------------------------------------------------->
-    <!------- EL CONTENIDO QUE SE PUEDE EDITAR COMIENZA AQUÍ ------->
-    <!-------------------------------------------------------------->
-
-    <!-------     IMAGEN TÍTULO SUPERIOR     ------->
     <div class="portrait-container container-fluid" data-height="420">
-      <h1 class="section-title">SECTION TITLE</h1>
+      <h1 class="section-title">DESCRIPTION</h1>
       <img
         src="img/portrait/model3.jpg"
         class="portrait-photo"
         style="opacity: 0.35"/>
     </div>
 
-
-
     <div id="project-content" class="main-content container">
       <div class="row" style="margin-top: 48px;">
 
-        <!-----------       INDICE DE LA IZQUIERDA       ----------->
-        <aside class="col-sm-12 col-md-3 col-lg-2 index-menu sticky-top">
-          <!----  El javascript creará los index por nosotros   ---->
-        </aside>
+        <!------- CONTENIDO COMPLETO INFORMACIÓN ------->
+        <section class="subsection-container md-offset-1 col-sm-12 col-md-12 col-lg-12">
+
+          <!-----    INSERTA CADA SUBTEMA COMO UN <article>    ----->
+
+          <article class="container">
+            <!-----    SUBTÍTULO DE LA SECCIÓN <h2>    ----->
+            <h2 class="row col-md-12 subsection-title">Problematic</h2>
+
+            <!-----    Cada <div> es una fila/párrafo    ----->
+
+            <p class="description-text">
+              Many people think that we are at the beginning of the post-antibiotic era
+              due to antimicrobial resistance, which has become a serious problem all around
+              the world in the last decades. This resistance reduces the effectiveness of
+              medications and bacterial infections become more frequent, long-lasting and harder to attack.
+              Bacterial resistance has reached such an uncontrolled level that now bacteria like
+              Acinetobacter and Pseudomonas have become super-resistant.
+              This means that they are almost immune to all antibiotics used to fight them and are
+              especially dangerous in hospitals and health care centers.
+            </p>
+      
+          </article>
+
+          <article class="container">
+            <!-----    SUBTÍTULO DE LA SECCIÓN <h2>    ----->
+            <h2 class="row col-md-12 subsection-title">Project focus</h2>
+
+            <!-----    Cada <div> es una fila/párrafo    ----->
+
+            <p class="description-text">
+              To raise awareness about the great impact that antibiotic resistance has on the life
+              quality of people, we decided to focus our project on a disease in which super-bacteria
+              have severe repercussions. This disease is Cystic Fibrosis (CF) and about 80% of deaths
+              are caused by these microorganisms [––––].
+              CF is the most common hereditary disease affecting white people of northern European ancestry,
+              having 1 in 2000–3000 births. (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5408469/)
+              Diagnosed patients experience an accumulation of viscous mucus within their lungs,
+              pancreas and digestive tract, giving place to an approximate life expectancy of 37.5 years
+              (18, in Mexico). [–––]
+              CF patients are especially susceptible to bacterial infections, mainly those caused by
+              Pseudomonas aeruginosa, because the mucus provides the perfect environment for theirproliferation and prevents them from being easily expelled. 
+            </p>
+
+          </article>
+
+          <article class="container">
+            <!-----    SUBTÍTULO DE LA SECCIÓN <h3>    ----->
+            <h2 class="row col-md-12 subsection-title">Working plan</h2>
+
+            <!-----    Cada <div> es una fila/párrafo    ----->
+
+            <p class="description-text">
+              Having these concerns in mind, iGEM team Tec-Monterrey 2019 came up with
+              a working plan which consists in the development of a platform that allows 
+              us to find new antibiotics for the treatment against Pseudomonas aeruginosa. 
+              However, in order for the antibiotic to work properly, it is necessary to contribute 
+              to its diffusion through the mucus. Thus, to achieve this objective we propose 5 
+              different whole-cell biosensors that may facilitate the discovery of new antibiotics 
+              followed up by a mucolytic that reduces the viscosity of CF patients' mucus. 
+            </p>
+
+          </article>
+
+          <article class="container">
+            <!-----    SUBTÍTULO DE LA SECCIÓN <h3>    ----->
+            <h2 class="row col-md-12 subsection-title">Main objectives:</h2>
+
+            <!-----    Cada <div> es una fila/párrafo    ----->
+
+            <p class="description-text">
+              Therefore we established two main objectives:
+            </p>
+
+            <ul>
+              <li class="mb-2">
+                To produce 5 whole cell biosensors able to detect the mechanism of
+                action of unknown compounds with possible antibiotic properties. 
+              </li>
+              <li>
+                To produce a recombinant protein (sialidase) able to reduce mucus
+                viscosity in CF patients using a sfGFP that helps secrete the sialidase
+                out of the cell, facilitating the recovery process.
+              </li>
+            </ul>
+
+          </article>
+
+          <div
+            id="description-nav-buttons"
+            class="container row col-md-12 d-flex justify-content-center"
+            style="margin-top: 64px;">
+            <div
+              class="col-md-3 orange"
+              style="background-color: var(--iGEM-orange)"
+              onmouseover="this.style.background='var(--iGEM-light-orange)';"
+              onmouseout="this.style.background='var(--iGEM-orange)';">
+              <span style="font-size: 1.5em; font-weight: bold;">HARDWARE</span>
+              <p>
+                See the design of our device!!
+              </p>
+            </div>
+            <div
+              class="col-md-3 green"
+              style="background-color: var(--iGEM-green)"
+              onmouseover="this.style.background='var(--iGEM-light-green)';"
+              onmouseout="this.style.background='var(--iGEM-green)';">
+              <span style="font-size: 1.5em; font-weight: bold;">DESIGN</span>
+              <p>
+                See the details of our working plan!!
+              </p>
+            </div>
+            <div
+              class="col-md-3 blue"
+              style="background-color: var(--iGEM-light-blue)"
+              onmouseover="this.style.background='var(--iGEM-lighter-blue)';"
+              onmouseout="this.style.background='var(--iGEM-light-blue)';">
+              <span style="font-size: 1.5em; font-weight: bold;">MODEL</span>
+              <p>
+                Check out our mathematical model!!
+              </p>
+            </div>
+          </div>
+          <!----------------    Y TERMINA HASTA ACÁ      ----------------->
+
+        </section>
       </div>
     </div>
 
-    <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ ------->
-    <!------------------------    HASTA ACÁ      ----------------------->
 
-    <footer id="sponsorships-container">
-      <img src="img/sponsors/idt.png" class="sponsorship-img" />
-      <img src="img/sponsors/twist.png" class="sponsorship-img" />
-      <img src="img/sponsors/ctr.png" class="sponsorship-img" />
-      <img src="img/sponsors/accesolab.png" class="sponsorship-img" />
-      <img src="img/sponsors/neb.png" class="sponsorship-img" />
-      <img src="img/sponsors/dibico.png" class="sponsorship-img" />
+    <footer class="d-flex flex-wrap justify-content-around">
+      <img src="" />
+      <img src="" />
+      <img src="" />
+      <img src="" />
+      <img src="" />
+      <img src="" />
+      <img src="" />
+      <img src="" />
+      <img src="" />
     </footer>
 
     <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
     <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
 
-    <script>
-      var headerHeight = $("header").height();
-      var portraitHeight = $(".portrait-container").data("height");
-      var pageColor = "var(--iGEM-dark-blue)";
-      var scrollHeights = [];
-      $(window).on("load", function() {
-        checkPortraitHeight();
-        checkHeaderColor();
-        $(".portrait-container").height(
-          Math.min(window.screen.width, portraitHeight)
-        );
-        createScrollHeights();
-        createIndex();
-        // var positionAdjust = ($(window).width() - portraitHeight)/2;
-        // $(".portrait-photo").css("object-position", "0px -" + positionAdjust + "px");
-      });
-      $(window).scroll(function() {
-        $(".navbar-collapse").removeClass("show");
-        checkPortraitHeight();
-        checkHeaderColor();
-        checkIndexMenu();
-      });
-      $(".main-content").click(function() {
-        $(".navbar-collapse").removeClass("show");
-      });
-      $(".portrait-photo").click(function() {
-        $(".navbar-collapse").removeClass("show");
-      });
-      function createScrollHeights() {
-        scrollHeights.push(portraitHeight);
-        if (window.screen.width < 768) {
-          scrollHeights[0] += $("aside").height() + 96;
-        }
-        $("article").each(function() {
-          scrollHeights[scrollHeights.length - 1];
-          scrollHeights.push(
-            scrollHeights[scrollHeights.length - 1] +
-              $(this).height() +
-              parseInt($(this).css("margin-top"))
-          );
-        });
-        console.log(scrollHeights);
-      }
-      function createIndex() {
-        const indexMenu = $(".index-menu");
-        $("article").each(function(i) {
-          indexMenu.append(`
-              <ul class="index-section" onclick="window.scrollTo(0, ${scrollHeights[
-                i
-              ] + 4});">
-                <a>
-                  ${$(this)
-                    .find(".subsection-title")
-                    .text()}
-                </a>
-              </ul>
-            `);
-        });
-      }
-      /* MAINTAIN PORTRAIG IMAGE SET */
-      function checkPortraitHeight() {
-        var height = Math.min(window.screen.width, portraitHeight);
-        var newHeight = height - $(document).scrollTop();
-        $(".portrait-photo").height(newHeight);
-      }
-      function checkHeaderColor() {
-        var opacity = $(document).scrollTop() / (portraitHeight - headerHeight);
-        $("header").css("background-color", `rgba(46, 80, 119, ${opacity})`);
-      }
-      function checkIndexMenu() {
-        var elements = document.getElementsByClassName("index-section");
-        for (var i = 0; i < elements.length; i++) {
-          e = elements[i];
-          var h = $(document).scrollTop();
-          if (h >= scrollHeights[i] && h < scrollHeights[i + 1]) {
-            e.className = "index-section current-index";
-          } else if (h > scrollHeights[i + 1]) {
-            e.className = "index-section visited-index";
-          } else if (h < scrollHeights[i]) {
-            e.className = "index-section not-visited-index";
-          } else if (i + 1 == elements.length) {
-            e.className = "index-section current-index";
-          }
-        }
-      }
-    </script>
+    <script src="js/placeholder.js"></script>
   </body>
 </html>

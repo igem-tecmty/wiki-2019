@@ -18,6 +18,21 @@ footer {
     height: 1.5em;
     margin: 0.5em;
 }
+
+.sponsorship-img {
+width: 100px;
+height: 40px;
+}
+
+.sponsorship-img2 {
+    width: 100px;
+    height: 30px;
+    }
+
+.sponsorship-img3 {
+    width: 90px;
+    height: 20px;
+    }    
   
 #contact-us {
     float: right;

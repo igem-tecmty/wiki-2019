@@ -1,4 +1,10 @@
-body, h1, h2, h3, h4, h5, h6 {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -7,7 +13,7 @@ body {
 }
 
 h3 {
-  font-family: 'Manjari', sans-serif;
+  font-family: "Manjari", sans-serif;
 }
 
 h4 {
@@ -16,7 +22,7 @@ h4 {
   margin-top: 1em;
 }
 
-.arrow-content{
+.arrow-content {
   height: 96px;
 }
 
@@ -41,7 +47,7 @@ aside {
 }
 
 .visited-index {
-  color: #6c757d!important;
+  color: #6c757d !important;
 }
 
 .current-index {
@@ -94,7 +100,7 @@ article {
 
 .index-menu > ul {
   padding-left: 0;
-  font-family: 'Manjari', sans-serif;
+  font-family: "Manjari", sans-serif;
   margin: 0;
   padding: 0.5em;
 }
@@ -151,18 +157,83 @@ article {
   margin-bottom: 12px;
 }
 
-#parrafo-alan {
+.index-button {
+  height: 180px;
   text-align: center;
+  align-items: center;
+  display: flex;
+  background-image: url("../img/portrait/model.jpg");
+  background-size:100%; 
+   /*background-color: var(--iGEM-dark-blue); */
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
 }
 
-.index-button {
-  width: 500px;
-  height: 500px;
+/*
+#antibiotic-div {
+}
+
+#cascade-div{
+}
+*/
+
+#front-card1 {
+color: white;
+}
+
+#back-card1 {
+  color: white;
+  color: white;
+  color: white;
   font-family: var(--iGEM-font-title);
+  font-size: 28px;
+  margin: 0 auto;
+  height: 1em;
+  line-height: 1em;
+}
+
+#front-card2{
+color: white;
+ /*background-image: url("../img/portrait/model.jpg");
+background-size: 100%; */
+}
+
+#back-card2 {
+  color: white;
+  font-family: var(--iGEM-font-title);
+  font-size: 28px;
+  margin: 0 auto;
+  height: 1em;
+  line-height: 1em;
+}
+
+#front-card3{
+  color: white;
+  }
+  
+  #back-card3 {
+    color: white;
+    color: white;
+    font-family: var(--iGEM-font-title);
+    font-size: 28px;
+    margin: 0 auto;
+    height: 1em;
+    line-height: 1em;
+  }
+
+.index-button > span {
+  margin: 0 auto;
+  height: 1em;
+  line-height: 1em;
+  font-family: var(--iGEM-font-title);
+  /* background-size: 100% ; */
+  font-size: 28px;
 }
 
 .div-info {
-
+  height: 500px;
 }
 
 #team-collabs-container {
@@ -220,4 +291,8 @@ table#promoters th {
   .subsection-title {
     font-size: 48px;
   }
+}
+
+#div-info {
+  background-image: url("../img/portrait/model.jpg");
 }

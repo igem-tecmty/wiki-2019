@@ -157,14 +157,18 @@ article {
   margin-bottom: 12px;
 }
 
+.description-text1 {
+  font-size: 11px;
+}
+
 .index-button {
   height: 180px;
   text-align: center;
   align-items: center;
   display: flex;
   background-image: url("../img/portrait/model.jpg");
-  background-size:100%; 
-   /*background-color: var(--iGEM-dark-blue); */
+  background-size: 100%;
+  /*background-color: var(--iGEM-dark-blue); */
   margin-top: 1em;
   margin-bottom: 1em;
   margin-right: 1em;
@@ -180,7 +184,12 @@ article {
 */
 
 #front-card1 {
-color: white;
+  color: white;
+}
+
+.description-image {
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 #back-card1 {
@@ -194,9 +203,9 @@ color: white;
   line-height: 1em;
 }
 
-#front-card2{
-color: white;
- /*background-image: url("../img/portrait/model.jpg");
+#front-card2 {
+  color: white;
+  /*background-image: url("../img/portrait/model.jpg");
 background-size: 100%; */
 }
 
@@ -209,19 +218,19 @@ background-size: 100%; */
   line-height: 1em;
 }
 
-#front-card3{
+#front-card3 {
   color: white;
-  }
-  
-  #back-card3 {
-    color: white;
-    color: white;
-    font-family: var(--iGEM-font-title);
-    font-size: 28px;
-    margin: 0 auto;
-    height: 1em;
-    line-height: 1em;
-  }
+}
+
+#back-card3 {
+  color: white;
+  color: white;
+  font-family: var(--iGEM-font-title);
+  font-size: 28px;
+  margin: 0 auto;
+  height: 1em;
+  line-height: 1em;
+}
 
 .index-button > span {
   margin: 0 auto;

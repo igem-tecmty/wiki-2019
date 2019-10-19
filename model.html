@@ -262,8 +262,8 @@
           <div id="cascade-div" class="col-lg-4 index-button">
             <img src="img/GFP.png" class="" />
             <p id="back-card2" style="display: none;">
-              Cascade Amplifier Signal for Discovery
-            </p>
+                Transcriptional Amplifiers for Drug Discovery
+              </p>
           </div>
           <div id="mucolitic-div" class="col-lg-4 index-button">
             <img src="img/GFP.png" class="" />
@@ -285,39 +285,29 @@
           <article class="container">
             <!-----    SUBTÍTULO DE LA SECCIÓN <h3>    ----->
             <h2 class="row col-md-12 subsection-title">
-              Cascade Amplifier Signal for Discovery
+              Transcriptional Amplifiers for Drug Discovery
             </h2>
 
             <!-----    Cada <div> es una fila/párrafo    ----->
 
             <div class="row mt-4">
-              <p class="col-md-12 description-text">
-                Modelling Biological systems has become an area of interest for
-                multidisciplinary areas of science, medicine and engineering.
-                Moreover, designing synthetic biological circuits using genetic
-                elements has become a research field for developing novel
-                biochemical sensors, diagnostics and inducible production of
-                molecules of interest.
+              <p class="col-md-12 description-text"> 
+                Designing synthetic biological circuits using genetic elements has become a research field for developing novel biochemical sensors. Specifically Bacterial cell based biosensors have been studied for the environmental monitoring, clinical diagnostics and drug discovery. One of the main challenges for this biosensors to meet real-life applications is the low sensibility and deficient detection limits. 
               </p>
+              <p class="col-md-12 description-text">
+                The rise  of multiple antibotic resistant bacteria and the evident crisis in drug discovery has  become one of the main challenges in human history. Traditional screening not only takes longer times,from years to decades, but often fails to discover novel biomolecules. Bacterial biosensors have provided a novel benchmark for the screening of secondary metabolites producers, boosting the discovery of antibiotics and broadening the spectrum of the latter.
+                One of main aspects that  should be considered for the development of novel antibiotic biosensors is the sensibility, since they can only work properly below the minimum inhibitory concentration. 
+              </p>
+                 
+<p class="col-md-12 description-text">Our project consists of a series of  engineered multi-layered transcriptional amplifiers that sequentially increases  the output expression level  of a GFP reporter protein by the presence of an  antibiotic belonging to a specific mechanism of action (MOA) for drug discovery and bacterial screening. 
+</p>
+<p class="col-md-12 description-text">Modelling Biological systems has become an area of interest for multidisciplinary areas of science, medicine and engineering. Mathematical models allow to understand and predict the behavior of complex sytems using simple concepts. On the following sections, we  develop  mathematical models for the engineered multi-layered transcriptional amplifiers using both exact deterministic differential equations and stochastic simulations to provide a proof of concept for the amplification signal of the antibiotic biosensor.
+</p>
+<p class="col-md-12 description-text">The structure of the following sections goes as follows: First we derive the mathematical equations for an already characterized heavy metal biosensor consisting of a constitutive promoter expressing a repressor protein inhibiting the later expression of a reporter gene. Then we will consider the effect of adding a mono-layer orthogonal cascade  and the signal amplification. After that we will extrapolate this same models to our antibiotic biosensor.
+</p>
+              
 
-              <p class="col-md-12 description-text">
-                Our project consist of a series of engineered multi-layered
-                transcriptional amplifiers that sequentially increases the
-                output expression level of a GFP reporter protein on the
-                presence of an inducer molecule.
-              </p>
 
-              <p class="col-md-12 description-text">
-                On the following sections, we will develop the mathematical
-                model of the signal amplification as follows: first we will
-                derive the mathematical equations for an already characterizad
-                heavy metal biosensor consisting of a consititutive promoter
-                expessing a represor protein inhibiting the later expression of
-                a reporter gene. Then we will consider the effect of adding a
-                bilayer orthogonal cascade and the signal amplification. After
-                that we will extrapolate this same model to our antibiotic
-                biosensor.
-              </p>
               <img src="img/GFP.png" class="col-md-9 description-image" />
             </div>
 
@@ -353,7 +343,7 @@
             <img src="img/table3.png" class="col-md-9 description-image" />
             <img src="img/table4.png" class="col-md-9 description-image" />
 
-            <p>
+            <p class="col-md-12 description-text">
               Consider the first system of differential equation. Notice that in
               chemicalequilibrium of the the rate of Repressor-Promoter
               formation is equal to therate of dissociation of the later. This
@@ -369,38 +359,24 @@
 
             <img src="img/table5.png" class="col-md-9 description-image" />
 
-            <p>
+            <p class="col-md-12 description-text">
               We can repeat the same process for the formation of inhibitor repressorcomplex, assuming a steady state for the binding of Inducer to the RepresorProtein.  SettingdC2(t)dt= 0.  We obtain a chemical equilibrium constantdirectly from this assumptionk−2k2=IRC2=Keq2, Once again some terms arecancelled out and the system of differential equations simplifies to:
             </p>
 
             <img src="img/table6.png" class="col-md-9 description-image" />
 
-            <p>
+            <p class="col-md-12 description-text">
               The analytical solutions of R(t) and I(t) areR(t) =αδR(1−eδRt) +R0eδRtandI(t) =I0eδIt.In steady state R becomes the rate of basal expression anddegradation dilution and I becomes zeroRss=αδR. Assuming that the rateof basal expression is approximately zero the last equation becomes
             </p>
 
             <img src="img/table7.png" class="col-md-9 description-image" />
+            <img src="img/table8.png" class="col-md-9 description-image" />
 
             <p class="col-md-12 description-text">
-              Note that equations 2, 3, and 5 are of the same form and there are
-              methods for obtaining the analytical solutions over some
-              restrictions. In general the chemical advance of the species R(t),
-              P(t) and $C_{1}(t)$ when no inhibtor is present and neglecting the
-              degradation dilution rate for short time scales will be
-              R(t)=$R_{0}-x(t)$, P(t)=$P_{0}-x(t)$ and
-              $C_{1}(t)$=$C_{1}(0)+x(t)$ Note that the total promotor
-              $P_{T}$=$C_{1}(0)+P_{0}$ is constant at all time, and
-              $R_T$=$R(t)+C_1(t)=R_0+C_{1,0}$. Therefore In abscence of
-              inhibitor and taking into accoint the simplifacations mentioned
-              above, the system of differential equations reduces to:
+                A simple empirical equation can be obtained by setting the promoterocuppancy as and changing P(t) to the promoter derepression asO(R) =P(t)P(t)+C1(t)=Keq1R(t)+Keq1However we are interested on the effect of the in-ducer in the expression of GFP therefore we can change the promoter de-repression(induction) asO(I) =I(t)I(t)+KFor experimental purposes I can be considered constant at all time, thatis, the degradation rate of I is small so thatdI(t)dt= 0setingδI= 0. Theexpression of can be adjusted to a Hill-Langmuir fucntionP(t)P(t)+C1(t)=InIn+Kn
             </p>
 
-            <img src="img/table4.png" class="col-md-9 description-image" />
-
-            <p>
-              We can make a change of variables in (8) with respect to to x
-              obtaining
-            </p>
+            <img src="img/table9.png" class="col-md-9 description-image" />
 
             <h3 class="row col-md-12">
               Heavy Metal biosensor with one cascade amplification module

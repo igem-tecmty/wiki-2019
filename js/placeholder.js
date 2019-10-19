@@ -133,7 +133,6 @@ $("#mucolitic-div")
       .find("img")
       .css("opacity", "1");
   });
-  });
 
 $("#cf-description").find("button").on('click', function () {
   $("#cf-description").find("div").toggle();

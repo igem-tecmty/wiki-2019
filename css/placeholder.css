@@ -12,9 +12,11 @@ h6 {
   font-size: 20px;
 }
 
-h2 { font-family: 'Manjari', sans-serif; }
+h2 {
+  font-family: "Manjari", sans-serif;
+}
 
-.arrow-content{
+.arrow-content {
   height: 96px;
 }
 
@@ -141,14 +143,18 @@ article {
   margin: 16px;
   text-align: center;
 }
-.people-component img { width: inherit; }
+.people-component img {
+  width: inherit;
+}
 .people-component .name {
   font-size: 1em;
   font-weight: bold;
 }
 
-.member-component { width: 100px; }
-.member-component > .name{
+.member-component {
+  width: 100px;
+}
+.member-component > .name {
   font-size: 1em;
   margin-top: 8px;
   font-weight: bold;
@@ -176,13 +182,20 @@ article {
   text-align: center;
   align-items: center;
   display: flex;
-  background-image: url("../img/portrait/model.jpg");
+  padding: 0;
+  background-color: black;
   background-size: 100%;
   /*background-color: var(--iGEM-dark-blue); */
   margin-top: 1em;
   margin-bottom: 1em;
   margin-right: 1em;
   margin-left: 1em;
+}
+
+.index-button > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 /*
@@ -200,16 +213,16 @@ article {
 .description-image {
   margin: 0 auto;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 #back-card1 {
   color: white;
-  color: white;
-  color: white;
   font-family: var(--iGEM-font-title);
   font-size: 28px;
   margin: 0 auto;
-  height: 1em;
+  height: 3em;
+  z-index: 3;
   line-height: 1em;
 }
 
@@ -224,7 +237,8 @@ background-size: 100%; */
   font-family: var(--iGEM-font-title);
   font-size: 28px;
   margin: 0 auto;
-  height: 1em;
+  height: 3em;
+  z-index: 3;
   line-height: 1em;
 }
 
@@ -234,11 +248,11 @@ background-size: 100%; */
 
 #back-card3 {
   color: white;
-  color: white;
   font-family: var(--iGEM-font-title);
   font-size: 28px;
   margin: 0 auto;
-  height: 1em;
+  height: 3em;
+  z-index: 3;
   line-height: 1em;
 }
 
@@ -306,7 +320,9 @@ background-size: 100%; */
   margin-right: 16px;
 }
 
-table#promoters th {  border-bottom: 2px solid #dee2e6; }
+table#promoters th {
+  border-bottom: 2px solid #dee2e6;
+}
 
 #div-info {
   background-image: url("../img/portrait/model.jpg");

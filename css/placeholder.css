@@ -8,6 +8,10 @@ h6 {
   margin: 0;
 }
 
+strong {
+  display: contents;
+}
+
 .main-content {
   font-size: 20px;
 }
@@ -36,7 +40,7 @@ h2 {
   filter: grayscale(100%);
 }
 
-.portrait-photo.team-photo {
+.portrait-photo.team-photo, .portrait-photo.thank-photo {
   opacity: 1;
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
@@ -45,6 +49,11 @@ h2 {
 aside {
   padding: 0 24px;
   font-size: 0.9em;
+  margin-right: 2em;
+}
+
+#notebook-content aside {
+  font-size: 0.75em;
 }
 
 .visited-index {
@@ -129,13 +138,35 @@ article {
   margin-top: 64px;
 }
 
-#description-nav-buttons > div {
+#attributions-content h2 {
+  margin-bottom: 0;
+}
+
+#cf-description > button {
+  border: 4px solid;
+  background-color: transparent;
+  border-color: var(--iGEM-blue);
+  border-radius: 8px;
+  font-size: 1.5em;
+  color: var(--iGEM-blue);
+}
+#cf-description p {
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+#description-nav-buttons > a {
   text-align: center;
   border: solid 6px;
   border-radius: 16px;
   margin: 0 16px;
   padding: 16px;
+  color: inherit;
   box-shadow: 4px 4px 16px;
+}
+#description-nav-buttons > a:hover {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .people-component {
@@ -160,6 +191,24 @@ article {
   font-weight: bold;
 }
 .member-component > h5 {
+  font-size: 0.6em;
+}
+
+#attributions-content .people-component > img {
+  width: 80px;
+  height: 80px;
+  font-size: 0.8em;
+  margin-right: 0.5em;
+}
+#attributions-content .member-component {
+  width: 80px;
+  font-size: 0.8em;
+}
+#attributions-content .people-component:not(.member-component) {
+  max-width: 320px;
+  text-align: left;
+}
+#attributions-content .people-component p {
   font-size: 0.6em;
 }
 
@@ -313,7 +362,7 @@ background-size: 100%; */
 .thank-container {
   height: 32px;
   width: 480px;
-  margin: 16px;
+  margin: 8px;
 }
 .thank-container > img {
   height: inherit;
@@ -328,7 +377,33 @@ table#promoters th {
   background-image: url("../img/portrait/model.jpg");
 }
 
+#contact-content {
+  font-family: "Manjari", sans-serif;
+}
+
+#contact-breathe-img {
+  width: 6em;
+  height: 6em;
+}
+
+#contact-info-container img {
+  margin: 4px;
+  width: 2em;
+  width: 2em;
+}
+
 @media only screen and (max-width: 719px) {
+  h1.section-title {
+    font-size: 2.5em;
+  }
+  img#contact-breathe-img { display: none; }
+  #contact-info-container {
+    text-align: center;
+  }
+  #contact-info-container > div {
+    width: fit-content;
+    margin: 0 auto;
+  }
   .index-menu {
     position: unset;
     padding: 1em 0;

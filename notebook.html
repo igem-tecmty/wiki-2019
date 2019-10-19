@@ -1,40 +1,24 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>iGEM Tec-Monterrey / Project</title>
-
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
-    <link rel="stylesheet" href="css/template.css" type="text/css" />
-    <link rel="stylesheet" href="css/header.css" type="text/css" />
-    <link rel="stylesheet" href="css/footer.css" type="text/css" />
-    <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Manjari&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
-      rel="stylesheet"
-    />
-
-    <script
-      language="JavaScript"
-      type="text/javascript"
-      src="js/jquery-3.4.1.min.js"
-    ></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+      <link rel="stylesheet" href="css/resetter.css" type="text/css" />
+      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+      <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
+      <link rel="stylesheet" href="css/template.css" type="text/css" />
+      <link rel="stylesheet" href="css/header.css" type="text/css" />
+      <link rel="stylesheet" href="css/footer.css" type="text/css" />
+      <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+      <link rel="stylesheet" href="css/colors.css" type="text/css" />
+  
+      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
+  
+      <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    </head>
 
   <body class="blue">
     <header id="desktop-menu">
@@ -242,12 +226,253 @@
     </header>
 
     <div class="portrait-container container-fluid" data-height="420">
-      <h2 class="section-title">NOTEBOOK & PROTOCOLS</h2>
+      <h1 class="section-title">PROTOCOLS</h1>
       <img
-        src="img/portrait/model5.jpg"
+        src="img/portrait/model3.jpg"
         class="portrait-photo"
-        style="opacity: 0.35"
-      />
+        style="opacity: 0.35"/>
+    </div>
+
+    <div id="notebook-content" class="main-content container">
+      <div class="row" style="margin-top: 48px;">
+
+        <aside class="col-sm-12 col-md-3 col-lg-2 index-menu sticky-top">
+        </aside>
+
+        <section class="subsection-container md-offset-1 col-sm-12 col-md-8 col-lg-9">
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">PCR amplification</h2>
+            <p class="description-text">
+              This protocol was adapted from the Quick-Start Protocol: QIAquick® PCR Purification
+              Kit-QIAquick® PCR & Gel Cleanup Kit
+            </p>
+
+            <div class="row mt-4 col-md">
+              <h3 class="col-md-12 inner-section-title">Materials</h3>
+              <ul class="col-md" style="list-style-type: square; margin-left: 1.5em;">
+                <li class="mb-2">QIAquick® PCR Purification Kit</li>
+                <li class="mb-2">DNA PCR products (50 µl)</li>
+                <li class="mb-2">1.5mL Eppendorf tubes</li>
+                <li class="mb-2">QIAquick column with collection tube</li>
+              </ul>
+            </div>
+
+            <div class="row mt-4 col-md">
+              <h3 class="col-md-12 inner-section-title">Equipment</h3>
+              <ul class="col-md" style="list-style-type: square; margin-left: 1.5em;">
+                <li class="mb-2">
+                  Microcentrifuge (all centrifugation steps are carried out at 13,000 rpm)
+                </li>
+              </ul>
+            </div>
+
+            <div class="row mt-4 col-md">
+              <h3 class="col-md-12 inner-section-title">Protocol for a 50 µl PCR reaction</h3>
+              <ol class="col-md" style="margin-left: 1.5em; list-style: decimal;">
+                <li class="mb-2">
+                    Add 250 μl of Buffer PB,  50 μl of DNA PCR products and 1 µl of pH indicator to
+                    a 1.5 ml Eppendorf tube and mix well
+                </li>
+                <li class="mb-2">
+                    The mixture should be color yellow: this indicates a pH ≤7.5 in which the adsorption of DNA to the
+                    membrane is efficient. If the color is orange or violet, add 10 μl 3 M sodium acetate, pH 5.0, and mix.
+                </li>
+                <li class="mb-2">
+                    To bind DNA, apply the mixture to the QIAquick column with collection tube and centrifuge for 30–60 s. Discard flow-through and place the QIAquick column back in the same tube.
+                </li>
+                <li class="mb-2">
+                    To wash, add 750μl Buffer PE to the QIAquick column and centrifuge for 30–60 s. Discard flow-through and place the QIAquick column back into the same tube.
+                </li>
+                <li class="mb-2">
+                    Centrifuge the QIAquick column once more in the provided 2 ml collection tube for 1 min to remove residual wash buffer.
+                </li>
+                <li class="mb-2">
+                    Place each QIAquick column in a clean 1.5 ml Eppendorf tube.
+                </li>
+                <li class="mb-2">
+                    To elute DNA, add 50 μl Buffer EB to the center of the QIAquick membrane and centrifuge the column for 1 min.
+                </li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">PCR clean-up (Purification)</h2>
+            <p class="description-text">
+              Many people think that we are at the beginning of the post-antibiotic era
+              due to antimicrobial resistance, which has become a serious problem all around
+              the world in the last decades. This resistance reduces the effectiveness of
+              medications and bacterial infections become more frequent, long-lasting and harder to attack.
+              Bacterial resistance has reached such an uncontrolled level that now bacteria like
+              Acinetobacter and Pseudomonas have become super-resistant.
+              This means that they are almost immune to all antibiotics used to fight them and are
+              especially dangerous in hospitals and health care centers.
+            </p>
+          </article>
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">
+              Agarose gel electrophoresis
+            </h2>
+            <p class="description-text">
+              Many people think that we are at the beginning of the post-antibiotic era
+              due to antimicrobial resistance, which has become a serious problem all around
+              the world in the last decades. This resistance reduces the effectiveness of
+              medications and bacterial infections become more frequent, long-lasting and harder to attack.
+              Bacterial resistance has reached such an uncontrolled level that now bacteria like
+              Acinetobacter and Pseudomonas have become super-resistant.
+              This means that they are almost immune to all antibiotics used to fight them and are
+              especially dangerous in hospitals and health care centers.
+            </p>
+          </article>
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">
+              SDS-Page gel electrophoresis
+            </h2>
+            <p class="description-text">
+              Many people think that we are at the beginning of the post-antibiotic era
+              due to antimicrobial resistance, which has become a serious problem all around
+              the world in the last decades. This resistance reduces the effectiveness of
+              medications and bacterial infections become more frequent, long-lasting and harder to attack.
+              Bacterial resistance has reached such an uncontrolled level that now bacteria like
+              Acinetobacter and Pseudomonas have become super-resistant.
+              This means that they are almost immune to all antibiotics used to fight them and are
+              especially dangerous in hospitals and health care centers.
+            </p>
+          </article>
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">
+              DNA gel extraction
+            </h2>
+            <p class="description-text">
+              Many people think that we are at the beginning of the post-antibiotic era
+              due to antimicrobial resistance, which has become a serious problem all around
+              the world in the last decades. This resistance reduces the effectiveness of
+              medications and bacterial infections become more frequent, long-lasting and harder to attack.
+              Bacterial resistance has reached such an uncontrolled level that now bacteria like
+              Acinetobacter and Pseudomonas have become super-resistant.
+              This means that they are almost immune to all antibiotics used to fight them and are
+              especially dangerous in hospitals and health care centers.
+            </p>
+          </article>
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">
+              Ligation
+            </h2>
+            <p class="description-text">
+              Many people think that we are at the beginning of the post-antibiotic era
+              due to antimicrobial resistance, which has become a serious problem all around
+              the world in the last decades. This resistance reduces the effectiveness of
+              medications and bacterial infections become more frequent, long-lasting and harder to attack.
+              Bacterial resistance has reached such an uncontrolled level that now bacteria like
+              Acinetobacter and Pseudomonas have become super-resistant.
+              This means that they are almost immune to all antibiotics used to fight them and are
+              especially dangerous in hospitals and health care centers.
+            </p>
+          </article>
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">
+                Competent Cells (E. Coli)
+            </h2>
+            <p class="description-text">
+              Many people think that we are at the beginning of the post-antibiotic era
+              due to antimicrobial resistance, which has become a serious problem all around
+              the world in the last decades. This resistance reduces the effectiveness of
+              medications and bacterial infections become more frequent, long-lasting and harder to attack.
+              Bacterial resistance has reached such an uncontrolled level that now bacteria like
+              Acinetobacter and Pseudomonas have become super-resistant.
+              This means that they are almost immune to all antibiotics used to fight them and are
+              especially dangerous in hospitals and health care centers.
+            </p>
+          </article>
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">
+              Transformation protocol (E. Coli and BL21)
+            </h2>
+            <p class="description-text">
+              Many people think that we are at the beginning of the post-antibiotic era
+              due to antimicrobial resistance, which has become a serious problem all around
+              the world in the last decades. This resistance reduces the effectiveness of
+              medications and bacterial infections become more frequent, long-lasting and harder to attack.
+              Bacterial resistance has reached such an uncontrolled level that now bacteria like
+              Acinetobacter and Pseudomonas have become super-resistant.
+              This means that they are almost immune to all antibiotics used to fight them and are
+              especially dangerous in hospitals and health care centers.
+            </p>
+          </article>
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">
+              Competence and transformation (Bacillus subtilis)
+            </h2>
+            <p class="description-text">
+              Many people think that we are at the beginning of the post-antibiotic era
+              due to antimicrobial resistance, which has become a serious problem all around
+              the world in the last decades. This resistance reduces the effectiveness of
+              medications and bacterial infections become more frequent, long-lasting and harder to attack.
+              Bacterial resistance has reached such an uncontrolled level that now bacteria like
+              Acinetobacter and Pseudomonas have become super-resistant.
+              This means that they are almost immune to all antibiotics used to fight them and are
+              especially dangerous in hospitals and health care centers.
+            </p>
+          </article>
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">
+              Glycerol stocks
+            </h2>
+            <p class="description-text">
+              Many people think that we are at the beginning of the post-antibiotic era
+              due to antimicrobial resistance, which has become a serious problem all around
+              the world in the last decades. This resistance reduces the effectiveness of
+              medications and bacterial infections become more frequent, long-lasting and harder to attack.
+              Bacterial resistance has reached such an uncontrolled level that now bacteria like
+              Acinetobacter and Pseudomonas have become super-resistant.
+              This means that they are almost immune to all antibiotics used to fight them and are
+              especially dangerous in hospitals and health care centers.
+            </p>
+          </article>
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">
+              Plasmidic DNA extraction (Miniprep)
+            </h2>
+            <p class="description-text">
+              Many people think that we are at the beginning of the post-antibiotic era
+              due to antimicrobial resistance, which has become a serious problem all around
+              the world in the last decades. This resistance reduces the effectiveness of
+              medications and bacterial infections become more frequent, long-lasting and harder to attack.
+              Bacterial resistance has reached such an uncontrolled level that now bacteria like
+              Acinetobacter and Pseudomonas have become super-resistant.
+              This means that they are almost immune to all antibiotics used to fight them and are
+              especially dangerous in hospitals and health care centers.
+            </p>
+          </article>
+
+          <article class="container">
+            <h2 class="row col-md-12 subsection-title">
+              Colony PCR
+            </h2>
+            <p class="description-text">
+              Many people think that we are at the beginning of the post-antibiotic era
+              due to antimicrobial resistance, which has become a serious problem all around
+              the world in the last decades. This resistance reduces the effectiveness of
+              medications and bacterial infections become more frequent, long-lasting and harder to attack.
+              Bacterial resistance has reached such an uncontrolled level that now bacteria like
+              Acinetobacter and Pseudomonas have become super-resistant.
+              This means that they are almost immune to all antibiotics used to fight them and are
+              especially dangerous in hospitals and health care centers.
+            </p>
+          </article>
+
+        </section>
+      </div>
     </div>
 
 

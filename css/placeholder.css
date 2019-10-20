@@ -40,7 +40,8 @@ h2 {
   filter: grayscale(100%);
 }
 
-.portrait-photo.team-photo, .portrait-photo.thank-photo {
+.portrait-photo.team-photo,
+.portrait-photo.thank-photo {
   opacity: 1;
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
@@ -227,7 +228,7 @@ article {
 }
 
 .index-button {
-  height: 180px;
+  height: 200px;
   text-align: center;
   align-items: center;
   display: flex;
@@ -247,6 +248,20 @@ article {
   position: absolute;
 }
 
+.metal-biosensor-button {
+  height: 80px;
+  width: 480px;
+  margin-top: 0.4em;
+  background-color: var(--iGEM-dark-blue);
+  color: white;
+  font-family: var(--iGEM-font-title);
+}
+
+#cards-model {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(197, 195, 195);
+}
 /*
 #antibiotic-div {
 }
@@ -396,7 +411,9 @@ table#promoters th {
   h1.section-title {
     font-size: 2.5em;
   }
-  img#contact-breathe-img { display: none; }
+  img#contact-breathe-img {
+    display: none;
+  }
   #contact-info-container {
     text-align: center;
   }

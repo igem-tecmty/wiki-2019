@@ -134,6 +134,58 @@ $("#mucolitic-div")
       .css("opacity", "1");
   });
 
-$("#cf-description").find("button").on('click', function () {
-  $("#cf-description").find("div").toggle();
-});
+$("#cf-description")
+  .find("button")
+  .on("click", function() {
+    $("#cf-description")
+      .find("div")
+      .toggle();
+  });
+
+$("#metal-biosensor-component")
+  .find("button")
+  .on("click", function() {
+    $("#metal-biosensor-component")
+      .find("div")
+      .toggle();
+  });
+
+$("#metal-biosensor-component2")
+  .find("button")
+  .on("click", function() {
+    $("#metal-biosensor-component2")
+      .find("div")
+      .toggle();
+  });
+
+$("#metal-biosensor-component3")
+  .find("button")
+  .on("click", function() {
+    $("#metal-biosensor-component3")
+      .find("div")
+      .toggle();
+  });
+
+$("#metal-biosensor-component4")
+  .find("button")
+  .on("click", function() {
+    $("#metal-biosensor-component4")
+      .find("div")
+      .toggle();
+  });
+
+$("#metal-biosensor-component5")
+  .find("button")
+  .on("click", function() {
+    $("#metal-biosensor-component5")
+      .find("div")
+      .toggle();
+  });
+
+$("#metal-biosensor-component6")
+  .find("button")
+  .on("click", function() {
+    $("#metal-biosensor-component6")
+      .find("div")
+      .toggle();
+  });

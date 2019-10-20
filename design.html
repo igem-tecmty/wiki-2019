@@ -1,45 +1,120 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
-    <link rel="stylesheet" href="css/template.css" type="text/css" />
-    <link rel="stylesheet" href="css/header.css" type="text/css" />
-    <link rel="stylesheet" href="css/footer.css" type="text/css" />
-    <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
-    <link rel="stylesheet" href="css/colors.css" type="text/css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
+  <link rel="stylesheet" href="css/template.css" type="text/css" />
+  <link rel="stylesheet" href="css/header.css" type="text/css" />
+  <link rel="stylesheet" href="css/footer.css" type="text/css" />
+  <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+  <link rel="stylesheet" href="css/colors.css" type="text/css" />
 
-    <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  </head>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
 
-  <!-- Possible colors: ("blue" | "orange" | "aqua" | "green" | "black") -->
-  <body>
+  <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+</head>
 
-    <header id="desktop-menu">
-      <div id="header-content-container">
+<!-- Possible colors: ("blue" | "orange" | "aqua" | "green" | "black") -->
 
-        <!-- Logo Breathe-In -->
-        <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
-          <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo" />
-        </a>
-        
-        <span class="filler"></span>
+<body>
+
+  <header id="desktop-menu">
+    <div id="header-content-container">
+
+      <!-- Logo Breathe-In -->
+      <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
+        <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo" />
+      </a>
+
+      <span class="filler"></span>
+      <div id="team-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          TEAM
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Members</a>
+          <a class="dropdown-item" href="#">Attributions</a>
+          <a class="dropdown-item" href="#">Collabs</a>
+          <a class="dropdown-item" href="#">Sponsors</a>
+          <a class="dropdown-item" href="#">Gallery</a>
+        </div>
+      </div>
+      <div id="project-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          PROJECT
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Description</a>
+          <a class="dropdown-item" href="#">Design</a>
+          <a class="dropdown-item" href="#">Notebook & Protocols</a>
+          <a class="dropdown-item" href="#">Experiments</a>
+          <a class="dropdown-item" href="#">Demonstrate</a>
+          <a class="dropdown-item" href="#">Model</a>
+          <a class="dropdown-item" href="#">Safety</a>
+        </div>
+      </div>
+      <div id="parts-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          PARTS
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Parts Overview</a>
+          <a class="dropdown-item" href="#">Basic Parts</a>
+          <a class="dropdown-item" href="#">Improved Parts</a>
+          <a class="dropdown-item" href="#">Composite Parts</a>
+          <a class="dropdown-item" href="#">Part Collection</a>
+        </div>
+      </div>
+      <div id="human-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          HUMAN
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Human Practices</a>
+          <a class="dropdown-item" href="#">Integrated human</a>
+          <a class="dropdown-item" href="#">Public Engagement</a>
+          <a class="dropdown-item" href="#">LATAM Meetup</a>
+        </div>
+      </div>
+      <div id="contact-dropdown" class="dropdown">
+        <button class="btn btn-secondary" type="button">
+          CONTACT
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <header id="mobile-menu">
+    <nav class="navbar navbar-light light-blue lighten-4">
+
+      <!-- Logo Breathe-In -->
+      <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
+        <img src="img/logos/logo_BREATHE_plain.png" class="main-logo" />
+      </a>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="text-white"><i class="material-icons">menu</i></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <!-- Links -->
         <div id="team-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             TEAM
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -51,14 +126,8 @@
           </div>
         </div>
         <div id="project-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             PROJECT
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -72,14 +141,8 @@
           </div>
         </div>
         <div id="parts-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             PARTS
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -91,14 +154,8 @@
           </div>
         </div>
         <div id="human-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             HUMAN
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -113,259 +170,154 @@
             CONTACT
           </button>
         </div>
+        <!-- Links -->
       </div>
-    </header>
+      <!-- Collapsible content -->
+    </nav>
+    <!--/.Navbar-->
+  </header>
 
-    <header id="mobile-menu">
-      <nav class="navbar navbar-light light-blue lighten-4">
+  <div class="portrait-container container-fluid green" data-height="420">
+    <h1 class="section-title">DESIGN</h1>
+    <img src="https://2019.igem.org/wiki/images/b/b8/T--Tec-Monterrey--portrait-design.jpg" class="portrait-photo"
+      style="opacity: 0.35" />
+  </div>
 
-        <!-- Logo Breathe-In -->
-        <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
-          <img src="img/logos/logo_BREATHE_plain.png" class="main-logo" />
-        </a>
+  <div id="design-content" class="main-content container green">
+    <div class="row" style="margin-top: 48px;">
 
-        <!-- Collapse button -->
-        <button
-          class="navbar-toggler toggler-example"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent1"
-          aria-controls="navbarSupportedContent1"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="text-white"><i class="material-icons">menu</i></span>
-        </button>
+      <aside class="col-sm-12 col-md-3 col-lg-2 index-menu sticky-top"></aside>
 
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-          <!-- Links -->
-          <div id="team-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              TEAM
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Members</a>
-              <a class="dropdown-item" href="#">Attributions</a>
-              <a class="dropdown-item" href="#">Collabs</a>
-              <a class="dropdown-item" href="#">Sponsors</a>
-              <a class="dropdown-item" href="#">Gallery</a>
-            </div>
-          </div>
-          <div id="project-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              PROJECT
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Description</a>
-              <a class="dropdown-item" href="#">Design</a>
-              <a class="dropdown-item" href="#">Notebook & Protocols</a>
-              <a class="dropdown-item" href="#">Experiments</a>
-              <a class="dropdown-item" href="#">Demonstrate</a>
-              <a class="dropdown-item" href="#">Model</a>
-              <a class="dropdown-item" href="#">Safety</a>
-            </div>
-          </div>
-          <div id="parts-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              PARTS
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Parts Overview</a>
-              <a class="dropdown-item" href="#">Basic Parts</a>
-              <a class="dropdown-item" href="#">Improved Parts</a>
-              <a class="dropdown-item" href="#">Composite Parts</a>
-              <a class="dropdown-item" href="#">Part Collection</a>
-            </div>
-          </div>
-          <div id="human-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              HUMAN
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Human Practices</a>
-              <a class="dropdown-item" href="#">Integrated human</a>
-              <a class="dropdown-item" href="#">Public Engagement</a>
-              <a class="dropdown-item" href="#">LATAM Meetup</a>
-            </div>
-          </div>
-          <div id="contact-dropdown" class="dropdown">
-            <button class="btn btn-secondary" type="button">
-              CONTACT
-            </button>
-          </div>
-          <!-- Links -->
+      <section class="subsection-container md-offset-1 col-sm-12 col-md-8 col-lg-9">
+
+        <div id="intro-text" class="col-md-12" style="margin-top: 96px;">
+          <p class="description-text">
+            Since our main goal consists in the development of a microfluidic
+            platform that allows us to find new antibiotics for the treatment
+            against Pseudomonas aeruginosa we designed the following working plan
+            concerning the whole cell biosensors and the mucolytic.
+          </p>
         </div>
-        <!-- Collapsible content -->
-      </nav>
-      <!--/.Navbar-->
-    </header>
 
-    <div class="portrait-container container-fluid green" data-height="420">
-      <h1 class="section-title">DESIGN</h1>
-      <img
-        src="https://2019.igem.org/wiki/images/b/b8/T--Tec-Monterrey--portrait-design.jpg"
-        class="portrait-photo"
-        style="opacity: 0.35"/>
-    </div>
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">Microfluidic platform designs</h2>
 
-    <div id="design-content" class="main-content container green">
-      <div class="row" style="margin-top: 48px;">
+          <p>
+            Each biosensor produces a different fluorescent signal depending
+            on the mechanism of action that the substance is affecting, interrupting
+            the biosynthesis of essential molecules for the cell, such as DNA, RNA, etc.
+          </p>
 
-        <aside class="col-sm-12 col-md-3 col-lg-2 index-menu sticky-top">
-          <!----  El javascript creará los index por nosotros   ---->
-        </aside>
+          <div class="row mt-4">
+            <p class="col-sm-12 col-md-7">
+              First, we looked for the main promoters that control transcription when
+              <span class="font-italic">B. subtilis</span> is under stress due to antibiotic exposure,
+              each of them induces a different type of self defense mechanism,
+              the chosen promoters are listed:
+            </p>
+            <div class="col-sm-12 col-md-5">
+              <table id="promoters" class="table" style="margin-top: -8px;">
+                <thread>
+                  <th scope="col">Promoter</th>
+                  <th scope="col">Mechanism of action</th>
+                </thread>
+                <tr>
+                  <td>helD</td>
+                  <td>Protein Synthesis</td>
+                </tr>
+                <tr>
+                  <td>bmrC</td>
+                  <td>Fatty acid biosynthesis</td>
+                </tr>
+                <tr>
+                  <td>yorB</td>
+                  <td>DNA biosynthesis</td>
+                </tr>
+                <tr>
+                  <td>fabHB</td>
+                  <td>RNA biosynthesis</td>
+                </tr>
+                <tr>
+                  <td>ypuA</td>
+                  <td>Cell wall synthesis</td>
+                </tr>
+              </table>
+            </div>
+          </div>
 
-        <section class="subsection-container md-offset-1 col-sm-12 col-md-8 col-lg-9">
+          <div class="row mt-4">
+            <div class="col-md-6 col-sm-12" style="border-right: 2px solid var(--iGEM-light-black)">
+              <img class="col-md-12" src="https://2011.igem.org/wiki/images/c/cd/Oscillator5.png" />
+              <p>
+                Once these biosensors are created, they will be used during field
+                research when researchers suspect of the presence of a new antibiotic.
+                However, further analysis will be required to determine if the antibiotics
+                are indeed new or not. To address this, our team has developed a microfluidic
+                device that will encapsulate actinomycetes (the most antibiotic-producing bacteria)
+                by droplets with the biosensor.
+              </p>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-6" style="margin-top: 9em;">
+              <p>
+                Once a fluorescent signal is produced, the droplet
+                will be destroyed with electrospray by a mass spectrophotometer to detect all the
+                signals of the present compounds. A comparison with a library of the signals of the
+                already known compounds will be made, and if a peak in the measurement does not match,
+                then it could be a potential new antibiotic. Considering that the production of the GFP
+                by <span class="font-italic">B. subtilis</span> may be too low due to the stress the bacteria is being
+                subjected to,
+                we will also use an amplification cascade to magnify the signal of the fluorescent protein.
+              </p>
+            </div>
+          </div>
 
-          <div id="intro-text" class="col-md-12" style="margin-top: 96px;">
-            <p class="description-text">
-              Since our main goal consists in the development of a microfluidic
-              platform that allows us to find new antibiotics for the treatment
-              against Pseudomonas aeruginosa we designed the following working plan
-              concerning the whole cell biosensors and the mucolytic.
+        </article>
+
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">Whole cell biosensors designs</h2>
+          <div class="row mt-4">
+            <p class="col-sm-12 col-md-7">
+              First, we looked for the main promoters that control transcription when
+              <span class="font-italic">B. subtilis</span> is under stress due to antibiotic exposure,
+              each of them induces a different type of self defense mechanism,
+              the chosen promoters are listed:
             </p>
           </div>
 
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">Microfluidic platform designs</h2>
+        </article>
 
-            <p>
-              Each biosensor produces a different fluorescent signal depending
-              on the mechanism of action that the substance is affecting, interrupting
-              the biosynthesis of essential molecules for the cell, such as DNA, RNA, etc. 
-            </p>
-
-            <div class="row mt-4">
-              <p class="col-sm-12 col-md-7">
-                First, we looked for the main promoters that control transcription when
-                <span class="font-italic">B. subtilis</span> is under stress due to antibiotic exposure,
-                each of them induces a different type of self defense mechanism,
-                the chosen promoters are listed:                
-              </p>
-              <div class="col-sm-12 col-md-5">
-                <table id="promoters" class="table" style="margin-top: -8px;">
-                  <thread>
-                    <th scope="col">Promoter</th>
-                    <th scope="col">Mechanism of action</th>
-                  </thread>
-                  <tr>
-                    <td>helD</td>
-                    <td>Protein Synthesis</td>
-                  </tr>
-                  <tr>
-                    <td>bmrC</td>
-                    <td>Fatty acid biosynthesis</td>
-                  </tr>
-                  <tr>
-                    <td>yorB</td>
-                    <td>DNA biosynthesis</td>
-                  </tr>
-                  <tr>
-                    <td>fabHB</td>
-                    <td>RNA biosynthesis</td>
-                  </tr>
-                  <tr>
-                    <td>ypuA</td>
-                    <td>Cell wall synthesis</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-
-            <div class="row mt-4">
-              <div class="col-md-6 col-sm-12" style="border-right: 2px solid var(--iGEM-light-black)">
-                <img class="col-md-12" src="https://2011.igem.org/wiki/images/c/cd/Oscillator5.png"/>
-                <p>
-                  Once these biosensors are created, they will be used during field
-                  research when researchers suspect of the presence of a new antibiotic.
-                  However, further analysis will be required to determine if the antibiotics
-                  are indeed new or not. To address this, our team has developed a microfluidic
-                  device that will encapsulate actinomycetes (the most antibiotic-producing bacteria)
-                  by droplets with the biosensor.
-                </p>
-              </div>
-              <div class="col-md-6 col-sm-12 mt-6" style="margin-top: 9em;">
-                <p>
-                  Once a fluorescent signal is produced, the droplet
-                  will be destroyed with electrospray by a mass spectrophotometer to detect all the
-                  signals of the present compounds. A comparison with a library of the signals of the
-                  already known compounds will be made, and if a peak in the measurement does not match,
-                  then it could be a potential new antibiotic. Considering that the production of the GFP
-                  by <span class="font-italic">B. subtilis</span> may be too low due to the stress the bacteria is being subjected to,
-                  we will also use an amplification cascade to magnify the signal of the fluorescent protein.
-                </p>
-              </div>
-            </div>
-      
-          </article>
-
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">Whole cell biosensors designs</h2>
-            <div class="row mt-4">
-              <p class="col-sm-12 col-md-7">
-                First, we looked for the main promoters that control transcription when
-                <span class="font-italic">B. subtilis</span> is under stress due to antibiotic exposure,
-                each of them induces a different type of self defense mechanism,
-                the chosen promoters are listed:                
-              </p>
-            </div>
-
-          </article>
-
-        </section>
-      </div>
+      </section>
     </div>
+  </div>
 
 
-    <footer class="d-flex flex-wrap justify-content-around">
-      <img src="https://2019.igem.org/wiki/images/thumb/1/1f/T--Tec-Monterrey--sponsors-acceso-lab.png/320px-T--Tec-Monterrey--sponsors-acceso-lab.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/d/d6/T--Tec-Monterrey--sponsors-arfq.png/262px-T--Tec-Monterrey--sponsors-arfq.png" />
-      <img src="https://2019.igem.org/wiki/images/b/bd/T--Tec-Monterrey--sponsors-benchmark.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/0/0a/T--Tec-Monterrey--sponsors-biolabs.png/320px-T--Tec-Monterrey--sponsors-biolabs.png" />
-      <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-cofepris.png" />
-      <img src="https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--sponsors-congreso-nuevo-leon.png" />
-      <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-ctr.png" />
-      <img src="https://2019.igem.org/wiki/images/a/ac/T--Tec-Monterrey--sponsors-dibico.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/9/9b/T--Tec-Monterrey--sponsors-idt.png/320px-T--Tec-Monterrey--sponsors-idt.png" />
-      <img src="https://2019.igem.org/wiki/images/d/db/T--Tec-Monterrey--sponsors-imss.png" />
-      <img src="" />
-      <img src="https://2019.igem.org/wiki/images/thumb/c/cf/T--Tec-Monterrey--sponsors-itesm.png/320px-T--Tec-Monterrey--sponsors-itesm.png" />
-      <img src="https://2019.igem.org/wiki/images/b/b7/T--Tec-Monterrey--sponsors-scintia.png" />
-      <img src="https://2019.igem.org/wiki/images/f/ff/T--Tec-Monterrey--sponsors-snap-gene.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/f/f0/T--Tec-Monterrey--sponsors-twist.png/320px-T--Tec-Monterrey--sponsors-twist.png" />
-    </footer>
+  <footer class="d-flex flex-wrap justify-content-around">
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/1/1f/T--Tec-Monterrey--sponsors-acceso-lab.png/320px-T--Tec-Monterrey--sponsors-acceso-lab.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/d/d6/T--Tec-Monterrey--sponsors-arfq.png/262px-T--Tec-Monterrey--sponsors-arfq.png" />
+    <img src="https://2019.igem.org/wiki/images/b/bd/T--Tec-Monterrey--sponsors-benchmark.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/0/0a/T--Tec-Monterrey--sponsors-biolabs.png/320px-T--Tec-Monterrey--sponsors-biolabs.png" />
+    <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-cofepris.png" />
+    <img src="https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--sponsors-congreso-nuevo-leon.png" />
+    <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-ctr.png" />
+    <img src="https://2019.igem.org/wiki/images/a/ac/T--Tec-Monterrey--sponsors-dibico.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/9/9b/T--Tec-Monterrey--sponsors-idt.png/320px-T--Tec-Monterrey--sponsors-idt.png" />
+    <img src="https://2019.igem.org/wiki/images/d/db/T--Tec-Monterrey--sponsors-imss.png" />
+    <img src="" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/c/cf/T--Tec-Monterrey--sponsors-itesm.png/320px-T--Tec-Monterrey--sponsors-itesm.png" />
+    <img src="https://2019.igem.org/wiki/images/b/b7/T--Tec-Monterrey--sponsors-scintia.png" />
+    <img src="https://2019.igem.org/wiki/images/f/ff/T--Tec-Monterrey--sponsors-snap-gene.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/f/f0/T--Tec-Monterrey--sponsors-twist.png/320px-T--Tec-Monterrey--sponsors-twist.png" />
+  </footer>
 
-    <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
-    <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
-    <script src="js/placeholder.js"></script>
-  </body>
+  <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
+  <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
+  <script src="js/placeholder.js"></script>
+</body>
+
 </html>

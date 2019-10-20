@@ -1,46 +1,126 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="css/resetter.css" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
-    <link rel="stylesheet" href="css/template.css" type="text/css" />
-    <link rel="stylesheet" href="css/header.css" type="text/css" />
-    <link rel="stylesheet" href="css/footer.css" type="text/css" />
-    <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
-    <link rel="stylesheet" href="css/colors.css" type="text/css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/resetter.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
+  <link rel="stylesheet" href="css/template.css" type="text/css" />
+  <link rel="stylesheet" href="css/header.css" type="text/css" />
+  <link rel="stylesheet" href="css/footer.css" type="text/css" />
+  <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+  <link rel="stylesheet" href="css/colors.css" type="text/css" />
 
-    <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  </head>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
 
-  <!-- Possible colors: ("blue" | "orange" | "aqua" | "green" | "black") -->
-  <body class="blue">
+  <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+</head>
 
-    <header id="desktop-menu">
-      <div id="header-content-container">
+<!-- Possible colors: ("blue" | "orange" | "aqua" | "green" | "black") -->
 
-        <!-- Logo Breathe-In -->
-        <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
-          <img src="https://2019.igem.org/wiki/images/thumb/4/4c/T--Tec-Monterrey--white-logo-breathe-in.png/240px-T--Tec-Monterrey--white-logo-breathe-in.png" class="main-logo" />
-        </a>
-        
-        <span class="filler"></span>
+<body class="aqua">
+
+  <header id="desktop-menu">
+    <div id="header-content-container">
+
+      <!-- Logo Breathe-In -->
+      <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
+        <img
+          src="https://2019.igem.org/wiki/images/thumb/4/4c/T--Tec-Monterrey--white-logo-breathe-in.png/240px-T--Tec-Monterrey--white-logo-breathe-in.png"
+          class="main-logo" />
+      </a>
+
+      <span class="filler"></span>
+      <div id="team-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          TEAM
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Team">Members</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Attributions">Attributions</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Collaborations">Collaborations</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Thanks">Special thanks</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Gallery">Gallery</a>
+        </div>
+      </div>
+      <div id="project-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          PROJECT
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Description">Description</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Design">Design</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Notebook">Notebook & Protocols</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Experiments">Experiments</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Demonstrate">Demonstrate</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Model">Model</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Safety">Safety</a>
+        </div>
+      </div>
+      <div id="parts-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          PARTS
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts">Parts Overview</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Basic_Part">Basic Parts</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Improve">Improved Parts</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Composite_Part">Composite Parts</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Part_Collection">Part Collection</a>
+        </div>
+      </div>
+      <div id="human-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          HUMAN
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices">Human Practices</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices#Integrated">Integrated human</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Public_Engagement">Public Engagement</a>
+          <a class="dropdown-item" href="/Team:Tec-Monterrey/Meetup">LATAM Meetup</a>
+        </div>
+      </div>
+      <div id="contact-dropdown" class="dropdown">
+        <button class="btn btn-secondary" type="button">
+          CONTACT
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <header id="mobile-menu">
+    <nav class="navbar navbar-light light-blue lighten-4">
+
+      <!-- Logo Breathe-In -->
+      <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
+        <img
+          src="https://2019.igem.org/wiki/images/thumb/4/4c/T--Tec-Monterrey--white-logo-breathe-in.png/240px-T--Tec-Monterrey--white-logo-breathe-in.png"
+          class="main-logo" />
+      </a>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="text-white"><i class="material-icons">menu</i></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <!-- Links -->
+
         <div id="team-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             TEAM
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -52,14 +132,8 @@
           </div>
         </div>
         <div id="project-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             PROJECT
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -73,14 +147,8 @@
           </div>
         </div>
         <div id="parts-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             PARTS
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -92,14 +160,8 @@
           </div>
         </div>
         <div id="human-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             HUMAN
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -114,332 +176,236 @@
             CONTACT
           </button>
         </div>
+        <!-- Links -->
       </div>
-    </header>
+      <!-- Collapsible content -->
+    </nav>
+    <!--/.Navbar-->
+  </header>
 
-    <header id="mobile-menu">
-      <nav class="navbar navbar-light light-blue lighten-4">
+  <div class="portrait-container container-fluid" data-height="420">
+    <h1 class="section-title">DESCRIPTION</h1>
+    <img src="https://2019.igem.org/wiki/images/e/e5/T--Tec-Monterrey--description-header.jpg" class="portrait-photo"
+      style="opacity: 0.35" />
+  </div>
 
-        <!-- Logo Breathe-In -->
-        <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
-          <img src="https://2019.igem.org/wiki/images/thumb/4/4c/T--Tec-Monterrey--white-logo-breathe-in.png/240px-T--Tec-Monterrey--white-logo-breathe-in.png" class="main-logo" />
-        </a>
+  <div id="description-content" class="main-content container">
+    <div class="row" style="margin-top: 48px;">
 
-        <!-- Collapse button -->
-        <button
-          class="navbar-toggler toggler-example"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent1"
-          aria-controls="navbarSupportedContent1"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="text-white"><i class="material-icons">menu</i></span>
-        </button>
+      <!------- CONTENIDO COMPLETO INFORMACIÓN ------->
+      <section class="subsection-container md-offset-1 col-sm-12 col-md-12 col-lg-12">
 
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-          <!-- Links -->
-          
-          <div id="team-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              TEAM
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Team">Members</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Attributions">Attributions</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Collaborations">Collaborations</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Thanks">Special thanks</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Gallery">Gallery</a>
-            </div>
-          </div>
-          <div id="project-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              PROJECT
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Description">Description</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Design">Design</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Notebook">Notebook & Protocols</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Experiments">Experiments</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Demonstrate">Demonstrate</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Model">Model</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Safety">Safety</a>
-            </div>
-          </div>
-          <div id="parts-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              PARTS
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts">Parts Overview</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Basic_Part">Basic Parts</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Improve">Improved Parts</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Composite_Part">Composite Parts</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Part_Collection">Part Collection</a>
-            </div>
-          </div>
-          <div id="human-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              HUMAN
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices">Human Practices</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices#Integrated">Integrated human</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Public_Engagement">Public Engagement</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Meetup">LATAM Meetup</a>
-            </div>
-          </div>
-          <div id="contact-dropdown" class="dropdown">
-            <button class="btn btn-secondary" type="button">
-              CONTACT
-            </button>
-          </div>
-          <!-- Links -->
-        </div>
-        <!-- Collapsible content -->
-      </nav>
-      <!--/.Navbar-->
-    </header>
+        <!-----    INSERTA CADA SUBTEMA COMO UN <article>    ----->
 
-    <div class="portrait-container container-fluid" data-height="420">
-      <h1 class="section-title">DESCRIPTION</h1>
-      <img
-        src="img/portrait/model3.jpg"
-        class="portrait-photo"
-        style="opacity: 0.35"/>
-    </div>
-
-    <div id="project-content" class="main-content container">
-      <div class="row" style="margin-top: 48px;">
-
-        <!------- CONTENIDO COMPLETO INFORMACIÓN ------->
-        <section class="subsection-container md-offset-1 col-sm-12 col-md-12 col-lg-12">
-
-          <!-----    INSERTA CADA SUBTEMA COMO UN <article>    ----->
-
-          <article class="container">
-            <!-----    SUBTÍTULO DE LA SECCIÓN <h2>    ----->
-            <h2 class="row col-md-12 subsection-title">Problematic</h2>
-
-            <!-----    Cada <div> es una fila/párrafo    ----->
-
-            <p class="description-text">
-              Many people think that we are at the beginning of the post-antibiotic era
-              due to antimicrobial resistance, which has become a serious problem all around
-              the world in the last decades. This resistance reduces the effectiveness of
-              medications and bacterial infections become more frequent, long-lasting and harder to attack.
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">Problematic</h2>
+          <div class="row">
+            <p class="description-text col-lg-8 col-sm-12">
+              Many people think that we are at the beginning of the post-antibiotic era due to
+              antimicrobial resistance, which has become a serious problem all around the world in
+              the last decades. This resistance reduces the effectiveness of medications and
+              bacterial infections become more frequent, long-lasting and harder to attack.
               Bacterial resistance has reached such an uncontrolled level that now bacteria like
-              Acinetobacter and Pseudomonas have become super-resistant.
-              This means that they are almost immune to all antibiotics used to fight them and are
-              especially dangerous in hospitals and health care centers.
+              <span style="font-style: italic;">Acinetobacter</span> and
+              <span style="font-style: italic;">Pseudomonas</span> have become
+              super-resistant [5]. This means that
+              they are almost immune to all antibiotics used to fight them and are especially
+              dangerous in hospitals and health care centers.
             </p>
-      
-          </article>
+            <img src="https://2019.igem.org/wiki/images/6/67/T--Tec-Monterrey--description-damian-11.png"
+              class="col-lg-4 col-sm-12" style="height: 100%;">
+          </div>
+        </article>
 
-          <article class="container">
-            <!-----    SUBTÍTULO DE LA SECCIÓN <h2>    ----->
-            <h2 class="row col-md-12 subsection-title">Project focus</h2>
-
-            <!-----    Cada <div> es una fila/párrafo    ----->
-
-            <p class="description-text">
-              To raise awareness about the great impact that antibiotic resistance has on the life
-              quality of people, we decided to focus our project on a disease in which super-bacteria
-              have severe repercussions. This disease is Cystic Fibrosis (CF) and about 80% of deaths
-              are caused by these microorganisms [––––].
-              CF is the most common hereditary disease affecting white people of northern European ancestry,
-              having 1 in 2000–3000 births. (https://www.ncbi.nlm.nih.gov/pmc/ articles/PMC5408469/)
-              Diagnosed patients experience an accumulation of viscous mucus within their lungs,
-              pancreas and digestive tract, giving place to an approximate life expectancy of 37.5 years
-              (18, in Mexico). [–––]
-              CF patients are especially susceptible to bacterial infections, mainly those caused by
-              Pseudomonas aeruginosa, because the mucus provides the perfect environment for
-              theirproliferation and prevents them from being easily expelled. 
-            </p>
-
-          </article>
-
-          <article id="cf-description" class="container d-flex flex-wrap">
-            <button class="col-md-3 col-sm-12 subsection-title">
-              What is Cystic Fibrosis?
-            </button>
-            <div class="col-md-9 col-sm-12" style="display: none;">
-              <p>
-                  Is a disease caused by a mutation in the CFTR gene, which encodes the information
-                  for the synthesis of an ion channel, which keeps the osmotic balance between
-                  chloride ions, influencing the movement of water between tissues. The most common
-                  mutation is a deletion of a phenylalanine, impairing the function of the channel,
-                  producing an unusable protein that lacks the ability to efficiently transport
-                  chloride ions, and giving place to a deficiency of water in the mucus (National
-                  Guideline Alliance, 2017).
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">Project focus</h2>
+          <div class="row">
+            <div class="col-sm-12 col-lg-8">
+              <p class="description-text">
+                To raise awareness about the great impact that antibiotic resistance has on the life quality of people,
+                we
+                decided to focus our project on a disease in which super-bacteria have severe repercussions. This
+                disease
+                is
+                Cystic Fibrosis (CF) and about 80% of deaths are caused by these microorganisms [3].
+                CF is the most common hereditary disease affecting white people of northern European ancestry, having 1
+                in
+                2000–3000 births [3].
               </p>
-              <p>
-                  The viscous mucus that is produced by CF patients is considerably different from the
-                  one of healthy individuals, due to one of the main components in mucus: mucines.
-                  These molecules are  glycoproteins that give mucus its viscosity.. In addition,
-                  patients have shown to possess abnormal glycosylations in their mucins, primarily
-                  of sialic acid and fucose. The large concentration of sialic acid has shown to be
-                  related to the increment in viscosity (Zanin, 2016) and to the increase on the
-                  incidence of infections (Venkatakrishnan, 2014). 
-              </p>
-              <p>
-                As a consequence, this produces continuous coughing, masculine infertility,
-                nutritional problems, recurring infections and an overall decrement in life quality,
-                giving place to an approximate life expectancy of 37.5 years (18, in Mexico)
-                (Davies, 2017).
+              <p class="description-text">
+                Diagnosed patients experience an accumulation of viscous mucus within their lungs, pancreas and
+                digestive
+                tract, giving place to an approximate life expectancy of 37.5 years (18, in Mexico). [1]
+                CF patients are especially susceptible to bacterial infections, mainly those caused by
+                <span style="font-style: italic;">Pseudomonas aeruginosa</span>, because the mucus provides the perfect
+                environment for their proliferation and prevents them from being easily expelled.
               </p>
             </div>
+            <img src="https://2019.igem.org/wiki/images/4/46/T--Tec-Monterrey--description-damian-22.png"
+              class="col-sm-12 col-lg-4" style="height: 100%;">
+          </div>
+        </article>
 
-          </article>
-
-          <article class="container">
-            <!-----    SUBTÍTULO DE LA SECCIÓN <h3>    ----->
-            <h2 class="row col-md-12 subsection-title">Working plan</h2>
-
-            <!-----    Cada <div> es una fila/párrafo    ----->
-
-            <p class="description-text">
-              Having these concerns in mind, iGEM team Tec-Monterrey 2019 came up with
-              a working plan which consists in the development of a platform that allows 
-              us to find new antibiotics for the treatment against Pseudomonas aeruginosa. 
-              However, in order for the antibiotic to work properly, it is necessary to contribute 
-              to its diffusion through the mucus. Thus, to achieve this objective we propose 5 
-              different whole-cell biosensors that may facilitate the discovery of new antibiotics 
-              followed up by a mucolytic that reduces the viscosity of CF patients' mucus. 
+        <article id="cf-description" class="container d-flex flex-wrap">
+          <button class="col-md-12 col-sm-12 subsection-title mb-4">
+            What is Cystic Fibrosis?
+          </button>
+          <div class="col-md-12 col-sm-12" style="display: none;">
+            <p>
+              Cystic Fibrosis is a disease caused by a mutation in the CFTR gene, which encodes the information for the
+              synthesis of an ion channel, which keeps the osmotic balance between chloride ions, influencing the
+              movement of water between tissues. The most common mutation is a deletion of a phenylalanine, impairing
+              the function of the channel, producing an unusable protein that lacks the ability to efficiently transport
+              chloride ions, and giving place to a deficiency of water in the mucus [2].
             </p>
-
-          </article>
-
-          <article class="container">
-            <!-----    SUBTÍTULO DE LA SECCIÓN <h3>    ----->
-            <h2 class="row col-md-12 subsection-title">Main objectives:</h2>
-
-            <!-----    Cada <div> es una fila/párrafo    ----->
-
-            <p class="description-text">
-              Therefore we established two main objectives:
+            <p>
+              The viscous mucus that is produced by CF patients is considerably different from the one of healthy
+              individuals, due to one of the main components in mucus: mucines. These molecules are glycoproteins that
+              give mucus its viscosity. In addition, patients have shown to possess abnormal glycosylations in their
+              mucins, primarily of sialic acid and fucose. The large concentration of sialic acid has shown to be
+              related to the increment in viscosity [6] and to the increase on the incidence of infections [4].
             </p>
-
-            <ul>
-              <li class="mb-2">
-                To produce 5 whole cell biosensors able to detect the mechanism of
-                action of unknown compounds with possible antibiotic properties. 
-              </li>
-              <li>
-                To produce a recombinant protein (sialidase) able to reduce mucus
-                viscosity in CF patients using a sfGFP that helps secrete the sialidase
-                out of the cell, facilitating the recovery process.
-              </li>
-            </ul>
-
-          </article>
-
-          <div
-            id="description-nav-buttons"
-            class="container row col-md-12 d-flex justify-content-center"
-            style="margin-top: 64px;">
-            <a 
-              href="/Team:Tec-Monterrey/Hardware"
-              class="col-sm-12 col-lg-3 orange mb-3"
-              style="background-color: var(--iGEM-orange)"
-              onmouseover="this.style.background='var(--iGEM-light-orange)';"
-              onmouseout="this.style.background='var(--iGEM-orange)';">
-                <span style="font-size: 1.5em; font-weight: bold;">HARDWARE</span>
-                <p>
-                  See the design of our device!!
-                </p>
-            </a>
-            <a
-              href="/Team:Tec-Monterrey/Design"
-              class="col-sm-12 col-lg-3 green mb-3"
-              style="background-color: var(--iGEM-green)"
-              onmouseover="this.style.background='var(--iGEM-light-green)';"
-              onmouseout="this.style.background='var(--iGEM-green)';" >
-                <span style="font-size: 1.5em; font-weight: bold;">DESIGN</span>
-                <p>
-                  See the details of our working plan!!
-                </p>
-            </a>
-            <a
-              href="/Team:Tec-Monterrey/Model"
-              class="col-sm-12 col-lg-3 blue mb-3"
-              style="background-color: var(--iGEM-light-blue)"
-              onmouseover="this.style.background='var(--iGEM-lighter-blue)';"
-              onmouseout="this.style.background='var(--iGEM-light-blue)';" >
-                <span style="font-size: 1.5em; font-weight: bold;">MODEL</span>
-                <p>
-                  Check out our mathematical model!!
-                </p>
-            </a>
+            <p>
+              As a consequence, this produces continuous coughing, masculine infertility, nutritional problems,
+              recurring infections and an overall decrement in life quality, giving place to an approximate life
+              expectancy of 37.5 years (18, in Mexico) [1].
+            </p>
           </div>
 
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">References:</h2>
-            <ol style="margin-left: 1.5em; list-style: decimal; font-weight: lighter;">
-              <li>
-                ........
-              </li>
-              <li>
-                ........
-              </li>
-            </ol>
-          </article>
+        </article>
 
-        </section>
-      </div>
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">Working plan</h2>
+          <p class="description-text">
+            Having these concerns in mind, iGEM team Tec-Monterrey 2019 came up with a working plan which consists in
+            the development of a platform that allows us to find new antibiotics for the treatment against
+            <span style="font-style: italic;">Pseudomonas aeruginosa.</span> However, in order for the antibiotic to
+            work properly, it is necessary to contribute to its
+            diffusion through the mucus. Thus, to achieve this objective we propose 5 different whole-cell biosensors
+            that may facilitate the discovery of new antibiotics followed up by a mucolytic that reduces the viscosity
+            of CF patients' mucus.
+          </p>
+          <div class="container d-flex flex-wrap">
+            <img src="https://2019.igem.org/wiki/images/0/0d/T--Tec-Monterrey--description-damian-33.png"
+              class="col-md-6" style="height: 100%;">
+            <img src="https://2019.igem.org/wiki/images/a/a5/T--Tec-Monterrey--description-damian-44.png"
+              class="col-md-6" style="height: 100%;">
+          </div>
+        </article>
+
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">Main objectives:</h2>
+          <p class="description-text">
+            Therefore we established two main objectives:
+          </p>
+          <ul style="list-style: circle;">
+            <li class="mb-2" style="margin-left: 32px;">
+              To produce 5 whole cell biosensors able to detect the mechanism of action of unknown compounds with
+              possible antibiotic properties.
+            </li>
+            <li class="mb-2" style="margin-left: 32px;">
+              To produce a recombinant protein able to reduce mucus viscosity in CF patients using a novel method that
+              facilitates the recovery process.
+            </li>
+          </ul>
+
+        </article>
+
+        <div id="description-nav-buttons" class="container row col-md-12 d-flex justify-content-center"
+          style="margin-top: 64px;">
+          <a href="/Team:Tec-Monterrey/Hardware" class="col-sm-12 col-lg-3 orange mb-3"
+            style="background-color: var(--iGEM-orange)" onmouseover="this.style.background='var(--iGEM-light-orange)';"
+            onmouseout="this.style.background='var(--iGEM-orange)';">
+            <span style="font-size: 1.5em; font-weight: bold;">HARDWARE</span>
+            <p>
+              See the design of our device!!
+            </p>
+          </a>
+          <a href="/Team:Tec-Monterrey/Design" class="col-sm-12 col-lg-3 green mb-3"
+            style="background-color: var(--iGEM-green)" onmouseover="this.style.background='var(--iGEM-light-green)';"
+            onmouseout="this.style.background='var(--iGEM-green)';">
+            <span style="font-size: 1.5em; font-weight: bold;">DESIGN</span>
+            <p>
+              See the details of our working plan!!
+            </p>
+          </a>
+          <a href="/Team:Tec-Monterrey/Model" class="col-sm-12 col-lg-3 blue mb-3"
+            style="background-color: var(--iGEM-light-blue)"
+            onmouseover="this.style.background='var(--iGEM-lighter-blue)';"
+            onmouseout="this.style.background='var(--iGEM-light-blue)';">
+            <span style="font-size: 1.5em; font-weight: bold;">MODEL</span>
+            <p>
+              Check out our mathematical model!!
+            </p>
+          </a>
+        </div>
+
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">References:</h2>
+          <ol style="margin-left: 1.5em; list-style: decimal; font-weight: lighter;">
+            <li class="mt-2">
+              Davies, J. C., Alton, E. W., & Bush, A. (2007). Cystic fibrosis. BMJ (Clinical research ed.),
+              335(7632), 1255–1259. doi:10.1136/bmj.39391.713229.AD
+            </li>
+            <li class="mt-2">
+              National Guideline Alliance (UK). Cystic Fibrosis: Diagnosis and management. London: National
+              Institute for Health and Care Excellence (UK); 2017 Oct 25. (NICE Guideline, No. 78.) Available from:
+              https://www.ncbi.nlm.nih.gov/books/NBK464183/
+            </li>
+            <li class="mt-2">
+              Rafeeq, M. M., & Murad, H. A. S. (2017). Cystic fibrosis: current therapeutic targets and future
+              approaches. <span class="font-italic">Journal of translational medicine</span>, 15(1), 84.
+            </li>
+            <li class="mt-2">
+              Venkatakrishnan, V., Thaysen-Andersen, M., Chen, S. C., Nevalainen, H., & Packer, N. H. (2014). Cystic
+              fibrosis and bacterial colonization define the sputum N-glycosylation phenotype. <span
+                class="font-italic">Glycobiology</span>, 25(1),
+              88-100
+            </li>
+            <li class="mt-2">
+              WHO (2017). <span class="font-italic">Global priority list of antibiotic-resistant bacteria to guide
+                research, discovery, and development of new antibiotics.</span> World Health Organization. Web site:
+              https://www.who.int/medicines/publications/global-priority-list-antibiotic-resistant-bacteria/en/
+            </li>
+            <li class="mt-2">
+              Zanin, M., Baviskar, P., Webster, R., & Webby, R. (2016). The Interaction between Respiratory
+              Pathogens and Mucus. Cell host & microbe, 19(2), 159–168. doi:10.1016/j.chom.2016.01.001
+            </li>
+          </ol>
+        </article>
+
+      </section>
     </div>
+  </div>
 
 
-    <footer class="d-flex flex-wrap justify-content-around">
-      <img src="https://2019.igem.org/wiki/images/thumb/1/1f/T--Tec-Monterrey--sponsors-acceso-lab.png/320px-T--Tec-Monterrey--sponsors-acceso-lab.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/d/d6/T--Tec-Monterrey--sponsors-arfq.png/262px-T--Tec-Monterrey--sponsors-arfq.png" />
-      <img src="https://2019.igem.org/wiki/images/b/bd/T--Tec-Monterrey--sponsors-benchmark.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/0/0a/T--Tec-Monterrey--sponsors-biolabs.png/320px-T--Tec-Monterrey--sponsors-biolabs.png" />
-      <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-cofepris.png" />
-      <img src="https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--sponsors-congreso-nuevo-leon.png" />
-      <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-ctr.png" />
-      <img src="https://2019.igem.org/wiki/images/a/ac/T--Tec-Monterrey--sponsors-dibico.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/9/9b/T--Tec-Monterrey--sponsors-idt.png/320px-T--Tec-Monterrey--sponsors-idt.png" />
-      <img src="https://2019.igem.org/wiki/images/d/db/T--Tec-Monterrey--sponsors-imss.png" />
-      <img src="" />
-      <img src="https://2019.igem.org/wiki/images/thumb/c/cf/T--Tec-Monterrey--sponsors-itesm.png/320px-T--Tec-Monterrey--sponsors-itesm.png" />
-      <img src="https://2019.igem.org/wiki/images/b/b7/T--Tec-Monterrey--sponsors-scintia.png" />
-      <img src="https://2019.igem.org/wiki/images/f/ff/T--Tec-Monterrey--sponsors-snap-gene.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/f/f0/T--Tec-Monterrey--sponsors-twist.png/320px-T--Tec-Monterrey--sponsors-twist.png" />
-    </footer>
+  <footer class="d-flex flex-wrap justify-content-around">
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/1/1f/T--Tec-Monterrey--sponsors-acceso-lab.png/320px-T--Tec-Monterrey--sponsors-acceso-lab.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/d/d6/T--Tec-Monterrey--sponsors-arfq.png/262px-T--Tec-Monterrey--sponsors-arfq.png" />
+    <img src="https://2019.igem.org/wiki/images/b/bd/T--Tec-Monterrey--sponsors-benchmark.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/0/0a/T--Tec-Monterrey--sponsors-biolabs.png/320px-T--Tec-Monterrey--sponsors-biolabs.png" />
+    <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-cofepris.png" />
+    <img src="https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--sponsors-congreso-nuevo-leon.png" />
+    <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-ctr.png" />
+    <img src="https://2019.igem.org/wiki/images/a/ac/T--Tec-Monterrey--sponsors-dibico.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/9/9b/T--Tec-Monterrey--sponsors-idt.png/320px-T--Tec-Monterrey--sponsors-idt.png" />
+    <img src="https://2019.igem.org/wiki/images/d/db/T--Tec-Monterrey--sponsors-imss.png" />
+    <img src="" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/c/cf/T--Tec-Monterrey--sponsors-itesm.png/320px-T--Tec-Monterrey--sponsors-itesm.png" />
+    <img src="https://2019.igem.org/wiki/images/b/b7/T--Tec-Monterrey--sponsors-scintia.png" />
+    <img src="https://2019.igem.org/wiki/images/f/ff/T--Tec-Monterrey--sponsors-snap-gene.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/f/f0/T--Tec-Monterrey--sponsors-twist.png/320px-T--Tec-Monterrey--sponsors-twist.png" />
+  </footer>
 
-    <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
-    <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
-    <script src="js/placeholder.js"></script>
-  </body>
+  <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
+  <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
+  <script src="js/placeholder.js"></script>
+</body>
+
 </html>

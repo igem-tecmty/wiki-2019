@@ -1,22 +1,14 @@
 var portraitHeight = $(".portrait-container").data("height") || $(".landing-video").height();
-var scrollHeights = [];
-
 checkPortraitHeight();
 checkHeaderColor();
+
 $(".portrait-container").height(Math.min(window.screen.width, portraitHeight));
-createScrollHeights();
+var scrollHeights = createScrollHeights();
 
-$(window).scroll(function() { checkHomeElement(); });
-
-$(".main-content").click(function() {
-    $(".navbar-collapse").removeClass("show");
-});
-
-$(".portrait-photo").click(function() {
-    $(".navbar-collapse").removeClass("show");
-});
+$(window).scroll(() => checkHomeElement());
 
 function createScrollHeights() {
+    let scrollHeights = [];
     let first = parseInt($(".portrait-container").height()||0) - window.innerHeight;
     first += window.innerHeight/2;
     first += parseInt($(".portrait-container").css("margin-bottom") || 0);
@@ -28,6 +20,8 @@ function createScrollHeights() {
         marginBot = parseInt($(this).css("margin-bottom") || 0);
         scrollHeights.push((scrollHeights[index - 1] || 0) + $(this).height() + marginBot);
     });
+
+    return scrollHeights;
 }
 
 function checkHomeElement() {

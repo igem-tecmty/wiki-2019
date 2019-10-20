@@ -1,16 +1,12 @@
 var headerHeight = $("header").height();
 var portraitHeight = $(".portrait-container").data("height");
-var scrollHeights = [];
+checkPortraitHeight();
 
-$(window).on("load", function() {
-  checkPortraitHeight();
-  checkHeaderColor();
-  $(".portrait-container").height(
-    Math.min(window.screen.width, portraitHeight)
-  );
-  createScrollHeights();
-  createIndex();
-});
+checkHeaderColor();
+$(".portrait-container").height(Math.min(window.screen.width, portraitHeight));
+var scrollHeights = createScrollHeights();
+
+createIndex();
 
 $(window).scroll(function() {
   $(".navbar-collapse").removeClass("show");
@@ -19,59 +15,51 @@ $(window).scroll(function() {
   checkIndexMenu();
 });
 
-$(".main-content").click(function() {
-  $(".navbar-collapse").removeClass("show");
-});
-
-$(".portrait-photo").click(function() {
-  $(".navbar-collapse").removeClass("show");
-});
-
 function createScrollHeights() {
-  scrollHeights.push(portraitHeight);
-  scrollHeights[0] += $("#intro-text").height() || 0;
-  scrollHeights[0] += parseInt($("#intro-text").css("margin-top")) || 0;
+  let scrollHeights = [];
+  
+  let first = portraitHeight;
+  first += $("#intro-text").height() || 0;
+  first += parseInt($("#intro-text").css("margin-top")) || 0;
   if (window.screen.width < 768) {
-    scrollHeights[0] += $("aside").height() + 96;
+    first += $("aside").height() + 96;
   }
+  
+  scrollHeights.push(first);
   $("article").each(function() {
     scrollHeights[scrollHeights.length - 1];
     scrollHeights.push(
       scrollHeights[scrollHeights.length - 1] +
-        $(this).height() +
-        parseInt($(this).css("margin-top"))
+      $(this).height() +
+      parseInt($(this).css("margin-top"))
     );
   });
+  
+  return scrollHeights;
 }
 
 function createIndex() {
   const indexMenu = $(".index-menu");
   $("article").each(function(i) {
     indexMenu.append(`
-        <ul class="index-section" onclick="window.scrollTo(0, ${scrollHeights[
-          i
-        ] + 4});">
-            <a>
-            ${$(this)
-              .find(".subsection-title")
-              .text()}
-            </a>
-        </ul>
-        `);
+    <ul class="index-section" onclick="window.scrollTo(0, ${scrollHeights[i] + 4});">
+    <a>${$(this).find(".subsection-title").text()}</a>
+    </ul>
+    `);
   });
 }
 
 /* MAINTAIN PORTRAIG IMAGE SET */
 function checkPortraitHeight() {
   const newHeight =
-    Math.min(window.screen.width, portraitHeight) - $(document).scrollTop();
+  Math.min(window.screen.width, portraitHeight) - $(document).scrollTop();
   $(".portrait-photo").height(newHeight);
 }
 
 function checkHeaderColor() {
   const opacity =
-    $(document).scrollTop() /
-    (Math.min(window.screen.width, portraitHeight) - $("header").height());
+  $(document).scrollTop() /
+  (Math.min(window.screen.width, portraitHeight) - $("header").height());
   $("header").css("background-color", `rgba(6, 15, 41, ${opacity})`);
 }
 
@@ -92,12 +80,19 @@ function checkIndexMenu() {
   }
 }
 
+/*
+$(window).on('click', () => $('.navbar-collapse').removeClass("show"));
+$('.navbar-collapse').on('click', function(event){
+  event.stopPropagation();
+});
+*/
+
 $("#antibiotic-div")
-  .on("mouseenter", function() {
-    $("#back-card1").show();
-    $("#antibiotic-div")
-      .find("img")
-      .css("opacity", "0.35");
+.on("mouseenter", function() {
+  $("#back-card1").show();
+  $("#antibiotic-div")
+  .find("img")
+  .css("opacity", "0.35");
   })
   .on("mouseleave", function() {
     $("#back-card1").hide();
@@ -189,3 +184,7 @@ $("#metal-biosensor-component6")
       .find("div")
       .toggle();
   });
+  
+$("#cf-description").find("button").on('click', function () {
+  $("#cf-description").find("div").toggle("medium");
+});

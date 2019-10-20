@@ -6,6 +6,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  overflow-wrap: break-word;
 }
 
 strong {
@@ -175,7 +176,7 @@ article {
   margin: 16px;
   text-align: center;
 }
-.people-component img {
+#team-content .member-component img {
   width: inherit;
 }
 .people-component .name {
@@ -190,6 +191,7 @@ article {
   font-size: 1em;
   margin-top: 8px;
   font-weight: bold;
+  width: -moz-fit-content;
 }
 .member-component > h5 {
   font-size: 0.6em;

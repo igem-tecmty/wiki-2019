@@ -14,6 +14,7 @@
     --iGEM-light-orange: #f8c37e;
     --iGEM-orange: #ffa630;
     --iGEM-dark-orange: #926122;
+    --iGEM-safety-red: rgb(131, 31, 31);
     --iGEM-font-title: 'Anton', sans-serif;
     --iGEM-light-black: #dee2e6;
 }
@@ -41,9 +42,12 @@ h3.black {
 
 .orange .portrait-container,
 .orange.portrait-container,
-.orange .hidden-component>button,
-.orange .thread {
+.orange .hidden-component>button {
     background-color: var(--iGEM-dark-orange);
+}
+
+.orange .thread {
+    background-color: var(--iGEM-orange);
 }
 
 .orange .subsection-title,
@@ -69,6 +73,10 @@ h2.orange {
     background-color: var(--iGEM-dark-aqua);
 }
 
+.aqua .thread {
+    background-color: var(--iGEM-aqua);
+}
+
 .aqua .subsection-title,
 .aqua .current-index,
 h2.aqua {
@@ -92,6 +100,10 @@ h2.aqua {
     background-color: var(--iGEM-dark-green);
 }
 
+.green .thread {
+    background-color: var(--iGEM-green);
+}
+
 .green .subsection-title,
 .green .current-index,
 h2.green {
@@ -110,9 +122,12 @@ h2.green {
 
 .blue .portrait-container,
 .blue.portrait-container,
-.blue .hidden-component>button,
-.blue .thread {
+.blue .hidden-component>button {
     background-color: var(--iGEM-dark-blue);
+}
+
+.blue .thread {
+    background-color: var(--iGEM-blue);
 }
 
 .blue .subsection-title,
@@ -129,4 +144,17 @@ h2.blue {
 
 #description-nav-buttons .blue {
     border-color: var(--iGEM-dark-blue);
+}
+
+.red .portrait-container,
+.red.portrait-container,
+.red .hidden-component>button,
+.red .thread {
+    background-color: var(--iGEM-safety-red);
+}
+
+.red .subsection-title,
+.red .current-index,
+h2.red {
+    color: var(--iGEM-safety-red);
 }

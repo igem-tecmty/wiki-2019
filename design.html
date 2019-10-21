@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/footer.css" type="text/css" />
   <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
   <link rel="stylesheet" href="css/colors.css" type="text/css" />
+  <link rel="stylesheet" href="css/slider.css" type="text/css" />
 
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
@@ -22,7 +23,7 @@
 
 <!-- Possible colors: ("blue" | "orange" | "aqua" | "green" | "black") -->
 
-<body>
+<body class="orange">
 
   <header id="desktop-menu">
     <div id="header-content-container">
@@ -177,96 +178,228 @@
     <!--/.Navbar-->
   </header>
 
-  <div class="portrait-container container-fluid green" data-height="420">
+  <div class="portrait-container container-fluid" data-height="420">
     <h1 class="section-title">DESIGN</h1>
-    <img src="https://2019.igem.org/wiki/images/b/b8/T--Tec-Monterrey--portrait-design.jpg" class="portrait-photo"
+    <img src="https://2019.igem.org/wiki/images/8/8d/T--Tec-Monterrey--design-portada.jpg" class="portrait-photo"
       style="opacity: 0.35" />
   </div>
 
-  <div id="design-content" class="main-content container green">
+  <div id="description-content" class="main-content container">
     <div class="row" style="margin-top: 48px;">
-
       <aside class="col-sm-12 col-md-3 col-lg-2 index-menu sticky-top"></aside>
 
       <section class="subsection-container md-offset-1 col-sm-12 col-md-8 col-lg-9">
 
         <div id="intro-text" class="col-md-12" style="margin-top: 96px;">
           <p class="description-text">
-            Since our main goal consists in the development of a microfluidic
-            platform that allows us to find new antibiotics for the treatment
-            against Pseudomonas aeruginosa we designed the following working plan
-            concerning the whole cell biosensors and the mucolytic.
+            Because our main goal consists in the development of a platform that allows us to find new antibiotics for
+            treatment against Pseudomonas aeruginosa we designed the following working plan concerning whole cell
+            biosensors and a mucolytic.
           </p>
         </div>
 
         <article class="container">
           <h2 class="row col-md-12 subsection-title">Microfluidic platform designs</h2>
-
           <p>
-            Each biosensor produces a different fluorescent signal depending
-            on the mechanism of action that the substance is affecting, interrupting
-            the biosynthesis of essential molecules for the cell, such as DNA, RNA, etc.
+            As we needed a way to apply our biosensors, we thought on a novel, low-cost and highly efficient system that
+            allows mixing a culture of a microorganism of interest with our biosensors so they could accomplish their
+            function. We decided that the best kind of system to fulfill these requirements was a microfluidic device
+            due to the low amount of material requirements, work speed and measurement precision [7]. Our main goal was
+            to have both the biosensors and the microorganism of interest in tiny separate droplets to then merge them
+            so bacteria could interact in a microenvironment [3].
+          </p>
+          <p>
+            We designed and fabricated the device with different elements; A droplet generator to encapsulate the
+            microorganism of interest, a passive spacer to separate these droplets, a pico injection system to mix the
+            culture of biosensors with the droplets, a reservoir to count and measure different parameters of the
+            droplets and, finally, an outlet to recover the droplets to store and further analyse.
+          </p>
+          <p>
+            When one of our biosensors emits a fluorescent signal, lysis can be performed on an HPLC-MS to determine if
+            there is a molecule that produces a spike that does not match any previously known component of the media or
+            antibiotic. This method is useful since it could potentially save time, effort and materials invested in
+            determining microorganisms of interest that are suspected to produce metabolites with antimicrobial
+            properties [2].
+          </p>
+          <img class="col-md-12"
+            src="https://2019.igem.org/wiki/images/f/fe/T--Tec-Monterrey--hw-mask-final-single-design.jpg">
+
+
+          <div id="description-nav-buttons" class="container row col-md-12" style="margin-top: 64px;">
+            <a href="/Team:Tec-Monterrey/Model" class="col-sm-12 col-md-6 col-lg-4 blue mb-3 offset-md-8"
+              style="background-color: var(--iGEM-light-blue);"
+              onmouseover="this.style.background='var(--iGEM-lighter-blue)';"
+              onmouseout="this.style.background='var(--iGEM-light-blue)';">
+              <span style="font-size: 1.5em; font-weight: bold;">HARDWARE</span>
+              <p>
+                Check our hardware section!
+              </p>
+            </a>
+          </div>
+        </article>
+
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">Whole cell biosensors designs</h2>
+          <p>
+            As we planned our dispositive to be able to differentiate between antibiotics, we came up with the idea of
+            separating the chemical entities by their mechanisms of action. With this in mind, we started an intensive
+            research to find the best promoters that control transcription under antibiotic stress.
+          </p>
+          <div class="row d-flex col-md-12 mb-4">
+
+            <p class="col-sm-12 col-lg-7" style="padding-left: 0;">
+              We decided to use only 5 promoters, which where reported by Urban et al. and belong to
+              <span class="font-italic">B. subtillis</span>.
+              Each one of them consists of a coding sequence that, when induced by an antibiotic, produces a specific
+              fluorescent signal according to the mechanism of action that is beíng affected, interrupting the
+              biosynthesis of essential molecules for the cell. [5]
+            </p>
+            <table id="promoters" class="table col-sm-12 col-lg-5 card-component" style="font-size: 0.7em; margin: 0;">
+              <tr class="thread">
+                <th scope="col text-center">Promoter</th>
+                <th scope="col text-center">Inhibited biosynthetic pathway</th>
+              </tr>
+              <tr>
+                <td>helD</td>
+                <td>RNA biosynthesis</td>
+              </tr>
+              <tr>
+                <td>bmrC</td>
+                <td>Protein biosynthesis</td>
+              </tr>
+              <tr>
+                <td>yorB</td>
+                <td>DNA biosynthesis</td>
+              </tr>
+              <tr>
+                <td>fabHB</td>
+                <td>Fatty acid biosynthesis</td>
+              </tr>
+              <tr>
+                <td>ypuA</td>
+                <td>Cell wall biosynthesis</td>
+              </tr>
+            </table>
+          </div>
+          <p>
+            Considering that the production of the GFP by <span class="font-italic">B. subtillis</span> may be too low
+            due to the stress the bacteria is
+            being subjected to, we decided to complement the biosensor design by using an amplification cascade to
+            magnify the signal of the fluorescent protein.
           </p>
 
-          <div class="row mt-4">
-            <p class="col-sm-12 col-md-7">
-              First, we looked for the main promoters that control transcription when
-              <span class="font-italic">B. subtilis</span> is under stress due to antibiotic exposure,
-              each of them induces a different type of self defense mechanism,
-              the chosen promoters are listed:
-            </p>
-            <div class="col-sm-12 col-md-5">
-              <table id="promoters" class="table" style="margin-top: -8px;">
-                <thread>
-                  <th scope="col">Promoter</th>
-                  <th scope="col">Mechanism of action</th>
-                </thread>
-                <tr>
-                  <td>helD</td>
-                  <td>Protein Synthesis</td>
-                </tr>
-                <tr>
-                  <td>bmrC</td>
-                  <td>Fatty acid biosynthesis</td>
-                </tr>
-                <tr>
-                  <td>yorB</td>
-                  <td>DNA biosynthesis</td>
-                </tr>
-                <tr>
-                  <td>fabHB</td>
-                  <td>RNA biosynthesis</td>
-                </tr>
-                <tr>
-                  <td>ypuA</td>
-                  <td>Cell wall synthesis</td>
-                </tr>
-              </table>
-            </div>
-          </div>
+        </article>
 
-          <div class="row mt-4">
-            <div class="col-md-6 col-sm-12" style="border-right: 2px solid var(--iGEM-light-black)">
-              <img class="col-md-12" src="https://2011.igem.org/wiki/images/c/cd/Oscillator5.png" />
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">Amplification cascade design</h2>
+          <p>
+            The previously mentioned cascade was originally reported by Wang et al. [6]. It consists of a series of
+            amplifier cascades that all altogether reduce the limit of detection (LOD) of heavy metals like arsenic and
+            mercury and increase the output of a reporter gene, which in our case is case was a GFP. A whole cell
+            biosensor can be splitted into three main modules: the sensor module, the amplifier module, and the output
+            module (Fig. 1).
+          </p>
+          <p>
+            The sensor module is comprised of an inducible promoter and its corresponding repressor protein and is
+            responsible for the manipulation of the LOD of the biosensor by varying the strength of the constitutive
+            promoter. A low strength causes a decrease in the LOD of the biosensor, which means that even smaller
+            concentrations of the given metal can be detected. Additionally, we describe this module in our
+            <a href="/Team:Tec-Monterrey/Model">mathematical model</a>.
+          </p>
+          <p>
+            The amplifier module is where the cascade comes in, it is responsible for the amplification of the initial
+            signal given by the inducible promoter from the first module by linking several amplifiers, creating a (sort
+            of) cascade. Each amplifier increases the output of a given input signal. Finally, the output module is
+            responsible for the expression of the reporter gene.
+          </p>
+          <img class="col-md-12" src="https://2019.igem.org/wiki/images/7/7e/T--Tec-Monterrey--design-cascade.png">
+          <p>
+            Despite being initially designed for heavy metals, we came up with the idea of using this cascade in our
+            project by changing the metal-inducible promoter from the first module for each one of our
+            antibiotic-inducible promoters. Then we linked this promoters to a cascade comprised of 2 amplifiers and a
+            GFP.
+          </p>
+          <p>
+            The final construct ended up being composed of one promoter, 2 proteins from the first amplifier, one
+            protein from the second amplifier, and one GFP protein at the end, with all of these proteins having their
+            own double terminator. This made a 4400 bp long construct, which drove us to our next problem: ligating
+            these parts.
+          </p>
+          <p>
+            We thought of Golden Gate cloning as a good choice for this ligation because this cloning method allows for
+            the ligation of multiple parts in one step.
+          </p>
+
+          <div id="droplet-techniques" class="container d-flex flex-wrap hidden-component" style="padding: 0;">
+            <button class="col-md-12 col-sm-12">
+              Assembly strategy
+            </button>
+            <div id="droplet-content" class="col-md-12" style="display: none; padding-top: 1em;">
               <p>
-                Once these biosensors are created, they will be used during field
-                research when researchers suspect of the presence of a new antibiotic.
-                However, further analysis will be required to determine if the antibiotics
-                are indeed new or not. To address this, our team has developed a microfluidic
-                device that will encapsulate actinomycetes (the most antibiotic-producing bacteria)
-                by droplets with the biosensor.
+                In order to synthesize all the modules that compose the cascade, we decided to split them into gBlocks,
+                which lead us to the creation of AMP1, AMp2, AMP3 and AMP4. AMP1 and AMP2 correspond to an amplifier
+                module,
+                AMP3 belongs to another amplifying module and AMP4 is only a reporter gene. To assemble all these parts
+                with
+                the correspondent promoter, we came to the conclusion that Golden Gate was the best assembly strategy
+                for
+                the ligation of the AMP(1-4) but it wasn’t enough for integrating the whole cascade into <span
+                  class="font-italic">B. subtilis</span>
+                genome.
+                To address this, we started by making the cascade compatible with the pSB1C3 modified (Bba_P10500)
+                standard
+                assembly to select the transformed colonies with the blue-whithe screening method. Then, we planned on
+                moving the entire sequence from <span class="font-italic">E. coli</span> to
+                <span class="font-italic">B. subtilis</span> using the genome integrative plasmid pBS1C.
               </p>
-            </div>
-            <div class="col-md-6 col-sm-12 mt-6" style="margin-top: 9em;">
               <p>
-                Once a fluorescent signal is produced, the droplet
-                will be destroyed with electrospray by a mass spectrophotometer to detect all the
-                signals of the present compounds. A comparison with a library of the signals of the
-                already known compounds will be made, and if a peak in the measurement does not match,
-                then it could be a potential new antibiotic. Considering that the production of the GFP
-                by <span class="font-italic">B. subtilis</span> may be too low due to the stress the bacteria is being
-                subjected to,
-                we will also use an amplification cascade to magnify the signal of the fluorescent protein.
+                The following images show in a graphic way the assembly strategy:
+              </p>
+              <img src="https://2019.igem.org/wiki/images/e/e1/T--Tec-Monterrey--design-golden-std.png"
+                class="col-md-12">
+              <p class="col-md-12 image-footer">
+                <span class="font-weight-bold">Figure 1: </span>The BBa_P10500 iGEM part counts with restriction sites
+                for
+                type IIs enzymes, such as BsaI and
+                BsmBI, that allow this plasmid to be used in Golden Gate cloning. As it is an iGEM part it also counts
+                with
+                a BioBrick Prefix and Suffix.
+              </p>
+              <img src="https://2019.igem.org/wiki/images/3/35/T--Tec-Monterrey--design-golden-step1.png"
+                class="col-md-12">
+              <p class="col-md-12 image-footer">
+                <span class="font-weight-bold">Figure 2: </span>The first step of our assembly strategy consisted in pre
+                cloning by Standard Assembly our gBlocks into the iGEM part BBa_I732902, which is comprised of a lacI
+                regulated promoter linked to a lacZ alpha fragment allowing for blue-white screening.
+              </p>
+              <img src="https://2019.igem.org/wiki/images/b/b1/T--Tec-Monterrey--design-golden-elbuenostep2.png"
+                class="col-md-12">
+              <p class="col-md-12 image-footer">
+                <span class="font-weight-bold">Figure 3: </span>The BBa_P10500 iGEM part counts with restriction sites
+                for
+                type IIs enzymes, such as BsaI and
+                BsmBI, that allow this plasmid to be used in Golden Gate cloning. As it is an iGEM part it also counts
+                with
+                a BioBrick Prefix and Suffix.
+              </p>
+              <img src="https://2019.igem.org/wiki/images/e/e3/T--Tec-Monterrey--design-golden-pcesar.png"
+                class="col-md-12">
+              <p class="col-md-12 image-footer">
+                <span class="font-weight-bold">Figure 4: </span>
+                The pBS1C plasmid is used for genomic integration of a desired DNA construct into the <span
+                  class="font-italic">B. subtilis</span>
+                genome,
+                specifically in the amyE region. The construct of interest must be added so that it ends up flanked by
+                the
+                amyE sequences in the plasmid in order for it to be integrated into the genome.
+              </p>
+              <img src="https://2019.igem.org/wiki/images/e/e3/T--Tec-Monterrey--design-golden-PUKK.png"
+                class="col-md-12">
+              <p class="col-md-12 image-footer">
+                <span class="font-weight-bold">Figure 5: </span>
+                Once the construct is successfully ligated to the BBa_P10500 plasmid by Golden Gate assembly method, it
+                will be digested with the BioBrick prefix and suffix enzymes and ligated to the pBS1C plasmid for its
+                final genomic integration into <span class="font-italic">B. subtilis.</span>
               </p>
             </div>
           </div>
@@ -274,16 +407,87 @@
         </article>
 
         <article class="container">
-          <h2 class="row col-md-12 subsection-title">Whole cell biosensors designs</h2>
-          <div class="row mt-4">
-            <p class="col-sm-12 col-md-7">
-              First, we looked for the main promoters that control transcription when
-              <span class="font-italic">B. subtilis</span> is under stress due to antibiotic exposure,
-              each of them induces a different type of self defense mechanism,
-              the chosen promoters are listed:
-            </p>
+          <h2 class="row col-md-12 subsection-title">Mucolytic design</h2>
+          <p>
+            Having in mind the fact that Cystic Fibrosis (CF) patients mucus provides the perfect environment for
+            bacteria proliferation and prevents them from being easily expelled, we realized that the discovery of new
+            antibiotics will not be enough to help patients with CF. Thus we also propose the production of a
+            recombinant protein able to reduce the density of the mucus, allowing for a proper permeability and
+            diffusion of the sumministrated antibiotic.
+          </p>
+          <p>
+            To do this, we looked for an enzyme able to break down the main components of the mucus: mucins; these
+            proteins present a high amount of sialic acid which confers density to the CF mucus. Mucins are polar
+            glycoproteins that normally form bonds with water molecules, so if there is an increment in the amount of
+            mucins, it will also be an increase in the density of the mucus.
+          </p>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="https://2019.igem.org/wiki/images/e/ee/T--Tec-Monterrey--design-mucolytic-sialidase.png"
+                style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="https://2019.igem.org/wiki/images/c/c6/T--Tec-Monterrey--design-mucolytic-sialidase2.png"
+                style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="https://2019.igem.org/wiki/images/0/0e/T--Tec-Monterrey--design-mucolytic-sialidase3.png"
+                style="width:100%">
+            </div>
           </div>
+          <p>
+            The chosen protein for the breakage is the sialidase from <span class="font-italic">Micromonospora
+              viridifaciens</span> (a harmless bacteria for humans), which according to the literature it has the
+            capacity of degrading sialic acid [4]. To address this, we designed three different protein expression
+            constructs. The first one is only for the expression of sialidase. For the second construct we decided to
+            implement a super-folding green fluorescent protein (sfGFP) because is has been proved to have
+            auto-secretory activity, making easier the detection and recovery of chimeric proteins fused to it [7]. The
+            last construct is a chimeric protein which consists in the union of the above mentioned parts. All of the
+            constructs are under the control of a T7-LacO promoter and C-terminal 6His-tagged, which will facilitate the
+            recovery of the sialidase from the cell culture.
+          </p>
+          <img src="https://2019.igem.org/wiki/images/2/28/T--Tec-Monterrey--sfgfp-sialidase.png" class="col-md-12">
+          <p class="col-md-12 image-footer text-center">
+            Possible secretory mechanism ofthe sfGFP fusion protein
+          </p>
+        </article>
 
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">References:</h2>
+          <ol style="margin-left: 1.5em; list-style: decimal; font-weight: lighter;">
+            <li class="mt-2">
+              Hutter, B., Fischer, C., Jacobi, A., Schaab, C., & Loferer, H. (2004). Panel of Bacillus subtilis reporter
+              strains indicative of various modes of action. Antimicrobial agents and chemotherapy, 48(7), 2588–2594.
+              doi:10.1128/AAC.48.7.2588-2594.2004
+            </li>
+            <li class="mt-2">
+              Mahler, L., Wink, K., Beulig, R. J., Scherlach, K., Tovar, M., Zang, E., … Roth, M. (2018). Detection of
+              antibiotics synthetized in microfluidic picolitre-droplets by various actinobacteria. <span
+                class="font-italic">Scientific Reports, 8</span>(1). doi: 10.1038/s41598-018-31263-2
+            </li>
+            <li class="mt-2">
+              Scanlon, T. C., Dostal, S. M., & Griswold, K. E. (2014). A high-throughput screen for antibiotic drug
+              discovery. <span class="font-italic">Biotechnology and bioengineering,</span> 111(2), 232–243.
+              doi:10.1002/bit.25019
+            </li>
+            <li class="mt-2">
+              UniProtKB. ID: Q02834 (NANH_MICVI)|
+            </li>
+            <li class="mt-2">
+              Urban, A., Eckermann, S., Fast, B., Metzger, S., Gehling, M., Ziegelbauer, K., Rübsamen-Waigmann, H.,
+              Freiberg, C. (2007). Novel whole-cell antibiotic biosensors for compound discovery. Applied and
+              environmental microbiology, 73(20), 6436–6443. doi:10.1128/AEM.00586-07
+            </li>
+            <li class="mt-2">
+              Zhang, Z., Tang, R., Zhu, D., Wang, W., Yi, L. & Ma, L.. (2017). Non-peptide guided auto-secretion of
+              recombinant proteins by super-folder green fluorescent protein in Escherichia coli . mayo 29, 2019, de
+              Nature Sitio web: https://www.nature.com/articles/s41598-017-07421-3
+            </li>
+            <li class="mt-2">
+              Zhu, Pingan, and Liqiu Wang. (2017). “Passive and Active Droplet Generation with Microfluidics: A Review.”
+              <span class="font-italic">Lab on a Chip,</span> 17(1): 34–75.
+            </li>
+          </ol>
         </article>
 
       </section>
@@ -318,6 +522,7 @@
   <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
   <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
   <script src="js/placeholder.js"></script>
+  <script type="text/javascript" src="js/slider.js"></script>
 </body>
 
 </html>

@@ -181,7 +181,6 @@ article {
   border: solid 6px;
   font-family: 'Manjari';
   border-radius: 16px;
-  margin: 0 16px;
   padding: 8px;
   padding-top: 1em;
   font-size: 0.8em;
@@ -274,6 +273,16 @@ article {
   background-size: cover;
 }
 
+#david-safety.static-move {
+  background-position: 60% -360px;
+  background-size: 75%;
+}
+
+#david-safety.static-move {
+  background-position: 60% -360px;
+  background-size: 75%;
+}
+
 .index-button {
   height: 200px;
   text-align: center;
@@ -307,6 +316,8 @@ article {
   margin-top: 0.4em;
   color: white;
   font-family: var(--iGEM-font-title);
+  box-shadow: 4px 4px 16px #000;
+  border: 0;
 }
 
 .metal-biosensor-button {
@@ -319,6 +330,12 @@ article {
 }
 
 #cards-model {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(197, 195, 195);
+}
+
+.card-component {
   border-width: 2px;
   border-style: solid;
   border-color: rgb(197, 195, 195);
@@ -484,11 +501,16 @@ table#promoters th {
 }
 
 #parts-content .thread,
-#collection-content .thread {
+#collection-content .thread,
+#safety-content .thread {
   color: white;
 }
 
-@media only screen and (max-width: 719px) {
+#protocols-link:visited {
+  color: var(--iGEM-blue);
+}
+
+@media only screen and (max-width: 768px) {
   h1.section-title {
     font-size: 2em;
   }
@@ -504,6 +526,11 @@ table#promoters th {
   #contact-info-container>div {
     width: fit-content;
     margin: 0 auto;
+  }
+
+  .static-move {
+    background-attachment: fixed;
+    background-position: center;
   }
 
   .index-menu {

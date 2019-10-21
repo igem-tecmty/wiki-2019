@@ -116,7 +116,7 @@ article {
   line-height: 1em;
 }
 
-.index-menu>ul {
+.index-menu > ul {
   padding-left: 0;
   font-family: "Manjari", sans-serif;
   margin: 0;
@@ -153,13 +153,13 @@ article {
   text-align: right;
 }
 
-#cf-description>button {
+#cf-description > button {
   border: 4px solid;
   font-size: 1em;
   background-color: transparent;
   border-color: var(--iGEM-blue);
   border-radius: 8px;
-  font-family: 'Manjari';
+  font-family: "Manjari";
   line-height: 1em;
   padding: 8px;
   padding-top: 0.5em;
@@ -167,7 +167,7 @@ article {
   box-shadow: 4px 4px 8px;
 }
 
-#cf-description>button:hover {
+#cf-description > button:hover {
   background-color: var(--iGEM-ultra-light-aqua);
 }
 
@@ -176,10 +176,10 @@ article {
   font-weight: lighter;
 }
 
-#description-nav-buttons>a {
+#description-nav-buttons > a {
   text-align: center;
   border: solid 6px;
-  font-family: 'Manjari';
+  font-family: "Manjari";
   border-radius: 16px;
   padding: 8px;
   padding-top: 1em;
@@ -195,7 +195,7 @@ article {
   margin-top: 4px;
 }
 
-#description-nav-buttons>a:hover {
+#description-nav-buttons > a:hover {
   cursor: pointer;
   text-decoration: none;
 }
@@ -219,18 +219,18 @@ article {
   width: 100px;
 }
 
-.member-component>.name {
+.member-component > .name {
   font-size: 1em;
   margin-top: 8px;
   font-weight: bold;
   width: -moz-fit-content;
 }
 
-.member-component>h5 {
+.member-component > h5 {
   font-size: 0.6em;
 }
 
-#attributions-content .people-component>img {
+#attributions-content .people-component > img {
   width: 80px;
   height: 80px;
   font-size: 0.8em;
@@ -298,19 +298,19 @@ article {
   margin-left: 1em;
 }
 
-.index-button>img {
+.index-button > img {
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
-.hidden-component>div {
+.hidden-component > div {
   border-width: 2px;
   border-style: solid;
   border-color: rgb(197, 195, 195);
 }
 
-.hidden-component>button {
+.hidden-component > button {
   height: 80px;
   width: 480px;
   margin-top: 0.4em;
@@ -349,10 +349,6 @@ article {
 }
 */
 
-#front-card1 {
-  color: white;
-}
-
 .description-image {
   margin: 0 auto;
   margin-top: 30px;
@@ -385,10 +381,6 @@ background-size: 100%; */
   line-height: 1em;
 }
 
-#front-card3 {
-  color: white;
-}
-
 #back-card3 {
   color: white;
   font-family: var(--iGEM-font-title);
@@ -399,7 +391,20 @@ background-size: 100%; */
   line-height: 1em;
 }
 
-.index-button>span {
+ul {
+  list-style-type: circle;
+}
+
+#back-card4 {
+  color: white;
+  font-family: var(--iGEM-font-title);
+  font-size: 28px;
+  margin: 0 auto;
+  height: 3em;
+  z-index: 3;
+  line-height: 1em;
+}
+.index-button > span {
   margin: 0 auto;
   height: 1em;
   line-height: 1em;
@@ -427,7 +432,7 @@ background-size: 100%; */
   text-align: left;
 }
 
-.instructor-component>img {
+.instructor-component > img {
   width: 75px;
   height: 75px;
   margin-right: 8px;
@@ -439,7 +444,7 @@ background-size: 100%; */
   width: 150px;
 }
 
-.advisor-component>img {
+.advisor-component > img {
   width: 75px;
   height: 75px;
 }
@@ -454,7 +459,7 @@ background-size: 100%; */
   height: 75px;
 }
 
-.collab-component>h4 {
+.collab-component > h4 {
   margin-top: 4px;
 }
 
@@ -464,7 +469,7 @@ background-size: 100%; */
   margin: 8px;
 }
 
-.thank-container>img {
+.thank-container > img {
   height: inherit;
   margin-right: 16px;
 }
@@ -523,7 +528,7 @@ table#promoters th {
     text-align: center;
   }
 
-  #contact-info-container>div {
+  #contact-info-container > div {
     width: fit-content;
     margin: 0 auto;
   }

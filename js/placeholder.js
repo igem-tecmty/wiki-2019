@@ -8,7 +8,7 @@ var scrollHeights = createScrollHeights();
 
 createIndex();
 
-$(window).scroll(function () {
+$(window).scroll(function() {
   $(".navbar-collapse").removeClass("show");
   checkPortraitHeight();
   checkHeaderColor();
@@ -19,8 +19,10 @@ $(window).scroll(function () {
 function checkStaticImages() {
   var initial = 600;
   const h = initial - $(document).scrollTop();
-  const newPosition = '0px ' + h + 'px';
-  $(".static-img-container").find("img").css("object-position", newPosition);
+  const newPosition = "0px " + h + "px";
+  $(".static-img-container")
+    .find("img")
+    .css("object-position", newPosition);
 }
 
 function createScrollHeights() {
@@ -36,12 +38,12 @@ function createScrollHeights() {
   }
 
   scrollHeights.push(first);
-  $("article").each(function () {
+  $("article").each(function() {
     scrollHeights[scrollHeights.length - 1];
     scrollHeights.push(
       scrollHeights[scrollHeights.length - 1] +
-      $(this).outerHeight() +
-      parseInt($(this).css("margin-top"))
+        $(this).outerHeight() +
+        parseInt($(this).css("margin-top"))
     );
   });
 
@@ -51,10 +53,13 @@ function createScrollHeights() {
 function createIndex() {
   const $indexMenu = $(".index-menu");
   $indexMenu.empty();
-  $("article").each(function (i) {
+  $("article").each(function(i) {
     $indexMenu.append(`
-    <ul class="index-section" onclick="window.scrollTo(0, ${scrollHeights[i] + 4});">
-    <a>${$(this).find(".subsection-title").text()}</a>
+    <ul class="index-section" onclick="window.scrollTo(0, ${scrollHeights[i] +
+      4});">
+    <a>${$(this)
+      .find(".subsection-title")
+      .text()}</a>
     </ul>
     `);
   });
@@ -99,13 +104,13 @@ $('.navbar-collapse').on('click', function(event){
 */
 
 $("#antibiotic-div")
-  .on("mouseenter", function () {
+  .on("mouseenter", function() {
     $("#back-card1").show();
     $("#antibiotic-div")
       .find("img")
       .css("opacity", "0.35");
   })
-  .on("mouseleave", function () {
+  .on("mouseleave", function() {
     $("#back-card1").hide();
     $("#antibiotic-div")
       .find("img")
@@ -113,13 +118,13 @@ $("#antibiotic-div")
   });
 
 $("#cascade-div")
-  .on("mouseenter", function () {
+  .on("mouseenter", function() {
     $("#back-card2").show();
     $("#cascade-div")
       .find("img")
       .css("opacity", "0.35");
   })
-  .on("mouseleave", function () {
+  .on("mouseleave", function() {
     $("#back-card2").hide();
     $("#cascade-div")
       .find("img")
@@ -127,22 +132,36 @@ $("#cascade-div")
   });
 
 $("#mucolitic-div")
-  .on("mouseenter", function () {
+  .on("mouseenter", function() {
     $("#back-card3").show();
     $("#mucolitic-div")
       .find("img")
       .css("opacity", "0.35");
   })
-  .on("mouseleave", function () {
+  .on("mouseleave", function() {
     $("#back-card3").hide();
     $("#mucolitic-div")
       .find("img")
       .css("opacity", "1");
   });
 
+$("#microfluidics-div")
+  .on("mouseenter", function() {
+    $("#back-card4").show();
+    $("#microfluidics-div")
+      .find("img")
+      .css("opacity", "0.35");
+  })
+  .on("mouseleave", function() {
+    $("#back-card4").hide();
+    $("#microfluidics-div")
+      .find("img")
+      .css("opacity", "1");
+  });
+
 $("#cf-description")
   .find("button")
-  .on("click", function () {
+  .on("click", function() {
     $("#cf-description")
       .find("div")
       .toggle("medium");
@@ -150,7 +169,7 @@ $("#cf-description")
 
 $("#droplet-techniques")
   .find("button")
-  .on("click", function () {
+  .on("click", function() {
     $("#droplet-techniques")
       .find("#droplet-content")
       .toggle("medium");
@@ -160,7 +179,7 @@ $("#droplet-techniques")
 
 $("#metal-biosensor-component")
   .find("button")
-  .on("click", function () {
+  .on("click", function() {
     $("#metal-biosensor-component")
       .find("div")
       .toggle("slow");
@@ -170,7 +189,7 @@ $("#metal-biosensor-component")
 
 $("#metal-biosensor-component2")
   .find("button")
-  .on("click", function () {
+  .on("click", function() {
     $("#metal-biosensor-component2")
       .find("div")
       .toggle("slow");
@@ -178,7 +197,7 @@ $("#metal-biosensor-component2")
 
 $("#metal-biosensor-component3")
   .find("button")
-  .on("click", function () {
+  .on("click", function() {
     $("#metal-biosensor-component3")
       .find("div")
       .toggle("slow");
@@ -186,7 +205,7 @@ $("#metal-biosensor-component3")
 
 $("#metal-biosensor-component4")
   .find("button")
-  .on("click", function () {
+  .on("click", function() {
     $("#metal-biosensor-component4")
       .find("div")
       .toggle("slow");
@@ -194,7 +213,7 @@ $("#metal-biosensor-component4")
 
 $("#metal-biosensor-component5")
   .find("button")
-  .on("click", function () {
+  .on("click", function() {
     $("#metal-biosensor-component5")
       .find("div")
       .toggle("slow");
@@ -202,8 +221,48 @@ $("#metal-biosensor-component5")
 
 $("#metal-biosensor-component6")
   .find("button")
-  .on("click", function () {
+  .on("click", function() {
     $("#metal-biosensor-component6")
       .find("div")
       .toggle("slow");
+  });
+
+$("#metal-biosensor-component7")
+  .find("button")
+  .on("click", function() {
+    $("#metal-biosensor-component7")
+      .find("div")
+      .toggle();
+  });
+
+$("#metal-biosensor-component8")
+  .find("button")
+  .on("click", function() {
+    $("#metal-biosensor-component8")
+      .find("div")
+      .toggle();
+  });
+
+$("#metal-biosensor-component9")
+  .find("button")
+  .on("click", function() {
+    $("#metal-biosensor-component9")
+      .find("div")
+      .toggle();
+  });
+
+$("#metal-biosensor-component10")
+  .find("button")
+  .on("click", function() {
+    $("#metal-biosensor-component10")
+      .find("div")
+      .toggle();
+  });
+
+$("#metal-biosensor-component11")
+  .find("button")
+  .on("click", function() {
+    $("#metal-biosensor-component11")
+      .find("div")
+      .toggle();
   });

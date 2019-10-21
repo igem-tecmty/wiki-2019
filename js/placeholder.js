@@ -40,7 +40,7 @@ function createScrollHeights() {
     scrollHeights[scrollHeights.length - 1];
     scrollHeights.push(
       scrollHeights[scrollHeights.length - 1] +
-      $(this).height() +
+      $(this).outerHeight() +
       parseInt($(this).css("margin-top"))
     );
   });
@@ -146,6 +146,16 @@ $("#cf-description")
     $("#cf-description")
       .find("div")
       .toggle("medium");
+  });
+
+$("#droplet-techniques")
+  .find("button")
+  .on("click", function () {
+    $("#droplet-techniques")
+      .find("#droplet-content")
+      .toggle("medium");
+    scrollHeights = createScrollHeights();
+    createIndex();
   });
 
 $("#metal-biosensor-component")

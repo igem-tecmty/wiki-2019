@@ -147,6 +147,12 @@ article {
   margin-bottom: 0;
 }
 
+.image-footer {
+  font-size: 0.75em;
+  font-weight: lighter;
+  text-align: right;
+}
+
 #cf-description>button {
   border: 4px solid;
   font-size: 1em;
@@ -287,6 +293,20 @@ article {
   width: 100%;
   height: 100%;
   position: absolute;
+}
+
+.hidden-component>div {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(197, 195, 195);
+}
+
+.hidden-component>button {
+  height: 80px;
+  width: 480px;
+  margin-top: 0.4em;
+  color: white;
+  font-family: var(--iGEM-font-title);
 }
 
 .metal-biosensor-button {

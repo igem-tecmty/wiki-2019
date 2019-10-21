@@ -30,6 +30,7 @@ h3.black {
 
 .black .current-index,
 .black .index-menu,
+.black .hidden-component>button,
 .black.brief-text {
     border-color: black;
 }
@@ -40,6 +41,7 @@ h3.black {
 
 .orange .portrait-container,
 .orange.portrait-container,
+.orange .hidden-component>button,
 .orange .thread {
     background-color: var(--iGEM-dark-orange);
 }
@@ -62,6 +64,7 @@ h2.orange {
 
 .aqua .portrait-container,
 .aqua.portrait-container,
+.aqua .hidden-component>button,
 .aqua .thread {
     background-color: var(--iGEM-dark-aqua);
 }
@@ -84,6 +87,7 @@ h2.aqua {
 
 .green .portrait-container,
 .green.portrait-container,
+.green .hidden-component>button,
 .green .thread {
     background-color: var(--iGEM-dark-green);
 }
@@ -106,6 +110,7 @@ h2.green {
 
 .blue .portrait-container,
 .blue.portrait-container,
+.blue .hidden-component>button,
 .blue .thread {
     background-color: var(--iGEM-dark-blue);
 }

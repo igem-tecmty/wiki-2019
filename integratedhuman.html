@@ -1,57 +1,116 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>iGEM Tec-Monterrey / Project</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
-    <link rel="stylesheet" href="css/template.css" type="text/css" />
-    <link rel="stylesheet" href="css/header.css" type="text/css" />
-    <link rel="stylesheet" href="css/footer.css" type="text/css" />
-    <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Manjari&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="css/resetter.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
+  <link rel="stylesheet" href="css/template.css" type="text/css" />
+  <link rel="stylesheet" href="css/header.css" type="text/css" />
+  <link rel="stylesheet" href="css/footer.css" type="text/css" />
+  <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+  <link rel="stylesheet" href="css/colors.css" type="text/css" />
+  <link rel="stylesheet" href="css/slider.css" type="text/css" />
 
-    <script
-      language="JavaScript"
-      type="text/javascript"
-      src="js/jquery-3.4.1.min.js"
-    ></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
+  <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+</head>
 
-  <body class="orange">
-    <header id="desktop-menu">
-      <div id="header-content-container">
-        <div id="logo-container">
-          <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
+<body class="orange">
+  <header id="desktop-menu">
+    <div id="header-content-container">
+      <div id="logo-container">
+        <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
+      </div>
+      <span class="filler"></span>
+      <div id="team-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          TEAM
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Members</a>
+          <a class="dropdown-item" href="#">Attributions</a>
+          <a class="dropdown-item" href="#">Collabs</a>
+          <a class="dropdown-item" href="#">Sponsors</a>
+          <a class="dropdown-item" href="#">Gallery</a>
         </div>
-        <span class="filler"></span>
+      </div>
+      <div id="project-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          PROJECT
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Description</a>
+          <a class="dropdown-item" href="#">Design</a>
+          <a class="dropdown-item" href="#">Notebook & Protocols</a>
+          <a class="dropdown-item" href="#">Experiments</a>
+          <a class="dropdown-item" href="#">Demonstrate</a>
+          <a class="dropdown-item" href="#">Model</a>
+          <a class="dropdown-item" href="#">Safety</a>
+        </div>
+      </div>
+      <div id="parts-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          PARTS
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Parts Overview</a>
+          <a class="dropdown-item" href="#">Basic Parts</a>
+          <a class="dropdown-item" href="#">Improved Parts</a>
+          <a class="dropdown-item" href="#">Composite Parts</a>
+          <a class="dropdown-item" href="#">Part Collection</a>
+        </div>
+      </div>
+      <div id="human-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          HUMAN
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Human Practices</a>
+          <a class="dropdown-item" href="#">Integrated human</a>
+          <a class="dropdown-item" href="#">Public Engagement</a>
+          <a class="dropdown-item" href="#">LATAM Meetup</a>
+        </div>
+      </div>
+      <div id="contact-dropdown" class="dropdown">
+        <button class="btn btn-secondary" type="button">
+          CONTACT
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <header id="mobile-menu">
+    <!--Navbar-->
+    <nav class="navbar navbar-light light-blue lighten-4">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">
+        <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
+      </a>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="text-white"><i class="material-icons"> menu </i></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <!-- Links -->
         <div id="team-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             TEAM
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -63,14 +122,8 @@
           </div>
         </div>
         <div id="project-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             PROJECT
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -84,14 +137,8 @@
           </div>
         </div>
         <div id="parts-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             PARTS
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -103,14 +150,8 @@
           </div>
         </div>
         <div id="human-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             HUMAN
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -125,143 +166,479 @@
             CONTACT
           </button>
         </div>
+        <!-- Links -->
       </div>
-    </header>
+      <!-- Collapsible content -->
+    </nav>
+    <!--/.Navbar-->
+  </header>
 
-    <header id="mobile-menu">
-      <!--Navbar-->
-      <nav class="navbar navbar-light light-blue lighten-4">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">
-          <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
-        </a>
+  <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ ------->
 
-        <!-- Collapse button -->
-        <button
-          class="navbar-toggler toggler-example"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent1"
-          aria-controls="navbarSupportedContent1"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="text-white"><i class="material-icons"> menu </i></span>
-        </button>
+  <div class="portrait-container container-fluid" data-height="420">
+    <h2 class="section-title">INTEGRATED HUMAN PRACTICES</h2>
+    <img src="https://2019.igem.org/wiki/images/5/57/T--Tec-Monterrey--human-doctor2333.jpg" class="portrait-photo"
+      style="opacity: 0.35" />
+  </div>
 
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-          <!-- Links -->
-          <div id="team-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              TEAM
+  <div class="main-content container">
+    <div class="row" style="margin-top: 48px;">
+
+      <aside class="col-sm-12 col-md-3 col-lg-2 index-menu sticky-top">
+      </aside>
+
+      <section class="subsection-container md-offset-1 col-sm-12 col-md-8 col-lg-9">
+
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">General Overview</h2>
+          <p class="description-text">
+            In iGEM Tec Monterrey, we managed to integrate the legal and educational aspects related to our research and
+            thus move from the laboratory to the classrooms and congress to reduce deficiencies in public health and
+            education systems. From the beginning we went to experts in public health and Cystic Fibrosis, to know the
+            areas that need the most help. Once defined the needs in which we would seek to create a change, we work
+            with experts in law and educational development to realize our ideas. This year's work can be summarized in
+            the following interviews and achievements:
+          </p>
+          <ul style="list-style: circle;">
+            <li class="mb-2" style="margin-left: 32px;">
+              Proposed amendment of the law for the labeling standard of medicines and herbal remedies.
+            </li>
+            <li class="mb-2" style="margin-left: 32px;">
+              Presentation and approval before the Congress of Nuevo León of an exhortation to the Secretary of Public
+              Health of the State of Nuevo León to promote improvements in the labeling of medication.
+            </li>
+            <li class="mb-2" style="margin-left: 32px;">
+              Interviews with doctors of the National Institute of Public Health
+            </li>
+            <li class="mb-2" style="margin-left: 32px;">
+              Approach and collaboration with the Regiomontana Association of Cystic Fibrosis.
+            </li>
+          </ul>
+          <p>
+            On Public and Educational Engagement we managed to consult with experts in the area and design several
+            activities to approach scientists as well as the general population, children, adults and people with Cystic
+            Fibrosis in order to establish a two-way conversation about Synthetic Biology and talk more about the
+            technological advances in recent years while documenting as much information as possible for future teams
+            that wish to build upon what we have achieved.
+          </p>
+        </article>
+
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">National Institute of Public Health of Mexico</h2>
+          <div class="row mt-4">
+            <p class="col-md-12 description-text">
+              In order to learn more about antibiotic resistance in our country, we contacted the National Institute of
+              Public Health of our country. Thanks to them, we were able to talk with the members of the research line
+              in public health about the access and usage of antibiotics and antimicrobial resistance.
+            </p>
+          </div>
+
+          <div class="row mt-4">
+            <h3 class="col-md-12 inner-section-title">Meeting with Anahí Dreser</h3>
+            <p class="col-md-12 description-text">
+              On May 16, a call was made with Anahi Dreser, a researcher specialized in antibiotic usage, health
+              policies and quality of care of the National Institute of Public Health. With this call we were able to
+              know a little more about the current situation of antibiotic resistance in Mexico and analyze alternatives
+              to generate an impact on society. She told us that the magnitude of the problem itself is unknown because
+              of the lack of collection of information by governmental entities and because there is a record that
+              Mexican doctors tend to misuse antibiotics and patients do not follow their prescribed treatment.
+              We could also discuss the impact that a device like the one we propose and the human practices we plan
+              will have. Dr. Dreser said:
+            </p>
+            <p class="col-md-12 description-text">
+              In addition, there is a record that Mexican doctors tend to misuse antibiotics and
+              that patients do not follow their prescribed treatment. We could also discuss the
+              impact that a device like the one we propose and the human practices we plan will
+              have. Dr. Dreser talked to us about the importance of creating a culture of antibiotics,
+              and its importance in modern day.
+            </p>
+            <p class="font-weight-bold font-italic text-secondary"
+              style="padding: 8px; border-left: 4px solid; margin-left: 1em;">
+              "Just as the new generations are growing with a culture of recycling, it would be
+              great that they could grow with a culture of the correct use of antibiotics".
+            </p>
+            <p class="col-md-12 description-text">
+              Thanks to the information provided, we began to investigate the legislative situation of this issue,
+              analyze the most resistant bacteria in our country and implement E-bug dynamics with patients more
+              vulnerable to infections and with children of various ages.
+            </p>
+          </div>
+
+          <div class="row mt-4">
+            <h3 class="col-md-12 inner-section-title">Meeting with Jesús Silva Sánchez</h3>
+            <p class="col-md-12 description-text">
+              We had the opportunity to interview Dr. Jesús Silva Sánchez, leader of the line of research in medicines
+              used in public health to discuss the public policy in the area of ​​health and the existing methods for
+              obtaining new antibiotics.
+            </p>
+          </div>
+        </article>
+
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">Asociación Regiomontana de Fibrosis Quística (ARFQ)</h2>
+
+          <p>
+            This association is dedicated to improve the life quality of patients
+            with cystic fibrosis, in the state of Nuevo León, Mexico. They primarily
+            give treatments and medications to patients with low incomes, and to achieve
+            this, they organize fundraising events.
+          </p>
+          <p>
+            Through this contact we were able to meet members of the association,
+            including children affected by this disease, which helped us to see the
+            reality that patients live.
+          </p>
+
+          <h3 class="inner-section-title mt-5">Meeting with Dr. Albino Rivas</h3>
+          <p>
+            After deciding that we would like to look for a solution to the problem of antibiotic resistance, we found
+            ourselves looking for areas where we could apply it. Thanks to one of our team members, we realized that
+            antibiotic resistance was an important part of the way Cystic Fibrosis is treated.
+          </p>
+          <img class="col-md-12 mb-4" src="https://2019.igem.org/wiki/images/2/2c/T--Tec-Monterrey--human-CF.jpg">
+          <p>
+            In published research on the consequences of patients infected with antibiotic-resistant P. aeruginosa, it
+            is mentioned that these people are more susceptible to the symptoms of the disease; it progresses faster
+            than normal and this has important implications for infection control, antibiotic use and lung
+            transplantation. [1] We sought to do something about it but did not know how to approach the issue.
+            Something did call our attention though:
+          </p>
+
+
+
+          <div id="life-expectancy" class="container d-flex flex-wrap hidden-component mb-4" style="padding: 0;">
+            <button class="col-md-12 col-sm-12">
+              ¿Why was the life expectancy in Mexico 18 years old while the global average was almost 40?
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Members</a>
-              <a class="dropdown-item" href="#">Attributions</a>
-              <a class="dropdown-item" href="#">Collabs</a>
-              <a class="dropdown-item" href="#">Sponsors</a>
-              <a class="dropdown-item" href="#">Gallery</a>
+            <div class="col-md-12" style="display: none; padding-top: 1em;">
+              <p>
+                We looked for information in articles and on the internet, however, we felt that talking to an expert in
+                the
+                field would give us a broader picture of what it means to have CF in Mexico. We found an association
+                that
+                helps people with CF in our city, the Regiomontana Association of Cystic Fibrosis (ARFQ). Our first
+                contact
+                with them took place during a visit we made to their offices where we met one of the doctors in charge
+                of
+                treating many of the patients they support, Dr. Albino Rivas.
+              </p>
+              <p>
+                A meeting was scheduled and held at our university. Dr. Rivas talked to us about the disease and many of
+                the
+                problems faced by CF patients. He pointed out that in our country the treatment for CF patients is
+                inaccessible for most of the population due to its high costs, which is one of the main reasons the life
+                expectancy of people with CF specifically in Mexico is so low compared to the rest of the world. These
+                treatments usually consist of antibiotics to treat infections, enzymes to help digest food, medicines to
+                expectorate sputum and mucolytics that are able to thin out the sputum. At first we were only focusing
+                on
+                antibiotics, he liked our stand on antibiotic resistance and mentioned a really important fact: Doctors
+                can
+                never give CF patients the same antibiotic on four occasions in a row, because after that, patients
+                become
+                resistant to them, even if they take the whole treatment correctly. The mucus that patients have in the
+                lungs is so thick that antibiotics only kill some bacteria but not others, so they become resistant.
+                After a
+                while, patients’ infections are practically impossible to treat and options cease to exist. He did
+                mention
+                though, that for our treatment to be useful for people with CF, other treatment options would be needed
+                in
+                order for new antibiotics to be effective, because then they would only become resistant to the new ones
+                discovered.
+              </p>
+              <img class="col-md-12 mb-4"
+                src="https://2019.igem.org/wiki/images/7/72/T--Tec-Monterrey--human-doctor2.jpg">
             </div>
           </div>
-          <div id="project-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              PROJECT
+          <p>
+            After the meeting with Dr. Rivas and a long thought process and brainstorming session, we came up with a
+            method to allow antibiotics to more easily reach the bacteria that colonize the lungs of CF patients, by
+            creating a mucolytic based on sialidases. By developing both processes at the same time, they would be able
+            to complement each other and offer a complete treatment.
+            <span class="font-weight-bold">The mucolytic would thin the mucus while the new antibiotics would penetrate
+              deeper and eliminate more bacteria.</span>
+          </p>
+          <p>
+            On the other hand, during the meeting Dr. Rivas also mentioned that here in Mexico there are other problems
+            surrounding the disease. Statistics that seek to report data are often not accurate because there is no
+            reliable body that reports all the information, there are many problems in diagnosing the disease because
+            many of the pediatric pulmonologists do not know about it so it is confused with other respiratory and
+            digestive illnesses. There are also social problems around it: lack of psychological support for patients,
+            especially those with scarce resources, problems with parents of children with CF because one of the
+            symptoms of the disease is that they cannot digest food well so it is sometimes believed that children
+            suffer from malnutrition because of their parents, when in reality they have CF, among many other things
+            particular to the disease in the Mexican context. It was after this meeting with the Doctor that we sought
+            to relate a little more with the association and help them in whatever we could. The idea of holding a rally
+            and giving workshops for children, particularly for the association's patients, was also born from here.
+          </p>
+
+          <div id="igem-rally" class="container d-flex flex-wrap hidden-component mb-2" style="padding: 0;">
+            <button class="col-md-12 col-sm-12">
+              iGem Rally 2019
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Description</a>
-              <a class="dropdown-item" href="#">Design</a>
-              <a class="dropdown-item" href="#">Notebook & Protocols</a>
-              <a class="dropdown-item" href="#">Experiments</a>
-              <a class="dropdown-item" href="#">Demonstrate</a>
-              <a class="dropdown-item" href="#">Model</a>
-              <a class="dropdown-item" href="#">Safety</a>
+            <div class="col-md-12" style="display: none; padding-top: 1em;">
+              <p>
+                We organized multiple activities with the children of the ARFQ, including a rally and experiments, based
+                on
+                e-Bug, an international platform that aims to reduce antibiotic resistance by creating activities that
+                helps
+                them to comprehend the magnitude of this problematic while also talking about Synthetic Biology and its
+                applications nowadays and in the future. We decided to teach these topics to CF patients because we
+                wanted
+                to transmit them the relevance of taking the appropriate antibiotics when indicated and in the
+                recommended
+                dose.
+              </p>
+              <a href="/Team:Tec-Monterrey/Public_Engagement" style="font-style: text-align: right;">
+                More about the workshops can be found in the Education and Public
+                Engagement section.
+              </a>
+              <p>
+                This rally was really meaningful for the whole team, as we all had the opportunity to meet some of the
+                children supported by the association as well as their parents. We did not talk much about CF, paying
+                close
+                attention to avoid topics that may be sensitive for them. The sole purpose of the rally was to get more
+                in
+                touch with the people that could be benefitted from our project and have a fun time while playing games
+                and
+                talking about antibiotic resistance and SynBio. We believe the bonds we made with the families helped us
+                get
+                closer to our project and pay more attention to detail.
+              </p>
             </div>
           </div>
-          <div id="parts-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              PARTS
+
+          <div id="run-for-water" class="container d-flex flex-wrap hidden-component mb-2" style="padding: 0;">
+            <button class="col-md-12 col-sm-12">
+              Run for Water (6k)
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Parts Overview</a>
-              <a class="dropdown-item" href="#">Basic Parts</a>
-              <a class="dropdown-item" href="#">Improved Parts</a>
-              <a class="dropdown-item" href="#">Composite Parts</a>
-              <a class="dropdown-item" href="#">Part Collection</a>
+            <div class="col-md-12" style="display: none; padding-top: 1em;">
+              <p>
+                To support the ARFQ association, the team participated in a fundraising race they organized in June, in
+                the city of San Pedro Garza García. Here, we had the opportunity to meet some other patients from the
+                association as well as some parents and collaborators at the association.
+              </p>
+              <img class="col-md-12 static-img mb-3"
+                src="https://2019.igem.org/wiki/images/d/dc/T--Tec-Monterrey--human-carrera.jpg">
             </div>
           </div>
-          <div id="human-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              HUMAN
+        </article>
+
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">IMSS</h2>
+          <p>
+            On July 17, 2019, we had the opportunity to interview Dr. Paula Isabel Ramírez Ortega, she is in charge of
+            the Epidemiology Area of ​​the Apatzingán Michoacán Mexican Institute of Social Insurance, IMSS hospital.
+            She told us about the conflict of interest in private offices in the country and why doctors in the public
+            sector tend to over-prescribe antibiotics. She said that doctors in the private sector earn more from the
+            sale of medicines and that public sector doctors prefer to provide the patient with medications in order to
+            avoid complaints. In the same way, she explained a little about the idea that society has of antibiotics and
+            why there is widespread use of them; She concludes that people arrive looking for a quick cure for their
+            discomforts and therefore end up consuming medications without knowing for sure if they will serve them.
+            Finally, we talked about the shortcomings of the public hospitals of the IMSS and told us about some
+            deficiencies with which she lives, which are the following:
+          </p>
+          <ul style="list-style: circle; background-color: var(--iGEM-light-orange);" class="card-component">
+            <li class="mb-2" style="margin-left: 32px;">
+              Hospitals do not have enough supplies to identify and attack infections properly.
+            </li>
+            <li class="mb-2" style="margin-left: 32px;">
+              Nosocomial infections in large hospitals are very persistent and resistant, to the extent that they
+              require hospitalization of a person more than 90 days in a row.
+            </li>
+          </ul>
+        </article>
+
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">Law modification proposal</h2>
+          <p>
+            The approaches with the experts made us see that innovations in the area of ​​health in our country may
+            become obsolete due to the deficiencies of the same health system. In a nutshell, it is no use for finding
+            new antibiotics or creating new medications if people or institutions are going to misuse them.
+          </p>
+          <p class="font-weight-bold">
+            For that reason, in iGEM Tec Monterrey we decided to leave the laboratory and begin to legislate to create a
+            change that favors the proper use of medicines and that in the long term fosters the development of a
+            national pharmaceutical policy that reduces the deficiencies of the current Mexican health system.
+          </p>
+
+          <div id="mexico-situation" class="container d-flex flex-wrap hidden-component mb-2" style="padding: 0;">
+            <button class="col-md-12 col-sm-12">
+              Situation in Mexico
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Human Practices</a>
-              <a class="dropdown-item" href="#">Integrated human</a>
-              <a class="dropdown-item" href="#">Public Engagement</a>
-              <a class="dropdown-item" href="#">LATAM Meetup</a>
+            <div class="col-md-12" style="display: none; padding-top: 1em;">
+              <p>
+                The inadequate prescription of antibiotics in the Mexican public sector is a serious problem. It has
+                been shown that respiratory and stomach infections are the worst treated. According to Gutierrez et al,
+                "Research carried out mostly during the 1980s and 1990s, concluded that between 60 and 80% of patients
+                with HAIs and EDAS received antibiotics in public and private primary health services in the country,
+                when in fact their use was justified only in 10 to 15% of the cases. "[2]. Additionally, it is known
+                that justified prescriptions are made in the most advanced hospitals. Nevertheless, many of the doses or
+                treatments provided were excessive, which represents a serious threat to patients. In conclusion, most
+                antibiotic prescriptions are unjustified or inadequate and this has negative consequences for society.
+              </p>
+              <p>
+                In monetary terms, the inappropriate use of antibiotics comes to represent 11% of the public spending in
+                health. This expense is caused by incorrect prescriptions and the lack of follow-up of treatments by
+                patients. In addition, the incorrect prescriptions of medications come to represent 1 or 2 percent more
+                than the patient's daily minimum wage. The bad prescriptions come to represent a large economic spill
+                that affects the Mexican economy.
+              </p>
+              <p>
+                In Mexico, a large part of the strategies implemented have been in the educational area and directives
+                of the health sector. First, training in prescriptions in medical schools began to improve. This was
+                intended to improve prescriptions for respiratory and stomach infections. In the same way, the use of
+                clinical guidelines for better prescriptions in public health institutes was encouraged. [3]
+                Nevertheless, there is no study that talks about the results of the implementation of these techniques.
+                In a few words, it has sought to improve prescriptions in Mexico, but it is not known if it is working.
+              </p>
             </div>
           </div>
-          <div id="contact-dropdown" class="dropdown">
-            <button class="btn btn-secondary" type="button">
-              CONTACT
+
+          <div id="our-proposal" class="container d-flex flex-wrap hidden-component mb-2" style="padding: 0;">
+            <button class="col-md-12 col-sm-12">
+              Our proposal
             </button>
+            <div class="col-md-12" style="display: none; padding-top: 1em;">
+              <p>
+                In order to begin a change in the subject of legislation in the area of ​​health, iGEM Tec Monterrey
+                began to promote an amendment to the <span class="font  -weight-bold">Official Mexican Standard
+                  NOM-072-SSA1-2012.</span> This rule establishes
+                the guidelines to follow in the labeling of medicines in Mexico, of which we proposed an improvement in
+                the warnings about the damage of antibiotics and the modification of an article to force pharmaceutical
+                companies to improve their labeling and the information provided about your medications.
+              </p>
+              <p>
+                Our strategy was to start with the modification of a rule that directly affects society. With this
+                modification, clearer and more concise information on medicines would be offered to society. This type
+                of modification would lead to the proper use of free medications and antibiotics, as well as to warn in
+                a stronger way the risk involved in the inappropriate use of antibiotics.
+              </p>
+              <p>
+                In addition to the above, it will be a precedent to propose further modifications in the national health
+                sector. Modifications that seek to establish a clearer authority for the health sector, strengthen
+                health regulations and improve the education system of the health sciences area.
+              </p>
+            </div>
           </div>
-          <!-- Links -->
-        </div>
-        <!-- Collapsible content -->
-      </nav>
-      <!--/.Navbar-->
-    </header>
+
+          <div id="gov-approach" class="container d-flex flex-wrap hidden-component mb-2" style="padding: 0;">
+            <button class="col-md-12 col-sm-12">
+              Approach with the government
+            </button>
+            <div class="col-md-12" style="display: none; padding-top: 1em;">
+              <p>
+                In order to make our proposal a reality, we took on the task of seeking help in the local congress of
+                the state of Nuevo León (Mexico), where we were able to collaborate with the deputy Rosa Isela Castro
+                who is part of the health commission.
+              </p>
+              <p>
+                Initially, we were able to present our bill to the deputy and her team, with them we were able to
+                discuss the pros and cons of this initiative, in addition to the legal mechanisms to make it happen.
+                With this meeting we could review our proposed law at the federal level, which was as follows:
+              </p>
+              <div class="d-flex col-md-12 justify-content-around mb-4">
+                <a href="https://2019.igem.org/wiki/images/c/c3/T--Tec-Monterrey--human-ppt.pdf">Law proposal
+                  (English)</a>
+                <a href="https://2019.igem.org/wiki/images/0/07/T--Tec-Monterrey--human-ppt2.pdf">Law proposal
+                  (Spanish)</a>
+              </div>
+              <p>
+                With this first approach we define that the main changes for the Official Mexican Standard
+                NOM-072-SSA1-2012 would be the following:
+              </p>
+              <ul class="card-component" style="list-style: circle; background-color: var(--iGEM-light-orange);">
+                <li class="mb-2" style="margin-left: 32px;">
+                  <span class="font-weight-bold">Modification of the article 5.12.7,</span> defining the warning that
+                  antibiotics should contain about
+                  antibacterial resistance. However, its effectiveness and understanding are limited, so it was agreed
+                  to propose a more forceful and visible message.
+                </li>
+                <li class="mb-2" style="margin-left: 32px;">
+                  <span class="font-weight-bold">Modification of the article 7.3,</span>
+                  the wording of this article makes the placement of informative inserts optional in the labeling of
+                  over-the-counter medications and antibiotics. To offer more information to the consumer and promote
+                  more appropriate use of medicines, we proposed to make the placement of informative inserts and the
+                  creation of methodologies that allow the creation of effective inserts mandatory.
+                </li>
+              </ul>
+              <p>
+                Then, an exhort was prepared for the secretary of health of the state of Nuevo León, with which he was
+                invited to begin the process to make this modification to the Mexican congress. This exhortation was
+                analyzed and approved unanimously by the Congress of Nuevo León and set the first precedent for this
+                proposed law.
+              </p>
+              <div class="d-flex col-md-12 justify-content-around mb-4">
+                <a href="https://2019.igem.org/wiki/images/6/65/T--Tec-Monterrey--human-ppt3.pdf">Law exhortation
+                  (English)</a>
+                <a href="https://2019.igem.org/wiki/images/7/72/T--Tec-Monterrey--human-ppt4.pdf">Law exhortation
+                  (Spanish)</a>
+              </div>
+              <img class="col-md-12 mb-4" src="https://2019.igem.org/wiki/images/9/9d/T--Tec-Monterrey--human-2.1.jpg">
+              <p>
+                Thanks to this collaboration with the local congress we were able to make our proposed law modification
+                more efficient and to use the appropriate legal mechanisms to create the desired change in Mexico.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="container">
+          <h2 class="row col-md-12 subsection-title">References</h2>
+          <ol style="margin-left: 1.5em; list-style: decimal; font-weight: lighter;">
+            <li class="mt-2">
+              Lechtzin, N., John, M., Irizarry, R., Merlo, C., Diette, G. B., & Boyle, M. P. (2006). Outcomes of Adults
+              with Cystic Fibrosis Infected with Antibiotic-Resistant <span class="font-italic">Pseudomonas
+                aeruginosa. Respiration, 73</span>(1), 27–33.
+              <a href="https://doi.org/10.1159/000087686">https://doi.org/10.1159/000087686</a>
+            </li>
+            <li class="mt-2">
+              Dreser, Anahí; WIRTZ, Veronika J; CORBETT, Kitty K and ECHANIZ, Gabriela. Use of antibiotics in Mexico:
+              review of problems and policies. Public Health Méx [online]. 2008, vol.50, suppl.4 [cited 2019-05-15],
+              pp.S480-S487. Available at:
+              http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0036-36342008001000009&lng=es&nrm=iso>. ISSN
+              0036-3634.
+            </li>
+            <li class="mt-2">
+              Gutiérrez G, Guiscafre H, Bronfman M, Walsh J, Martinez H, MuñozO. Changing physician prescribing
+              patterns: evaluation of an educational strategy for acute diarrhea in Mexico City. Med Care
+              1994;32:436-446.
+            </li>
+          </ol>
+        </article>
+
+      </section>
+    </div>
+  </div>
 
 
-    <footer class="d-flex flex-wrap justify-content-around">
-      <img src="https://2019.igem.org/wiki/images/thumb/1/1f/T--Tec-Monterrey--sponsors-acceso-lab.png/320px-T--Tec-Monterrey--sponsors-acceso-lab.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/d/d6/T--Tec-Monterrey--sponsors-arfq.png/262px-T--Tec-Monterrey--sponsors-arfq.png" />
-      <img src="https://2019.igem.org/wiki/images/b/bd/T--Tec-Monterrey--sponsors-benchmark.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/0/0a/T--Tec-Monterrey--sponsors-biolabs.png/320px-T--Tec-Monterrey--sponsors-biolabs.png" />
-      <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-cofepris.png" />
-      <img src="https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--sponsors-congreso-nuevo-leon.png" />
-      <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-ctr.png" />
-      <img src="https://2019.igem.org/wiki/images/a/ac/T--Tec-Monterrey--sponsors-dibico.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/9/9b/T--Tec-Monterrey--sponsors-idt.png/320px-T--Tec-Monterrey--sponsors-idt.png" />
-      <img src="https://2019.igem.org/wiki/images/d/db/T--Tec-Monterrey--sponsors-imss.png" />
-      <img src="" />
-      <img src="https://2019.igem.org/wiki/images/thumb/c/cf/T--Tec-Monterrey--sponsors-itesm.png/320px-T--Tec-Monterrey--sponsors-itesm.png" />
-      <img src="https://2019.igem.org/wiki/images/b/b7/T--Tec-Monterrey--sponsors-scintia.png" />
-      <img src="https://2019.igem.org/wiki/images/f/ff/T--Tec-Monterrey--sponsors-snap-gene.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/f/f0/T--Tec-Monterrey--sponsors-twist.png/320px-T--Tec-Monterrey--sponsors-twist.png" />
-    </footer>
+  <footer class="d-flex flex-wrap justify-content-around">
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/1/1f/T--Tec-Monterrey--sponsors-acceso-lab.png/320px-T--Tec-Monterrey--sponsors-acceso-lab.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/d/d6/T--Tec-Monterrey--sponsors-arfq.png/262px-T--Tec-Monterrey--sponsors-arfq.png" />
+    <img src="https://2019.igem.org/wiki/images/b/bd/T--Tec-Monterrey--sponsors-benchmark.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/0/0a/T--Tec-Monterrey--sponsors-biolabs.png/320px-T--Tec-Monterrey--sponsors-biolabs.png" />
+    <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-cofepris.png" />
+    <img src="https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--sponsors-congreso-nuevo-leon.png" />
+    <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-ctr.png" />
+    <img src="https://2019.igem.org/wiki/images/a/ac/T--Tec-Monterrey--sponsors-dibico.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/9/9b/T--Tec-Monterrey--sponsors-idt.png/320px-T--Tec-Monterrey--sponsors-idt.png" />
+    <img src="https://2019.igem.org/wiki/images/d/db/T--Tec-Monterrey--sponsors-imss.png" />
+    <img src="" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/c/cf/T--Tec-Monterrey--sponsors-itesm.png/320px-T--Tec-Monterrey--sponsors-itesm.png" />
+    <img src="https://2019.igem.org/wiki/images/b/b7/T--Tec-Monterrey--sponsors-scintia.png" />
+    <img src="https://2019.igem.org/wiki/images/f/ff/T--Tec-Monterrey--sponsors-snap-gene.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/f/f0/T--Tec-Monterrey--sponsors-twist.png/320px-T--Tec-Monterrey--sponsors-twist.png" />
+  </footer>
 
-    <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
-    <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
-    <script src="js/placeholder.js"></script>
-  </body>
+  <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
+  <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
+  <script src="js/placeholder.js"></script>
+  <script type="text/javascript" src="js/slider.js"></script>
+</body>
+
 </html>

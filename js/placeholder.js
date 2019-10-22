@@ -227,6 +227,93 @@ $("#metal-biosensor-component6")
       .toggle("slow");
   });
 
+$("#igem-rally")
+  .find("button")
+  .on("click", function () {
+    $("#igem-rally")
+      .find("div")
+      .toggle("slow");
+  });
+
+$("#run-for-water")
+  .find("button")
+  .on("click", function () {
+    $("#run-for-water")
+      .find("div")
+      .toggle("slow");
+  });
+
+$("#mexico-situation")
+  .find("button")
+  .on("click", function () {
+    $("#mexico-situation")
+      .find("div")
+      .toggle("slow");
+  });
+
+$("#our-proposal")
+  .find("button")
+  .on("click", function () {
+    $("#our-proposal")
+      .find("div")
+      .toggle("slow");
+  });
+
+$("#gov-approach")
+  .find("button")
+  .on("click", function () {
+    $("#gov-approach")
+      .find("div")
+      .toggle("slow");
+  });
+
+$("#life-expectancy")
+  .find("button")
+  .on("click", function () {
+    $("#life-expectancy")
+      .find("div")
+      .toggle("slow");
+  });
+
+$("#microfluidic-device")
+  .find("button")
+  .on("click", function () {
+    $("#microfluidic-device")
+      .find("div")
+      .toggle("slow");
+  });
+
+$("#3a-assembly")
+  .find("button")
+  .on("click", function () {
+    $("#3a-assembly")
+      .find("div")
+      .toggle("slow");
+  });
+
+$("#golden-gate")
+  .find("button")
+  .on("click", function () {
+    $("#golden-gate")
+      .find("div")
+      .toggle("slow");
+  });
+
+$("#heavy-metal")
+  .find("button")
+  .on("click", function () {
+    $("#heavy-metal")
+      .find("div")
+      .toggle("slow");
+  });
+
+$("#mucolytic")
+  .find("button")
+  .on("click", function () {
+    $("#mucolytic")
+      .find("div")
+      .toggle("slow");
+  });
 $("#metal-biosensor-component7")
   .find("button")
   .on("click", function() {

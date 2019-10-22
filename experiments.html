@@ -1,57 +1,115 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>iGEM Tec-Monterrey / Project</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
-    <link rel="stylesheet" href="css/template.css" type="text/css" />
-    <link rel="stylesheet" href="css/header.css" type="text/css" />
-    <link rel="stylesheet" href="css/footer.css" type="text/css" />
-    <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Manjari&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="css/resetter.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
+  <link rel="stylesheet" href="css/template.css" type="text/css" />
+  <link rel="stylesheet" href="css/header.css" type="text/css" />
+  <link rel="stylesheet" href="css/footer.css" type="text/css" />
+  <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+  <link rel="stylesheet" href="css/colors.css" type="text/css" />
 
-    <script
-      language="JavaScript"
-      type="text/javascript"
-      src="js/jquery-3.4.1.min.js"
-    ></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
+  <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+</head>
 
-  <body class="blue">
-    <header id="desktop-menu">
-      <div id="header-content-container">
-        <div id="logo-container">
-          <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
+<body class="blue">
+  <header id="desktop-menu">
+    <div id="header-content-container">
+      <div id="logo-container">
+        <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
+      </div>
+      <span class="filler"></span>
+      <div id="team-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          TEAM
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Members</a>
+          <a class="dropdown-item" href="#">Attributions</a>
+          <a class="dropdown-item" href="#">Collabs</a>
+          <a class="dropdown-item" href="#">Sponsors</a>
+          <a class="dropdown-item" href="#">Gallery</a>
         </div>
-        <span class="filler"></span>
+      </div>
+      <div id="project-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          PROJECT
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Description</a>
+          <a class="dropdown-item" href="#">Design</a>
+          <a class="dropdown-item" href="#">Notebook & Protocols</a>
+          <a class="dropdown-item" href="#">Experiments</a>
+          <a class="dropdown-item" href="#">Demonstrate</a>
+          <a class="dropdown-item" href="#">Model</a>
+          <a class="dropdown-item" href="#">Safety</a>
+        </div>
+      </div>
+      <div id="parts-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          PARTS
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Parts Overview</a>
+          <a class="dropdown-item" href="#">Basic Parts</a>
+          <a class="dropdown-item" href="#">Improved Parts</a>
+          <a class="dropdown-item" href="#">Composite Parts</a>
+          <a class="dropdown-item" href="#">Part Collection</a>
+        </div>
+      </div>
+      <div id="human-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          HUMAN
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Human Practices</a>
+          <a class="dropdown-item" href="#">Integrated human</a>
+          <a class="dropdown-item" href="#">Public Engagement</a>
+          <a class="dropdown-item" href="#">LATAM Meetup</a>
+        </div>
+      </div>
+      <div id="contact-dropdown" class="dropdown">
+        <button class="btn btn-secondary" type="button">
+          CONTACT
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <header id="mobile-menu">
+    <!--Navbar-->
+    <nav class="navbar navbar-light light-blue lighten-4">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">
+        <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
+      </a>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="text-white"><i class="material-icons"> menu </i></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <!-- Links -->
         <div id="team-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             TEAM
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -63,14 +121,8 @@
           </div>
         </div>
         <div id="project-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             PROJECT
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -84,14 +136,8 @@
           </div>
         </div>
         <div id="parts-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             PARTS
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -103,14 +149,8 @@
           </div>
         </div>
         <div id="human-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             HUMAN
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -125,152 +165,158 @@
             CONTACT
           </button>
         </div>
+        <!-- Links -->
       </div>
-    </header>
+      <!-- Collapsible content -->
+    </nav>
+    <!--/.Navbar-->
+  </header>
 
-    <header id="mobile-menu">
-      <!--Navbar-->
-      <nav class="navbar navbar-light light-blue lighten-4">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">
-          <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
-        </a>
+  <div class="portrait-container container-fluid" data-height="420">
+    <h2 class="section-title">EXPERIMENTS AND PROTOCOLS</h2>
+    <img src="https://2019.igem.org/wiki/images/a/a1/T--Tec-Monterrey--results-portada.jpg" class="portrait-photo"
+      style="opacity: 0.35" />
+  </div>
 
-        <!-- Collapse button -->
-        <button
-          class="navbar-toggler toggler-example"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent1"
-          aria-controls="navbarSupportedContent1"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="text-white"><i class="material-icons"> menu </i></span>
-        </button>
+  <div id="demonstrate-content" class="main-content container">
+    <div class="row" style="margin-top: 48px;">
+      <section class="subsection-container md-offset-1 col-sm-12 col-lg-9">
 
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-          <!-- Links -->
-          <div id="team-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              TEAM
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Members</a>
-              <a class="dropdown-item" href="#">Attributions</a>
-              <a class="dropdown-item" href="#">Collabs</a>
-              <a class="dropdown-item" href="#">Sponsors</a>
-              <a class="dropdown-item" href="#">Gallery</a>
-            </div>
-          </div>
-          <div id="project-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              PROJECT
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Description</a>
-              <a class="dropdown-item" href="#">Design</a>
-              <a class="dropdown-item" href="#">Notebook & Protocols</a>
-              <a class="dropdown-item" href="#">Experiments</a>
-              <a class="dropdown-item" href="#">Demonstrate</a>
-              <a class="dropdown-item" href="#">Model</a>
-              <a class="dropdown-item" href="#">Safety</a>
-            </div>
-          </div>
-          <div id="parts-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              PARTS
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Parts Overview</a>
-              <a class="dropdown-item" href="#">Basic Parts</a>
-              <a class="dropdown-item" href="#">Improved Parts</a>
-              <a class="dropdown-item" href="#">Composite Parts</a>
-              <a class="dropdown-item" href="#">Part Collection</a>
-            </div>
-          </div>
-          <div id="human-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              HUMAN
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Human Practices</a>
-              <a class="dropdown-item" href="#">Integrated human</a>
-              <a class="dropdown-item" href="#">Public Engagement</a>
-              <a class="dropdown-item" href="#">LATAM Meetup</a>
-            </div>
-          </div>
-          <div id="contact-dropdown" class="dropdown">
-            <button class="btn btn-secondary" type="button">
-              CONTACT
-            </button>
-          </div>
-          <!-- Links -->
+        <p>
+          The experiments and protocols followed an organized sequence of steps that allowed us to validate the results
+          obtained from our laboratory work. We focus on having several lines in our experiments that were carried out
+          separately but still converge in the same goal:
+        </p>
+
+        <ul style="list-style: circle;">
+          <li class="mb-2" style="margin-left: 32px;">
+            3A Assembly of biosensor promoters
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            3A Assembly of Heavy metals
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            Signal amplification cascade
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            Mucolytic production in E. coli
+          </li>
+        </ul>
+
+        <p>
+          In order to develop our project, we looked for the appropriate protocols to success, however, it was necessary
+          to modify some of them in order to adapt them for our needs and goals. The following list shows all the
+          protocols used, please read the PDF document for the complete steps. We hope they could be easily repeated by
+          future iGEM teams to ensure the repeatability of each experience.
+        </p>
+
+        <ul style="list-style: circle;">
+          <li class="mb-2" style="margin-left: 32px;">
+            PCR amplification
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            PCR clean-up
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            Digestion
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            Agarose gel electrophoresis
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            DNA gel extraction
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            Ligation
+          </li>
+          <li class="mb-2" style="margin-left: 64px;">
+            3A assembly
+          </li>
+          <li class="mb-2" style="margin-left: 64px;">
+            Golden
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            Competent Cells (E. Coli)
+          </li>
+          <li class="mb-2" style="margin-left: 64px;">
+            Electro (stbl4)
+          </li>
+          <li class="mb-2" style="margin-left: 64px;">
+            Calcium (dh5alpha and BL21)
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            Transformation protocol (E. Coli and BL21)
+          </li>
+          <li class="mb-2" style="margin-left: 64px;">
+            Heatshock
+          </li>
+          <li class="mb-2" style="margin-left: 64px;">
+            Electroporation
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            Competence and transformation (Bacillus subtilis)
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            Glycerol stocks
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            Plasmidic DNA extraction (Miniprep)
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            Protein induction assay
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            Protein purification assay
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            Fluorescence kinetic curve
+          </li>
+          <li class="mb-2" style="margin-left: 32px;">
+            Bradford
+          </li>
+        </ul>
+
+
+        <div id="description-nav-buttons" style="margin-top: 128px;">
+          <a href="https://2019.igem.org/wiki/images/6/6d/T--Tec-Monterrey--experi-2.1.pdf"
+            class="col-sm-12 col-lg-3 green mb-3" style="background-color: var(--iGEM-green)"
+            onmouseover="this.style.background='var(--iGEM-light-green)';"
+            onmouseout="this.style.background='var(--iGEM-green)';">
+            <span style="font-size: 1.5em; font-weight: bold;">Experiments file</span>
+          </a>
         </div>
-        <!-- Collapsible content -->
-      </nav>
-      <!--/.Navbar-->
-    </header>
-
-    <div class="portrait-container container-fluid" data-height="420">
-      <h2 class="section-title">EXPERIMENTS</h2>
-      <img
-        src="img/portrait/model5.jpg"
-        class="portrait-photo"
-        style="opacity: 0.35"
-      />
+      </section>
     </div>
+  </div>
 
 
-    <footer class="d-flex flex-wrap justify-content-around">
-      <img src="https://2019.igem.org/wiki/images/thumb/1/1f/T--Tec-Monterrey--sponsors-acceso-lab.png/320px-T--Tec-Monterrey--sponsors-acceso-lab.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/d/d6/T--Tec-Monterrey--sponsors-arfq.png/262px-T--Tec-Monterrey--sponsors-arfq.png" />
-      <img src="https://2019.igem.org/wiki/images/b/bd/T--Tec-Monterrey--sponsors-benchmark.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/0/0a/T--Tec-Monterrey--sponsors-biolabs.png/320px-T--Tec-Monterrey--sponsors-biolabs.png" />
-      <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-cofepris.png" />
-      <img src="https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--sponsors-congreso-nuevo-leon.png" />
-      <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-ctr.png" />
-      <img src="https://2019.igem.org/wiki/images/a/ac/T--Tec-Monterrey--sponsors-dibico.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/9/9b/T--Tec-Monterrey--sponsors-idt.png/320px-T--Tec-Monterrey--sponsors-idt.png" />
-      <img src="https://2019.igem.org/wiki/images/d/db/T--Tec-Monterrey--sponsors-imss.png" />
-      <img src="" />
-      <img src="https://2019.igem.org/wiki/images/thumb/c/cf/T--Tec-Monterrey--sponsors-itesm.png/320px-T--Tec-Monterrey--sponsors-itesm.png" />
-      <img src="https://2019.igem.org/wiki/images/b/b7/T--Tec-Monterrey--sponsors-scintia.png" />
-      <img src="https://2019.igem.org/wiki/images/f/ff/T--Tec-Monterrey--sponsors-snap-gene.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/f/f0/T--Tec-Monterrey--sponsors-twist.png/320px-T--Tec-Monterrey--sponsors-twist.png" />
-    </footer>
+  <footer class="d-flex flex-wrap justify-content-around">
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/1/1f/T--Tec-Monterrey--sponsors-acceso-lab.png/320px-T--Tec-Monterrey--sponsors-acceso-lab.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/d/d6/T--Tec-Monterrey--sponsors-arfq.png/262px-T--Tec-Monterrey--sponsors-arfq.png" />
+    <img src="https://2019.igem.org/wiki/images/b/bd/T--Tec-Monterrey--sponsors-benchmark.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/0/0a/T--Tec-Monterrey--sponsors-biolabs.png/320px-T--Tec-Monterrey--sponsors-biolabs.png" />
+    <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-cofepris.png" />
+    <img src="https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--sponsors-congreso-nuevo-leon.png" />
+    <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-ctr.png" />
+    <img src="https://2019.igem.org/wiki/images/a/ac/T--Tec-Monterrey--sponsors-dibico.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/9/9b/T--Tec-Monterrey--sponsors-idt.png/320px-T--Tec-Monterrey--sponsors-idt.png" />
+    <img src="https://2019.igem.org/wiki/images/d/db/T--Tec-Monterrey--sponsors-imss.png" />
+    <img src="" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/c/cf/T--Tec-Monterrey--sponsors-itesm.png/320px-T--Tec-Monterrey--sponsors-itesm.png" />
+    <img src="https://2019.igem.org/wiki/images/b/b7/T--Tec-Monterrey--sponsors-scintia.png" />
+    <img src="https://2019.igem.org/wiki/images/f/ff/T--Tec-Monterrey--sponsors-snap-gene.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/f/f0/T--Tec-Monterrey--sponsors-twist.png/320px-T--Tec-Monterrey--sponsors-twist.png" />
+  </footer>
 
-    <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
-    <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
-    <script src="js/placeholder.js"></script>
-  </body>
+  <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
+  <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
+  <script src="js/placeholder.js"></script>
+</body>
+
 </html>

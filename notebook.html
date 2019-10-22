@@ -1,41 +1,115 @@
 <html>
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-      <link rel="stylesheet" href="css/resetter.css" type="text/css" />
-      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-      <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
-      <link rel="stylesheet" href="css/template.css" type="text/css" />
-      <link rel="stylesheet" href="css/header.css" type="text/css" />
-      <link rel="stylesheet" href="css/footer.css" type="text/css" />
-      <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
-      <link rel="stylesheet" href="css/colors.css" type="text/css" />
-  
-      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
-  
-      <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    </head>
 
-  <body class="blue">
-    <header id="desktop-menu">
-      <div id="header-content-container">
-        <div id="logo-container">
-          <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/resetter.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
+  <link rel="stylesheet" href="css/template.css" type="text/css" />
+  <link rel="stylesheet" href="css/header.css" type="text/css" />
+  <link rel="stylesheet" href="css/footer.css" type="text/css" />
+  <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+  <link rel="stylesheet" href="css/colors.css" type="text/css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
+
+  <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body class="blue">
+  <header id="desktop-menu">
+    <div id="header-content-container">
+      <div id="logo-container">
+        <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
+      </div>
+      <span class="filler"></span>
+      <div id="team-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          TEAM
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Members</a>
+          <a class="dropdown-item" href="#">Attributions</a>
+          <a class="dropdown-item" href="#">Collabs</a>
+          <a class="dropdown-item" href="#">Sponsors</a>
+          <a class="dropdown-item" href="#">Gallery</a>
         </div>
-        <span class="filler"></span>
+      </div>
+      <div id="project-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          PROJECT
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Description</a>
+          <a class="dropdown-item" href="#">Design</a>
+          <a class="dropdown-item" href="#">Notebook & Protocols</a>
+          <a class="dropdown-item" href="#">Experiments</a>
+          <a class="dropdown-item" href="#">Demonstrate</a>
+          <a class="dropdown-item" href="#">Model</a>
+          <a class="dropdown-item" href="#">Safety</a>
+        </div>
+      </div>
+      <div id="parts-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          PARTS
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Parts Overview</a>
+          <a class="dropdown-item" href="#">Basic Parts</a>
+          <a class="dropdown-item" href="#">Improved Parts</a>
+          <a class="dropdown-item" href="#">Composite Parts</a>
+          <a class="dropdown-item" href="#">Part Collection</a>
+        </div>
+      </div>
+      <div id="human-dropdown" class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          HUMAN
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Human Practices</a>
+          <a class="dropdown-item" href="#">Integrated human</a>
+          <a class="dropdown-item" href="#">Public Engagement</a>
+          <a class="dropdown-item" href="#">LATAM Meetup</a>
+        </div>
+      </div>
+      <div id="contact-dropdown" class="dropdown">
+        <button class="btn btn-secondary" type="button">
+          CONTACT
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <header id="mobile-menu">
+    <!--Navbar-->
+    <nav class="navbar navbar-light light-blue lighten-4">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">
+        <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
+      </a>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="text-white"><i class="material-icons"> menu </i></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <!-- Links -->
         <div id="team-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             TEAM
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -47,14 +121,8 @@
           </div>
         </div>
         <div id="project-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             PROJECT
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -68,14 +136,8 @@
           </div>
         </div>
         <div id="parts-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             PARTS
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -87,14 +149,8 @@
           </div>
         </div>
         <div id="human-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             HUMAN
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -109,393 +165,158 @@
             CONTACT
           </button>
         </div>
+        <!-- Links -->
       </div>
-    </header>
+      <!-- Collapsible content -->
+    </nav>
+    <!--/.Navbar-->
+  </header>
 
-    <header id="mobile-menu">
-      <!--Navbar-->
-      <nav class="navbar navbar-light light-blue lighten-4">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">
-          <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
-        </a>
+  <div class="portrait-container container-fluid" data-height="420">
+    <h1 class="section-title">NOTEBOOK</h1>
+    <img src="https://2019.igem.org/wiki/images/6/6b/T--Tec-Monterrey--notebook.jpg" class="portrait-photo"
+      style="opacity: 0.35" />
+  </div>
 
-        <!-- Collapse button -->
-        <button
-          class="navbar-toggler toggler-example"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent1"
-          aria-controls="navbarSupportedContent1"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="text-white"><i class="material-icons"> menu </i></span>
-        </button>
+  <div id="notebook-content" class="main-content container">
+    <div class="row" style="margin-top: 48px;">
 
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-          <!-- Links -->
-          <div id="team-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              TEAM
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Members</a>
-              <a class="dropdown-item" href="#">Attributions</a>
-              <a class="dropdown-item" href="#">Collabs</a>
-              <a class="dropdown-item" href="#">Sponsors</a>
-              <a class="dropdown-item" href="#">Gallery</a>
-            </div>
-          </div>
-          <div id="project-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              PROJECT
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Description</a>
-              <a class="dropdown-item" href="#">Design</a>
-              <a class="dropdown-item" href="#">Notebook & Protocols</a>
-              <a class="dropdown-item" href="#">Experiments</a>
-              <a class="dropdown-item" href="#">Demonstrate</a>
-              <a class="dropdown-item" href="#">Model</a>
-              <a class="dropdown-item" href="#">Safety</a>
-            </div>
-          </div>
-          <div id="parts-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              PARTS
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Parts Overview</a>
-              <a class="dropdown-item" href="#">Basic Parts</a>
-              <a class="dropdown-item" href="#">Improved Parts</a>
-              <a class="dropdown-item" href="#">Composite Parts</a>
-              <a class="dropdown-item" href="#">Part Collection</a>
-            </div>
-          </div>
-          <div id="human-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              HUMAN
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Human Practices</a>
-              <a class="dropdown-item" href="#">Integrated human</a>
-              <a class="dropdown-item" href="#">Public Engagement</a>
-              <a class="dropdown-item" href="#">LATAM Meetup</a>
-            </div>
-          </div>
-          <div id="contact-dropdown" class="dropdown">
-            <button class="btn btn-secondary" type="button">
-              CONTACT
-            </button>
-          </div>
-          <!-- Links -->
+      <section class="subsection-container md-offset-1 col-md-12">
+
+        <div id="intro-text" class="col-md-12" style="margin-top: 32px;">
+          <p class="description-text">
+            In order to accomplish the objectives previously established on our working plan
+            <a href="/Team:Tec-Monterrey/Design">(see the “Design” page)</a>, we
+            divided the team into different modules, so we could work simultaneously in the laboratory as you can see in
+            the next sections.
+          </p>
         </div>
-        <!-- Collapsible content -->
-      </nav>
-      <!--/.Navbar-->
-    </header>
 
-    <div class="portrait-container container-fluid" data-height="420">
-      <h1 class="section-title">PROTOCOLS</h1>
-      <img
-        src="img/portrait/model3.jpg"
-        class="portrait-photo"
-        style="opacity: 0.35"/>
+        <div id="microfluidic-device" class="container d-flex flex-wrap hidden-component mb-3" style="padding: 0;">
+          <button class="col-md-12 col-sm-12">
+            Microfluidic device
+          </button>
+          <div class="col-md-12" style="display: none; padding-top: 1em;">
+            <p>
+              The hardware module started working in the AutoCAD designs in June in order to have time to send the mask
+              for fabrication. As soon as the mask arrived in August, hardware started working in the microfluidic
+              device.
+            </p>
+            <img class="col-sm-12 col-md-5" style="padding: 4px;"
+              src="https://2019.igem.org/wiki/images/a/a0/T--Tec-Monterrey--notebook-ricardo.jpg">
+            <img class="col-sm-12 col-md-5" style="padding: 4px;"
+              src="https://2019.igem.org/wiki/images/c/c6/T--Tec-Monterrey--notebook-ricardo2.jpg">
+            <img class="col-sm-12 col-md-5" style="padding: 4px;"
+              src="https://2019.igem.org/wiki/images/5/5e/T--Tec-Monterrey--notebook-ricardo3.jpg">
+            <img class="col-sm-12 col-md-5" style="padding: 4px;"
+              src="https://2019.igem.org/wiki/images/6/61/T--Tec-Monterrey--notebook-ricardo4.jpg">
+          </div>
+        </div>
+
+        <div id="3a-assembly" class="container d-flex flex-wrap hidden-component mb-3" style="padding: 0;">
+          <button class="col-md-12 col-sm-12">
+            3A Assembly
+          </button>
+          <div class="col-md-12" style="display: none; padding-top: 1em;">
+            <p>
+              3A Assembly module started the lab work on August, since the IDT and Twist parts we needed arrived at the
+              end of July.
+              You can see the schedule on the following images:
+            </p>
+            <img class="col-sm-12 col-md-5" style="padding: 4px;"
+              src="https://2019.igem.org/wiki/images/1/1d/T--Tec-Monterrey--notebook-3a1.jpg">
+            <img class="col-sm-12 col-md-5" style="padding: 4px;"
+              src="https://2019.igem.org/wiki/images/0/02/T--Tec-Monterrey--notebook-3a2.jpg">
+            <img class="col-sm-12 col-md-5" style="padding: 4px;"
+              src="https://2019.igem.org/wiki/images/6/6f/T--Tec-Monterrey--notebook-3a3.jpg">
+          </div>
+        </div>
+
+        <div id="golden-gate" class="container d-flex flex-wrap hidden-component mb-3" style="padding: 0;">
+          <button class="col-md-12 col-sm-12">
+            Golden Gate
+          </button>
+          <div class="col-md-12" style="display: none; padding-top: 1em;">
+            <p>
+              Golden Gate module started its work the third week of august because we had to obtain the X-gal necessary
+              to perform blue-white screening in order to confirm the success of the Golden Gate procedure.
+            </p>
+            <img class="col-sm-12 col-md-5" style="padding: 4px;"
+              src="https://2019.igem.org/wiki/images/4/45/T--Tec-Monterrey--notebook-golden1.jpg">
+            <img class="col-sm-12 col-md-5" style="padding: 4px;"
+              src="https://2019.igem.org/wiki/images/9/93/T--Tec-Monterrey--notebook-golden2.jpg">
+            <img class="col-sm-12 col-md-5" style="padding: 4px;"
+              src="https://2019.igem.org/wiki/images/0/0e/T--Tec-Monterrey--notebook-golden3.jpg">
+          </div>
+        </div>
+
+        <div id="heavy-metal" class="container d-flex flex-wrap hidden-component mb-3" style="padding: 0;">
+          <button class="col-md-12 col-sm-12">
+            Heavy Metal 3A
+          </button>
+          <div class="col-md-12" style="display: none; padding-top: 1em;">
+            <p>
+              As part of our experiments, we wanted to run a proof of concept for the amplification cascade using toxic
+              metal inducible promoters. We worked for three weeks on this module and only missed the last
+              transformation of our final product ligations.
+            </p>
+            <img class="col-sm-12 col-md-5" style="padding: 4px;"
+              src="https://2019.igem.org/wiki/images/7/7f/T--Tec-Monterrey--notebook-metales.jpg">
+            <img class="col-sm-12 col-md-5" style="padding: 4px;"
+              src="https://2019.igem.org/wiki/images/f/fa/T--Tec-Monterrey--notebook-metales2.jpg">
+          </div>
+        </div>
+
+        <div id="mucolytic" class="container d-flex flex-wrap hidden-component mb-3" style="padding: 0;">
+          <button class="col-md-12 col-sm-12">
+            Mucolytic
+          </button>
+          <div class="col-md-12" style="display: none; padding-top: 1em;">
+            <p>
+              The team in charge of this module started its work on the first week of August, with the purpose of
+              characterizing an easy method for protein recovery for further assays.
+            </p>
+            <img class="col-sm-12 col-md-5" style="padding: 4px;"
+              src="https://2019.igem.org/wiki/images/1/1d/T--Tec-Monterrey--notebook-mucolytic1.png">
+            <img class="col-sm-12 col-md-5" style="padding: 4px;"
+              src="https://2019.igem.org/wiki/images/b/b9/T--Tec-Monterrey--notebook-mucolytic2.jpg">
+            <img class="col-sm-12 col-md-5" style="padding: 4px;"
+              src="https://2019.igem.org/wiki/images/a/ad/T--Tec-Monterrey--notebook-mucolytic4.jpg">
+          </div>
+        </div>
+
+      </section>
     </div>
-
-    <div id="notebook-content" class="main-content container">
-      <div class="row" style="margin-top: 48px;">
-
-        <aside class="col-sm-12 col-md-3 col-lg-2 index-menu sticky-top">
-        </aside>
-
-        <section class="subsection-container md-offset-1 col-sm-12 col-md-8 col-lg-9">
-
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">PCR amplification</h2>
-            <p class="description-text">
-              This protocol was adapted from the Quick-Start Protocol: QIAquick® PCR Purification
-              Kit-QIAquick® PCR & Gel Cleanup Kit
-            </p>
-
-            <div class="row mt-4 col-md">
-              <h3 class="col-md-12 inner-section-title">Materials</h3>
-              <ul class="col-md" style="list-style-type: square; margin-left: 1.5em;">
-                <li class="mb-2">QIAquick® PCR Purification Kit</li>
-                <li class="mb-2">DNA PCR products (50 µl)</li>
-                <li class="mb-2">1.5mL Eppendorf tubes</li>
-                <li class="mb-2">QIAquick column with collection tube</li>
-              </ul>
-            </div>
-
-            <div class="row mt-4 col-md">
-              <h3 class="col-md-12 inner-section-title">Equipment</h3>
-              <ul class="col-md" style="list-style-type: square; margin-left: 1.5em;">
-                <li class="mb-2">
-                  Microcentrifuge (all centrifugation steps are carried out at 13,000 rpm)
-                </li>
-              </ul>
-            </div>
-
-            <div class="row mt-4 col-md">
-              <h3 class="col-md-12 inner-section-title">Protocol for a 50 µl PCR reaction</h3>
-              <ol class="col-md" style="margin-left: 1.5em; list-style: decimal;">
-                <li class="mb-2">
-                    Add 250 μl of Buffer PB,  50 μl of DNA PCR products and 1 µl of pH indicator to
-                    a 1.5 ml Eppendorf tube and mix well
-                </li>
-                <li class="mb-2">
-                    The mixture should be color yellow: this indicates a pH ≤7.5 in which the adsorption of DNA to the
-                    membrane is efficient. If the color is orange or violet, add 10 μl 3 M sodium acetate, pH 5.0, and mix.
-                </li>
-                <li class="mb-2">
-                    To bind DNA, apply the mixture to the QIAquick column with collection tube and centrifuge for 30–60 s. Discard flow-through and place the QIAquick column back in the same tube.
-                </li>
-                <li class="mb-2">
-                    To wash, add 750μl Buffer PE to the QIAquick column and centrifuge for 30–60 s. Discard flow-through and place the QIAquick column back into the same tube.
-                </li>
-                <li class="mb-2">
-                    Centrifuge the QIAquick column once more in the provided 2 ml collection tube for 1 min to remove residual wash buffer.
-                </li>
-                <li class="mb-2">
-                    Place each QIAquick column in a clean 1.5 ml Eppendorf tube.
-                </li>
-                <li class="mb-2">
-                    To elute DNA, add 50 μl Buffer EB to the center of the QIAquick membrane and centrifuge the column for 1 min.
-                </li>
-              </ol>
-            </div>
-          </article>
-
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">PCR clean-up (Purification)</h2>
-            <p class="description-text">
-              Many people think that we are at the beginning of the post-antibiotic era
-              due to antimicrobial resistance, which has become a serious problem all around
-              the world in the last decades. This resistance reduces the effectiveness of
-              medications and bacterial infections become more frequent, long-lasting and harder to attack.
-              Bacterial resistance has reached such an uncontrolled level that now bacteria like
-              Acinetobacter and Pseudomonas have become super-resistant.
-              This means that they are almost immune to all antibiotics used to fight them and are
-              especially dangerous in hospitals and health care centers.
-            </p>
-          </article>
-
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">
-              Agarose gel electrophoresis
-            </h2>
-            <p class="description-text">
-              Many people think that we are at the beginning of the post-antibiotic era
-              due to antimicrobial resistance, which has become a serious problem all around
-              the world in the last decades. This resistance reduces the effectiveness of
-              medications and bacterial infections become more frequent, long-lasting and harder to attack.
-              Bacterial resistance has reached such an uncontrolled level that now bacteria like
-              Acinetobacter and Pseudomonas have become super-resistant.
-              This means that they are almost immune to all antibiotics used to fight them and are
-              especially dangerous in hospitals and health care centers.
-            </p>
-          </article>
-
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">
-              SDS-Page gel electrophoresis
-            </h2>
-            <p class="description-text">
-              Many people think that we are at the beginning of the post-antibiotic era
-              due to antimicrobial resistance, which has become a serious problem all around
-              the world in the last decades. This resistance reduces the effectiveness of
-              medications and bacterial infections become more frequent, long-lasting and harder to attack.
-              Bacterial resistance has reached such an uncontrolled level that now bacteria like
-              Acinetobacter and Pseudomonas have become super-resistant.
-              This means that they are almost immune to all antibiotics used to fight them and are
-              especially dangerous in hospitals and health care centers.
-            </p>
-          </article>
-
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">
-              DNA gel extraction
-            </h2>
-            <p class="description-text">
-              Many people think that we are at the beginning of the post-antibiotic era
-              due to antimicrobial resistance, which has become a serious problem all around
-              the world in the last decades. This resistance reduces the effectiveness of
-              medications and bacterial infections become more frequent, long-lasting and harder to attack.
-              Bacterial resistance has reached such an uncontrolled level that now bacteria like
-              Acinetobacter and Pseudomonas have become super-resistant.
-              This means that they are almost immune to all antibiotics used to fight them and are
-              especially dangerous in hospitals and health care centers.
-            </p>
-          </article>
-
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">
-              Ligation
-            </h2>
-            <p class="description-text">
-              Many people think that we are at the beginning of the post-antibiotic era
-              due to antimicrobial resistance, which has become a serious problem all around
-              the world in the last decades. This resistance reduces the effectiveness of
-              medications and bacterial infections become more frequent, long-lasting and harder to attack.
-              Bacterial resistance has reached such an uncontrolled level that now bacteria like
-              Acinetobacter and Pseudomonas have become super-resistant.
-              This means that they are almost immune to all antibiotics used to fight them and are
-              especially dangerous in hospitals and health care centers.
-            </p>
-          </article>
-
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">
-                Competent Cells (E. Coli)
-            </h2>
-            <p class="description-text">
-              Many people think that we are at the beginning of the post-antibiotic era
-              due to antimicrobial resistance, which has become a serious problem all around
-              the world in the last decades. This resistance reduces the effectiveness of
-              medications and bacterial infections become more frequent, long-lasting and harder to attack.
-              Bacterial resistance has reached such an uncontrolled level that now bacteria like
-              Acinetobacter and Pseudomonas have become super-resistant.
-              This means that they are almost immune to all antibiotics used to fight them and are
-              especially dangerous in hospitals and health care centers.
-            </p>
-          </article>
-
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">
-              Transformation protocol (E. Coli and BL21)
-            </h2>
-            <p class="description-text">
-              Many people think that we are at the beginning of the post-antibiotic era
-              due to antimicrobial resistance, which has become a serious problem all around
-              the world in the last decades. This resistance reduces the effectiveness of
-              medications and bacterial infections become more frequent, long-lasting and harder to attack.
-              Bacterial resistance has reached such an uncontrolled level that now bacteria like
-              Acinetobacter and Pseudomonas have become super-resistant.
-              This means that they are almost immune to all antibiotics used to fight them and are
-              especially dangerous in hospitals and health care centers.
-            </p>
-          </article>
-
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">
-              Competence and transformation (Bacillus subtilis)
-            </h2>
-            <p class="description-text">
-              Many people think that we are at the beginning of the post-antibiotic era
-              due to antimicrobial resistance, which has become a serious problem all around
-              the world in the last decades. This resistance reduces the effectiveness of
-              medications and bacterial infections become more frequent, long-lasting and harder to attack.
-              Bacterial resistance has reached such an uncontrolled level that now bacteria like
-              Acinetobacter and Pseudomonas have become super-resistant.
-              This means that they are almost immune to all antibiotics used to fight them and are
-              especially dangerous in hospitals and health care centers.
-            </p>
-          </article>
-
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">
-              Glycerol stocks
-            </h2>
-            <p class="description-text">
-              Many people think that we are at the beginning of the post-antibiotic era
-              due to antimicrobial resistance, which has become a serious problem all around
-              the world in the last decades. This resistance reduces the effectiveness of
-              medications and bacterial infections become more frequent, long-lasting and harder to attack.
-              Bacterial resistance has reached such an uncontrolled level that now bacteria like
-              Acinetobacter and Pseudomonas have become super-resistant.
-              This means that they are almost immune to all antibiotics used to fight them and are
-              especially dangerous in hospitals and health care centers.
-            </p>
-          </article>
-
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">
-              Plasmidic DNA extraction (Miniprep)
-            </h2>
-            <p class="description-text">
-              Many people think that we are at the beginning of the post-antibiotic era
-              due to antimicrobial resistance, which has become a serious problem all around
-              the world in the last decades. This resistance reduces the effectiveness of
-              medications and bacterial infections become more frequent, long-lasting and harder to attack.
-              Bacterial resistance has reached such an uncontrolled level that now bacteria like
-              Acinetobacter and Pseudomonas have become super-resistant.
-              This means that they are almost immune to all antibiotics used to fight them and are
-              especially dangerous in hospitals and health care centers.
-            </p>
-          </article>
-
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">
-              Colony PCR
-            </h2>
-            <p class="description-text">
-              Many people think that we are at the beginning of the post-antibiotic era
-              due to antimicrobial resistance, which has become a serious problem all around
-              the world in the last decades. This resistance reduces the effectiveness of
-              medications and bacterial infections become more frequent, long-lasting and harder to attack.
-              Bacterial resistance has reached such an uncontrolled level that now bacteria like
-              Acinetobacter and Pseudomonas have become super-resistant.
-              This means that they are almost immune to all antibiotics used to fight them and are
-              especially dangerous in hospitals and health care centers.
-            </p>
-          </article>
-
-        </section>
-      </div>
-    </div>
+  </div>
 
 
-    <footer class="d-flex flex-wrap justify-content-around">
-      <img src="https://2019.igem.org/wiki/images/thumb/1/1f/T--Tec-Monterrey--sponsors-acceso-lab.png/320px-T--Tec-Monterrey--sponsors-acceso-lab.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/d/d6/T--Tec-Monterrey--sponsors-arfq.png/262px-T--Tec-Monterrey--sponsors-arfq.png" />
-      <img src="https://2019.igem.org/wiki/images/b/bd/T--Tec-Monterrey--sponsors-benchmark.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/0/0a/T--Tec-Monterrey--sponsors-biolabs.png/320px-T--Tec-Monterrey--sponsors-biolabs.png" />
-      <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-cofepris.png" />
-      <img src="https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--sponsors-congreso-nuevo-leon.png" />
-      <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-ctr.png" />
-      <img src="https://2019.igem.org/wiki/images/a/ac/T--Tec-Monterrey--sponsors-dibico.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/9/9b/T--Tec-Monterrey--sponsors-idt.png/320px-T--Tec-Monterrey--sponsors-idt.png" />
-      <img src="https://2019.igem.org/wiki/images/d/db/T--Tec-Monterrey--sponsors-imss.png" />
-      <img src="" />
-      <img src="https://2019.igem.org/wiki/images/thumb/c/cf/T--Tec-Monterrey--sponsors-itesm.png/320px-T--Tec-Monterrey--sponsors-itesm.png" />
-      <img src="https://2019.igem.org/wiki/images/b/b7/T--Tec-Monterrey--sponsors-scintia.png" />
-      <img src="https://2019.igem.org/wiki/images/f/ff/T--Tec-Monterrey--sponsors-snap-gene.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/f/f0/T--Tec-Monterrey--sponsors-twist.png/320px-T--Tec-Monterrey--sponsors-twist.png" />
-    </footer>
+  <footer class="d-flex flex-wrap justify-content-around">
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/1/1f/T--Tec-Monterrey--sponsors-acceso-lab.png/320px-T--Tec-Monterrey--sponsors-acceso-lab.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/d/d6/T--Tec-Monterrey--sponsors-arfq.png/262px-T--Tec-Monterrey--sponsors-arfq.png" />
+    <img src="https://2019.igem.org/wiki/images/b/bd/T--Tec-Monterrey--sponsors-benchmark.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/0/0a/T--Tec-Monterrey--sponsors-biolabs.png/320px-T--Tec-Monterrey--sponsors-biolabs.png" />
+    <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-cofepris.png" />
+    <img src="https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--sponsors-congreso-nuevo-leon.png" />
+    <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-ctr.png" />
+    <img src="https://2019.igem.org/wiki/images/a/ac/T--Tec-Monterrey--sponsors-dibico.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/9/9b/T--Tec-Monterrey--sponsors-idt.png/320px-T--Tec-Monterrey--sponsors-idt.png" />
+    <img src="https://2019.igem.org/wiki/images/d/db/T--Tec-Monterrey--sponsors-imss.png" />
+    <img src="" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/c/cf/T--Tec-Monterrey--sponsors-itesm.png/320px-T--Tec-Monterrey--sponsors-itesm.png" />
+    <img src="https://2019.igem.org/wiki/images/b/b7/T--Tec-Monterrey--sponsors-scintia.png" />
+    <img src="https://2019.igem.org/wiki/images/f/ff/T--Tec-Monterrey--sponsors-snap-gene.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/f/f0/T--Tec-Monterrey--sponsors-twist.png/320px-T--Tec-Monterrey--sponsors-twist.png" />
+  </footer>
 
-    <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
-    <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
-    <script src="js/placeholder.js"></script>
-  </body>
+  <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
+  <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
+  <script src="js/placeholder.js"></script>
+</body>
+
 </html>

@@ -515,6 +515,10 @@ table#promoters th {
   color: var(--iGEM-blue);
 }
 
+#parts-content a:visited {
+  color: var(--iGEM-blue);
+}
+
 @media only screen and (max-width: 768px) {
   h1.section-title {
     font-size: 2em;
@@ -537,7 +541,9 @@ table#promoters th {
     background-attachment: fixed;
     background-position: center;
   }
+}
 
+@media only screen and (max-width: 992px) {
   .index-menu {
     position: unset;
     padding: 1em 0;

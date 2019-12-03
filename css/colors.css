@@ -1,22 +1,23 @@
 :root {
-    --iGEM-lighter-blue: #a7c9f0;
-    --iGEM-light-blue: #5f8dc2;
-    --iGEM-blue: #356296;
+    --iGEM-lighter-blue: rgb(167, 201, 240);
+    --iGEM-light-blue: rgb(95, 141, 194);
+    --iGEM-blue: rgb(53, 98, 150);
+    --iGEM-blue-transparent: rgba(53, 98, 150, 0.35);
     --iGEM-dark-blue: rgb(6, 15, 41);
-    --iGEM-dark-blue-transparent: #2e5077a0;
-    --iGEM-light-green: #c1ee8e;
-    --iGEM-green: #90cf49;
+    --iGEM-dark-blue-transparent: rgba(6, 15, 41, 0.65);
+    --iGEM-light-green: rgb(193, 238, 142);
+    --iGEM-green: rgb(144, 207, 73);
     --iGEM-dark-green: rgb(74, 104, 40);
-    --iGEM-ultra-light-aqua: #caf3f7;
-    --iGEM-light-aqua: #9beaf1;
-    --iGEM-aqua: #4fa1a9;
-    --iGEM-dark-aqua: #236e75;
-    --iGEM-light-orange: #f8c37e;
-    --iGEM-orange: #ffa630;
-    --iGEM-dark-orange: #926122;
+    --iGEM-ultra-light-aqua: rgb(202, 243, 247);
+    --iGEM-light-aqua: rgb(155, 234, 241);
+    --iGEM-aqua: rgb(79, 161, 169);
+    --iGEM-dark-aqua: rgb(35, 110, 117);
+    --iGEM-light-orange: rgb(248, 195, 126);
+    --iGEM-orange: rgb(255, 166, 48);
+    --iGEM-dark-orange: rgb(146, 97, 34);
     --iGEM-safety-red: rgb(131, 31, 31);
+    --iGEM-light-black: rgb(222, 226, 230);
     --iGEM-font-title: 'Anton', sans-serif;
-    --iGEM-light-black: #dee2e6;
 }
 
 .black .portrait-container {
@@ -120,8 +121,10 @@ h2.green {
     border-color: var(--iGEM-dark-green);
 }
 
-.blue .portrait-container,
-.blue.portrait-container,
+.blue header>div {
+    background-color: var(--iGEM-dark-blue-transparent);
+}
+
 .blue .hidden-component>button {
     background-color: var(--iGEM-dark-blue);
 }

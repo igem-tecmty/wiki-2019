@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
   <link rel="stylesheet" href="css/template.css" type="text/css" />
-  <link rel="stylesheet" href="css/header.css" type="text/css" />
+  <link rel="stylesheet" href="css/top-menu.css" type="text/css" />
   <link rel="stylesheet" href="css/footer.css" type="text/css" />
   <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
   <link rel="stylesheet" href="css/colors.css" type="text/css" />
@@ -25,7 +25,7 @@
 
 <body class="aqua">
 
-  <header id="desktop-menu">
+  <nav id="desktop-menu">
     <div id="header-content-container">
 
       <!-- Logo Breathe-In -->
@@ -95,9 +95,9 @@
         </button>
       </div>
     </div>
-  </header>
+  </nav>
 
-  <header id="mobile-menu">
+  <nav id="mobile-menu">
     <nav class="navbar navbar-light light-blue lighten-4">
 
       <!-- Logo Breathe-In -->
@@ -181,7 +181,7 @@
       <!-- Collapsible content -->
     </nav>
     <!--/.Navbar-->
-  </header>
+  </nav>
 
   <div class="portrait-container container-fluid" data-height="420">
     <h1 class="section-title">HARDWARE</h1>
@@ -189,295 +189,293 @@
       style="opacity: 0.35" />
   </div>
 
-  <div id="description-content" class="main-content container">
-    <div class="row" style="margin-top: 48px;">
-      <aside class="col-sm-12 col-lg-2 index-menu sticky-top"></aside>
+  <div id="description-content" class="main-content container row" style="margin-top: 48px;">
+    <aside class="col-sm-12 col-lg-2 index-menu sticky-top"></aside>
 
-      <section class="subsection-container md-offset-1 col-sm-12 col-lg-9">
+    <main class="subsection-container md-offset-1 col-sm-12 col-lg-9">
 
 
-        <article class="container">
-          <h2 class="row col-md-12 subsection-title">Microfluidics</h2>
-          <p>
-            Microfluidics is a subset of fluid mechanics that integrates physics and engineering on a micrometer
-            length scale [2]. For microfluidic systems, flow rates operate in small volumes, ranging from microliters
-            (10^-6) to picolitres (10^-12) inside micrometric (10^-6 μm) channels. The small dimensions in which these
-            systems are driven allows a wide number of advantages over conventional techniques that use reaction
-            vessels, test tubes or microliter plates, which include more predictable systems with high-throughput
-            experimentation capabilities, a smaller volume of sample needed, a shorter time to gather results, and the
-            possibility to execute multiple parallel tests [5], [15].
-          </p>
-        </article>
+      <article class="container">
+        <h2 class="row col-md-12 subsection-title">Microfluidics</h2>
+        <p>
+          Microfluidics is a subset of fluid mechanics that integrates physics and engineering on a micrometer
+          length scale [2]. For microfluidic systems, flow rates operate in small volumes, ranging from microliters
+          (10^-6) to picolitres (10^-12) inside micrometric (10^-6 μm) channels. The small dimensions in which these
+          systems are driven allows a wide number of advantages over conventional techniques that use reaction
+          vessels, test tubes or microliter plates, which include more predictable systems with high-throughput
+          experimentation capabilities, a smaller volume of sample needed, a shorter time to gather results, and the
+          possibility to execute multiple parallel tests [5], [15].
+        </p>
+      </article>
 
-        <article class="container">
-          <h2 class="row col-md-12 subsection-title">Droplet microfluidics</h2>
-          <p class="description-text">
-            Microfluidic systems take advantage of the properties of fluid flow on the microscale to the widest
-            possible range. Research in this area include theoretical analysis, fluid behavior and applications
-            based on this regime [16]. Microfluidic platforms operate both in the continuous flow regime and in the
-            segmented flow regime. In the second case, droplets are used as individual reaction chambers, alike
-            conventional techniques used in standard laboratories, but orders of magnitude smaller with higher
-            control and precision [3].
-          </p>
-          <p class="description-text">
-            Droplet-based microfluidics is an adaptable tool for extensive applications, attributed to have a number of
-            advantages [6],[8]-[10]. In a channel microfluidic device, two separate and immiscible liquid streams are
-            forced into channels. The shear force at the point where they meet creates (usually aqueous) droplets that
-            are encased within a continuous fluid (generally oil). Each droplet is a self-contained vessel, isolated
-            from other droplets and from the channel walls by the oil phase.
-          </p>
-          <div id="droplet-techniques" class="container d-flex flex-wrap hidden-component" style="padding: 0;">
-            <button class="col-md-12 col-sm-12">
-              Droplet Generation Techniques
-            </button>
-            <div id="droplet-content" class="col-md-12" style="display: none; padding-top: 1em;">
+      <article class="container">
+        <h2 class="row col-md-12 subsection-title">Droplet microfluidics</h2>
+        <p class="description-text">
+          Microfluidic systems take advantage of the properties of fluid flow on the microscale to the widest
+          possible range. Research in this area include theoretical analysis, fluid behavior and applications
+          based on this regime [16]. Microfluidic platforms operate both in the continuous flow regime and in the
+          segmented flow regime. In the second case, droplets are used as individual reaction chambers, alike
+          conventional techniques used in standard laboratories, but orders of magnitude smaller with higher
+          control and precision [3].
+        </p>
+        <p class="description-text">
+          Droplet-based microfluidics is an adaptable tool for extensive applications, attributed to have a number of
+          advantages [6],[8]-[10]. In a channel microfluidic device, two separate and immiscible liquid streams are
+          forced into channels. The shear force at the point where they meet creates (usually aqueous) droplets that
+          are encased within a continuous fluid (generally oil). Each droplet is a self-contained vessel, isolated
+          from other droplets and from the channel walls by the oil phase.
+        </p>
+        <div id="droplet-techniques" class="container d-flex flex-wrap hidden-component" style="padding: 0;">
+          <button class="col-md-12 col-sm-12">
+            Droplet Generation Techniques
+          </button>
+          <div id="droplet-content" class="col-md-12" style="display: none; padding-top: 1em;">
+            <p>
+              Several different techniques for droplet generation have been extensively proposed and reviewed in
+              macroscopic configurations [1],[12],[15]. Nevertheless, these methods cannot produce monodisperse
+              droplets,
+              thus making them unsuitable for biological or medical applications. Hence, microfluidic techniques have
+              been
+              proposed in order to overcome these limitations.
+              The highly complex physics of droplet generation in microfluidic systems is not completely understood
+              yet,
+              but there is enough information in order to implement droplets on microfluidic devices successfully.
+              There
+              are three main techniques for droplet generation that have been conventionally used: T-junction, co
+              flow,
+              and flow focusing. Each technique has a different mechanism of pinch-off in order to form the droplets
+              as
+              depicted in figure 1.
+            </p>
+            <img class="col-md-12" src="https://2019.igem.org/wiki/images/a/a6/T--Tec-Monterrey--hw-device-types.png">
+            <p class="image-footer">
+              <span class="font-weight-bold">Figure 1.</span> Schematic representation of the most popular droplet
+              generation methods [17].
+            </p>
+            <div class="col-md-12">
+              <h3 class="mb-2">T-junction</h3>
               <p>
-                Several different techniques for droplet generation have been extensively proposed and reviewed in
-                macroscopic configurations [1],[12],[15]. Nevertheless, these methods cannot produce monodisperse
-                droplets,
-                thus making them unsuitable for biological or medical applications. Hence, microfluidic techniques have
-                been
-                proposed in order to overcome these limitations.
-                The highly complex physics of droplet generation in microfluidic systems is not completely understood
-                yet,
-                but there is enough information in order to implement droplets on microfluidic devices successfully.
-                There
-                are three main techniques for droplet generation that have been conventionally used: T-junction, co
-                flow,
-                and flow focusing. Each technique has a different mechanism of pinch-off in order to form the droplets
-                as
-                depicted in figure 1.
+                The T-junction method uses a simple junction (often formed like the letter “T”) where the continuous
+                and
+                the dispersed phase meet at an angle. The disperse phase upon reaching the continuous phase pinches
+                off
+                in
+                the droplet form, induced by shear stress exerted by the continuous phase, and gets carried in its
+                stream
+                [13]. The droplet detaches from the fluid thread before it can block the full width of the continuous
+                phase channel. This is a straightforward method and different regimes are obtained based on the
+                capillary
+                number [9].
               </p>
-              <img class="col-md-12" src="https://2019.igem.org/wiki/images/a/a6/T--Tec-Monterrey--hw-device-types.png">
-              <p class="image-footer">
-                <span class="font-weight-bold">Figure 1.</span> Schematic representation of the most popular droplet
-                generation methods [17].
+            </div>
+            <div class="col-md-12">
+              <h3 class="mb-2">Co flow</h3>
+              <p>
+                In the co flow design, the dispersed phase and the continuous phase meet in parallel. A capillary is
+                inserted in a surrounding channel in such a way that the fluid in the surrounding channel completely
+                engulfs the capillary and any liquid that is ejected out of it [12]. Therefore, the channel carrying
+                the
+                water phase is completely covered by the oil stream. This method is again dominated by the capillary
+                number or rather the flow rates of the two streams yielding different flow regimes [4].
               </p>
-              <div class="col-md-12">
-                <h3 class="mb-2">T-junction</h3>
-                <p>
-                  The T-junction method uses a simple junction (often formed like the letter “T”) where the continuous
-                  and
-                  the dispersed phase meet at an angle. The disperse phase upon reaching the continuous phase pinches
-                  off
-                  in
-                  the droplet form, induced by shear stress exerted by the continuous phase, and gets carried in its
-                  stream
-                  [13]. The droplet detaches from the fluid thread before it can block the full width of the continuous
-                  phase channel. This is a straightforward method and different regimes are obtained based on the
-                  capillary
-                  number [9].
-                </p>
-              </div>
-              <div class="col-md-12">
-                <h3 class="mb-2">Co flow</h3>
-                <p>
-                  In the co flow design, the dispersed phase and the continuous phase meet in parallel. A capillary is
-                  inserted in a surrounding channel in such a way that the fluid in the surrounding channel completely
-                  engulfs the capillary and any liquid that is ejected out of it [12]. Therefore, the channel carrying
-                  the
-                  water phase is completely covered by the oil stream. This method is again dominated by the capillary
-                  number or rather the flow rates of the two streams yielding different flow regimes [4].
-                </p>
-              </div>
-              <div class="col-md-12">
-                <h3 class="mb-2">Flow focusing</h3>
-                <p>
-                  This model is a modified version of the co-flow device and produces more uniform droplets than the
-                  T-junction and the co-flow systems. Here the co flowing of two or more phases are accelerated and
-                  elongated in a constriction of the channel (orifice). The presence of the orifice structure in the
-                  parallel flow system creates different flow regimes based on the flow rates of the two phases [13].
-                </p>
-              </div>
+            </div>
+            <div class="col-md-12">
+              <h3 class="mb-2">Flow focusing</h3>
+              <p>
+                This model is a modified version of the co-flow device and produces more uniform droplets than the
+                T-junction and the co-flow systems. Here the co flowing of two or more phases are accelerated and
+                elongated in a constriction of the channel (orifice). The presence of the orifice structure in the
+                parallel flow system creates different flow regimes based on the flow rates of the two phases [13].
+              </p>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="container">
-          <h2 class="row col-md-12 subsection-title">Comparison of methods for droplet generation</h2>
-          <p class="description-text">
-            The techniques mentioned above are used to produce droplets in numerous different purposes. The geometry
-            used is dependent on the application and the specifications needed. The droplet size depends on several
-            parameters such as the geometry, the flow rates and the liquids being used. Flow focusing devices usually
-            need a more precisely controlled production and accurate control of parameters in order to produce droplets
-            at a higher monodispersity and can generate smaller size droplets at a higher rate compared to T-junctions.
-            Co flow devices’ behavior is hard to control compared to T-junctions or flow focusing and finally
-            T-junctions may not generate droplets as monodisperse as the ones in a flow focusing device, however this
-            kind of device is the most used and documented.
-          </p>
-          <p class="description-text">
-            As these methods require a precise control of the flow rate to generate monodisperse droplets, which is
-            difficult to reach especially with syringe pumps, but taking into account our resources and time
-            availability we decided to go ahead with a T-junction device, especially because we found many references
-            that define parameters we can use instead of obtaining them ourselves.
-          </p>
+      <article class="container">
+        <h2 class="row col-md-12 subsection-title">Comparison of methods for droplet generation</h2>
+        <p class="description-text">
+          The techniques mentioned above are used to produce droplets in numerous different purposes. The geometry
+          used is dependent on the application and the specifications needed. The droplet size depends on several
+          parameters such as the geometry, the flow rates and the liquids being used. Flow focusing devices usually
+          need a more precisely controlled production and accurate control of parameters in order to produce droplets
+          at a higher monodispersity and can generate smaller size droplets at a higher rate compared to T-junctions.
+          Co flow devices’ behavior is hard to control compared to T-junctions or flow focusing and finally
+          T-junctions may not generate droplets as monodisperse as the ones in a flow focusing device, however this
+          kind of device is the most used and documented.
+        </p>
+        <p class="description-text">
+          As these methods require a precise control of the flow rate to generate monodisperse droplets, which is
+          difficult to reach especially with syringe pumps, but taking into account our resources and time
+          availability we decided to go ahead with a T-junction device, especially because we found many references
+          that define parameters we can use instead of obtaining them ourselves.
+        </p>
 
-        </article>
+      </article>
 
-        <article class="container">
-          <h2 class="row col-md-12 subsection-title">Microfluidic device design</h2>
-          <p class="description-text">
-            In order to fulfill the design considerations regarding the microfluidic device, a number of different
-            design ideas were sketched using AutoCAD 2019. Once a microfluidic device design was sketched, it went
-            through a redesign and development process in order to have an optimized model based on previous literature
-            and known good practice parameters. As previously discussed, the microfluidic device should have a droplet
-            generator, a spacer, a second droplet generation, a reservoir, and an outlet for recovery. For the droplet
-            generator, two geometries were taken into account, a T-junction and a flow-focusing device, but based on a
-            literature search and the microfluidics model section, a T-junction was preferred based on its simplicity.
-            The following figure shows the first sketched models.
-          </p>
-          <img class="col-md-12 mb-1"
-            src="https://2019.igem.org/wiki/images/c/c0/T--Tec-Monterrey--hw-posible-designs.jpg">
-          <p class="image-footer mb-3">
-            <span class="font-weight-bold">Figure 2.</span> Different proposed design for our device.
-          </p>
-          <p class="description-text">
-            A microfluidic device was designed based on the microfluidics model parameters section in order to generate
-            monodisperse droplets in two different junctions. The first junction needed to generate droplets using a
-            T-junction, then go through a spacer in order to prevent coalescence or merging of the droplets, then a
-            second T-junction would be added in order to generate the second droplet, after these droplets were mixed, a
-            reservoir chamber is used to visualize and count the droplets, and finally an outlet for recollecting the
-            mixed droplets. The final proposed design is shown in the following figure.
-          </p>
-          <img class="col-md-12 mb-1"
-            src="https://2019.igem.org/wiki/images/f/fe/T--Tec-Monterrey--hw-mask-final-single-design.jpg">
-          <p class="image-footer mb-3">
-            <span class="font-weight-bold">Figure 3.</span> Detailed final design of our device.
-          </p>
-        </article>
+      <article class="container">
+        <h2 class="row col-md-12 subsection-title">Microfluidic device design</h2>
+        <p class="description-text">
+          In order to fulfill the design considerations regarding the microfluidic device, a number of different
+          design ideas were sketched using AutoCAD 2019. Once a microfluidic device design was sketched, it went
+          through a redesign and development process in order to have an optimized model based on previous literature
+          and known good practice parameters. As previously discussed, the microfluidic device should have a droplet
+          generator, a spacer, a second droplet generation, a reservoir, and an outlet for recovery. For the droplet
+          generator, two geometries were taken into account, a T-junction and a flow-focusing device, but based on a
+          literature search and the microfluidics model section, a T-junction was preferred based on its simplicity.
+          The following figure shows the first sketched models.
+        </p>
+        <img class="col-md-12 mb-1"
+          src="https://2019.igem.org/wiki/images/c/c0/T--Tec-Monterrey--hw-posible-designs.jpg">
+        <p class="image-footer mb-3">
+          <span class="font-weight-bold">Figure 2.</span> Different proposed design for our device.
+        </p>
+        <p class="description-text">
+          A microfluidic device was designed based on the microfluidics model parameters section in order to generate
+          monodisperse droplets in two different junctions. The first junction needed to generate droplets using a
+          T-junction, then go through a spacer in order to prevent coalescence or merging of the droplets, then a
+          second T-junction would be added in order to generate the second droplet, after these droplets were mixed, a
+          reservoir chamber is used to visualize and count the droplets, and finally an outlet for recollecting the
+          mixed droplets. The final proposed design is shown in the following figure.
+        </p>
+        <img class="col-md-12 mb-1"
+          src="https://2019.igem.org/wiki/images/f/fe/T--Tec-Monterrey--hw-mask-final-single-design.jpg">
+        <p class="image-footer mb-3">
+          <span class="font-weight-bold">Figure 3.</span> Detailed final design of our device.
+        </p>
+      </article>
 
-        <article class="container">
-          <h2 class="row col-md-12 subsection-title">Microfluidic device fabrication</h2>
-          <p class="description-text">
-            Once the design was validated as a good candidate for the requirements given, a number of different
-            variations were also made by adding a second spacer after the mixing, and changing the number of spacers.
-            These different versions were added into a single file and a mask was ordered from CAD/Art services, inc.
-          </p>
-          <img class="col-md-12 mb-1"
-            src="https://2019.igem.org/wiki/images/7/7e/T--Tec-Monterrey--hw-mask-final-designs.jpg">
-          <p class="image-footer mb-3">
-            <span class="font-weight-bold">Figure 4.</span> Variations of design included in our final masks.
-          </p>
-          <p class="description-text">
-            With the masks, a master mold was fabricated using SU8-2007 over a glass slide. Although a silicon wafers is
-            the gold standard to use as a substrate, we couldn’t use them because they are too expensive. This process
-            was based on the MicroChem SU-8 data sheet as a starting point, but we had to make a number of changes and
-            develop our own process based on the availability of resources.
-          </p>
-          <p class="description-text">
-            One of the biggest issues was that we didn’t have a cleanroom, hence all fabrication procedures were made in
-            a dark room, however dust and other particles could be in the environment, making the process more difficult
-            with the possibility of having a non-functional master mold or blocked channels. After the fabrication of
-            the SU8 master, a microfluidic device with the proposed geometry was fabricated using standard soft
-            lithography techniques.
-          </p>
-          <p class="description-text">
-            The polydimethylsiloxane (PDMS) devices were bonded onto a glass slide and sealed to form the microfluidic
-            channels using a plasma surface activation. Once the final microfluidic device was made, the proposed flow
-            conditions were tested and the results were compared with the simulations (see model). Syringe pumps were
-            used to maintain a continuous flow rate of both the disperse and continuous phases, the syringe pump flow
-            rate is defined by the user and is the main control parameter for the generation of the droplets.
-          </p>
-        </article>
+      <article class="container">
+        <h2 class="row col-md-12 subsection-title">Microfluidic device fabrication</h2>
+        <p class="description-text">
+          Once the design was validated as a good candidate for the requirements given, a number of different
+          variations were also made by adding a second spacer after the mixing, and changing the number of spacers.
+          These different versions were added into a single file and a mask was ordered from CAD/Art services, inc.
+        </p>
+        <img class="col-md-12 mb-1"
+          src="https://2019.igem.org/wiki/images/7/7e/T--Tec-Monterrey--hw-mask-final-designs.jpg">
+        <p class="image-footer mb-3">
+          <span class="font-weight-bold">Figure 4.</span> Variations of design included in our final masks.
+        </p>
+        <p class="description-text">
+          With the masks, a master mold was fabricated using SU8-2007 over a glass slide. Although a silicon wafers is
+          the gold standard to use as a substrate, we couldn’t use them because they are too expensive. This process
+          was based on the MicroChem SU-8 data sheet as a starting point, but we had to make a number of changes and
+          develop our own process based on the availability of resources.
+        </p>
+        <p class="description-text">
+          One of the biggest issues was that we didn’t have a cleanroom, hence all fabrication procedures were made in
+          a dark room, however dust and other particles could be in the environment, making the process more difficult
+          with the possibility of having a non-functional master mold or blocked channels. After the fabrication of
+          the SU8 master, a microfluidic device with the proposed geometry was fabricated using standard soft
+          lithography techniques.
+        </p>
+        <p class="description-text">
+          The polydimethylsiloxane (PDMS) devices were bonded onto a glass slide and sealed to form the microfluidic
+          channels using a plasma surface activation. Once the final microfluidic device was made, the proposed flow
+          conditions were tested and the results were compared with the simulations (see model). Syringe pumps were
+          used to maintain a continuous flow rate of both the disperse and continuous phases, the syringe pump flow
+          rate is defined by the user and is the main control parameter for the generation of the droplets.
+        </p>
+      </article>
 
-        <article class="container">
-          <h2 class="row col-md-12 subsection-title">Experimentation</h2>
-          <p class="description-text">
-            A set of conditions based on the droplet breakup simulations were taken into account, the flow rate of the
-            continuous phase was changed from 1 to 50 µm/min, while leaving the disperse phase constant at 1 µm/min in
-            order to use the smallest possible amount of reagent to optimize the biological sample. Two droplets of
-            different content are forced to be in contact and to merge, then the mixed droplet passes through the
-            remaining channel into a reservoir to contabilize and see the monodispersity of the generated droplets.
-            Finally, the droplets are recaptured in a vial for further experimentation.
-          </p>
-          <p class="description-text">
-            To see further details and an extensive explanation of the fabrication process please see our
-            <a id="protocols-link"
-              href="https://2019.igem.org/wiki/images/d/d4/T--Tec-Monterrey--hw-Device-protocols.pdf">
-              protocols document.
-            </a>
-          </p>
-        </article>
+      <article class="container">
+        <h2 class="row col-md-12 subsection-title">Experimentation</h2>
+        <p class="description-text">
+          A set of conditions based on the droplet breakup simulations were taken into account, the flow rate of the
+          continuous phase was changed from 1 to 50 µm/min, while leaving the disperse phase constant at 1 µm/min in
+          order to use the smallest possible amount of reagent to optimize the biological sample. Two droplets of
+          different content are forced to be in contact and to merge, then the mixed droplet passes through the
+          remaining channel into a reservoir to contabilize and see the monodispersity of the generated droplets.
+          Finally, the droplets are recaptured in a vial for further experimentation.
+        </p>
+        <p class="description-text">
+          To see further details and an extensive explanation of the fabrication process please see our
+          <a id="protocols-link"
+            href="https://2019.igem.org/wiki/images/d/d4/T--Tec-Monterrey--hw-Device-protocols.pdf">
+            protocols document.
+          </a>
+        </p>
+      </article>
 
-        <article class="container">
-          <h2 class="row col-md-12 subsection-title">References</h2>
-          <ol style="margin-left: 1.5em; list-style: decimal; font-weight: lighter;">
-            <li class="mt-2">
-              Anna, Shelley Lynn. (2016). “Droplets and Bubbles in Microfluidic Devices.” <span
-                class="font-italic">Annual Review of Fluid
-                Mechanics</span> 48: 285–309.
-            </li>
-            <li class="mt-2">
-              Baroud, Charles N., Francois Gallaire, and Rémi Dangla. (2010). “Dynamics of Microfluidic Droplets.” <span
-                class="font-italic">Lab
-                on a Chip 10</span>(16): 2032–45.
-            </li>
-            <li class="mt-2">
-              Debon, Aaron P., Robert C.R. Wootton, and Katherine S. Elvira. (2015). “Droplet Confinement and Leakage:
-              Causes, Underlying Effects, and Amelioration Strategies.” <span class="font-italic">Biomicrofluidics
-                9</span>(2).
-            </li>
-            <li class="mt-2">
-              Ganesh, Shruthi. (2017). “UC Irvine UC Irvine Electronic Theses and Dissertations.” : 123.
-            </li>
-            <li class="mt-2">
-              Gu, Hao, Michel H.G. Duits, and Frieder Mugele. (2011). “Droplets Formation and Merging in Two-Phase Flow
-              Microfluidics.” <span class="font-italic">International journal of molecular sciences 12</span>(4):
-              2572–97.
-            </li>
-            <li class="mt-2">
-              Jeong, Woong-Chan et al. (2012). “Controlled Generation of Submicron Emulsion Droplets via Highly Stable
-              Tip-Streaming Mode in Microfluidic Devices.” <span class="font-italic">Lab on a Chip 12</span>(8):
-              1446–53.
-            </li>
-            <li class="mt-2">
-              Johnson, Paul Michael. 2015. “UC Irvine UC Irvine Electronic Theses and Dissertations.” : 123.
-            </li>
-            <li class="mt-2">
-              Kang, Zhanxiao et al. (2016). “Engineering Particle Morphology with Microfluidic Droplets.” <span
-                class="font-italic">Journal of
-                Micromechanics and Microengineering 26</span>(7): 75011.
-            </li>
-            <li class="mt-2">
-              Kong, Tiantian et al. (2013). “Engineering Polymeric Composite Particles by Emulsion-Templating:
-              Thermodynamics versus Kinetics.” <span class="font-italic">Soft Matter 9</span>(41): 9780–84.
-            </li>
-            <li class="mt-2">
-              Kong, Tiantian et al. (2012). “Droplet Based Microfluidic Fabrication of Designer Microparticles for
-              Encapsulation Applications.” <span class="font-italic">Biomicrofluidics 6</span>(3): 34104.
-            </li>
-            <li class="mt-2">
-              Martz, Thomas D et al. (2012). “Microfluidic Generation of Acoustically Active Nanodroplets.” <span
-                class="font-italic">Small 8</span>(12):
-              1876–79.
-            </li>
-            <li class="mt-2">
-              Rosenfeld, Liat, Tiras Lin, Ratmir Derda, and Sindy K Y Tang. (2014). “Review and Analysis of Performance
-              Metrics of Droplet Microfluidics Systems.” <span class="font-italic">Microfluidics and nanofluidics
-                16</span>(5): 921–39.
-            </li>
-            <li class="mt-2">
-              Schuler, Friedrich. (2016). “Centrifugal Step Emulsification for Digital Droplet Amplification.”
-            </li>
-            <li class="mt-2">
-              Tarn, M.D., and N. Pamme. 2014. “Microfluidics.” <span class="font-italic">Reference Module in Chemistry,
-                Molecular Sciences and
-                Chemical Engineering:</span> 1–7.
-            </li>
-            <li class="mt-2">
-              Vladisavljević, G T, Isao Kobayashi, and Mitsutoshi Nakajima. (2012). “Production of Uniform Droplets
-              Using Membrane, Microchannel and Microfluidic Emulsification Devices.” <span
-                class="font-italic">Microfluidics and nanofluidics 13</span>(1): 151–78.
-            </li>
-            <li class="mt-2">
-              Zhu, Pingan, and Liqiu Wang. (2017). “Passive and Active Droplet Generation with Microfluidics: A Review.”
-              <span class="font-italic">Lab on a Chip 17</span>(1): 34–75.
-            </li>
-          </ol>
-        </article>
+      <article class="container">
+        <h2 class="row col-md-12 subsection-title">References</h2>
+        <ol style="margin-left: 1.5em; list-style: decimal; font-weight: lighter;">
+          <li class="mt-2">
+            Anna, Shelley Lynn. (2016). “Droplets and Bubbles in Microfluidic Devices.” <span
+              class="font-italic">Annual Review of Fluid
+              Mechanics</span> 48: 285–309.
+          </li>
+          <li class="mt-2">
+            Baroud, Charles N., Francois Gallaire, and Rémi Dangla. (2010). “Dynamics of Microfluidic Droplets.” <span
+              class="font-italic">Lab
+              on a Chip 10</span>(16): 2032–45.
+          </li>
+          <li class="mt-2">
+            Debon, Aaron P., Robert C.R. Wootton, and Katherine S. Elvira. (2015). “Droplet Confinement and Leakage:
+            Causes, Underlying Effects, and Amelioration Strategies.” <span class="font-italic">Biomicrofluidics
+              9</span>(2).
+          </li>
+          <li class="mt-2">
+            Ganesh, Shruthi. (2017). “UC Irvine UC Irvine Electronic Theses and Dissertations.” : 123.
+          </li>
+          <li class="mt-2">
+            Gu, Hao, Michel H.G. Duits, and Frieder Mugele. (2011). “Droplets Formation and Merging in Two-Phase Flow
+            Microfluidics.” <span class="font-italic">International journal of molecular sciences 12</span>(4):
+            2572–97.
+          </li>
+          <li class="mt-2">
+            Jeong, Woong-Chan et al. (2012). “Controlled Generation of Submicron Emulsion Droplets via Highly Stable
+            Tip-Streaming Mode in Microfluidic Devices.” <span class="font-italic">Lab on a Chip 12</span>(8):
+            1446–53.
+          </li>
+          <li class="mt-2">
+            Johnson, Paul Michael. 2015. “UC Irvine UC Irvine Electronic Theses and Dissertations.” : 123.
+          </li>
+          <li class="mt-2">
+            Kang, Zhanxiao et al. (2016). “Engineering Particle Morphology with Microfluidic Droplets.” <span
+              class="font-italic">Journal of
+              Micromechanics and Microengineering 26</span>(7): 75011.
+          </li>
+          <li class="mt-2">
+            Kong, Tiantian et al. (2013). “Engineering Polymeric Composite Particles by Emulsion-Templating:
+            Thermodynamics versus Kinetics.” <span class="font-italic">Soft Matter 9</span>(41): 9780–84.
+          </li>
+          <li class="mt-2">
+            Kong, Tiantian et al. (2012). “Droplet Based Microfluidic Fabrication of Designer Microparticles for
+            Encapsulation Applications.” <span class="font-italic">Biomicrofluidics 6</span>(3): 34104.
+          </li>
+          <li class="mt-2">
+            Martz, Thomas D et al. (2012). “Microfluidic Generation of Acoustically Active Nanodroplets.” <span
+              class="font-italic">Small 8</span>(12):
+            1876–79.
+          </li>
+          <li class="mt-2">
+            Rosenfeld, Liat, Tiras Lin, Ratmir Derda, and Sindy K Y Tang. (2014). “Review and Analysis of Performance
+            Metrics of Droplet Microfluidics Systems.” <span class="font-italic">Microfluidics and nanofluidics
+              16</span>(5): 921–39.
+          </li>
+          <li class="mt-2">
+            Schuler, Friedrich. (2016). “Centrifugal Step Emulsification for Digital Droplet Amplification.”
+          </li>
+          <li class="mt-2">
+            Tarn, M.D., and N. Pamme. 2014. “Microfluidics.” <span class="font-italic">Reference Module in Chemistry,
+              Molecular Sciences and
+              Chemical Engineering:</span> 1–7.
+          </li>
+          <li class="mt-2">
+            Vladisavljević, G T, Isao Kobayashi, and Mitsutoshi Nakajima. (2012). “Production of Uniform Droplets
+            Using Membrane, Microchannel and Microfluidic Emulsification Devices.” <span
+              class="font-italic">Microfluidics and nanofluidics 13</span>(1): 151–78.
+          </li>
+          <li class="mt-2">
+            Zhu, Pingan, and Liqiu Wang. (2017). “Passive and Active Droplet Generation with Microfluidics: A Review.”
+            <span class="font-italic">Lab on a Chip 17</span>(1): 34–75.
+          </li>
+        </ol>
+      </article>
 
-      </section>
-    </div>
+    </main>
   </div>
 
 

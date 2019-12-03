@@ -1,6 +1,6 @@
 body,
 #HQ_page {
-    font-size: 24px;
+    font-size: 18px !important;
     background-color: #14224c;
     color: white;
 }
@@ -98,10 +98,6 @@ footer {
 @media only screen and (max-width: 719px) {
     footer {
         margin-top: 600px;
-    }
-
-    body {
-        font-size: 18px;
     }
 
     #hard-to-find {

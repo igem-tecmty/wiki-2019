@@ -66,7 +66,7 @@ function createIndex() {
 
 /* MAINTAIN PORTRAIG IMAGE SET */
 function checkPortraitHeight() {
-  let toMove = $(document).scrollTop() / 3;
+  let toMove = $(document).scrollTop() / 5;
   if (window.innerWidth <= 576) toMove = 0;
   $("header").css({
     'background-position-y': `calc(50% - ${toMove}px)`

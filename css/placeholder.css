@@ -13,6 +13,12 @@ h6 {
   overflow-wrap: break-word;
 }
 
+p {
+  font-family: 'Lato';
+  line-height: 1.25em;
+}
+
+
 header {
   background-repeat: no-repeat;
   background-size: cover;

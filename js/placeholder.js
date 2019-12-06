@@ -77,7 +77,7 @@ function checkHeaderColor() {
   const opacity =
     $(document).scrollTop() /
     (Math.min(window.screen.width, portraitHeight) - $("nav").height());
-  $("nav").css({
+  $(".top-menu").css({
     'background-color': `rgba(6, 15, 41, ${opacity})`
   });
 }

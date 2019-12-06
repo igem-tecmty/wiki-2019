@@ -81,13 +81,7 @@ h2 {
   filter: grayscale(0%);
 }
 
-aside {
-  padding: 0 24px;
-  font-size: 0.9em;
-  margin-right: 2em;
-}
-
-#notebook-content aside {
+#notebook-content aside.index-menu {
   font-size: 0.75em;
 }
 
@@ -131,10 +125,8 @@ article>h3.inner-subtitle {
 
 aside.index-menu {
   height: fit-content;
-  padding: 0;
-  padding-top: 6em;
+  padding-top: 7em;
   z-index: 1;
-  font-size: 1.25em;
   color: black;
   line-height: 1em;
 }
@@ -567,11 +559,13 @@ table#promoters th {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .wrapper {
     font-size: 15px;
   }
+}
 
+@media only screen and (max-width: 991px) {
   aside.index-menu {
     position: unset;
     padding: 1em 0;

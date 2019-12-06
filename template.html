@@ -20,7 +20,7 @@
 
 <body>
 
-  <div class="top-menu">
+  <header class="top-menu">
     <nav class="navbar navbar-expand-lg navbar-dark container">
       <a class="navbar-brand" href="#">
         <img
@@ -42,11 +42,11 @@
               TEAM
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Members</a>
-              <a class="dropdown-item" href="#">Attributions</a>
-              <a class="dropdown-item" href="#">Collaborations</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Team">Members</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Attributions">Attributions</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Collaborations">Collaborations</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Special Thanks</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Thanks">Special Thanks</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -55,15 +55,14 @@
               PROJECT
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Description</a>
-              <a class="dropdown-item" href="#">Design</a>
-              <a class="dropdown-item" href="#">Notebook</a>
-              <a class="dropdown-item" href="#">Experiments & Protocols</a>
-              <a class="dropdown-item" href="#">Results</a>
-              <a class="dropdown-item" href="#">Demonstrate</a>
-              <a class="dropdown-item" href="#">Model</a>
-              <a class="dropdown-item" href="#">Hardware</a>
-              <a class="dropdown-item" href="#">Safety</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Description">Description</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Design">Design</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Notebook">Notebook & Protocols</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Experiments">Experiments</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Demonstrate">Demonstrate</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Model">Model</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Hardware">Hardware</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Safety">Safety</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -72,11 +71,11 @@
               PARTS
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Parts Overview</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts">Parts Overview</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Basic Parts</a>
-              <a class="dropdown-item" href="#">Composite Parts</a>
-              <a class="dropdown-item" href="#">Improved Parts</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts#basic-parts">Basic Parts</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts#improved-parts">Improved Parts</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts#composite-parts">Composite Parts</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -85,36 +84,36 @@
               HUMAN
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Human Practices</a>
-              <a class="dropdown-item" href="#">Integrated Human</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices">Human Practices</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices">Integrated Human</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Education and Public Engagement</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Public_Engagement">Education and Public Engagement</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT</a>
+            <a class="nav-link" href="/Team:Tec-Monterrey/Contact">CONTACT</a>
           </li>
         </ul>
       </div>
     </nav>
-  </div>
+  </header>
 
   <!---- SE COPIA Y PEGA DESDE AQUÍ... ---->
-  <main class="wrapper blue">
+  <main class="wrapper blue" id="template-page">
 
-    <header
+    <header class="page-cover"
       style="height: 400px; background-image: url('https://2019.igem.org/wiki/images/b/b8/T--Tec-Monterrey--portrait-design.jpg');">
       <div>
-        <h1 class="section-title">SECTION TITLE</h1>
+        <h1 class="page-title">SECTION TITLE</h1>
       </div>
     </header>
 
-    <main class="container main-content" style="margin-top: 48px;">
-      <div class="row">
-        <aside class="col-md-* col-lg-3 index-menu sticky-top"></aside>
-        <main class="subsection-container col-md-* col-lg-9">
+    <div class="container">
+      <div class="row main-content" style="margin-top: 48px;">
+        <nav class="col-md-* col-lg-3 index-menu sticky-top"></nav>
+        <article class="subsection-container col-md-* col-lg-9">
 
-          <article class="container">
+          <section class="container" id="section-01">
             <h2 class="row col-md-12 subsection-title">Subtitle 01</h2>
 
             <div class="row mt-4">
@@ -128,12 +127,13 @@
             </div>
 
             <div class="row mt-4">
-              <div class="col-sm-12 col-md-4 img-wrapper">
+              <figure class="col-sm-* col-md-4 img-wrapper">
                 <img
                   src="http://2011.igem.org/wiki/images/thumb/7/77/Cam_Overexpression_Construct.png/600px-Cam_Overexpression_Construct.png"
                   class="description-image" />
-              </div>
-              <p class="col-sm-12 col-md-8 description-text">
+                <figcaption><strong>Imagen 1:</strong> Imagen descriptiva de lo que se realizó</figcaption>
+              </figure>
+              <p class="col-sm-* col-md-8 description-text">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident, sunt in culpa qui officia deserunt
@@ -153,9 +153,9 @@
                 laborum.
               </p>
             </div>
-          </article>
+          </section>
 
-          <article class="container">
+          <section class="container" id="section-02">
             <h2 class="row col-md-12 subsection-title">Subtitle 02</h2>
 
             <div class="row mt-4">
@@ -198,9 +198,9 @@
                 mollit anim id est laborum.
               </p>
             </div>
-          </article>
+          </section>
 
-          <article class="container">
+          <section class="container" id="section-03">
             <h2 class="row col-md-12 subsection-title">Subtitle 03</h2>
 
             <div class="row mt-4">
@@ -247,11 +247,11 @@
                 mollit anim id est laborum.
               </p>
             </div>
-          </article>
+          </section>
 
-        </main>
+        </article>
       </div>
-    </main>
+    </div>
 
   </main>
   <!----------  HASTA ACÁ...   ---------->

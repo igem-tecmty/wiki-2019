@@ -1,268 +1,84 @@
 <html>
+
 <body>
-<header id="desktop-menu" style="
-    color: white;
-    background-color: var(--iGEM-dark-blue);
-    position: fixed;
-    z-index: 5;
-    display: flex;
-    width: 100%;
-    font-family: "Manjari", sans-serif;
-    box-shadow: 0px 0px 8px black;
-">
-    <div id="header-content-container" style="
-        width: 100%;
-        max-width: 1080px;
-        margin: 0 auto;
-        display: flex;
-        color: white;
-        align-items: center;
-        justify-content: flex-end;
-        width: 100%;
-    ">
+    <header class="top-menu">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="#">
+                <img src="https://2019.igem.org/wiki/images/thumb/4/4c/T--Tec-Monterrey--white-logo-breathe-in.png/240px-T--Tec-Monterrey--white-logo-breathe-in.png"
+                    width="48" height="48" class="d-inline-block align-top" alt="">
+                Breathe-In
+            </a>
 
-        <!-- Logo Breathe-In -->
-        <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey" style="
-            padding: 0;
-            margin: 0 4px;
-            height: 72px;
-        ">
-            <img src="img/logos/logo_BREATHE_white_plain.png" class="main-logo" style="padding: 8px; height: 72px;"/>
-        </a>
-        
-        <span style="flex-grow: 1;"></span>
-        <div id="team-dropdown" class="dropdown" style="
-            position: relative;
-            width: 15%;
-            max-width: 128px;
-        ">
-            <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false">
-                TEAM
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Members</a>
-                <a class="dropdown-item" href="#">Attributions</a>
-                <a class="dropdown-item" href="#">Collabs</a>
-                <a class="dropdown-item" href="#">Sponsors</a>
-                <a class="dropdown-item" href="#">Gallery</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            TEAM
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Team">Members</a>
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Attributions">Attributions</a>
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Collaborations">Collaborations</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Thanks">Special Thanks</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PROJECT
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Description">Description</a>
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Design">Design</a>
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Notebook">Notebook & Protocols</a>
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Experiments">Experiments</a>
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Demonstrate">Demonstrate</a>
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Model">Model</a>
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Hardware">Hardware</a>
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Safety">Safety</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PARTS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts">Parts Overview</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts#basic-parts">Basic Parts</a>
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts#improved-parts">Improved Parts</a>
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts#composite-parts">Composite
+                                Parts</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            HUMAN
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices">Human Practices</a>
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices">Integrated Human</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Team:Tec-Monterrey/Public_Engagement">Education and Public
+                                Engagement</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Team:Tec-Monterrey/Contact">CONTACT</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-
-        <div id="project-dropdown" class="dropdown" style="
-            position: relative;
-            width: 15%;
-            max-width: 128px;
-        ">
-            <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-            >
-                PROJECT
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Description</a>
-                <a class="dropdown-item" href="#">Design</a>
-                <a class="dropdown-item" href="#">Notebook & Protocols</a>
-                <a class="dropdown-item" href="#">Experiments</a>
-                <a class="dropdown-item" href="#">Demonstrate</a>
-                <a class="dropdown-item" href="#">Model</a>
-                <a class="dropdown-item" href="#">Safety</a>
-            </div>
-        </div>
-
-        <div id="parts-dropdown" class="dropdown" style="
-            position: relative;
-            width: 15%;
-            max-width: 128px;
-        ">
-            <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-            >
-                PARTS
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Parts Overview</a>
-                <a class="dropdown-item" href="#">Basic Parts</a>
-                <a class="dropdown-item" href="#">Improved Parts</a>
-                <a class="dropdown-item" href="#">Composite Parts</a>
-                <a class="dropdown-item" href="#">Part Collection</a>
-            </div>
-        </div>
-
-        <div id="human-dropdown" class="dropdown" style="
-            position: relative;
-            width: 15%;
-            max-width: 128px;
-        ">
-            <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-            >
-                HUMAN
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Human Practices</a>
-                <a class="dropdown-item" href="#">Integrated human</a>
-                <a class="dropdown-item" href="#">Public Engagement</a>
-                <a class="dropdown-item" href="#">LATAM Meetup</a>
-            </div>
-        </div>
-
-        <div id="contact-dropdown" class="dropdown" style="
-            position: relative;
-            width: 15%;
-            max-width: 128px;
-        ">
-            <button class="btn btn-secondary" type="button">
-                CONTACT
-            </button>
-        </div>
-    </div>
-</header>
-
-<header id="mobile-menu" style="
-    color: white;
-    background-color: var(--iGEM-dark-blue);
-    position: fixed;
-    z-index: 5;
-    display: flex;
-    width: 100%;
-    font-family: "Manjari", sans-serif;
-    box-shadow: 0px 0px 8px black;
-">
-    <nav class="navbar navbar-light light-blue lighten-4">
-
-        <!-- Logo Breathe-In -->
-        <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey" style="
-            padding: 0;
-            margin: 0 4px;
-            height: 72px;
-        ">
-        <img src="img/logos/logo_BREATHE_plain.png" class="main-logo" style="padding: 8px; height: 72px;" />
-        </a>
-
-        <!-- Collapse button -->
-        <button
-        class="navbar-toggler toggler-example"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent1"
-        aria-controls="navbarSupportedContent1"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        >
-        <span class="text-white"><i class="material-icons">menu</i></span>
-        </button>
-
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-        <!-- Links -->
-        <div id="team-dropdown" class="dropdown">
-            <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            >
-            TEAM
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Members</a>
-            <a class="dropdown-item" href="#">Attributions</a>
-            <a class="dropdown-item" href="#">Collabs</a>
-            <a class="dropdown-item" href="#">Sponsors</a>
-            <a class="dropdown-item" href="#">Gallery</a>
-            </div>
-        </div>
-        <div id="project-dropdown" class="dropdown">
-            <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            >
-            PROJECT
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Description</a>
-            <a class="dropdown-item" href="#">Design</a>
-            <a class="dropdown-item" href="#">Notebook & Protocols</a>
-            <a class="dropdown-item" href="#">Experiments</a>
-            <a class="dropdown-item" href="#">Demonstrate</a>
-            <a class="dropdown-item" href="#">Model</a>
-            <a class="dropdown-item" href="#">Safety</a>
-            </div>
-        </div>
-        <div id="parts-dropdown" class="dropdown">
-            <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            >
-            PARTS
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Parts Overview</a>
-            <a class="dropdown-item" href="#">Basic Parts</a>
-            <a class="dropdown-item" href="#">Improved Parts</a>
-            <a class="dropdown-item" href="#">Composite Parts</a>
-            <a class="dropdown-item" href="#">Part Collection</a>
-            </div>
-        </div>
-        <div id="human-dropdown" class="dropdown">
-            <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            >
-            HUMAN
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Human Practices</a>
-            <a class="dropdown-item" href="#">Integrated human</a>
-            <a class="dropdown-item" href="#">Public Engagement</a>
-            <a class="dropdown-item" href="#">LATAM Meetup</a>
-            </div>
-        </div>
-        <div id="contact-dropdown" class="dropdown">
-            <button class="btn btn-secondary" type="button">
-            CONTACT
-            </button>
-        </div>
-        <!-- Links -->
-        </div>
-        <!-- Collapsible content -->
-    </nav>
-    <!--/.Navbar-->
-</header>
+        </nav>
+    </header>
 </body>
+
 </html>

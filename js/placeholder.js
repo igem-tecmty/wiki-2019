@@ -1,9 +1,7 @@
-var portraitHeight = $("header").height();
+var portraitHeight = $("header.page-cover").height();
 checkPortraitHeight();
 
 checkHeaderColor();
-$(".portrait-container").height(Math.min(window.screen.width, portraitHeight));
-var scrollHeights = createScrollHeights();
 
 createIndex();
 
@@ -24,42 +22,14 @@ function checkStaticImages() {
     .css("object-position", newPosition);
 }
 
-function createScrollHeights() {
-  let scrollHeights = [];
-
-  let first = portraitHeight;
-  first += $("#intro-text").height() || 0;
-  first += parseInt($("#intro-text").css("margin-top")) || 0;
-  first += $(".intro-section").height() || 0;
-  first += parseInt($(".intro-section").css("margin-top")) || 0;
-  if (window.screen.width < 768) {
-    first += $("aside").height() + 96;
-  }
-
-  scrollHeights.push(first);
-  $("article").each(function () {
-    scrollHeights[scrollHeights.length - 1];
-    scrollHeights.push(
-      scrollHeights[scrollHeights.length - 1] +
-      $(this).outerHeight() +
-      parseInt($(this).css("margin-top"))
-    );
-  });
-
-  return scrollHeights;
-}
-
 function createIndex() {
   const $indexMenu = $(".index-menu");
   $indexMenu.empty();
-  $("article").each(function (i) {
+  $("section").each(function (i) {
     $indexMenu.append(`
-    <ul class="index-section" onclick="window.scrollTo(0, ${scrollHeights[i] +
-      4});">
-    <a>${$(this)
+    <a class="index-section" data-elem-id="${$(this).attr('id')}">${$(this)
       .find(".subsection-title")
       .text()}</a>
-    </ul>
     `);
   });
 }
@@ -77,27 +47,36 @@ function checkHeaderColor() {
   const opacity =
     $(document).scrollTop() /
     (Math.min(window.screen.width, portraitHeight) - $("nav").height());
-  $(".top-menu").css({
+  $("header.top-menu").css({
     'background-color': `rgba(6, 15, 41, ${opacity})`
   });
 }
 
 function checkIndexMenu() {
-  const elements = document.getElementsByClassName("index-section");
-  for (let i = 0; i < elements.length; i++) {
-    e = elements[i];
-    const h = $(document).scrollTop();
-    if (h >= scrollHeights[i] && h < scrollHeights[i + 1]) {
-      e.className = "index-section current-index";
-    } else if (h > scrollHeights[i + 1]) {
-      e.className = "index-section visited-index";
-    } else if (h < scrollHeights[i]) {
-      e.className = "index-section not-visited-index";
-    } else if (i + 1 == elements.length) {
-      e.className = "index-section current-index";
+  let foundCurrent = false;
+  let i = $("section").length - 1;
+  const h = $(document).scrollTop();
+  const indexes = document.getElementsByClassName("index-section");
+  $($("section").get().reverse()).each(function () {
+    if (h > $(this).offset().top - $('header.top-menu').height() - 30) {
+      foundCurrent ?
+        indexes[i].className = "index-section visited-index" :
+        indexes[i].className = "index-section current-index";
+      foundCurrent = true;
+    } else {
+      indexes[i].className = "index-section not-visited-index";
     }
-  }
+    i--;
+  });
 }
+
+$(".index-section").click(function () {
+  var elemID = '#' + $(this).data('elem-id')
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $(elemID).offset().top - $("header.top-menu").height() - 24
+  }, 500);
+  checkIndexMenu()
+});
 
 /*
 $(window).on('click', () => $('.navbar-collapse').removeClass("show"));
@@ -176,7 +155,6 @@ $("#droplet-techniques")
     $("#droplet-techniques")
       .find("#droplet-content")
       .toggle("medium");
-    scrollHeights = createScrollHeights();
     createIndex();
   });
 
@@ -186,7 +164,6 @@ $("#metal-biosensor-component")
     $("#metal-biosensor-component")
       .find("div")
       .toggle("slow");
-    scrollHeights = createScrollHeights();
     createIndex();
   });
 

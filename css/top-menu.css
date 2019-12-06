@@ -1,4 +1,4 @@
-.top-menu {
+header.top-menu {
   z-index: 5;
   position: fixed !important;
   width: 100%;
@@ -7,7 +7,7 @@
   background-color: var(--iGEM-dark-blue);
 }
 
-.top-menu nav.navbar {
+header.top-menu nav.navbar {
   display: flex;
   height: 56px;
   font-family: "Manjari", sans-serif;
@@ -16,7 +16,7 @@
   padding: 0 !important;
 }
 
-.top-menu a.navbar-brand {
+header.top-menu a.navbar-brand {
   line-height: 60px;
   font-size: 2em;
   height: 50px;
@@ -25,53 +25,53 @@
   margin-left: 1rem;
 }
 
-.top-menu button.navbar-toggler {
+header.top-menu button.navbar-toggler {
   margin-right: 1rem;
   margin-left: 1rem;
   background-color: #FFFFFF10;
   border-color: #FFFFFF10;
 }
 
-.top-menu .navbar-collapse.show {
+header.top-menu .navbar-collapse.show {
   background-color: var(--iGEM-dark-blue);
 }
 
-.top-menu li.nav-item,
-.top-menu li.nav-item:active {
+header.top-menu li.nav-item,
+header.top-menu li.nav-item:active {
   border-radius: 8px;
 }
 
-.top-menu li.nav-item:hover {
+header.top-menu li.nav-item:hover {
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.top-menu li.nav-item a,
-.top-menu li.nav-item a:hover,
-.top-menu li.nav-item a:active,
-.top-menu li.nav-item a:focus {
+header.top-menu li.nav-item a,
+header.top-menu li.nav-item a:hover,
+header.top-menu li.nav-item a:active,
+header.top-menu li.nav-item a:focus {
   text-decoration: none;
   color: white !important;
 }
 
-.top-menu a.nav-link {
+header.top-menu a.nav-link {
   color: white !important;
   padding-left: 1em !important;
   padding-right: 1em !important;
   padding-top: 0.675rem;
 }
 
-.top-menu .dropdown-menu {
+header.top-menu .dropdown-menu {
   background-color: #12214b;
 }
 
-.top-menu a.dropdown-item:hover,
-.top-menu a.dropdown-item:active,
-.top-menu a.dropdown-item:focus {
+header.top-menu a.dropdown-item:hover,
+header.top-menu a.dropdown-item:active,
+header.top-menu a.dropdown-item:focus {
   background-color: #FFFFFF10 !important;
 }
 
 @media only screen and (min-width: 992px) {
-  .top-menu nav.navbar {
+  header.top-menu nav.navbar {
     height: 70px;
   }
 }

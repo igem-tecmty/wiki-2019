@@ -27,7 +27,7 @@
 .black .subsection-title,
 .black .current-index,
 h3.black {
-    color: black;
+    color: black !important;
 }
 
 .black .current-index,
@@ -54,7 +54,7 @@ h3.black {
 .orange .subsection-title,
 .orange .current-index,
 h2.orange {
-    color: var(--iGEM-orange);
+    color: var(--iGEM-orange) !important;
 }
 
 .orange .current-index,
@@ -81,7 +81,7 @@ h2.orange {
 .aqua .subsection-title,
 .aqua .current-index,
 h2.aqua {
-    color: var(--iGEM-aqua);
+    color: var(--iGEM-aqua) !important;
 }
 
 .aqua .current-index,
@@ -108,7 +108,7 @@ h2.aqua {
 .green .subsection-title,
 .green .current-index,
 h2.green {
-    color: var(--iGEM-green);
+    color: var(--iGEM-green) !important;
 }
 
 .green .current-index,
@@ -136,7 +136,7 @@ h2.green {
 .blue .subsection-title,
 .blue .current-index,
 h2.blue {
-    color: var(--iGEM-light-blue);
+    color: var(--iGEM-light-blue) !important;
 }
 
 .blue .current-index,
@@ -159,5 +159,5 @@ h2.blue {
 .red .subsection-title,
 .red .current-index,
 h2.red {
-    color: var(--iGEM-safety-red);
+    color: var(--iGEM-safety-red) !important;
 }

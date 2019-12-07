@@ -66,7 +66,7 @@ h3.inner-subtitle,
   font-weight: bold;
 }
 
-#notebook-content nav.index-menu {
+main#notebook-page nav.index-menu {
   font-size: 0.75em;
 }
 
@@ -139,7 +139,7 @@ figure figcaption strong {
   margin-top: 64px;
 }
 
-#attributions-content h2 {
+main#attributions-page h2 {
   margin-bottom: 0;
 }
 
@@ -202,7 +202,7 @@ figure figcaption strong {
   text-align: center;
 }
 
-#team-page .member-component img {
+.people-component img {
   width: inherit;
 }
 
@@ -226,24 +226,24 @@ figure figcaption strong {
   font-size: 0.6em;
 }
 
-#attributions-content .people-component>img {
+main#attributions-page .people-component>img {
   width: 80px;
   height: 80px;
   font-size: 0.8em;
   margin-right: 0.5em;
 }
 
-#attributions-content .member-component {
+main#attributions-page .member-component {
   width: 80px;
   font-size: 0.8em;
 }
 
-#attributions-content .people-component:not(.member-component) {
+main#attributions-page .people-component:not(.member-component) {
   max-width: 320px;
   text-align: left;
 }
 
-#attributions-content .people-component p {
+main#attributions-page .people-component p {
   font-size: 0.6em;
 }
 
@@ -479,7 +479,7 @@ table#promoters th {
   background-image: url("../img/portrait/model.jpg");
 }
 
-#contact-content {
+main#contact-page {
   font-family: "Manjari", sans-serif;
 }
 
@@ -494,17 +494,17 @@ table#promoters th {
   width: 2em;
 }
 
-#parts-content table,
-#collection-content table {
+main#parts-page table,
+main#collection-page table {
   font-size: 0.8em;
   display: block;
   margin-top: -8px;
   overflow: auto;
 }
 
-#parts-content .thread,
-#collection-content .thread,
-#safety-content .thread {
+main#parts-page .thread,
+main#collection-page .thread,
+main#safety-page .thread {
   color: white;
 }
 
@@ -512,7 +512,7 @@ table#promoters th {
   color: var(--iGEM-blue);
 }
 
-#parts-content a:visited {
+main#parts-page a:visited {
   color: var(--iGEM-blue);
 }
 

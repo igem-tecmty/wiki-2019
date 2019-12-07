@@ -1,778 +1,715 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-    <link rel="stylesheet" href="css/resetter.css" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
-    <link rel="stylesheet" href="css/header.css" type="text/css" />
-    <link rel="stylesheet" href="css/footer.css" type="text/css" />
-    <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
-    <link rel="stylesheet" href="css/colors.css" type="text/css" />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/resetter.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
+  <link rel="stylesheet" href="css/top-menu.css" type="text/css" />
+  <link rel="stylesheet" href="css/footer.css" type="text/css" />
+  <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+  <link rel="stylesheet" href="css/colors.css" type="text/css" />
 
-    <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  </head>
+  <link href="https://fonts.googleapis.com/css?family=Anton|Lato|Manjari&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-  <body class="blue">
+  <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+</head>
 
-    <header id="desktop-menu">
-      <div id="header-content-container">
+<body>
 
-        <!-- Logo Breathe-In -->
-        <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
-          <img src="https://2019.igem.org/wiki/images/thumb/4/4c/T--Tec-Monterrey--white-logo-breathe-in.png/240px-T--Tec-Monterrey--white-logo-breathe-in.png" class="main-logo" />
-        </a>
-        
-        <span class="filler"></span>
-        <div id="team-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            TEAM
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Team">Members</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Attributions">Attributions</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Collaborations">Collaborations</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Thanks">Special thanks</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Gallery">Gallery</a>
-          </div>
-        </div>
-        <div id="project-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            PROJECT
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Description">Description</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Design">Design</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Notebook">Notebook & Protocols</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Experiments">Experiments</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Demonstrate">Demonstrate</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Model">Model</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Safety">Safety</a>
-          </div>
-        </div>
-        <div id="parts-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            PARTS
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts">Parts Overview</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Basic_Part">Basic Parts</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Improve">Improved Parts</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Composite_Part">Composite Parts</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Part_Collection">Part Collection</a>
-          </div>
-        </div>
-        <div id="human-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            HUMAN
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices">Human Practices</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices#Integrated">Integrated human</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Public_Engagement">Public Engagement</a>
-            <a class="dropdown-item" href="/Team:Tec-Monterrey/Meetup">LATAM Meetup</a>
-          </div>
-        </div>
-        <div id="contact-dropdown" class="dropdown">
-          <button class="btn btn-secondary" type="button">
-            CONTACT
-          </button>
-        </div>
-      </div>
-    </header>
+  <header class="top-menu">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://2019.igem.org/wiki/images/thumb/4/4c/T--Tec-Monterrey--white-logo-breathe-in.png/240px-T--Tec-Monterrey--white-logo-breathe-in.png"
+          width="48" height="48" class="d-inline-block align-top" alt="">
+        Breathe-In
+      </a>
 
-    <header id="mobile-menu">
-      <nav class="navbar navbar-light light-blue lighten-4">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Logo Breathe-In -->
-        <a class="navbar-brand" href="https://2019.igem.org/Team:Tec-Monterrey">
-          <img src="https://2019.igem.org/wiki/images/thumb/4/4c/T--Tec-Monterrey--white-logo-breathe-in.png/240px-T--Tec-Monterrey--white-logo-breathe-in.png" class="main-logo" />
-        </a>
-
-        <!-- Collapse button -->
-        <button
-          class="navbar-toggler toggler-example"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent1"
-          aria-controls="navbarSupportedContent1"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="text-white"><i class="material-icons">menu</i></span>
-        </button>
-
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-          <!-- Links -->
-          
-          <div id="team-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               TEAM
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/Team:Tec-Monterrey/Team">Members</a>
               <a class="dropdown-item" href="/Team:Tec-Monterrey/Attributions">Attributions</a>
               <a class="dropdown-item" href="/Team:Tec-Monterrey/Collaborations">Collaborations</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Thanks">Special thanks</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Gallery">Gallery</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Thanks">Special Thanks</a>
             </div>
-          </div>
-          <div id="project-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               PROJECT
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/Team:Tec-Monterrey/Description">Description</a>
               <a class="dropdown-item" href="/Team:Tec-Monterrey/Design">Design</a>
               <a class="dropdown-item" href="/Team:Tec-Monterrey/Notebook">Notebook & Protocols</a>
               <a class="dropdown-item" href="/Team:Tec-Monterrey/Experiments">Experiments</a>
               <a class="dropdown-item" href="/Team:Tec-Monterrey/Demonstrate">Demonstrate</a>
               <a class="dropdown-item" href="/Team:Tec-Monterrey/Model">Model</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Hardware">Hardware</a>
               <a class="dropdown-item" href="/Team:Tec-Monterrey/Safety">Safety</a>
             </div>
-          </div>
-          <div id="parts-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               PARTS
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts">Parts Overview</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Basic_Part">Basic Parts</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Improve">Improved Parts</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Composite_Part">Composite Parts</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Part_Collection">Part Collection</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts#basic-parts">Basic Parts</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts#improved-parts">Improved Parts</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts#composite-parts">Composite
+                Parts</a>
             </div>
-          </div>
-          <div id="human-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               HUMAN
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices">Human Practices</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices#Integrated">Integrated human</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Public_Engagement">Public Engagement</a>
-              <a class="dropdown-item" href="/Team:Tec-Monterrey/Meetup">LATAM Meetup</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices">Integrated Human</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Public_Engagement">Education and Public
+                Engagement</a>
             </div>
-          </div>
-          <div id="contact-dropdown" class="dropdown">
-            <button class="btn btn-secondary" type="button">
-              CONTACT
-            </button>
-          </div>
-          <!-- Links -->
-        </div>
-        <!-- Collapsible content -->
-      </nav>
-      <!--/.Navbar-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Team:Tec-Monterrey/Contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!---- SE COPIA Y PEGA DESDE AQUÍ... ---->
+  <main id="attributions-page" class="wrapper blue">
+
+    <header class="page-cover"
+      style="height: 400px; background-image: url('https://2019.igem.org/wiki/images/4/4c/T--Tec-Monterrey--portrait-attributions.jpg');">
+      <div>
+        <h1 class="page-title">ATTRIBUTIONS</h1>
+      </div>
     </header>
 
-    <div class="portrait-container container-fluid" data-height="420">
-      <h1 class="section-title">ATTRIBUTIONS</h1>
-      <img
-        src="https://2019.igem.org/wiki/images/4/4c/T--Tec-Monterrey--portrait-attributions.jpg"
-        class="portrait-photo"
-        style="opacity: 0.35"
-      />
-    </div>
-
-    <!------- PARA AGREGAR A LA WIKI VAMOS A COPIAR Y PEGAR DESDE AQUÍ ------->
-    <div id="attributions-content" class="main-content container">
-      <div class="row" style="margin-top: 48px;">
-
-        <!-----------       INDICE DE LA IZQUIERDA       ----------->
-        <aside class="col-sm-12 col-md-3 col-lg-2 index-menu sticky-top" style="margin-right: 2em;">
-          <!----  El javascript creará los index por nosotros   ---->
-        </aside>
-
-        <section class="subsection-container col-sm-12 col-md-8 col-lg-9">
-
-          <article class="container">
+    <div class="container">
+      <div class="row main-content" style="margin-top: 48px;">
+        <nav class="col-md-* col-lg-3 index-menu sticky-top"></nav>
+        <article class="subsection-container col-md-* col-lg-9">
+          <section id="dry-lab-section" class="container">
             <h2 class="row col-md-12 subsection-title">Dry lab</h2>
             <div class="d-flex justify-content-start flex-wrap">
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/2/2a/T--Tec-Monterrey--team-abril.png/240px-T--Tec-Monterrey--team-abril.png" />
-                  <h4 class="name">Abril Diosdado</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/7/7a/T--Tec-Monterrey--team-adrian.png/240px-T--Tec-Monterrey--team-adrian.png" />
-                  <h4 class="name">Adrián Hernández</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/a/ac/T--Tec-Monterrey--team-nufo.png/240px-T--Tec-Monterrey--team-nufo.png" />
-                  <h4 class="name">Arnulfo Juárez</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/3/34/T--Tec-Monterrey--team-damn.png/240px-T--Tec-Monterrey--team-damn.png" />
-                  <h4 class="name">Damian Espinoza</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/d/d9/T--Tec-Monterrey--team-daniel.png/240px-T--Tec-Monterrey--team-daniel.png" />
-                  <h4 class="name">Daniel Cuellar</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/d/d7/T--Tec-Monterrey--team-david.png/240px-T--Tec-Monterrey--team-david.png" />
-                  <h4 class="name">David Diaz</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/6/69/T--Tec-Monterrey--team-fernanda.png/240px-T--Tec-Monterrey--team-fernanda.png" />
-                  <h4 class="name">Fernanda Velázquez</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/8/89/T--Tec-Monterrey--team-gigi.png/240px-T--Tec-Monterrey--team-gigi.png" />
-                  <h4 class="name">Guillermo Wells</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/1/16/T--Tec-Monterrey--team-ivonne.png/240px-T--Tec-Monterrey--team-ivonne.png" />
-                  <h4 class="name">Ivonne Lomelí</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/f/f5/T--Tec-Monterrey--team-maggie.png/240px-T--Tec-Monterrey--team-maggie.png" />
-                  <h4 class="name">Margarita Escobar</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/8/8c/T--Tec-Monterrey--team-riyad.png/240px-T--Tec-Monterrey--team-riyad.png" />
-                  <h4 class="name">Riyad Vera</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/c/ca/T--Tec-Monterrey--team-shani.png/240px-T--Tec-Monterrey--team-shani.png" />
-                  <h4 class="name">Shani Leyva</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/a/a9/T--Tec-Monterrey--team-vale.png/240px-T--Tec-Monterrey--team-vale.png" />
-                  <h4 class="name">Valeria Betancourt</h4>
-              </div>
-      
-            </div>
-            <p class="row col-md-12 mt-3">
-                The dry lab team came up with the project idea. These team members worked 4 months
-                to make a detailed investigation to back the project up in order to proceed with the
-                laboratory tasks. It is worth to acknowledge the work of our teammates:
-                <strong> Abril Diosdado, David Díaz, Arnulfo Juárez</strong> and
-                <strong>Guillermo Wells, </strong> who designed the parts that were later
-                synthesized for the development of the project. 
-            </p>
-          </article>
 
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">Wet lab</h2>
-            <div class="d-flex justify-content-start flex-wrap">
-        
               <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/2/2a/T--Tec-Monterrey--team-abril.png/240px-T--Tec-Monterrey--team-abril.png" />
-                  <h4 class="name">Abril Diosdado</h4>
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/2/2a/T--Tec-Monterrey--team-abril.png/240px-T--Tec-Monterrey--team-abril.png" />
+                <h4 class="name">Abril Diosdado</h4>
               </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/7/7a/T--Tec-Monterrey--team-adrian.png/240px-T--Tec-Monterrey--team-adrian.png" />
-                  <h4 class="name">Adrián Hernández</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/7/76/T--Tec-Monterrey--team-alan.png/240px-T--Tec-Monterrey--team-alan.png" />
-                  <h4 class="name">Alan Anaya</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/a/ac/T--Tec-Monterrey--team-nufo.png/240px-T--Tec-Monterrey--team-nufo.png" />
-                  <h4 class="name">Arnulfo Juárez</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/3/34/T--Tec-Monterrey--team-damn.png/240px-T--Tec-Monterrey--team-damn.png" />
-                  <h4 class="name">Damian Espinoza</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/d/d9/T--Tec-Monterrey--team-daniel.png/240px-T--Tec-Monterrey--team-daniel.png" />
-                  <h4 class="name">Daniel Cuellar</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/d/d7/T--Tec-Monterrey--team-david.png/240px-T--Tec-Monterrey--team-david.png" />
-                  <h4 class="name">David Diaz</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/6/69/T--Tec-Monterrey--team-fernanda.png/240px-T--Tec-Monterrey--team-fernanda.png" />
-                  <h4 class="name">Fernanda Velázquez</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/8/89/T--Tec-Monterrey--team-gigi.png/240px-T--Tec-Monterrey--team-gigi.png" />
-                  <h4 class="name">Guillermo Wells</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/1/16/T--Tec-Monterrey--team-ivonne.png/240px-T--Tec-Monterrey--team-ivonne.png" />
-                  <h4 class="name">Ivonne Lomelí</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/f/f5/T--Tec-Monterrey--team-maggie.png/240px-T--Tec-Monterrey--team-maggie.png" />
-                  <h4 class="name">Margarita Escobar</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/8/8c/T--Tec-Monterrey--team-riyad.png/240px-T--Tec-Monterrey--team-riyad.png" />
-                  <h4 class="name">Riyad Vera</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/c/ca/T--Tec-Monterrey--team-shani.png/240px-T--Tec-Monterrey--team-shani.png" />
-                  <h4 class="name">Shani Leyva</h4>
-              </div>
-        
-              <div class="people-component member-component">
-                  <img src="https://2019.igem.org/wiki/images/thumb/a/a9/T--Tec-Monterrey--team-vale.png/240px-T--Tec-Monterrey--team-vale.png" />
-                  <h4 class="name">Valeria Betancourt</h4>
-              </div>
-      
-            </div>
-            <p class="row col-md-12 mt-3">
-                Laboratory work was made during 4 months. Our team was divided into specific
-                sections according to the needs of the project. 
-                <strong>David Díaz </strong>was in charge of the amplification cascade,
-                <strong>Abril Diosdado</strong> coordinated the ligations using the 3A assembly method and
-                <strong>Arnulfo Juárez</strong> ran the experiments involved in the expression of sialidase with the sfGFP. 
-            </p>
-          </article>
 
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">Hardware</h2>
-            <div class="d-flex justify-content-start flex-wrap">
-        
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/a/ac/T--Tec-Monterrey--team-nufo.png/240px-T--Tec-Monterrey--team-nufo.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/7/7a/T--Tec-Monterrey--team-adrian.png/240px-T--Tec-Monterrey--team-adrian.png" />
+                <h4 class="name">Adrián Hernández</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/a/ac/T--Tec-Monterrey--team-nufo.png/240px-T--Tec-Monterrey--team-nufo.png" />
                 <h4 class="name">Arnulfo Juárez</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/3/34/T--Tec-Monterrey--team-damn.png/240px-T--Tec-Monterrey--team-damn.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/3/34/T--Tec-Monterrey--team-damn.png/240px-T--Tec-Monterrey--team-damn.png" />
                 <h4 class="name">Damian Espinoza</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/d/d9/T--Tec-Monterrey--team-daniel.png/240px-T--Tec-Monterrey--team-daniel.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/d/d9/T--Tec-Monterrey--team-daniel.png/240px-T--Tec-Monterrey--team-daniel.png" />
                 <h4 class="name">Daniel Cuellar</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/d/d7/T--Tec-Monterrey--team-david.png/240px-T--Tec-Monterrey--team-david.png" />
+                <h4 class="name">David Diaz</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/6/69/T--Tec-Monterrey--team-fernanda.png/240px-T--Tec-Monterrey--team-fernanda.png" />
+                <h4 class="name">Fernanda Velázquez</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/8/89/T--Tec-Monterrey--team-gigi.png/240px-T--Tec-Monterrey--team-gigi.png" />
+                <h4 class="name">Guillermo Wells</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/1/16/T--Tec-Monterrey--team-ivonne.png/240px-T--Tec-Monterrey--team-ivonne.png" />
+                <h4 class="name">Ivonne Lomelí</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/f/f5/T--Tec-Monterrey--team-maggie.png/240px-T--Tec-Monterrey--team-maggie.png" />
+                <h4 class="name">Margarita Escobar</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/8/8c/T--Tec-Monterrey--team-riyad.png/240px-T--Tec-Monterrey--team-riyad.png" />
+                <h4 class="name">Riyad Vera</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/c/ca/T--Tec-Monterrey--team-shani.png/240px-T--Tec-Monterrey--team-shani.png" />
+                <h4 class="name">Shani Leyva</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/a/a9/T--Tec-Monterrey--team-vale.png/240px-T--Tec-Monterrey--team-vale.png" />
+                <h4 class="name">Valeria Betancourt</h4>
+              </div>
+
+            </div>
+            <p class="row col-md-12 mt-3">
+              The dry lab team came up with the project idea. These team members worked 4 months
+              to make a detailed investigation to back the project up in order to proceed with the
+              laboratory tasks. It is worth to acknowledge the work of our teammates:
+              <strong> Abril Diosdado, David Díaz, Arnulfo Juárez</strong> and
+              <strong>Guillermo Wells, </strong> who designed the parts that were later
+              synthesized for the development of the project.
+            </p>
+          </section>
+
+          <section id="wet-lab-section" class="container">
+            <h2 class="row col-md-12 subsection-title">Wet lab</h2>
+            <div class="d-flex justify-content-start flex-wrap">
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/2/2a/T--Tec-Monterrey--team-abril.png/240px-T--Tec-Monterrey--team-abril.png" />
+                <h4 class="name">Abril Diosdado</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/7/7a/T--Tec-Monterrey--team-adrian.png/240px-T--Tec-Monterrey--team-adrian.png" />
+                <h4 class="name">Adrián Hernández</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/7/76/T--Tec-Monterrey--team-alan.png/240px-T--Tec-Monterrey--team-alan.png" />
+                <h4 class="name">Alan Anaya</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/a/ac/T--Tec-Monterrey--team-nufo.png/240px-T--Tec-Monterrey--team-nufo.png" />
+                <h4 class="name">Arnulfo Juárez</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/3/34/T--Tec-Monterrey--team-damn.png/240px-T--Tec-Monterrey--team-damn.png" />
+                <h4 class="name">Damian Espinoza</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/d/d9/T--Tec-Monterrey--team-daniel.png/240px-T--Tec-Monterrey--team-daniel.png" />
+                <h4 class="name">Daniel Cuellar</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/d/d7/T--Tec-Monterrey--team-david.png/240px-T--Tec-Monterrey--team-david.png" />
+                <h4 class="name">David Diaz</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/6/69/T--Tec-Monterrey--team-fernanda.png/240px-T--Tec-Monterrey--team-fernanda.png" />
+                <h4 class="name">Fernanda Velázquez</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/8/89/T--Tec-Monterrey--team-gigi.png/240px-T--Tec-Monterrey--team-gigi.png" />
+                <h4 class="name">Guillermo Wells</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/1/16/T--Tec-Monterrey--team-ivonne.png/240px-T--Tec-Monterrey--team-ivonne.png" />
+                <h4 class="name">Ivonne Lomelí</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/f/f5/T--Tec-Monterrey--team-maggie.png/240px-T--Tec-Monterrey--team-maggie.png" />
+                <h4 class="name">Margarita Escobar</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/8/8c/T--Tec-Monterrey--team-riyad.png/240px-T--Tec-Monterrey--team-riyad.png" />
+                <h4 class="name">Riyad Vera</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/c/ca/T--Tec-Monterrey--team-shani.png/240px-T--Tec-Monterrey--team-shani.png" />
+                <h4 class="name">Shani Leyva</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/a/a9/T--Tec-Monterrey--team-vale.png/240px-T--Tec-Monterrey--team-vale.png" />
+                <h4 class="name">Valeria Betancourt</h4>
+              </div>
+
+            </div>
+            <p class="row col-md-12 mt-3">
+              Laboratory work was made during 4 months. Our team was divided into specific
+              sections according to the needs of the project.
+              <strong>David Díaz </strong>was in charge of the amplification cascade,
+              <strong>Abril Diosdado</strong> coordinated the ligations using the 3A assembly method and
+              <strong>Arnulfo Juárez</strong> ran the experiments involved in the expression of sialidase with the
+              sfGFP.
+            </p>
+          </section>
+
+          <section id="hardware-section" class="container">
+            <h2 class="row col-md-12 subsection-title">Hardware</h2>
+            <div class="d-flex justify-content-start flex-wrap">
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/a/ac/T--Tec-Monterrey--team-nufo.png/240px-T--Tec-Monterrey--team-nufo.png" />
+                <h4 class="name">Arnulfo Juárez</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/3/34/T--Tec-Monterrey--team-damn.png/240px-T--Tec-Monterrey--team-damn.png" />
+                <h4 class="name">Damian Espinoza</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/d/d9/T--Tec-Monterrey--team-daniel.png/240px-T--Tec-Monterrey--team-daniel.png" />
+                <h4 class="name">Daniel Cuellar</h4>
+              </div>
+
+              <div class="people-component member-component">
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
                 <h4 class="name">Ricardo García</h4>
               </div>
             </div>
 
             <p class="row col-md-12 mt-3">
-                We especially would like to thank our advisor <strong>Ricardo García,</strong> since
-                he did an important part of the creation of the prototype, in addition to
-                instructing our teammates <strong>Damian Espinoza, Daniel Cuellar</strong> and
-                <strong>Arnulfo Juárez</strong> in the microfluidics field.
+              We especially would like to thank our advisor <strong>Ricardo García,</strong> since
+              he did an important part of the creation of the prototype, in addition to
+              instructing our teammates <strong>Damian Espinoza, Daniel Cuellar</strong> and
+              <strong>Arnulfo Juárez</strong> in the microfluidics field.
             </p>
-          </article>
+          </section>
 
-          <article class="container">
+          <section id="model-section" class="container">
             <h2 class="row col-md-12 subsection-title">Model</h2>
             <div class="d-flex justify-content-start flex-wrap">
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/7/76/T--Tec-Monterrey--team-alan.png/240px-T--Tec-Monterrey--team-alan.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/7/76/T--Tec-Monterrey--team-alan.png/240px-T--Tec-Monterrey--team-alan.png" />
                 <h4 class="name">Alan Anaya</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/d/d7/T--Tec-Monterrey--team-david.png/240px-T--Tec-Monterrey--team-david.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/d/d7/T--Tec-Monterrey--team-david.png/240px-T--Tec-Monterrey--team-david.png" />
                 <h4 class="name">David Diaz</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
                 <h4 class="name">Eugenio Guzmán</h4>
               </div>
-        
+
             </div>
 
             <p class="row col-md-12 mt-3">
-                Alan Anaya was the main coordinator of  the Mathematical Model team.
-                <strong>Eugenio Guzmán</strong> contributed to a system of differential equations for the expression of the
-                sialidase under the induction of IPTG. <strong>Alan Anaya</strong> and <strong>David Diaz</strong> contributed to the
-                mathematical description and computer based simulations for the cascade amplified
-                biosensor and evolutionary antibiotic resistance toy modell. Alan  was in charge of
-                the experimental analysis and parameter fittings.
+              Alan Anaya was the main coordinator of the Mathematical Model team.
+              <strong>Eugenio Guzmán</strong> contributed to a system of differential equations for the expression of
+              the
+              sialidase under the induction of IPTG. <strong>Alan Anaya</strong> and <strong>David Diaz</strong>
+              contributed
+              to the
+              mathematical description and computer based simulations for the cascade amplified
+              biosensor and evolutionary antibiotic resistance toy modell. Alan was in charge of
+              the experimental analysis and parameter fittings.
             </p>
-          </article>
+          </section>
 
-          <article class="container">
+          <section id="human-section" class="container">
             <h2 class="row col-md-12 subsection-title">Human Practices</h2>
             <div class="d-flex justify-content-start flex-wrap">
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/d/d9/T--Tec-Monterrey--team-daniel.png/240px-T--Tec-Monterrey--team-daniel.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/d/d9/T--Tec-Monterrey--team-daniel.png/240px-T--Tec-Monterrey--team-daniel.png" />
                 <h4 class="name">Daniel Cuellar</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/1/16/T--Tec-Monterrey--team-ivonne.png/240px-T--Tec-Monterrey--team-ivonne.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/1/16/T--Tec-Monterrey--team-ivonne.png/240px-T--Tec-Monterrey--team-ivonne.png" />
                 <h4 class="name">Ivonne Lomelí</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/8/8c/T--Tec-Monterrey--team-riyad.png/240px-T--Tec-Monterrey--team-riyad.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/8/8c/T--Tec-Monterrey--team-riyad.png/240px-T--Tec-Monterrey--team-riyad.png" />
                 <h4 class="name">Riyad Vera</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
                 <h4 class="name">Rosalina Zesati</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/a/a9/T--Tec-Monterrey--team-vale.png/240px-T--Tec-Monterrey--team-vale.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/a/a9/T--Tec-Monterrey--team-vale.png/240px-T--Tec-Monterrey--team-vale.png" />
                 <h4 class="name">Valeria Betancourt</h4>
               </div>
-        
+
             </div>
 
             <p class="row col-md-12 mt-3">
-                It is important to highlight the work of <strong>Riyad Vera</strong> as the main coordinator of the
-                human practices area, he was in charge of carrying out the legislative work in
-                the Congress of Nuevo León and of the contact with the experts of the National
-                Institute of Public Health.
+              It is important to highlight the work of <strong>Riyad Vera</strong> as the main coordinator of the
+              human practices area, he was in charge of carrying out the legislative work in
+              the Congress of Nuevo León and of the contact with the experts of the National
+              Institute of Public Health.
             </p>
-          </article>
+          </section>
 
-          <article class="container">
+          <section id="educational-section" class="container">
             <h2 class="row col-md-12 subsection-title">Public & Educational Engagement</h2>
             <div class="d-flex justify-content-start flex-wrap">
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/2/2a/T--Tec-Monterrey--team-abril.png/240px-T--Tec-Monterrey--team-abril.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/2/2a/T--Tec-Monterrey--team-abril.png/240px-T--Tec-Monterrey--team-abril.png" />
                 <h4 class="name">Abril Diosdado</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/d/d9/T--Tec-Monterrey--team-daniel.png/240px-T--Tec-Monterrey--team-daniel.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/d/d9/T--Tec-Monterrey--team-daniel.png/240px-T--Tec-Monterrey--team-daniel.png" />
                 <h4 class="name">Daniel Cuellar</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/6/69/T--Tec-Monterrey--team-fernanda.png/240px-T--Tec-Monterrey--team-fernanda.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/6/69/T--Tec-Monterrey--team-fernanda.png/240px-T--Tec-Monterrey--team-fernanda.png" />
                 <h4 class="name">Fernanda Velázquez</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/1/16/T--Tec-Monterrey--team-ivonne.png/240px-T--Tec-Monterrey--team-ivonne.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/1/16/T--Tec-Monterrey--team-ivonne.png/240px-T--Tec-Monterrey--team-ivonne.png" />
                 <h4 class="name">Ivonne Lomelí</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/f/f5/T--Tec-Monterrey--team-maggie.png/240px-T--Tec-Monterrey--team-maggie.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/f/f5/T--Tec-Monterrey--team-maggie.png/240px-T--Tec-Monterrey--team-maggie.png" />
                 <h4 class="name">Margarita Escobar</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/c/ca/T--Tec-Monterrey--team-shani.png/240px-T--Tec-Monterrey--team-shani.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/c/ca/T--Tec-Monterrey--team-shani.png/240px-T--Tec-Monterrey--team-shani.png" />
                 <h4 class="name">Shani Leyva</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/a/a9/T--Tec-Monterrey--team-vale.png/240px-T--Tec-Monterrey--team-vale.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/a/a9/T--Tec-Monterrey--team-vale.png/240px-T--Tec-Monterrey--team-vale.png" />
                 <h4 class="name">Valeria Betancourt</h4>
               </div>
-        
+
             </div>
 
             <p class="row col-md-12 mt-3">
-                <strong>Abril Diosdado, Ivonne Lomelí, Margarita Escobar, Shani Leyva</strong> and
-                <strong>Valeria Betancourt</strong>
-                were the organizers of the “Genoma” International Congress, with speakers from
-                different universities around the world and diverse workshops related to synthetic
-                biology. <strong>Daniel Cuellar</strong> was the main creator of the “Touch and Listen” device as
-                well as the development of inclusive materials and their content.
+              <strong>Abril Diosdado, Ivonne Lomelí, Margarita Escobar, Shani Leyva</strong> and
+              <strong>Valeria Betancourt</strong>
+              were the organizers of the “Genoma” International Congress, with speakers from
+              different universities around the world and diverse workshops related to synthetic
+              biology. <strong>Daniel Cuellar</strong> was the main creator of the “Touch and Listen” device as
+              well as the development of inclusive materials and their content.
             </p>
-          </article>
+          </section>
 
-          <article class="container">
+          <section id="design-section" class="container">
             <h2 class="row col-md-12 subsection-title">Graphic Design</h2>
             <div class="d-flex justify-content-start flex-wrap">
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/4/43/T--Tec-Monterrey--team-ana.png/240px-T--Tec-Monterrey--team-ana.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/4/43/T--Tec-Monterrey--team-ana.png/240px-T--Tec-Monterrey--team-ana.png" />
                 <h4 class="name">Ana Macías</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/f/f5/T--Tec-Monterrey--team-maggie.png/240px-T--Tec-Monterrey--team-maggie.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/f/f5/T--Tec-Monterrey--team-maggie.png/240px-T--Tec-Monterrey--team-maggie.png" />
                 <h4 class="name">Margarita Escobar</h4>
               </div>
 
             </div>
 
             <p class="row col-md-12 mt-3">
-                <strong>Ana Macías</strong> was the main designer of the team, making images for social media, logos,
-                posters and illustrations for the Wiki.
+              <strong>Ana Macías</strong> was the main designer of the team, making images for social media, logos,
+              posters and illustrations for the Wiki.
             </p>
-          </article>
+          </section>
 
-          <article class="container">
+          <section id="wiki-section" class="container">
             <h2 class="row col-md-12 subsection-title">Wiki</h2>
             <div class="d-flex justify-content-start flex-wrap">
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/4/43/T--Tec-Monterrey--team-ana.png/240px-T--Tec-Monterrey--team-ana.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/4/43/T--Tec-Monterrey--team-ana.png/240px-T--Tec-Monterrey--team-ana.png" />
                 <h4 class="name">Ana Macías</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/3/36/T--Tec-Monterrey--team-diego.png/240px-T--Tec-Monterrey--team-diego.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/3/36/T--Tec-Monterrey--team-diego.png/240px-T--Tec-Monterrey--team-diego.png" />
                 <h4 class="name">Diego Estrada</h4>
               </div>
-        
+
               <div class="people-component member-component">
-                <img src="https://2019.igem.org/wiki/images/thumb/a/a9/T--Tec-Monterrey--team-vale.png/240px-T--Tec-Monterrey--team-vale.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/a/a9/T--Tec-Monterrey--team-vale.png/240px-T--Tec-Monterrey--team-vale.png" />
                 <h4 class="name">Valeria Betancourt</h4>
               </div>
-              
+
             </div>
 
             <p class="row col-md-12 mt-3">
-                It is worth to acknowledge the work of <strong>Diego Estrada</strong>, the main developer of the
-                Wiki, in which he worked during 3 months for an extraordinary result.
+              It is worth to acknowledge the work of <strong>Diego Estrada</strong>, the main developer of the
+              Wiki, in which he worked during 3 months for an extraordinary result.
             </p>
-          </article>
+          </section>
 
-          <article class="container">
+          <section id="instructors-section" class="container">
             <h2 class="row col-md-12 subsection-title">Instructors</h2>
             <div class="d-flex justify-content-between flex-wrap">
-        
+
               <div class="people-component attribution d-flex">
-                <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
                 <div>
                   <h4 class="name">Ph.D. Cuauhtémoc Licona Cassani</h4>
                   <p>
-                      Cuauhtémoc supported us in the planning stage of the project with advice and
-                      feedback as well as laboratory materials.
+                    Cuauhtémoc supported us in the planning stage of the project with advice and
+                    feedback as well as laboratory materials.
                   </p>
                 </div>
               </div>
-        
+
               <div class="people-component attribution d-flex">
-                <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
                 <div>
                   <h4 class="name">Ph.D. Héctor Alejandro Cabrera Fuentes</h4>
                   <p>
-                      Héctor supported the team with economic resources.
+                    Héctor supported the team with economic resources.
                   </p>
                 </div>
               </div>
-        
+
               <div class="people-component attribution d-flex">
-                <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
                 <div>
                   <h4 class="name">MSc. César Iván Ortiz Alcaraz</h4>
                   <p>
-                      César gave us advice and tips on the protocols concerning Bacillus subtilis
+                    César gave us advice and tips on the protocols concerning Bacillus subtilis
                   </p>
                 </div>
               </div>
-        
+
               <div class="people-component attribution d-flex">
-                <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
                 <div>
                   <h4 class="name">Ph.D. Héctor Castañeda</h4>
                   <p>
-                      Héctor provided us with an important part of the materials.
+                    Héctor provided us with an important part of the materials.
                   </p>
                 </div>
               </div>
-        
+
               <div class="people-component attribution d-flex">
-                <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
                 <div>
                   <h4 class="name">Ph.D. Jesús (Chucho) Hernández-Pérez</h4>
                   <p>
-                      Chucho supervised many of our experiments, gave us feedback and helped us with
-                      troubleshooting issues.
+                    Chucho supervised many of our experiments, gave us feedback and helped us with
+                    troubleshooting issues.
                   </p>
                 </div>
               </div>
-        
+
               <div class="people-component attribution d-flex">
-                <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
                 <div>
                   <h4 class="name">Ph.D. Teresa Vargas-Cortéz</h4>
                   <p>
-                      Tere gave us several tips for the electroporation protocol, provided us with
-                      bacterial stocks and B. subtilis feedback.
+                    Tere gave us several tips for the electroporation protocol, provided us with
+                    bacterial stocks and B. subtilis feedback.
                   </p>
                 </div>
               </div>
-              
-            </div>
-          </article>
 
-          <article class="container">
+            </div>
+          </section>
+
+          <section id="advisors" class="container">
             <h2 class="row col-md-12 subsection-title">Advisors</h2>
             <div class="d-flex justify-content-between flex-wrap">
-        
+
               <div class="people-component attribution d-flex">
-                <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
                 <div>
                   <h4 class="name">Ph.D. Jose Manuel (Chema) Aguilar Yáñez</h4>
                   <p>
-                      Chema guided us in the beginning of the project definition. 
+                    Chema guided us in the beginning of the project definition.
                   </p>
                 </div>
               </div>
-        
+
               <div class="people-component attribution d-flex">
-                <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
                 <div>
                   <h4 class="name">MSc. Ricardo Camilo Chávez Martínez</h4>
                   <p>
-                      Ricardo guided us at the beginning of the project, giving us advice about the
-                      types of project we could choose and telling us about his own experiences.
-                      He supported us with the  loan of material in the laboratory.
+                    Ricardo guided us at the beginning of the project, giving us advice about the
+                    types of project we could choose and telling us about his own experiences.
+                    He supported us with the loan of material in the laboratory.
                   </p>
                 </div>
               </div>
-        
+
               <div class="people-component attribution d-flex">
-                <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
                 <div>
                   <h4 class="name">Ph.D. Sara Margarita Aguilar Garza</h4>
                   <p>
-                      Sara was there for some troubleshooting conversation and provided us with some
-                      material.
+                    Sara was there for some troubleshooting conversation and provided us with some
+                    material.
                   </p>
                 </div>
               </div>
-        
+
               <div class="people-component attribution d-flex">
-                <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
                 <div>
                   <h4 class="name">Ing. Yamile Minerva Castellanos Morales</h4>
                   <p>
-                      Minerva gave feedback and information about our Human Practices
+                    Minerva gave feedback and information about our Human Practices
                   </p>
                 </div>
               </div>
-        
+
               <div class="people-component attribution d-flex">
-                <img src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
+                <img
+                  src="https://2019.igem.org/wiki/images/thumb/9/96/T--Tec-Monterrey--team-placeholder.png/240px-T--Tec-Monterrey--team-placeholder.png" />
                 <div>
                   <h4 class="name">Ing. Martha Carolina Elizondo Cantú</h4>
                   <p>
-                      Carolina trained us in fundamental laboratory protocols and gave us advice on
-                      protein purification methods.
+                    Carolina trained us in fundamental laboratory protocols and gave us advice on
+                    protein purification methods.
                   </p>
                 </div>
               </div>
             </div>
-          </article>
-
-        </section>
-
+          </section>
+        </article>
       </div>
-      
     </div>
 
+  </main>
+  <!----------  HASTA ACÁ...   ---------->
 
-    <footer class="d-flex flex-wrap justify-content-around">
-      <img src="https://2019.igem.org/wiki/images/thumb/1/1f/T--Tec-Monterrey--sponsors-acceso-lab.png/320px-T--Tec-Monterrey--sponsors-acceso-lab.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/d/d6/T--Tec-Monterrey--sponsors-arfq.png/262px-T--Tec-Monterrey--sponsors-arfq.png" />
-      <img src="https://2019.igem.org/wiki/images/b/bd/T--Tec-Monterrey--sponsors-benchmark.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/0/0a/T--Tec-Monterrey--sponsors-biolabs.png/320px-T--Tec-Monterrey--sponsors-biolabs.png" />
-      <img src="https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--sponsors-congreso-nuevo-leon.png" />
-      <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-ctr.png" />
-      <img src="https://2019.igem.org/wiki/images/a/ac/T--Tec-Monterrey--sponsors-dibico.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/9/9b/T--Tec-Monterrey--sponsors-idt.png/320px-T--Tec-Monterrey--sponsors-idt.png" />
-      <img src="https://2019.igem.org/wiki/images/d/db/T--Tec-Monterrey--sponsors-imss.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/e/e1/T--Tec-Monterrey--sponsors-insp.png/320px-T--Tec-Monterrey--sponsors-insp.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/c/cf/T--Tec-Monterrey--sponsors-itesm.png/320px-T--Tec-Monterrey--sponsors-itesm.png" />
-      <img src="https://2019.igem.org/wiki/images/b/b7/T--Tec-Monterrey--sponsors-scintia.png" />
-      <img src="https://2019.igem.org/wiki/images/f/ff/T--Tec-Monterrey--sponsors-snap-gene.png" />
-      <img src="https://2019.igem.org/wiki/images/thumb/f/f0/T--Tec-Monterrey--sponsors-twist.png/320px-T--Tec-Monterrey--sponsors-twist.png" />
-    </footer>
+  <footer class="d-flex flex-wrap justify-content-around">
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/1/1f/T--Tec-Monterrey--sponsors-acceso-lab.png/320px-T--Tec-Monterrey--sponsors-acceso-lab.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/d/d6/T--Tec-Monterrey--sponsors-arfq.png/262px-T--Tec-Monterrey--sponsors-arfq.png" />
+    <img src="https://2019.igem.org/wiki/images/b/bd/T--Tec-Monterrey--sponsors-benchmark.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/0/0a/T--Tec-Monterrey--sponsors-biolabs.png/320px-T--Tec-Monterrey--sponsors-biolabs.png" />
+    <img src="https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--sponsors-congreso-nuevo-leon.png" />
+    <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-ctr.png" />
+    <img src="https://2019.igem.org/wiki/images/a/ac/T--Tec-Monterrey--sponsors-dibico.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/9/9b/T--Tec-Monterrey--sponsors-idt.png/320px-T--Tec-Monterrey--sponsors-idt.png" />
+    <img src="https://2019.igem.org/wiki/images/d/db/T--Tec-Monterrey--sponsors-imss.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/e/e1/T--Tec-Monterrey--sponsors-insp.png/320px-T--Tec-Monterrey--sponsors-insp.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/c/cf/T--Tec-Monterrey--sponsors-itesm.png/320px-T--Tec-Monterrey--sponsors-itesm.png" />
+    <img src="https://2019.igem.org/wiki/images/b/b7/T--Tec-Monterrey--sponsors-scintia.png" />
+    <img src="https://2019.igem.org/wiki/images/f/ff/T--Tec-Monterrey--sponsors-snap-gene.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/f/f0/T--Tec-Monterrey--sponsors-twist.png/320px-T--Tec-Monterrey--sponsors-twist.png" />
+  </footer>
 
-    <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
-    <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
-    <script src="js/placeholder.js"></script>
-  
-  </body>
+  <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
+  <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
+  <script src="js/placeholder.js"></script>
+</body>
+
 </html>

@@ -7,315 +7,262 @@
   <link rel="stylesheet" href="css/resetter.css" type="text/css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
-  <link rel="stylesheet" href="css/header.css" type="text/css" />
+  <link rel="stylesheet" href="css/top-menu.css" type="text/css" />
   <link rel="stylesheet" href="css/footer.css" type="text/css" />
   <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
   <link rel="stylesheet" href="css/colors.css" type="text/css" />
 
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Anton|Lato|Manjari&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
 
   <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 </head>
 
-<body class="green">
-  <header id="desktop-menu">
-    <div id="header-content-container">
-      <div id="logo-container">
-        <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
-      </div>
-      <span class="filler"></span>
-      <div id="team-dropdown" class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          TEAM
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Members</a>
-          <a class="dropdown-item" href="#">Attributions</a>
-          <a class="dropdown-item" href="#">Collabs</a>
-          <a class="dropdown-item" href="#">Sponsors</a>
-          <a class="dropdown-item" href="#">Gallery</a>
-        </div>
-      </div>
-      <div id="project-dropdown" class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          PROJECT
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Description</a>
-          <a class="dropdown-item" href="#">Design</a>
-          <a class="dropdown-item" href="#">Notebook & Protocols</a>
-          <a class="dropdown-item" href="#">Experiments</a>
-          <a class="dropdown-item" href="#">Demonstrate</a>
-          <a class="dropdown-item" href="#">Model</a>
-          <a class="dropdown-item" href="#">Safety</a>
-        </div>
-      </div>
-      <div id="parts-dropdown" class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          PARTS
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Parts Overview</a>
-          <a class="dropdown-item" href="#">Basic Parts</a>
-          <a class="dropdown-item" href="#">Improved Parts</a>
-          <a class="dropdown-item" href="#">Composite Parts</a>
-          <a class="dropdown-item" href="#">Part Collection</a>
-        </div>
-      </div>
-      <div id="human-dropdown" class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          HUMAN
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Human Practices</a>
-          <a class="dropdown-item" href="#">Integrated human</a>
-          <a class="dropdown-item" href="#">Public Engagement</a>
-          <a class="dropdown-item" href="#">LATAM Meetup</a>
-        </div>
-      </div>
-      <div id="contact-dropdown" class="dropdown">
-        <button class="btn btn-secondary" type="button">
-          CONTACT
-        </button>
-      </div>
-    </div>
-  </header>
+<body>
 
-  <header id="mobile-menu">
-    <!--Navbar-->
-    <nav class="navbar navbar-light light-blue lighten-4">
-      <!-- Navbar brand -->
+  <header class="top-menu">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
       <a class="navbar-brand" href="#">
-        <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
+        <img
+          src="https://2019.igem.org/wiki/images/thumb/4/4c/T--Tec-Monterrey--white-logo-breathe-in.png/240px-T--Tec-Monterrey--white-logo-breathe-in.png"
+          width="48" height="48" class="d-inline-block align-top" alt="">
+        Breathe-In
       </a>
 
-      <!-- Collapse button -->
-      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
-        data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="text-white"><i class="material-icons"> menu </i></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Collapsible content -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-        <!-- Links -->
-        <div id="team-dropdown" class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            TEAM
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Members</a>
-            <a class="dropdown-item" href="#">Attributions</a>
-            <a class="dropdown-item" href="#">Collabs</a>
-            <a class="dropdown-item" href="#">Sponsors</a>
-            <a class="dropdown-item" href="#">Gallery</a>
-          </div>
-        </div>
-        <div id="project-dropdown" class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            PROJECT
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Description</a>
-            <a class="dropdown-item" href="#">Design</a>
-            <a class="dropdown-item" href="#">Notebook & Protocols</a>
-            <a class="dropdown-item" href="#">Experiments</a>
-            <a class="dropdown-item" href="#">Demonstrate</a>
-            <a class="dropdown-item" href="#">Model</a>
-            <a class="dropdown-item" href="#">Safety</a>
-          </div>
-        </div>
-        <div id="parts-dropdown" class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            PARTS
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Parts Overview</a>
-            <a class="dropdown-item" href="#">Basic Parts</a>
-            <a class="dropdown-item" href="#">Improved Parts</a>
-            <a class="dropdown-item" href="#">Composite Parts</a>
-            <a class="dropdown-item" href="#">Part Collection</a>
-          </div>
-        </div>
-        <div id="human-dropdown" class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            HUMAN
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Human Practices</a>
-            <a class="dropdown-item" href="#">Integrated human</a>
-            <a class="dropdown-item" href="#">Public Engagement</a>
-            <a class="dropdown-item" href="#">LATAM Meetup</a>
-          </div>
-        </div>
-        <div id="contact-dropdown" class="dropdown">
-          <button class="btn btn-secondary" type="button">
-            CONTACT
-          </button>
-        </div>
-        <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              TEAM
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Team">Members</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Attributions">Attributions</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Collaborations">Collaborations</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Thanks">Special Thanks</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              PROJECT
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Description">Description</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Design">Design</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Notebook">Notebook & Protocols</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Experiments">Experiments</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Demonstrate">Demonstrate</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Model">Model</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Hardware">Hardware</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Safety">Safety</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              PARTS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts">Parts Overview</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts#basic-parts">Basic Parts</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts#improved-parts">Improved Parts</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts#composite-parts">Composite
+                Parts</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              HUMAN
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices">Human Practices</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices">Integrated Human</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Public_Engagement">Education and Public
+                Engagement</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Team:Tec-Monterrey/Contact">CONTACT</a>
+          </li>
+        </ul>
       </div>
-      <!-- Collapsible content -->
     </nav>
-    <!--/.Navbar-->
   </header>
 
-  <div class="portrait-container container-fluid" data-height="420">
-    <h1 class="section-title">COLLABORATION</h1>
-    <img src="https://2019.igem.org/wiki/images/0/00/T--Tec-Monterrey--collaboration-portada.jpg" class="portrait-photo"
-      style="opacity: 0.35;" />
-  </div>
+  <!---- SE COPIA Y PEGA DESDE AQUÍ... ---->
+  <main id="attributions-page" class="wrapper green">
 
-  <div id="project-content" class="main-content container">
-    <div class="row" style="margin-top: 48px;">
+    <header class="page-cover"
+      style="height: 400px; background-image: url('https://2019.igem.org/wiki/images/0/00/T--Tec-Monterrey--collaboration-portada.jpg');">
+      <div>
+        <h1 class="page-title">COLLABORATIONS</h1>
+      </div>
+    </header>
 
-      <aside class="col-sm-12 col-md-3 col-lg-2 index-menu sticky-top">
-      </aside>
+    <div class="container">
+      <div class="row main-content" style="margin-top: 48px;">
+        <nav class="col-md-* col-lg-3 index-menu sticky-top"></nav>
 
-      <section class="subsection-container offset-md-1 col-sm-12 col-md-8 col-lg-9">
+        <article class="subsection-container col-md-* col-lg-9">
 
-        <article class="container">
-          <h2 class="row col-md-12 subsection-title">Meeting with iGem UANL and UAAAN</h2>
-          <img class="col-md-12 static-img mb-3"
-            style="
-              height: 280px;
-              background-image: url('https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--collaboration-meetup5.jpg');">
-          <p class="description-text">
-            Since we began to develop our project, we looked for teams that were located close to us as an opportunity
-            to share our ideas and look to opportunities to collaborate in the future. We kept close attention to team
-            UANL and team UAAAN, as they belong to universities that have worked with past Tec-Monterrey teams.
-          </p>
-          <p class="description-text">
-            Both teams contacted us so we could start sharing the projects we were elaborating. Once we agreed on a date
-            to get together, both teams came to our college campus, where we opened a space for discussion. Each team
-            had the opportunity to explain the theory behind their project and share the progress they had made so far.
-          </p>
-          <p class="description-text">
-            During this first approach with both teams, we raised the possibility of collaborating, hosting the Latin
-            American Meetup. After dropping hints through social media that we wanted to organize the meetup, another
-            team contacted us, Tec-Chihuahua. Because they are located farther away than the 3 initial teams we had
-            agreed to collaborate with, we started talking by video call. Finally, only formal collaboration was
-            established between Tec-Monterrey, Tec-Chihuahua, and UANL, which is how the organization for the LATAM
-            MEETUP began.
-          </p>
-        </article>
-
-        <article class="container">
-          <h2 class="row col-md-12 subsection-title">LATAM MEETUP</h2>
-          <img class="col-md-12 static-img mb-3"
-            style="
-              height: 280px;
-              background-image: url('https://2019.igem.org/wiki/images/6/6b/T--Tec-Monterrey--collaboration-meetup.jpg');">
-          <p class="description-text">
-            One of our main purposes was to innovate and build upon what other teams had achieved in the past, which is
-            a little bit complicated, considering Latin America is a very large region and there are not very many teams
-            compared to other regions.
-          </p>
-          <p class="description-text">
-            We looked for different strategies to attract more participants from other iGEM teams and it occurred to us
-            that probably more people would come if they had a reason to stay a little longer than the day that was
-            going to last the meetup. This is why we put the dates of the International Congress GENOMA and the meetup
-            together. August 29th and 30th would be the first one, while the 31st would be meetup. In addition, we
-            wanted to provide workshops that would be useful to the iGEM community. These are usually more attractive
-            than a conference, because it allows us to apply the knowledge acquired in our own projects.
-          </p>
-          <p class="description-text mb-1">
-            The workshops that were imparted were the following:
-            <ul style="list-style: circle;">
-              <li style="margin-left: 32px;">
-                Modelling in Synthetic Biology
-              </li>
-              <li style="margin-left: 32px;">
-                What comes after iGEM
-              </li>
-              <li style="margin-left: 32px;">
-                How to organize your wiki
-              </li>
-              <li style="margin-left: 32px;">
-                iGEM for Dummies
-              </li>
-            </ul>
-          </p>
-          <p class="description-text">
-            We also organized the schedule to accommodate a space in which we had the workshops, a networking sessión
-            and project presentations all in one day. Finally, in collaboration with iGEM Tec Chihuahua and UANL we
-            hosted in Monterrey, N.L., a MeetUp for the Latin American region. The event occurred on August 31 in our
-            campus facilities where we welcomed iGEM teams ITESO Guadalajara, Tec Chihuahua and UANL. The event started
-            with the workshops mentioned above. We received good feedback on the content as it was not focused on a
-            particular area or project, rather it could be applied by any iGEM team. Next, each team did a short poster
-            presentation of their project and received feedback from PhD. Maximiliano Medina, MSc. Heber Torres and
-            other iGEM teams. During the event we connected with more team Tec Chihuahua members via Zoom video chat and
-            live broadcasted the workshops in our social media so other LATAM teams could follow up. The event meant a
-            huge opportunity to network with after iGEMers and experts in Synthetic Biology. We also created strong
-            bonds with iGEM teams in the region by sharing recommendations, presenting our work and pointing out their
-            projects strengths and areas of opportunity.
-          </p>
-        </article>
-
-        <article class="container">
-          <h2 class="row col-md-12 subsection-title">iGEM Instagram Challenge</h2>
-          <div class="row">
-            <p class="description-text col-md-8">
-              We got involved with other iGEM teams from all around the world in a Social Media Challenge organized by
-              iGEM Stonybrook. For a whole week we participated in daily challenges which consisted in revealing our
-              project, uploading videos of lab bonding, sharing agar art images among others. This collaboration helped
-              us
-              connect with other iGEM teams around the world and learn what they were preparing for the Giant Jamboree.
-              It
-              was also a great opportunity to integrate with many of the other teams that participated and to better
-              connect with our social media audience, sharing relevant information to make us known and what we were
-              working on for almost an entire year.
+          <section id="meeting-teams" class="container">
+            <h2 class="subsection-title">Meeting with iGem UANL and UAAAN</h2>
+            <img class="col-md-12 static-img mb-3"
+              style="
+                height: 280px;
+                background-image: url('https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--collaboration-meetup5.jpg');">
+            <p class="description-text">
+              Since we began to develop our project, we looked for teams that were located close to us as an opportunity
+              to share our ideas and look to opportunities to collaborate in the future. We kept close attention to team
+              UANL and team UAAAN, as they belong to universities that have worked with past Tec-Monterrey teams.
             </p>
-            <img src="https://2019.igem.org/wiki/images/2/23/T--Tec-Monterrey--collaboration-instagram.jpg"
-              class="col-md-4 static-img" style="height: 100%;">
-          </div>
+            <p class="description-text">
+              Both teams contacted us so we could start sharing the projects we were elaborating. Once we agreed on a
+              date
+              to get together, both teams came to our college campus, where we opened a space for discussion. Each team
+              had the opportunity to explain the theory behind their project and share the progress they had made so
+              far.
+            </p>
+            <p class="description-text">
+              During this first approach with both teams, we raised the possibility of collaborating, hosting the Latin
+              American Meetup. After dropping hints through social media that we wanted to organize the meetup, another
+              team contacted us, Tec-Chihuahua. Because they are located farther away than the 3 initial teams we had
+              agreed to collaborate with, we started talking by video call. Finally, only formal collaboration was
+              established between Tec-Monterrey, Tec-Chihuahua, and UANL, which is how the organization for the LATAM
+              MEETUP began.
+            </p>
+          </section>
+
+          <section id="latam-meetup" class="container">
+            <h2 class="row col-md-12 subsection-title">LATAM MEETUP</h2>
+            <img class="col-md-12 static-img mb-3"
+              style="
+                height: 280px;
+                background-image: url('https://2019.igem.org/wiki/images/6/6b/T--Tec-Monterrey--collaboration-meetup.jpg');">
+            <p class="description-text">
+              One of our main purposes was to innovate and build upon what other teams had achieved in the past, which
+              is
+              a little bit complicated, considering Latin America is a very large region and there are not very many
+              teams
+              compared to other regions.
+            </p>
+            <p class="description-text">
+              We looked for different strategies to attract more participants from other iGEM teams and it occurred to
+              us
+              that probably more people would come if they had a reason to stay a little longer than the day that was
+              going to last the meetup. This is why we put the dates of the International Congress GENOMA and the meetup
+              together. August 29th and 30th would be the first one, while the 31st would be meetup. In addition, we
+              wanted to provide workshops that would be useful to the iGEM community. These are usually more attractive
+              than a conference, because it allows us to apply the knowledge acquired in our own projects.
+            </p>
+            <p class="description-text mb-1">
+              The workshops that were imparted were the following:
+              <ul style="list-style: circle;">
+                <li style="margin-left: 32px;">
+                  Modelling in Synthetic Biology
+                </li>
+                <li style="margin-left: 32px;">
+                  What comes after iGEM
+                </li>
+                <li style="margin-left: 32px;">
+                  How to organize your wiki
+                </li>
+                <li style="margin-left: 32px;">
+                  iGEM for Dummies
+                </li>
+              </ul>
+            </p>
+            <p class="description-text">
+              We also organized the schedule to accommodate a space in which we had the workshops, a networking sessión
+              and project presentations all in one day. Finally, in collaboration with iGEM Tec Chihuahua and UANL we
+              hosted in Monterrey, N.L., a MeetUp for the Latin American region. The event occurred on August 31 in our
+              campus facilities where we welcomed iGEM teams ITESO Guadalajara, Tec Chihuahua and UANL. The event
+              started
+              with the workshops mentioned above. We received good feedback on the content as it was not focused on a
+              particular area or project, rather it could be applied by any iGEM team. Next, each team did a short
+              poster
+              presentation of their project and received feedback from PhD. Maximiliano Medina, MSc. Heber Torres and
+              other iGEM teams. During the event we connected with more team Tec Chihuahua members via Zoom video chat
+              and
+              live broadcasted the workshops in our social media so other LATAM teams could follow up. The event meant a
+              huge opportunity to network with after iGEMers and experts in Synthetic Biology. We also created strong
+              bonds with iGEM teams in the region by sharing recommendations, presenting our work and pointing out their
+              projects strengths and areas of opportunity.
+            </p>
+          </section>
+
+          <section id="instagram-challenge" class="container">
+            <h2 class="row col-md-12 subsection-title">iGEM Instagram Challenge</h2>
+            <div class="row">
+              <p class="description-text col-md-8">
+                We got involved with other iGEM teams from all around the world in a Social Media Challenge organized by
+                iGEM Stonybrook. For a whole week we participated in daily challenges which consisted in revealing our
+                project, uploading videos of lab bonding, sharing agar art images among others. This collaboration
+                helped
+                us
+                connect with other iGEM teams around the world and learn what they were preparing for the Giant
+                Jamboree.
+                It
+                was also a great opportunity to integrate with many of the other teams that participated and to better
+                connect with our social media audience, sharing relevant information to make us known and what we were
+                working on for almost an entire year.
+              </p>
+              <img src="https://2019.igem.org/wiki/images/2/23/T--Tec-Monterrey--collaboration-instagram.jpg"
+                class="col-md-4 static-img" style="height: 100%;">
+            </div>
+          </section>
+
+          <section id="tec-guadalajara" class="container">
+            <h2 class="row col-md-12 subsection-title">Team Tec-Guadalajara</h2>
+            <img class="col-md-12 static-img mb-3" style="
+                background-position: 0px 40px;
+                height: 192px;
+                background-image: url('https://2019.igem.org/wiki/images/0/0a/T--Tec-Monterrey--collab-GDL2.gif');">
+            <p class="description-text">
+              In collaboration with team Tec-Guadalajara, we did a troubleshooting meeting through the Zoom, video chat
+              platform. The team explained to us they were having problems with the correct ligation of their parts. We
+              noticed we had some differences in our methods, such as the ligation time and amount of DNA we added to
+              the
+              reaction, so we shared with them our standardized protocols and some pro tips that worked well for us.
+            </p>
+            <p class="description-text">
+              This was very helpful for us since last week before the videochat, we had trouble with the protocol which
+              had worked for us in previous ligations. Tec-Guadalajara team managed to carry out the protocols with
+              successful results (positive bacterial transformations), which indicated the reproducibility of our
+              protocol
+              and discard problems in our work.
+            </p>
+            <p class="description-text">
+              In another video chat meeting we learned that Team Tec-Guadalajara had also experienced working with blind
+              and visually impaired people (see “ Educational & Public engagement” section), so we asked them to
+              collaborate with us on our Touch and Listen manual by sharing their experience designing a rally based on
+              an
+              educational model approved by the Ministry of Public Education, SEP by its acronym in Spanish. We shared
+              in
+              return our experience on designing materials based on Universal Design for Learning, which could help them
+              make their educational rally become inclusive for people with visual disabilities.
+            </p>
+          </section>
+          <!----------------    Y TERMINA HASTA ACÁ      ----------------->
+
         </article>
 
-        <article class="container">
-          <h2 class="row col-md-12 subsection-title">Team Tec-Guadalajara</h2>
-          <img class="col-md-12 static-img mb-3" style="
-              background-position: 0px 40px;
-              height: 192px;
-              background-image: url('https://2019.igem.org/wiki/images/0/0a/T--Tec-Monterrey--collab-GDL2.gif');">
-          <p class="description-text">
-            In collaboration with team Tec-Guadalajara, we did a troubleshooting meeting through the Zoom, video chat
-            platform. The team explained to us they were having problems with the correct ligation of their parts. We
-            noticed we had some differences in our methods, such as the ligation time and amount of DNA we added to the
-            reaction, so we shared with them our standardized protocols and some pro tips that worked well for us.
-          </p>
-          <p class="description-text">
-            This was very helpful for us since last week before the videochat, we had trouble with the protocol which
-            had worked for us in previous ligations. Tec-Guadalajara team managed to carry out the protocols with
-            successful results (positive bacterial transformations), which indicated the reproducibility of our protocol
-            and discard problems in our work.
-          </p>
-          <p class="description-text">
-            In another video chat meeting we learned that Team Tec-Guadalajara had also experienced working with blind
-            and visually impaired people (see “ Educational & Public engagement” section), so we asked them to
-            collaborate with us on our Touch and Listen manual by sharing their experience designing a rally based on
-            an
-            educational model approved by the Ministry of Public Education, SEP by its acronym in Spanish. We shared
-            in
-            return our experience on designing materials based on Universal Design for Learning, which could help them
-            make their educational rally become inclusive for people with visual disabilities.
-          </p>
-        </article>
-        <!----------------    Y TERMINA HASTA ACÁ      ----------------->
-
-      </section>
+      </div>
     </div>
-  </div>
+
+  </main>
+  <!----------  HASTA ACÁ...   ---------->
 
   <footer class="d-flex flex-wrap justify-content-around">
     <img

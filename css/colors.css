@@ -8,14 +8,18 @@
     --iGEM-light-green: rgb(193, 238, 142);
     --iGEM-green: rgb(144, 207, 73);
     --iGEM-dark-green: rgb(74, 104, 40);
+    --iGEM-dark-green-transparent: rgba(74, 104, 40, 0.65);
     --iGEM-ultra-light-aqua: rgb(202, 243, 247);
     --iGEM-light-aqua: rgb(155, 234, 241);
     --iGEM-aqua: rgb(79, 161, 169);
     --iGEM-dark-aqua: rgb(35, 110, 117);
+    --iGEM-dark-aqua-transparent: rgba(35, 110, 117, 0.65);
     --iGEM-light-orange: rgb(248, 195, 126);
     --iGEM-orange: rgb(255, 166, 48);
     --iGEM-dark-orange: rgb(146, 97, 34);
+    --iGEM-dark-orange-transparent: rgba(146, 97, 34, 0.65);
     --iGEM-safety-red: rgb(131, 31, 31);
+    --iGEM-safety-red-transparent: rgba(131, 31, 31, 0.65);
     --iGEM-light-black: rgb(222, 226, 230);
     --iGEM-font-title: 'Anton', sans-serif;
 }
@@ -49,6 +53,10 @@ h3.black {
 
 .orange .thread {
     background-color: var(--iGEM-orange);
+}
+
+.orange header.page-cover>div {
+    background-color: var(--iGEM-dark-orange-transparent);
 }
 
 .orange .subsection-title,
@@ -90,6 +98,10 @@ h2.aqua {
     border-color: var(--iGEM-aqua);
 }
 
+.aqua header.page-cover>div {
+    background-color: var(--iGEM-dark-aqua-transparent);
+}
+
 #description-nav-buttons .aqua {
     border-color: var(--iGEM-dark-aqua);
 }
@@ -103,6 +115,10 @@ h2.aqua {
 
 .green .thread {
     background-color: var(--iGEM-green);
+}
+
+.green header.page-cover>div {
+    background-color: var(--iGEM-dark-green-transparent);
 }
 
 .green .subsection-title,
@@ -121,7 +137,7 @@ h2.green {
     border-color: var(--iGEM-dark-green);
 }
 
-.blue header>div {
+.blue header.page-cover>div {
     background-color: var(--iGEM-dark-blue-transparent);
 }
 
@@ -160,4 +176,8 @@ h2.blue {
 .red .current-index,
 h2.red {
     color: var(--iGEM-safety-red) !important;
+}
+
+.red header.page-cover>div {
+    background-color: var(--iGEM-safety-red-transparent);
 }

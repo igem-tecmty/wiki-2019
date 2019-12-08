@@ -495,16 +495,14 @@ main#contact-page {
   width: 2em;
 }
 
-main#parts-page table,
-main#collection-page table {
-  font-size: 0.8em;
+main#parts-page table {
+  font-size: 0.75em;
   display: block;
   margin-top: -8px;
   overflow: auto;
 }
 
 main#parts-page .thread,
-main#collection-page .thread,
 main#safety-page .thread {
   color: white;
 }
@@ -513,8 +511,9 @@ main#safety-page .thread {
   color: var(--iGEM-blue);
 }
 
-main#parts-page a:visited {
-  color: var(--iGEM-blue);
+main#parts-page table a,
+main#parts-page table a:visited {
+  color: var(--iGEM-light-blue);
 }
 
 @media only screen and (max-width: 768px) {

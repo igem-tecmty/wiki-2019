@@ -62,9 +62,12 @@ h2.subsection-title {
 }
 
 h3.inner-subtitle,
-#HQ_page h3.inner-subtitle {
+h3.inner-section-title,
+#HQ_page h3.inner-subtitle,
+#HQ_page h3.inner-section-title {
   font-family: "Lato";
   font-weight: bold;
+  color: inherit;
 }
 
 main#notebook-page nav.index-menu {
@@ -304,6 +307,7 @@ main#attributions-page .people-component p {
 .hidden-component>div {
   border-width: 2px;
   border-style: solid;
+  font-size: 0.85em;
   border-color: rgb(197, 195, 195);
 }
 
@@ -512,7 +516,9 @@ main#safety-page .thread {
 }
 
 main#parts-page table a,
-main#parts-page table a:visited {
+main#parts-page table a:visited,
+main#integrated-human-page article a,
+main#integrated-human-page article a:visited {
   color: var(--iGEM-light-blue);
 }
 

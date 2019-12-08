@@ -476,6 +476,10 @@ ul {
   margin-right: 16px;
 }
 
+#HQ_page th {
+  background-color: inherit;
+}
+
 table#promoters th {
   border-bottom: 2px solid #dee2e6;
 }

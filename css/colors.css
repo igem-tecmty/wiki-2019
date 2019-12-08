@@ -24,8 +24,8 @@
     --iGEM-font-title: 'Anton', sans-serif;
 }
 
-.black .portrait-container {
-    background-color: black;
+.black header.page-cover>div {
+    background-color: rgba(0, 0, 0, 0.65);
 }
 
 .black .subsection-title,

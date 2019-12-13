@@ -41,7 +41,7 @@ h3.black {
     border-color: black;
 }
 
-#description-nav-buttons .black {
+.nav-buttons .black {
     border-color: var(--iGEM-light-black);
 }
 
@@ -71,7 +71,7 @@ h2.orange {
     border-color: var(--iGEM-orange);
 }
 
-#description-nav-buttons .orange {
+.nav-buttons .orange {
     border-color: var(--iGEM-dark-orange);
 }
 
@@ -102,7 +102,7 @@ h2.aqua {
     background-color: var(--iGEM-dark-aqua-transparent);
 }
 
-#description-nav-buttons .aqua {
+.nav-buttons .aqua {
     border-color: var(--iGEM-dark-aqua);
 }
 
@@ -133,7 +133,7 @@ h2.green {
     border-color: var(--iGEM-green);
 }
 
-#description-nav-buttons .green {
+.nav-buttons .green {
     border-color: var(--iGEM-dark-green);
 }
 
@@ -161,7 +161,7 @@ h2.blue {
     border-color: var(--iGEM-light-blue);
 }
 
-#description-nav-buttons .blue {
+.nav-buttons .blue {
     border-color: var(--iGEM-dark-blue);
 }
 

@@ -1,368 +1,218 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-    <link rel="stylesheet" href="css/resetter.css" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
-    <link rel="stylesheet" href="css/header.css" type="text/css" />
-    <link rel="stylesheet" href="css/footer.css" type="text/css" />
-    <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
-    <link rel="stylesheet" href="css/colors.css" type="text/css" />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Manjari&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="css/resetter.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap_overwrite.css" type="text/css" />
+  <link rel="stylesheet" href="css/top-menu.css" type="text/css" />
+  <link rel="stylesheet" href="css/footer.css" type="text/css" />
+  <link rel="stylesheet" href="css/placeholder.css" type="text/css" />
+  <link rel="stylesheet" href="css/colors.css" type="text/css" />
 
-    <script
-      language="JavaScript"
-      type="text/javascript"
-      src="js/jquery-3.4.1.min.js"
-    ></script>
+  <link href="https://fonts.googleapis.com/css?family=Anton|Lato|Manjari&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$']],
-    preview: ["[math]"],
-    processEscapes: true
-  }
-});
- </script>
-  </head>
+  <script language="JavaScript" type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [
+          ['$', '$']
+        ],
+        preview: ["[math]"],
+        processEscapes: true
+      }
+    });
 
-  <body class="green">
-    <header id="desktop-menu">
-      <div id="header-content-container">
-        <div id="logo-container">
-          <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
-        </div>
-        <span class="filler"></span>
-        <div id="team-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            TEAM
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Members</a>
-            <a class="dropdown-item" href="#">Attributions</a>
-            <a class="dropdown-item" href="#">Collabs</a>
-            <a class="dropdown-item" href="#">Sponsors</a>
-            <a class="dropdown-item" href="#">Gallery</a>
-          </div>
-        </div>
-        <div id="project-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            PROJECT
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Description</a>
-            <a class="dropdown-item" href="#">Design</a>
-            <a class="dropdown-item" href="#">Notebook & Protocols</a>
-            <a class="dropdown-item" href="#">Experiments</a>
-            <a class="dropdown-item" href="#">Demonstrate</a>
-            <a class="dropdown-item" href="#">Model</a>
-            <a class="dropdown-item" href="#">Safety</a>
-          </div>
-        </div>
-        <div id="parts-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            PARTS
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Parts Overview</a>
-            <a class="dropdown-item" href="#">Basic Parts</a>
-            <a class="dropdown-item" href="#">Improved Parts</a>
-            <a class="dropdown-item" href="#">Composite Parts</a>
-            <a class="dropdown-item" href="#">Part Collection</a>
-          </div>
-        </div>
-        <div id="human-dropdown" class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            HUMAN
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Human Practices</a>
-            <a class="dropdown-item" href="#">Integrated human</a>
-            <a class="dropdown-item" href="#">Public Engagement</a>
-            <a class="dropdown-item" href="#">LATAM Meetup</a>
-          </div>
-        </div>
-        <div id="contact-dropdown" class="dropdown">
-          <button class="btn btn-secondary" type="button">
-            CONTACT
-          </button>
-        </div>
+  </script>
+</head>
+
+<body>
+
+  <header class="top-menu">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://2019.igem.org/wiki/images/thumb/4/4c/T--Tec-Monterrey--white-logo-breathe-in.png/240px-T--Tec-Monterrey--white-logo-breathe-in.png"
+          width="48" height="48" class="d-inline-block align-top" alt="">
+        Breathe-In
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              TEAM
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Team">Members</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Attributions">Attributions</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Collaborations">Collaborations</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Thanks">Special Thanks</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              PROJECT
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Description">Description</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Design">Design</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Notebook">Notebook & Protocols</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Experiments">Experiments</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Demonstrate">Demonstrate</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Model">Model</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Hardware">Hardware</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Safety">Safety</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              PARTS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts">Parts Overview</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts#basic-parts">Basic Parts</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts#improved-parts">Improved Parts</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Parts#composite-parts">Composite
+                Parts</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              HUMAN
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices">Human Practices</a>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Human_Practices">Integrated Human</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Team:Tec-Monterrey/Public_Engagement">Education and Public
+                Engagement</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Team:Tec-Monterrey/Contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="model-page" class="wrapper green">
+
+    <header class="page-cover"
+      style="height: 400px; background-image: url('https://2019.igem.org/wiki/images/e/eb/T--Tec-Monterrey--portrait-model.jpg');">
+      <div>
+        <h1 class="page-title">MATHEMATICAL MODEL</h1>
       </div>
     </header>
 
-    <header id="mobile-menu">
-      <!--Navbar-->
-      <nav class="navbar navbar-light light-blue lighten-4">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">
-          <img src="img/logos/IGEM_BREATHEIN.png" class="main-logo" />
-        </a>
+    <div class="container">
+      <div class="row main-content" style="margin-top: 48px;">
+        <nav class="col-md-* col-lg-3 index-menu sticky-top"></nav>
 
-        <!-- Collapse button -->
-        <button
-          class="navbar-toggler toggler-example"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent1"
-          aria-controls="navbarSupportedContent1"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="text-white"><i class="material-icons"> menu </i></span>
-        </button>
+        <article class="subsection-container col-md-* col-lg-9">
 
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-          <!-- Links -->
-          <div id="team-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              TEAM
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Members</a>
-              <a class="dropdown-item" href="#">Attributions</a>
-              <a class="dropdown-item" href="#">Collabs</a>
-              <a class="dropdown-item" href="#">Sponsors</a>
-              <a class="dropdown-item" href="#">Gallery</a>
-            </div>
+          <div class="nav-buttons col-12 mt-4">
+            <a href="https://2019.igem.org/wiki/images/6/6c/T--Tec-Monterrey--mathematical-model.pdf" target="blank"
+              class="col-12 blue mb-3" style="background-color: var(--iGEM-blue)"
+              onmouseover="this.style.background='var(--iGEM-light-blue)';"
+              onmouseout="this.style.background='var(--iGEM-blue)';">
+              <span style="font-size: 1.5em; font-weight: bold;">MATHEMATICAL MODEL DOCUMENT</span>
+            </a>
           </div>
-          <div id="project-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              PROJECT
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Description</a>
-              <a class="dropdown-item" href="#">Design</a>
-              <a class="dropdown-item" href="#">Notebook & Protocols</a>
-              <a class="dropdown-item" href="#">Experiments</a>
-              <a class="dropdown-item" href="#">Demonstrate</a>
-              <a class="dropdown-item" href="#">Model</a>
-              <a class="dropdown-item" href="#">Safety</a>
-            </div>
-          </div>
-          <div id="parts-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              PARTS
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Parts Overview</a>
-              <a class="dropdown-item" href="#">Basic Parts</a>
-              <a class="dropdown-item" href="#">Improved Parts</a>
-              <a class="dropdown-item" href="#">Composite Parts</a>
-              <a class="dropdown-item" href="#">Part Collection</a>
-            </div>
-          </div>
-          <div id="human-dropdown" class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              HUMAN
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Human Practices</a>
-              <a class="dropdown-item" href="#">Integrated human</a>
-              <a class="dropdown-item" href="#">Public Engagement</a>
-              <a class="dropdown-item" href="#">LATAM Meetup</a>
-            </div>
-          </div>
-          <div id="contact-dropdown" class="dropdown">
-            <button class="btn btn-secondary" type="button">
-              CONTACT
-            </button>
-          </div>
-          <!-- Links -->
-        </div>
-        <!-- Collapsible content -->
-      </nav>
-      <!--/.Navbar-->
-    </header>
 
-    <div class="portrait-container container-fluid" data-height="420">
-      <h1 class="section-title">MATHEMATICAL MODEL</h1>
-      <img
-        src="https://2019.igem.org/wiki/images/e/eb/T--Tec-Monterrey--portrait-model.jpg"
-        class="portrait-photo"
-        style="opacity: 0.35"
-      />
-    </div>
-
-    <div id="project-content" class="main-content container">
-      <div class="row" style="margin-top: 48px;">
-        <!-------------------------------------------------------------->
-        <div class="container d-flex justify-content-center intro-section">
-          <div id="cascade-div" class="col-lg-4 index-button">
-            <img src="https://2019.igem.org/wiki/images/thumb/a/a2/T--Tec-Monterrey--model-gfp-2.png/320px-T--Tec-Monterrey--model-gfp-2.png" />
-            <p id="back-card2" style="display: none;">
-              Transcriptional Amplifiers for Drug Discovery
-            </p>
-          </div>
-          <div id="microfluidics-div" class="col-lg-4 index-button">
-              <img src="img/microfluidic-display-image.gif" class="" />
-              <p id="back-card4" style="display: none;">
-                Microfluidics Model
-              </p>
-            </div>
-          <div id="mucolitic-div" class="col-lg-4 index-button">
-            <img src="https://2019.igem.org/wiki/images/thumb/9/93/T--Tec-Monterrey--model-gfp-3.png/320px-T--Tec-Monterrey--model-gfp-3.png" />
-            <p id="back-card3" style="display: none;">
-              Mucolytic Production
-            </p>
-          </div>
-        </div>
-        
-        <aside class="col-sm-12 col-md-3 col-lg-2 index-menu sticky-top">
-          <!----  El javascript creará los index por nosotros   ---->
-        </aside>
-
-        <!------- CONTENIDO COMPLETO INFORMACIÓN ------->
-        <section
-          class="subsection-container md-offset-1 col-sm-12 col-md-8 col-lg-9"
-        >
-
-          <!-----    SUBTÍTULO DE LA SECCIÓN <h3>    ----->
-
-          <article class="container">
-            <!-----    SUBTÍTULO DE LA SECCIÓN <h3>    ----->
-            <h2 class="row col-md-12 subsection-title">
+          <section id="amplifiers" class="container">
+            <h2 class="subsection-title">
               Transcriptional Amplifiers for Drug Discovery
             </h2>
 
-            <!-----    Cada <div> es una fila/párrafo    ----->
-
-            <div class="row mt-4">
-              <p class="col-md-12 description-text">
-                  Designing synthetic biological circuits using genetic elements 
-                  has become a research field for developing novel biochemical sensors. 
-                  Specifically Bacterial cell based biosensors have been studied for the environmental 
-                  monitoring, clinical diagnostics and drug discovery. One of the main challenges 
-                  for this biosensors to meet real-life applications is the low sensibility and 
-                  deficient detection limits. 
+            <div class="mt-4">
+              <p class="description-text">
+                Designing synthetic biological circuits using genetic elements
+                has become a research field for developing novel biochemical sensors.
+                Specifically Bacterial cell based biosensors have been studied for the environmental
+                monitoring, clinical diagnostics and drug discovery. One of the main challenges
+                for this biosensors to meet real-life applications is the low sensibility and
+                deficient detection limits.
               </p>
 
-              <p class="col-md-12 description-text">
-                  The rise  of multiple antibotic resistant bacteria and the evident crisis 
-                  in drug discovery has  become one of the main challenges in human history. 
-                  Traditional screening not only takes longer times,from years to decades, 
-                  but often fails to discover novel biomolecules. Bacterial biosensors have provided 
-                  a novel benchmark for the screening of secondary metabolites producers, boosting 
-                  the discovery of antibiotics and broadening the spectrum of the latter.
-                  One of main aspects that  should be considered for the development of novel 
-                  antibiotic biosensors is the sensibility, since they can only work properly below 
-                  the minimum inhibitory concentration.
-              </p>
-              <p class="col-md-12 description-text">
-                  Our project consists of a series of  engineered multi-layered transcriptional amplifiers that sequentially increases  the output expression level  of a GFP reporter protein by the presence of an  antibiotic belonging to a specific mechanism of action (MOA) in order to enhanced the process of drug discovery and bacterial screening.
-              </p>
-              <p class="col-md-12 description-text">
-                  Modelling Biological systems has become an area of interest for multidisciplinary areas of science, medicine and engineering. Mathematical models allow to understand and predict the behavior of complex systems using simple concepts. 
-              </p>
-              <p class="col-md-12 description-text">
-                  Bacterial bio-sensors can be divided into three modules, the first comprising a sensing module that recognizes the external signal and transduces into a transcriptional  output, the computing module that modulates the transduced sensor signal and the output module which executes the physiological output response. In this project, we  develop  mathematical models for the engineered multi-layered transcriptional amplifiers which acts as  a computing  module using both exact deterministic differential equations and stochastic simulations to provide a proof of concept for the amplification signal of the antibiotic biosensor.
-              </p>
-              <p class="col-md-12 description-text">
-                  The structure of the following sections goes as follows: First we derive the mathematical equations for an already characterized heavy metal biosensor consisting of a constitutive promoter expressing a repressor protein inhibiting the later expression of a reporter gene. Then we will consider the effect of adding a mono-layer orthogonal transcriptional amplifier to the signal amplification. After that we will extrapolate this same models to our antibiotic biosensor.
+              <p class="description-text">
+                The rise of multiple antibotic resistant bacteria and the evident crisis
+                in drug discovery has become one of the main challenges in human history.
+                Traditional screening not only takes longer times,from years to decades,
+                but often fails to discover novel biomolecules. Bacterial biosensors have provided
+                a novel benchmark for the screening of secondary metabolites producers, boosting
+                the discovery of antibiotics and broadening the spectrum of the latter.
+                One of main aspects that should be considered for the development of novel
+                antibiotic biosensors is the sensibility, since they can only work properly below
+                the minimum inhibitory concentration.
               </p>
 
-            <div
-              id="metal-biosensor-component"
-              class="container d-flex flex-wrap"
-            >
-              <button class="col-md-12 metal-biosensor-button">
+              <p class="description-text">
+                Our project consists of a series of engineered multi-layered transcriptional amplifiers that
+                sequentially increases the output expression level of a GFP reporter protein by the presence of an
+                antibiotic belonging to a specific mechanism of action (MOA) in order to enhanced the process of drug
+                discovery and bacterial screening.
+              </p>
+              <p class="description-text">
+                Modelling Biological systems has become an area of interest for multidisciplinary areas of science,
+                medicine and engineering. Mathematical models allow to understand and predict the behavior of complex
+                systems using simple concepts.
+              </p>
+              <p class="description-text">
+                Bacterial bio-sensors can be divided into three modules, the first comprising a sensing module that
+                recognizes the external signal and transduces into a transcriptional output, the computing module that
+                modulates the transduced sensor signal and the output module which executes the physiological output
+                response. In this project, we develop mathematical models for the engineered multi-layered
+                transcriptional amplifiers which acts as a computing module using both exact deterministic differential
+                equations and stochastic simulations to provide a proof of concept for the amplification signal of the
+                antibiotic biosensor.
+              </p>
+              <p class="description-text">
+                The structure of the following sections goes as follows: First we derive the mathematical equations for
+                an already characterized heavy metal biosensor consisting of a constitutive promoter expressing a
+                repressor protein inhibiting the later expression of a reporter gene. Then we will consider the effect
+                of adding a mono-layer orthogonal transcriptional amplifier to the signal amplification. After that we
+                will extrapolate this same models to our antibiotic biosensor.
+              </p>
+            </div>
+
+            <div class="hidden-component mb-3">
+              <button class="col-12 metal-biosensor-button">
                 Heavy Metal biosensor without cascade amplification
               </button>
-              <div class="col-md-12" style="display: none;" id="cards-model">
-                <img
-                  src="https://2019.igem.org/wiki/images/1/16/T--Tec-Monterrey--model-grafica.png"
-                  class="col-md-11 description-image"
-                />
-                <p class="col-sm-12 col-md-10 description-text1">
-                  Figure 1: Differential equations of whole system without
-                  cascade amplification signal . The constants where chosen
-                  arbitrary taking the following values: alpha0 = 0.05`, beta0
-                  = 0, beta1 = 0.015`, deltaf = 0.005`, deltaR = 0.025`, delta
-                  = 0.00025`, k1 = 0.04`, k2 = 0.80`, kmin1 = 0.015`, kmin2 =
-                  0.075`, P(0) = 1, R(0) = 0.05, RP(0) = 1 GFP(0) = 0.`, I(0)
-                  = 2, IR(0) = 0`}
-                </p>
 
-                <p></p>
-                <p class="col-md-12 description-text">
+              <div class="col-12" style="display: none;">
+                <figure class="col-12 no-gutter img-wrapper">
+                  <img src="https://2019.igem.org/wiki/images/1/16/T--Tec-Monterrey--model-grafica.png"
+                    class="description-image" />
+                  <figcaption><strong>Figure 1:</strong> Differential equations of whole system without
+                    cascade amplification signal . The constants where chosen
+                    arbitrary taking the following values: alpha0 = 0.05`, beta0
+                    = 0, beta1 = 0.015`, deltaf = 0.005`, deltaR = 0.025`, delta
+                    = 0.00025`, k1 = 0.04`, k2 = 0.80`, kmin1 = 0.015`, kmin2 =
+                    0.075`, P(0) = 1, R(0) = 0.05, RP(0) = 1 GFP(0) = 0.`, I(0)
+                    = 2, IR(0) = 0`}</figcaption>
+                </figure>
+
+                <p class="description-text">
                   The fisrt system to be modelled consist of an heavy metal
                   biosensor. In the abscence of heavy metal the constitutive
                   promoter expresses a repressor protein that inactivates the
@@ -374,19 +224,18 @@ MathJax.Hub.Config({
                   promoter-repressor in order to overcome such inhibition and
                   lower the detection limits of the heavy metal.
                 </p>
-                <p class="col-md-12 description-text">
+
+                <p class="description-text">
                   The system of differential equations of this system is:
                 </p>
-                <img
-                  src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--model-table-3.png"
-                  class="col-md-9 description-image"
-                />
-                <img
-                  src="https://2019.igem.org/wiki/images/9/90/T--Tec-Monterrey--model-table-4.png"
-                  class="col-md-9 description-image"
-                />
 
-                <p class="col-md-12 description-text">
+                <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--model-table-3.png"
+                  class="description-image col-md-12" />
+
+                <img src="https://2019.igem.org/wiki/images/9/90/T--Tec-Monterrey--model-table-4.png"
+                  class="description-image col-md-12" />
+
+                <p class="description-text">
                   Consider the first system of differential equation. Notice
                   that in chemicalequilibrium of the the rate of
                   Repressor-Promoter formation is equal to therate of
@@ -401,12 +250,10 @@ MathJax.Hub.Config({
                   vanish and the differential equation simplifes to:
                 </p>
 
-                <img
-                  src="https://2019.igem.org/wiki/images/4/40/T--Tec-Monterrey--model-table-5.png"
-                  class="col-md-9 description-image"
-                />
+                <img src="https://2019.igem.org/wiki/images/4/40/T--Tec-Monterrey--model-table-5.png"
+                  class="description-image col-md-12" />
 
-                <p class="col-md-12 description-text">
+                <p class="description-text">
                   We can repeat the same process for the formation of
                   inhibitor repressorcomplex, assuming a steady state for the
                   binding of Inducer to the RepresorProtein. SettingdC2(t)dt=
@@ -416,12 +263,10 @@ MathJax.Hub.Config({
                   simplifies to:
                 </p>
 
-                <img
-                  src="https://2019.igem.org/wiki/images/6/6e/T--Tec-Monterrey--model-table-6.png"
-                  class="col-md-9 description-image"
-                />
+                <img src="https://2019.igem.org/wiki/images/6/6e/T--Tec-Monterrey--model-table-6.png"
+                  class="description-image col-md-12" />
 
-                <p class="col-md-12 description-text">
+                <p class="description-text">
                   The analytical solutions of R(t) and I(t) areR(t)
                   =αδR(1−eδRt) +R0eδRtandI(t) =I0eδIt.In steady state R
                   becomes the rate of basal expression anddegradation dilution
@@ -429,16 +274,13 @@ MathJax.Hub.Config({
                   expression is approximately zero the last equation becomes
                 </p>
 
-                <img
-                  src="https://2019.igem.org/wiki/images/7/7b/T--Tec-Monterrey--model-table-7.png"
-                  class="col-md-9 description-image"
-                />
-                <img
-                  src="https://2019.igem.org/wiki/images/c/ca/T--Tec-Monterrey--model-table-8.png"
-                  class="col-md-9 description-image"
-                />
+                <img src="https://2019.igem.org/wiki/images/7/7b/T--Tec-Monterrey--model-table-7.png"
+                  class="description-image col-md-12" />
 
-                <p class="col-md-12 description-text">
+                <img src="https://2019.igem.org/wiki/images/c/ca/T--Tec-Monterrey--model-table-8.png"
+                  class="description-image col-md-12" />
+
+                <p class="description-text">
                   A simple empirical equation can be obtained by setting the
                   promoterocuppancy as and changing P(t) to the promoter
                   derepression asO(R) =P(t)P(t)+C1(t)=Keq1R(t)+Keq1However we
@@ -451,22 +293,21 @@ MathJax.Hub.Config({
                   Hill-Langmuir fucntionP(t)P(t)+C1(t)=InIn+Kn
                 </p>
 
-                <img
-                  src="https://2019.igem.org/wiki/images/a/a7/T--Tec-Monterrey--model-table-9.png"
-                  class="col-md-9 description-image"
-                />
+                <img src="https://2019.igem.org/wiki/images/a/a7/T--Tec-Monterrey--model-table-9.png"
+                  class="description-image col-md-12" />
               </div>
             </div>
 
-            <div
-              id="metal-biosensor-component2"
-              class="container d-flex flex-wrap"
-            >
-                <button class="col-md-12 metal-biosensor-button">
-                  Heavy Metal  biosensor  with a multilayer-  orthogonal transcriptional amplifiers
-                </button>
-                <div class="col-md-12" style="display: none;" id="cards-model">
-                  <p>Multi-layer orthogonal transcriptional amplifier have proved to amplified considerably the signal output lowering the detection limits for sensing applications. The system of differential equations for a monolayer-  orthogonal transcriptional amplifier consisting of a dimer activator  previously studied integrates the following terms.
+            <div class="hidden-component mb-3">
+              <button class="col-md-12 metal-biosensor-button">
+                Heavy Metal biosensor with a multilayer- orthogonal transcriptional amplifiers
+              </button>
+
+              <div class="col-md-12" style="display: none;">
+                <p>Multi-layer orthogonal transcriptional amplifier have proved to amplified considerably the signal
+                  output lowering the detection limits for sensing applications. The system of differential equations
+                  for a monolayer- orthogonal transcriptional amplifier consisting of a dimer activator previously
+                  studied integrates the following terms.
                   \begin{equation}
                   \frac{dH_R(t)}{dt} = \beta_0 +\beta_1P_A(t)+k_{-3}H_2(t)-H_R(t)(\delta_{H_R} + k_3H_S(t))
                   \end{equation}
@@ -494,225 +335,344 @@ MathJax.Hub.Config({
                   \begin{equation}
                   \frac{dG(t)}{dt} = \gamma_0 +\gamma_1P_B(t)-\delta_{G}G(t)
                   \end{equation}
-                  </p>
-                  <p>
-                  For a bilayer biosensor the mathematical approach for stablishing the differential equations is the same
+                </p>
+                <p>
+                  For a bilayer biosensor the mathematical approach for stablishing the differential equations is the
+                  same
                   \begin{equation}
-                    \frac{dH_R(t)}{dt} = \beta_0 +\beta_1P_A(t)+k_{-3}H_2(t)-H_R(t)(\delta_{H_R} + k_3H_S(t))
+                  \frac{dH_R(t)}{dt} = \beta_0 +\beta_1P_A(t)+k_{-3}H_2(t)-H_R(t)(\delta_{H_R} + k_3H_S(t))
                   \end{equation}
 
                   \begin{equation}
-                    \frac{dH_S(t)}{dt} = \beta_0 +\beta_1P_A(t)+k_{-3}H_2(t)-H_S(t)(\delta_{H_S} + k_3H_R(t))
+                  \frac{dH_S(t)}{dt} = \beta_0 +\beta_1P_A(t)+k_{-3}H_2(t)-H_S(t)(\delta_{H_S} + k_3H_R(t))
                   \end{equation}
 
                   \begin{equation}
-                    \frac{dH_{2}(t)}{dt} = k_{3}H_R(t)H_S(t)-k_{-3}H_{2}(t)
+                  \frac{dH_{2}(t)}{dt} = k_{3}H_R(t)H_S(t)-k_{-3}H_{2}(t)
                   \end{equation}
 
                   \begin{equation}
-                    \frac{dP_B(t)}{dt} = -k_{4}H_2(t)P_B(t)+k_{-4}C_{3}(t)
+                  \frac{dP_B(t)}{dt} = -k_{4}H_2(t)P_B(t)+k_{-4}C_{3}(t)
                   \end{equation}
 
                   \begin{equation}
-                    \frac{dC_3(t)}{dt} = k_{4}H_2(t)P_B(t)-k_{-4}C_{3}(t)
+                  \frac{dC_3(t)}{dt} = k_{4}H_2(t)P_B(t)-k_{-4}C_{3}(t)
                   \end{equation}
 
                   \begin{equation}
-                    \frac{dE(t)}{dt} =  \gamma_1P_B(t)-\delta_{G}E(t)-k_5E(t)P_c(t)+k_{-5}C_4(t)
+                  \frac{dE(t)}{dt} = \gamma_1P_B(t)-\delta_{G}E(t)-k_5E(t)P_c(t)+k_{-5}C_4(t)
                   \end{equation}
 
                   \begin{equation}
-                    \frac{dC_4(t)}{dt} = k_{5}E(t)P_C(t)-k_{-5}C_{4}(t)
+                  \frac{dC_4(t)}{dt} = k_{5}E(t)P_C(t)-k_{-5}C_{4}(t)
                   \end{equation}
 
                   \begin{equation}
-                    \frac{dP_C(t)}{dt} = -k_{5}E(t)P_C(t)+k_{-5}C_{4}(t)
+                  \frac{dP_C(t)}{dt} = -k_{5}E(t)P_C(t)+k_{-5}C_{4}(t)
                   \end{equation}
 
                   \begin{equation}
-                    \frac{dG(t)}{dt} = \varepsilon_1P_B(t)-\delta_{G}G(t)
+                  \frac{dG(t)}{dt} = \varepsilon_1P_B(t)-\delta_{G}G(t)
                   \end{equation}
                 </p>
                 <p>
-                  Instead on trying to find the analytical solutions of the systems of differential equatios. We are now interested in compairing the biosensor with and without a multilayer- orthogonal transcriptional amplifier under same circumstances.
+                  Instead on trying to find the analytical solutions of the systems of differential equatios. We are
+                  now interested in compairing the biosensor with and without a multilayer- orthogonal transcriptional
+                  amplifier under same circumstances.
                 </p>
-                </div>
+              </div>
             </div>
-            <div
-              id="metal-biosensor-component11"
-              class="container d-flex flex-wrap"
-            >
+
+            <!--
+            <div class="container d-flex flex-wrap hidden-component">
               <button class="col-md-12 metal-biosensor-button">
-                Response curve-based tuning process for antibiotic biosensor              
+                Response curve-based tuning process for antibiotic biosensor
               </button>
-              <div class="col-md-12" style="display: none;" id="cards-model">
-               CONTENT GOES HERE
+              <div class="col-md-12" style="display: none;" >
+                CONTENT GOES HERE
+              </div>
+            </div>-->
+          </section>
+
+          <section id="microfluidics" class="container">
+            <h2 class="subsection-title">
+              Microfluidics Model
+            </h2>
+            <p class="description-text">
+              Compared to single phase flows, microfluidic two-phase flows relies on several physical phenomena that
+              need to be controlled for the droplets to fully form. The flow properties in microchannels rely on three
+              parameters: the channel geometry, the properties of both fluids, and the flow conditions. These factors
+              can be described by some important dimensionless parameters.
+            </p>
+
+            <div class="d-flex flex-wrap hidden-component mb-3">
+              <button class="col-md-12 metal-biosensor-button">
+                Dimensionless Numbers
+              </button>
+              <div class="col-md-12" style="display: none;">
+                <p>
+                  The physics behind microfluidics include the relations between the interfacial tension, inertial
+                  forces and the involved fluids’ properties. Dimensionless numbers have become a standard manner to
+                  compare fluid interaction at macro and micro scale.
+                </p>
+                <p>
+                  The flow in microfluidic systems are usually characterized by low Reynolds number values, which
+                  describes the ratio between inertial and viscous forces in fluids, and can be used to characterize the
+                  system.
+                </p>
+                <b>EQUATION 1.1</b>
+                <P>
+                  Where ρ is the density of the fluid (kg/m3), V is the average fluid velocity (m/s), L is the linear
+                  dimension (m) and µ is the dynamic viscosity of the fluid (kg/ms). In microfluidic systems, viscous
+                  forces (µ) dominate and Reynolds numbers are generally smaller than 100, leading to the prevalence of
+                  laminar flow. For Re << 1 the flow is dominated by viscous stresses and pressure gradients, hence
+                    inertial effects are negligible, and the trajectories of fluidic psections can be controlled
+                    precisely. </P> <P>
+                    The dominant forces at the microscale are <b>interfacial and viscous forces</b>, therefore it is
+                    important to determine the relative importance of the interfacial tension compared to other forces
+                    in droplet generation. The capillary number Ca is the ratio of viscous stress to capillary pres
+                </P>
+                <b>EQUATION 1.2</b>
+                <p>
+                  Here η is the viscosity of the fluid in the two-phase system, μ is the velocity of the phase, and Υ is
+                  the interfacial tension of the liquid-liquid interface. At low Ca (<1) the interfacial tension
+                    dominates, and spherical droplets are found. In contrast, at high Ca (>>1) the viscous forces play
+                    an important role, leading to deformation of the droplets and sometimes to asymmetric shapes.
+                    Suryo & Basaran had previously reported a phases map in which different droplet generation regimes
+                    were identified at different ranges of Ca numbers for both continuous and disperse phases [numero].
+                    The squeezing regime generates well-rounded monodisperse droplets at high throughput and has defined
+                    boundary conditions for the Ca numbers as shown in Figure 1. Hence a prediction can be made based on
+                    the parameters considered in the Ca in order to generate monodisperse droplets in the squeezing
+                </p>
+                <img src="img/T--Tec-Monterrey--hw-Ca-phase-diagram.png" class="col-md-9 description-image">
+                <p class="col-sm-12 col-md-10 description-text1">
+                  Figure 1. Phase diagram in (Cac,Cad) plane for various modes observed in microcapillary devices
+                </p>
               </div>
             </div>
-          </article>
 
-          <article class="container">
-              <h2 class="row col-md-12 subsection-title">
-                Microfluidics Model
-              </h2>
-              <p class="col-md-12 description-text">
-                Compared to single phase flows, microfluidic two-phase flows relies on several physical phenomena that need to be controlled for the droplets to fully form. The flow properties in microchannels rely on three parameters: the channel geometry, the properties of both fluids, and the flow conditions. These factors can be described by some important dimensionless parameters.
-              </p>
+            <div class="d-flex flex-wrap hidden-component mb-3">
+              <button class="col-md-12 metal-biosensor-button">
+                Interfacial Effects
+              </button>
+              <div class="col-md-12" style="display: none;">
+                <p>
+                  The interfacial effects become relevant when working at microscale and are crucial in multi-phase
+                  flows. The interfaces considered in microfluidic two-phase systems include the fluid-wall and
+                  fluid-fluid interfaces. The wetting properties of the fluid-wall interface are important to determine
+                  whether there will be an ordered droplet production or not. If there is a complete wetting of the
+                  continuous phase in the microchannels, an orderly pattern can be achieved. The hydrophobicity or
+                  hydrophilicity of a solid surface can be expressed quantitatively by contact angles. The contact angle
+                  between a liquid and a solid is the angle formed by the tangent from the contact point along the
+                  gas-liquid interface. If the contact angle between a liquid and a solid is less than 90° the liquid
+                  will wet the surface and spread over it. If the contact angle is ≥90°, the liquid will stay on the
+                  surface as a bead. Therefore, the* contact angle between a liquid and a solid is dependent on the
+                  nature of the liquid as well as the surface characteristics of the solid. Water-in-oil (W/O) droplets
+                  can be achieved in hydrophobic surfaces that have a contact angle higher than 90°, in which the
+                  droplet will not spread over the surface; nevertheless, it is possible to modify the contact angle by
+                  adding surfactants at different con
+                </p>
+              </div>
+            </div>
 
-              <div
-                id="metal-biosensor-component7"
-                class="container d-flex flex-wrap"
-              >
-                <button class="col-md-12 metal-biosensor-button">
-                  Dimensionless Numbers
-                </button>
-                <div class="col-md-12" style="display: none;" id="cards-model">
-                  <p>
-                      The physics behind microfluidics include the relations between the interfacial tension, inertial forces and the involved fluids’ properties. Dimensionless numbers have become a standard manner to compare fluid interaction at macro and micro scale.                
-                  </p>
-                  <p>
-                      The flow in microfluidic systems are usually characterized by low Reynolds number values, which describes the ratio between inertial and viscous forces in fluids, and can be used to characterize the system. 
-                  </p>
-                  <b>EQUATION 1.1</b>
-                  <P>
-                      Where ρ is the density of the fluid (kg/m3), V is the average fluid velocity (m/s), L is the linear dimension (m) and µ is the dynamic viscosity of the fluid (kg/ms). In microfluidic systems, viscous forces (µ) dominate and Reynolds numbers are generally smaller than 100, leading to the prevalence of laminar flow. For Re << 1 the flow is dominated by viscous stresses and pressure gradients, hence inertial effects are negligible, and the trajectories of fluidic particles can be controlled precisely. 
-                  </P>
-                  <P>
-                      The dominant forces at the microscale are <b>interfacial and viscous forces</b>, therefore it is important to determine the relative importance of the interfacial tension compared to other forces in droplet generation. The capillary number Ca is the ratio of viscous stress to capillary pres
-                  </P>
-                  <b>EQUATION 1.2</b>
-                  <p>
-                    Here η is the viscosity of the fluid in the two-phase system, μ is the velocity of the phase, and Υ is the interfacial tension of the liquid-liquid interface. At low Ca (<1) the interfacial tension dominates, and spherical droplets are found. In contrast, at high Ca (>>1) the viscous forces play an important role, leading to deformation of the droplets and sometimes to asymmetric shapes.
-                    Suryo & Basaran had previously reported a phases map in which different droplet generation regimes were identified at different ranges of Ca numbers for both continuous and disperse phases [numero]. The squeezing regime generates well-rounded monodisperse droplets at high throughput and has defined boundary conditions for the Ca numbers as shown in Figure 1. Hence a prediction can be made based on the parameters considered in the Ca in order to generate monodisperse droplets in the squeezing     
-                  </p>
-                  <img src="img/T--Tec-Monterrey--hw-Ca-phase-diagram.png" class="col-md-9 description-image">
-                  <p class="col-sm-12 col-md-10 description-text1">
-                    Figure 1. Phase diagram in (Cac,Cad) plane for various modes observed in microcapillary devices
-                  </p>
-                </div>
+            <div class="d-flex flex-wrap hidden-component mb-3">
+              <button class="col-md-12 metal-biosensor-button">
+                Surfactant Effects
+              </button>
+              <div class="col-md-12" style="display: none;">
+                <p>
+                  Surfactants are often used in order to modify the contact angle between the fluid-wall
+                  interface. They are also used to reduce the interfacial tension between fluids and to prevent
+                  the coalescence or merging of droplets [13]. In the presence of surfactants, the interfacial
+                  tension is determined by the competition between interfacial deformation and surfactant
+                  convection, diffusion and adsorption–desorption kinetics during droplet generation [3]. A faster
+                  interfacial deformation and slower mass transfer process causes the surface coverage of
+                  surfactants to become smaller, thereby the interfacial tension turns larger [13].
+                </p>
+                <p>
+                  Properties of the fluids (i.e., viscosity, density, interfacial tension) and design parameters
+                  (i.e., geometry, dimensions, flow rates) are the main variables responsible for the formation of
+                  continuous monodisperse droplets in a microfluidic system.
+                </p>
+                <p>
+                  The droplet breakup process in microfluidic devices has been extensively studied, and several
+                  mechanisms have been classified based on the droplet generation. The most important mechanism is
+                  the squeezing regime, since this produces continuous monodisperse droplets in defined intervals
+                  of time.
+                </p>
+                <img src="img/T--Tec-Monterrey--hw-regimes.png" class="col-md-9 description-image">
+                <p>
+                  The droplet breaking process is not fully understood since it is dependent on many parameters,
+                  nevertheless a good approximation can be made based on design parameters including flow rate,
+                  viscosities, and geometry of the device.
+                </p>
+                <p>
+                  As the viscous forces and capillary forces are the dominant forces in the droplet breakup and
+                  capillary numbers relate those terms, they are essential in the determination of design
+                  parameters for droplet formation. Based on the known physical parameters of the fluids being
+                  used, it can be possible to calculate the best velocities at which the fluids begin the droplet
+                  formation in the squeezing regime.
+                </p>
+                <p>
+                  A MATLAB script was developed in order to determine the optimized velocities and hence the flow
+                  rates for droplet generation based on the boundary conditions of the squeezing regime. The
+                  following figure is an example of the scatter map created based on the conditions available in
+                  literature, the physical parameters of the fluids (interfacial tension, density, and kinematic
+                  viscosity), and the geometry of the channel (width and length). The flow rate conditions were
+                  used as parameters into a COMSOL simulation in order to determine the optimized flow rates that
+                  could generate continuous monodisperse droplets in order to try them in the experimental section
+                  of the microfluidic device.
+                </p>
+                <img src="img/T--Tec-Monterrey--hw-matlab-diagram.jpg" class="col-md-9 description-image">
               </div>
-    
-              <div
-                id="metal-biosensor-component8"
-                class="container d-flex flex-wrap"
-              >
-                <button class="col-md-12 metal-biosensor-button">
-                  Interfacial Effects
-                </button>
-                <div class="col-md-12" style="display: none;" id="cards-model">
+            </div>
+
+            <div class="d-flex flex-wrap hidden-component mb-3">
+              <button class="col-md-12 metal-biosensor-button">
+                Simulations and Model
+              </button>
+              <div class="col-md-12" style="display: none;">
                 <p>
-                  The interfacial effects become relevant when working at microscale and are crucial in multi-phase flows. The interfaces considered in microfluidic two-phase systems include the fluid-wall and fluid-fluid interfaces. The wetting properties of the fluid-wall interface are important to determine whether there will be an ordered droplet production or not. If there is a complete wetting of the continuous phase in the microchannels, an orderly pattern can be achieved. The hydrophobicity or hydrophilicity of a solid surface can be expressed quantitatively by contact angles. The contact angle between a liquid and a solid is the angle formed by the tangent from the contact point along the gas-liquid interface. If the contact angle between a liquid and a solid is < 90° the liquid will wet the surface and spread over it. If the contact angle is ≥90°, the liquid will stay on the surface as a bead. Therefore, the* contact angle between a liquid and a solid is dependent on the nature of the liquid as well as the surface characteristics of the solid. Water-in-oil (W/O) droplets can be achieved in hydrophobic surfaces that have a contact angle higher than 90°, in which the droplet will not spread over the surface; nevertheless, it is possible to modify the contact angle by adding surfactants at different con
-                </p>
-                </div>
-              </div>  
-      
-              <div
-                id="metal-biosensor-component9"
-                class="container d-flex flex-wrap"
-              >
-                <button class="col-md-12 metal-biosensor-button">
-                  Surfactant Effects
-                </button>
-                <div class="col-md-12" style="display: none;" id="cards-model">
-                  <p>
-                    Surfactants are often used in order to modify the contact angle between the fluid-wall interface. They are also used to reduce the interfacial tension between fluids and to prevent the coalescence or merging of droplets [13]. In the presence of surfactants, the interfacial tension is determined by the competition between interfacial deformation and surfactant convection, diffusion and adsorption–desorption kinetics during droplet generation [3]. A faster interfacial deformation and slower mass transfer process causes the surface coverage of surfactants to become smaller, thereby the interfacial tension turns larger [13].
-                  </p>
-                  <p>
-                    Properties of the fluids (i.e., viscosity, density, interfacial tension) and design parameters (i.e., geometry, dimensions, flow rates) are the main variables responsible for the formation of continuous monodisperse droplets in a microfluidic system.
-                  </p>
-                  <p>
-                    The droplet breakup process in microfluidic devices has been extensively studied, and several mechanisms have been classified based on the droplet generation. The most important mechanism is the squeezing regime, since this produces continuous monodisperse droplets in defined intervals of time. 
-                  </p>
-                  <img src="img/T--Tec-Monterrey--hw-regimes.png" class="col-md-9 description-image">
-                  <p>
-                    The droplet breaking process is not fully understood since it is dependent on many parameters, nevertheless a good approximation can be made based on design parameters including flow rate, viscosities, and geometry of the device.
-                  </p>
-                  <p>
-                    As the viscous forces and capillary forces are the dominant forces in the droplet breakup and capillary numbers relate those terms, they are essential in the determination of design parameters for droplet formation. Based on the known physical parameters of the fluids being used, it can be possible to calculate the best velocities at which the fluids begin the droplet formation in the squeezing regime.
-                  </p>
-                  <p>
-                    A MATLAB script was developed in order to determine the optimized velocities and hence the flow rates for droplet generation based on the boundary conditions of the squeezing regime.  The following figure is an example of the scatter map created based on the conditions available in literature, the physical parameters of the fluids (interfacial tension, density, and kinematic viscosity), and the geometry of the channel (width and length). The flow rate conditions were used as parameters into a COMSOL simulation in order to determine the optimized flow rates that could generate continuous monodisperse droplets in order to try them in the experimental section of the microfluidic device. 
-                  </p>
-                  <img src="img/T--Tec-Monterrey--hw-matlab-diagram.jpg" class="col-md-9 description-image">
-                </div>
-              </div>
-    
-              <div
-                id="metal-biosensor-component10"
-                class="container d-flex flex-wrap"
-              >
-                <button class="col-md-12 metal-biosensor-button">
-                  Simulations and Model
-                </button>
-                <div class="col-md-12" style="display: none;" id="cards-model">
-                <p>
-                  As previously discussed, the role of viscosity, effect of flow rates, and geometries of the microfluidic device are of great relevance on droplet formation [1]. Nevertheless, the experimental and empirical investigations that focus on these effects are usually subject to spend a large amount of resources, time, and effort in order to achieve an optimized set of conditions for droplet generation, since there is a high chance of failure at initial stages of the design process [2], [3]. Therefore, a numerical study of microdroplet generation could provide a suitable model for the prediction of the effects of the previously mentioned parameters on a droplet generation T-junction microfluidic device.
+                  As previously discussed, the role of viscosity, effect of flow rates, and geometries of the
+                  microfluidic device are of great relevance on droplet formation [1]. Nevertheless, the experimental
+                  and empirical investigations that focus on these effects are usually subject to spend a large amount
+                  of resources, time, and effort in order to achieve an optimized set of conditions for droplet
+                  generation, since there is a high chance of failure at initial stages of the design process [2],
+                  [3]. Therefore, a numerical study of microdroplet generation could provide a suitable model for the
+                  prediction of the effects of the previously mentioned parameters on a droplet generation T-junction
+                  microfluidic device.
                 </p>
                 <p>
-                  A reliable simulation may be a suitable method to reduce the required time to achieve an optimized characteristic of the system, and to be able to forecast how the different modifications of the parameters will impact on the droplet generation [3]. In order to determine the effect of different flow rates of both phases and their relation to droplet size and monodispersity, simulations were carried out using COMSOL Multiphysics which includes a computational fluid dynamics (CFD) module and a microfluidics module as well [4].
+                  A reliable simulation may be a suitable method to reduce the required time to achieve an optimized
+                  characteristic of the system, and to be able to forecast how the different modifications of the
+                  parameters will impact on the droplet generation [3]. In order to determine the effect of different
+                  flow rates of both phases and their relation to droplet size and monodispersity, simulations were
+                  carried out using COMSOL Multiphysics which includes a computational fluid dynamics (CFD) module and
+                  a microfluidics module as well [4].
                 </p>
                 <p>
-                  CFD provides a reliable alternative in order to obtain insights into a complicated process. Several methods have been typically used in order to simulate two-phase fluidic systems, including volume of fluid (VOF) method, level-set method (LS), phase-field method, and lattice-Boltzmann method. Although there are several advantages regarding the different methods, the LS method represents the interface by a smooth function, and it is convenient for calculating the curvature and surface tension forces [5]. Hence, it seems to be suitable for modeling droplet breakup process in microfluidic devices. In the proposed simulations, we employed LS method to study the droplet-breakup process using FC40 as the continuous phase, and water as the dispersed phase. The effects of the capillary number (Ca) and the different flow rates are investigated [3].
+                  CFD provides a reliable alternative in order to obtain insights into a complicated process. Several
+                  methods have been typically used in order to simulate two-phase fluidic systems, including volume of
+                  fluid (VOF) method, level-set method (LS), phase-field method, and lattice-Boltzmann method.
+                  Although there are several advantages regarding the different methods, the LS method represents the
+                  interface by a smooth function, and it is convenient for calculating the curvature and surface
+                  tension forces [5]. Hence, it seems to be suitable for modeling droplet breakup process in
+                  microfluidic devices. In the proposed simulations, we employed LS method to study the
+                  droplet-breakup process using FC40 as the continuous phase, and water as the dispersed phase. The
+                  effects of the capillary number (Ca) and the different flow rates are investigated [3].
                 </p>
                 <p>
-                  COMSOL Multiphysics determines the modules that are needed in order to give solving parameters, the dimensions in which the experiment will be performed, and the definition of the physics of the problem. For this simulation, we used a laminar two-phase flow using the level set method. A single-phase flow system is less complicated to model computationally than the multiphase flow due to fewer partial differential equations that need to be solved parallelly. Nevertheless, it is needed a two-phase system in order to properly simulate the relationship between the dispersed and continuous phases.
+                  COMSOL Multiphysics determines the modules that are needed in order to give solving parameters, the
+                  dimensions in which the experiment will be performed, and the definition of the physics of the
+                  problem. For this simulation, we used a laminar two-phase flow using the level set method. A
+                  single-phase flow system is less complicated to model computationally than the multiphase flow due
+                  to fewer partial differential equations that need to be solved parallelly. Nevertheless, it is
+                  needed a two-phase system in order to properly simulate the relationship between the dispersed and
+                  continuous phases.
                 </p>
                 <p>
-                  In order to analyze the motion of a liquid, the starting equation to use is the Navier-Stokes equation. The following assumptions are made in order to simplify the model: a constant fluid density, a laminar flow regime exists throughout the system, all fluids are Newtonian, and three-dimensional stresses for a fluid obey Hooke’s law [6]. While assuming the above, the incompressible form of the Navier-Stokes equation is as follows:
+                  In order to analyze the motion of a liquid, the starting equation to use is the Navier-Stokes
+                  equation. The following assumptions are made in order to simplify the model: a constant fluid
+                  density, a laminar flow regime exists throughout the system, all fluids are Newtonian, and
+                  three-dimensional stresses for a fluid obey Hooke’s law [6]. While assuming the above, the
+                  incompressible form of the Navier-Stokes equation is as follows:
                 </p>
                 <b>EQUATIONNNNNNN</b>
                 <p>
-                  As previously described, microfluidic flows have a low Reynolds number, in which viscous forces dominate over inertial forces. So, the inertial variables 𝜌 (𝑢 ∙𝛻) 𝑢 can be removed from the above equation. At low Reynolds numbers and small length scale, the relationship between the gravitational forces to surface tension are small enough that the gravitational force is negligible. The terms related to inertia and body forces are removed from the original Navier-Stokes equation, giving:
+                  As previously described, microfluidic flows have a low Reynolds number, in which viscous forces
+                  dominate over inertial forces. So, the inertial variables 𝜌 (𝑢 ∙𝛻) 𝑢 can be removed from the
+                  above equation. At low Reynolds numbers and small length scale, the relationship between the
+                  gravitational forces to surface tension are small enough that the gravitational force is negligible.
+                  The terms related to inertia and body forces are removed from the original Navier-Stokes equation,
+                  giving:
                 </p>
                 <b>EQUATIONNNNNNN</b>
                 <p>
-                  Multiphase flow has the previously mentioned properties, the boundary conditions at the fluid interface, contact angle, surface tension force, interfacial flows, and time dependent. When computational modeling two-phase flow, another set of equations are necessary. The level set method is used for multiphase simulations and is described further on in the next section.
+                  Multiphase flow has the previously mentioned properties, the boundary conditions at the fluid
+                  interface, contact angle, surface tension force, interfacial flows, and time dependent. When
+                  computational modeling two-phase flow, another set of equations are necessary. The level set method
+                  is used for multiphase simulations and is described further on in the next section.
                 </p>
                 <p>
-                  The level set method is a simple and straightforward method for modeling multiphase flow. The level set method uses a smooth signed distance function to produce an interface. The level set variable is represented by ϕ. In phase 1, the value of ϕ in the dispersed phase is equivalent to one. At the interface, which is the region that separates both phases, the level set variable is 0.5, while phase 2 is composed of the continuous fluid and ϕ equals 0. The level-set equation is expressed as:
+                  The level set method is a simple and straightforward method for modeling multiphase flow. The level
+                  set method uses a smooth signed distance function to produce an interface. The level set variable is
+                  represented by ϕ. In phase 1, the value of ϕ in the dispersed phase is equivalent to one. At the
+                  interface, which is the region that separates both phases, the level set variable is 0.5, while
+                  phase 2 is composed of the continuous fluid and ϕ equals 0. The level-set equation is expressed as:
                 </p>
                 <b>EQUATIONNNNNNN</b>
                 <p>
-                  In this equation, γ and ε are the stabilization parameters: ε determines the thickness of the interface where ϕ goes smoothly from 0 to 1, and it should have the same order as the computational mesh size of the elements where interface propagates. The parameter γ determines the amount of reinitialization of the level set function. A suitable value for γ is the maximum value of the velocity field of the velocity.
+                  In this equation, γ and ε are the stabilization parameters: ε determines the thickness of the
+                  interface where ϕ goes smoothly from 0 to 1, and it should have the same order as the computational
+                  mesh size of the elements where interface propagates. The parameter γ determines the amount of
+                  reinitialization of the level set function. A suitable value for γ is the maximum value of the
+                  velocity field of the velocity.
                 </p>
                 <p>
-                  The interfacial variables, the unit normal to the interface  and the curvature κ, then can be calculated by the following equations respectively:
+                  The interfacial variables, the unit normal to the interface and the curvature κ, then can be
+                  calculated by the following equations respectively:
                 </p>
-                <b>EQUATIONNNNNNN</b>            
-                <b>EQUATIONNNNNNN</b>            
+                <b>EQUATIONNNNNNN</b>
+                <b>EQUATIONNNNNNN</b>
                 <p>
                   The surface tension force acting on the interface between the two fluids is:
                 </p>
-                <b>EQUATIONNNNNNN</b>            
+                <b>EQUATIONNNNNNN</b>
                 <p>
-                  where σ is the interfacial tension coefficient (N/m), κ is the curvature calculated previously. δ is a Dirac delta function concentrated to the interface. The δ function is approximated by a smooth function according to:
+                  where σ is the interfacial tension coefficient (N/m), κ is the curvature calculated previously. δ is
+                  a Dirac delta function concentrated to the interface. The δ function is approximated by a smooth
+                  function according to:
                 </p>
                 <b>EQUATIONNNNNNN</b>
                 <p>
-                  The density ρ and viscosity µ in the Navier-Stokes equation are smoothed by ϕ across the interface by the following:
+                  The density ρ and viscosity µ in the Navier-Stokes equation are smoothed by ϕ across the interface
+                  by the following:
                 </p>
                 <b>EQUATIONNNNNNN</b>
                 <b>EQUATIONNNNNNN</b>
                 <p>
-                  The finite element analysis (FEA) is a numerical method to solve partial differential equations. The finite element method relies on meshing the spatial domain into multiple elements. A finer mesh has a higher number of elements and can provide a more accurate solution but will require a longer computing time than a coarse mesh [3]. FEA uses an iterative process in order to calculate a solution to all couple field variables. This modeling in order to be used needs a geometry, then models, material properties, and boundary conditions are applied to the geometry, and finally meshed. Then, computation begins, and the algorithms try to converge in order to give a solution.
+                  The finite element analysis (FEA) is a numerical method to solve partial differential equations. The
+                  finite element method relies on meshing the spatial domain into multiple elements. A finer mesh has
+                  a higher number of elements and can provide a more accurate solution but will require a longer
+                  computing time than a coarse mesh [3]. FEA uses an iterative process in order to calculate a
+                  solution to all couple field variables. This modeling in order to be used needs a geometry, then
+                  models, material properties, and boundary conditions are applied to the geometry, and finally
+                  meshed. Then, computation begins, and the algorithms try to converge in order to give a solution.
                 </p>
                 <p>
-                  The first design is a three-dimensional T-junction composed of two inlets. The inlet for Fluid 1 had a width of 100 µm and a length of 400 µm prior to the junction. The inlet for Fluid 2 had an inlet width of 100 µm and length of 300 µm prior to reaching the junction, as can be seen in the following figure. Post T-junction, the droplets travel 600 µm to the expanded pillar induced merging chamber. The entire geometry has a depth of 100µm. 
+                  The first design is a three-dimensional T-junction composed of two inlets. The inlet for Fluid 1 had
+                  a width of 100 µm and a length of 400 µm prior to the junction. The inlet for Fluid 2 had an inlet
+                  width of 100 µm and length of 300 µm prior to reaching the junction, as can be seen in the following
+                  figure. Post T-junction, the droplets travel 600 µm to the expanded pillar induced merging chamber.
+                  The entire geometry has a depth of 100µm.
                 </p>
                 <img src="img/T--Tec-Monterrey--hw-COMSOL-geometry.png" class="col-md-9 description-image">
                 <p>
-                  A free tetrahedral mesh with a COMSOL Multiphysics® predetermined element size of “fine” was utilized. Then a mapped operation was performed over the different distribution elements of the geometry in order to have smaller features in the interface section. Finally, a swept function was used to generate the different regions of the mesh size in the model.
+                  A free tetrahedral mesh with a COMSOL Multiphysics® predetermined element size of “fine” was
+                  utilized. Then a mapped operation was performed over the different distribution elements of the
+                  geometry in order to have smaller features in the interface section. Finally, a swept function was
+                  used to generate the different regions of the mesh size in the model.
                 </p>
-                <img src="img/T--Tec-Monterrey--hw-COMSOL-geometry-swept-function.png" class="col-md-9 description-image">
+                <img src="img/T--Tec-Monterrey--hw-COMSOL-geometry-swept-function.png"
+                  class="col-md-9 description-image">
                 <p>
-                  The properties of fluids utilized in the three-dimensional study can be seen below in Table I. The flow rate of the continuous phase is not constant but varies from <b>1µl/min to 50µL/min</b>. The variables for the oil are based on the specification for FC40.
+                  The properties of fluids utilized in the three-dimensional study can be seen below in Table I. The
+                  flow rate of the continuous phase is not constant but varies from <b>1µl/min to 50µL/min</b>. The
+                  variables for the oil are based on the specification for FC40.
                 </p>
-                <img src="img/T--Tec-Monterrey--hw-table-fluids.png" class="col-md-9 description-image">
-                <p class="col-sm-12 col-md-10 description-text1">
-                  Table 1. Properties of fluids used in three-dimensional study.
-                </p>
+                <figure>
+                  <img src="img/T--Tec-Monterrey--hw-table-fluids.png">
+                  <figcaption>
+                    <strong>Table 1. </strong>Properties of fluids used in three-dimensional study.
+                  </figcaption>
+                </figure>
                 <p>
-                  The main goal of the simulation is to generate droplets. Droplet generation commonly occurs by shearing one fluid phase with another. Utilizing the T-junction defined previously with the parameters based on the MATLAB script. All physical parameters are based on literature. Since the goal was to see whether the conditions could generate droplets or not, the results are only qualitative with a binary response on whether or not a droplet was formed. The next steps for this simulations were to test the given parameters that could make droplets in the experimental setup.
+                  The main goal of the simulation is to generate droplets. Droplet generation commonly occurs by
+                  shearing one fluid phase with another. Utilizing the T-junction defined previously with the
+                  parameters based on the MATLAB script. All physical parameters are based on literature. Since the
+                  goal was to see whether the conditions could generate droplets or not, the results are only
+                  qualitative with a binary response on whether or not a droplet was formed. The next steps for this
+                  simulations were to test the given parameters that could make droplets in the experimental setup.
                 </p>
                 <b>
                   REFERENCES
@@ -726,101 +686,84 @@ MathJax.Hub.Config({
                   <li>Assume the three-dimensional stresses for a fluid obey Hooke’s law</li>
                 </ul>
                 <p>
-                  Taking this into account we run the experiments in order to generate droplets, we can see the comparison between the simulation where droplets were generated and the real experiments using the flow rates that the simulation results suggested.
+                  Taking this into account we run the experiments in order to generate droplets, we can see the
+                  comparison between the simulation where droplets were generated and the real experiments using the
+                  flow rates that the simulation results suggested.
                 </p>
-                <img src="img/T--Tec-Monterrey--hw-droplet-simulation.gif" class="col-md-9 description-image">
-                  <video controls loop playsinline="" autoplay="true" muted="" class="col-md-9 description-image">
-                      <source src="https://2019.igem.org/wiki/images/3/35/T--Tec-Monterrey--hw-droplets-generation.mp4" type="video/mp4">
-                    </video>
+                <div class="d-flex row col-12">
+                  <img src="img/T--Tec-Monterrey--hw-droplet-simulation.gif" class="col-6 description-image">
+                  <video loop playsinline="" autoplay muted class="col-6 description-image">
+                    <source src="https://2019.igem.org/wiki/images/3/35/T--Tec-Monterrey--hw-droplets-generation.mp4"
+                      type="video/mp4">
+                  </video>
                 </div>
-              </div>  
-    
-          </article>
+              </div>
+            </div>
 
-          <article class="container">
-            <h2 class="row col-md-12 subsection-title">
-              Mucolytic Production
+          </section>
+
+          <section id="mucolytic" class="container">
+            <h2 class="subsection-title">
+              Mucolytic production
             </h2>
-            <div class="row mt-4">
-              <p class="col-md-12 description-text">INTRODUCCION</p>
-            <div
-            id="metal-biosensor-component5"
-            class="container d-flex flex-wrap"
-          >
-            <button class="col-md-12 metal-biosensor-button">
-              Inducible Expression in E. Coli T7 System for the Production of Sialidase Mucolytic 
-            </button>
-            <div class="col-md-12" style="display: none;" id="cards-model">
-              CONTENT GOES HERE
-            </div>
+
+            <p class="description-text">
+              INTRODUCCION
+            </p>
+
+            <div class="d-flex flex-wrap hidden-component mb-3">
+              <button class="col-md-12 metal-biosensor-button">
+                Inducible Expression in E. Coli T7 System for the Production of Sialidase Mucolytic
+              </button>
+              <div class="col-md-12" style="display: none;">
+                CONTENT GOES HERE
+              </div>
             </div>
 
-            <div
-              id="metal-biosensor-component6"
-              class="container d-flex flex-wrap"
-            >
+            <div class="d-flex flex-wrap hidden-component mb-3">
               <button class="col-md-12 metal-biosensor-button">
                 Titulo B
               </button>
-              <div class="col-md-12" style="display: none;" id="cards-model">
-              CONTENT GOES HERE
+              <div class="col-md-12" style="display: none;">
+                CONTENT GOES HERE
               </div>
-            </div>  
-          </article>
+            </div>
+          </section>
 
           <!----------------    Y TERMINA HASTA ACÁ      ----------------->
-        </section>
+        </article>
       </div>
     </div>
 
-    <footer class="d-flex flex-wrap justify-content-around">
-      <img
-        src="https://2019.igem.org/wiki/images/thumb/1/1f/T--Tec-Monterrey--sponsors-acceso-lab.png/320px-T--Tec-Monterrey--sponsors-acceso-lab.png"
-      />
-      <img
-        src="https://2019.igem.org/wiki/images/thumb/d/d6/T--Tec-Monterrey--sponsors-arfq.png/262px-T--Tec-Monterrey--sponsors-arfq.png"
-      />
-      <img
-        src="https://2019.igem.org/wiki/images/b/bd/T--Tec-Monterrey--sponsors-benchmark.png"
-      />
-      <img
-        src="https://2019.igem.org/wiki/images/thumb/0/0a/T--Tec-Monterrey--sponsors-biolabs.png/320px-T--Tec-Monterrey--sponsors-biolabs.png"
-      />
-      <img
-        src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-cofepris.png"
-      />
-      <img
-        src="https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--sponsors-congreso-nuevo-leon.png"
-      />
-      <img
-        src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-ctr.png"
-      />
-      <img
-        src="https://2019.igem.org/wiki/images/a/ac/T--Tec-Monterrey--sponsors-dibico.png"
-      />
-      <img
-        src="https://2019.igem.org/wiki/images/thumb/9/9b/T--Tec-Monterrey--sponsors-idt.png/320px-T--Tec-Monterrey--sponsors-idt.png"
-      />
-      <img
-        src="https://2019.igem.org/wiki/images/d/db/T--Tec-Monterrey--sponsors-imss.png"
-      />
-      <img src="" />
-      <img
-        src="https://2019.igem.org/wiki/images/thumb/c/cf/T--Tec-Monterrey--sponsors-itesm.png/320px-T--Tec-Monterrey--sponsors-itesm.png"
-      />
-      <img
-        src="https://2019.igem.org/wiki/images/b/b7/T--Tec-Monterrey--sponsors-scintia.png"
-      />
-      <img
-        src="https://2019.igem.org/wiki/images/f/ff/T--Tec-Monterrey--sponsors-snap-gene.png"
-      />
-      <img
-        src="https://2019.igem.org/wiki/images/thumb/f/f0/T--Tec-Monterrey--sponsors-twist.png/320px-T--Tec-Monterrey--sponsors-twist.png"
-      />
-    </footer>
+  </main>
 
-    <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
-    <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
-    <script src="js/placeholder.js"></script>
-  </body>
+  <footer class="d-flex flex-wrap justify-content-around">
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/1/1f/T--Tec-Monterrey--sponsors-acceso-lab.png/320px-T--Tec-Monterrey--sponsors-acceso-lab.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/d/d6/T--Tec-Monterrey--sponsors-arfq.png/262px-T--Tec-Monterrey--sponsors-arfq.png" />
+    <img src="https://2019.igem.org/wiki/images/b/bd/T--Tec-Monterrey--sponsors-benchmark.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/0/0a/T--Tec-Monterrey--sponsors-biolabs.png/320px-T--Tec-Monterrey--sponsors-biolabs.png" />
+    <img src="https://2019.igem.org/wiki/images/9/9a/T--Tec-Monterrey--sponsors-congreso-nuevo-leon.png" />
+    <img src="https://2019.igem.org/wiki/images/5/53/T--Tec-Monterrey--sponsors-ctr.png" />
+    <img src="https://2019.igem.org/wiki/images/a/ac/T--Tec-Monterrey--sponsors-dibico.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/9/9b/T--Tec-Monterrey--sponsors-idt.png/320px-T--Tec-Monterrey--sponsors-idt.png" />
+    <img src="https://2019.igem.org/wiki/images/d/db/T--Tec-Monterrey--sponsors-imss.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/e/e1/T--Tec-Monterrey--sponsors-insp.png/320px-T--Tec-Monterrey--sponsors-insp.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/c/cf/T--Tec-Monterrey--sponsors-itesm.png/320px-T--Tec-Monterrey--sponsors-itesm.png" />
+    <img src="https://2019.igem.org/wiki/images/b/b7/T--Tec-Monterrey--sponsors-scintia.png" />
+    <img src="https://2019.igem.org/wiki/images/f/ff/T--Tec-Monterrey--sponsors-snap-gene.png" />
+    <img
+      src="https://2019.igem.org/wiki/images/thumb/f/f0/T--Tec-Monterrey--sponsors-twist.png/320px-T--Tec-Monterrey--sponsors-twist.png" />
+  </footer>
+
+  <script src="https://2019.igem.org/Template:Tec-Monterrey/popper?action=raw&ctype=text/javascript"></script>
+  <script src="https://2019.igem.org/Template:Tec-Monterrey/bootstrapJSmin?action=raw&ctype=text/javascript"></script>
+  <script src="js/placeholder.js"></script>
+</body>
+
 </html>

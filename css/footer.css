@@ -3,8 +3,8 @@ footer {
     padding: 8px;
     margin-top: 192px;
 }
-  
-footer > img {
-    height: 32px;
-    margin: 16px 32px;
+
+footer>img {
+    height: 2em;
+    margin: 1em 2em;
 }

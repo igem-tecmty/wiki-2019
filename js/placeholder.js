@@ -88,11 +88,10 @@ $(".index-section").click(function() {
 $(".hidden-component")
   .find("button")
   .on("click", function() {
-    console.log($(this).parent());
     $(this)
       .parent()
       .find("div")
-      .toggle("slow");
+      .animate({ height: "toggle", opacity: "toggle" }, "slow");
   });
 
 /*

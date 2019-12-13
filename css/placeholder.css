@@ -472,17 +472,17 @@ table#promoters th {
 
 main#contact-page {
   font-family: "Manjari", sans-serif;
+  color: white;
 }
 
-#contact-breathe-img {
-  width: 6em;
-  height: 6em;
+main#contact-page div#contact-info-container {
+  font-size: 1.5em;
 }
 
-#contact-info-container img {
-  margin: 4px;
-  width: 2em;
-  width: 2em;
+main#contact-page div#social-links img {
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0.5em;
 }
 
 main#parts-page table {
@@ -520,19 +520,6 @@ main#integrated-human-page article a:visited {
     font-size: 2.5em;
   }
 
-  img#contact-breathe-img {
-    display: none;
-  }
-
-  #contact-info-container {
-    text-align: center;
-  }
-
-  #contact-info-container>div {
-    width: fit-content;
-    margin: 0 auto;
-  }
-
   .static-move {
     background-attachment: fixed;
     background-position: center;
@@ -565,5 +552,15 @@ main#integrated-human-page article a:visited {
     padding: 1em 0;
     margin: 0.5em;
     border-bottom: solid 4px;
+  }
+
+  img#contact-breathe-img {
+    display: none;
+  }
+
+  main#contact-page #contact-info-container,
+  main#contact-page #contact-info-container div {
+    text-align: center;
+    justify-content: center;
   }
 }

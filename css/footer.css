@@ -1,10 +1,10 @@
 footer {
     background-color: var(--iGEM-dark-blue);
     padding: 8px;
-    margin-top: 192px;
+    margin-top: 10em;
 }
 
 footer>img {
-    height: 2em;
-    margin: 1em 2em;
+    height: 1.5em;
+    margin: 1em;
 }

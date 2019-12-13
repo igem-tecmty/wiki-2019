@@ -1,35 +1,22 @@
 body,
 #HQ_page {
-    font-size: 18px !important;
-    background-color: #14224c;
     color: white;
+    background-color: var(--iGEM-dark-blue);
 }
 
 header {
     box-shadow: none;
 }
 
-.portrait-container {
+header.page-cover {
     position: relative;
     width: 100%;
     margin-bottom: 120px;
     opacity: 1;
 }
 
-.portrait-container video {
+header.page-cover video {
     z-index: 3;
-}
-
-.portrait-photo {
-    width: 100%;
-    height: 320px + 72px;
-    object-fit: cover;
-    position: fixed;
-    opacity: 1;
-    -webkit-filter: grayscale(0%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
-    z-index: 0;
 }
 
 video {
@@ -53,6 +40,7 @@ footer {
 
 .home-element {
     opacity: 0.1;
+    padding: 4em 0;
 }
 
 .background-img-landing {
@@ -63,6 +51,7 @@ footer {
     z-index: -3;
     opacity: 0.1;
     margin-top: -121px;
+    max-width: 90%;
 }
 
 .background-img-landing>img {
@@ -72,7 +61,7 @@ footer {
 }
 
 #hard-to-find {
-    font-size: 5em;
+    font-size: 5em !important;
 }
 
 #description-button {
@@ -95,7 +84,7 @@ footer {
     font-size: 1.5em;
 }
 
-@media only screen and (max-width: 719px) {
+@media only screen and (max-width: 911px) {
     footer {
         margin-top: 600px;
     }

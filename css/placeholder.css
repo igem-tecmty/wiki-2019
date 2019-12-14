@@ -540,13 +540,15 @@ main#integrated-human-page article a:visited {
   font-family: var(--iGEM-font-title)
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .wrapper {
     font-size: 15px;
   }
-}
 
-@media only screen and (max-width: 991px) {
+  header.top-menu h1 {
+    padding: 0.5em;
+  }
+
   nav.index-menu {
     position: unset;
     padding: 1em 0;

@@ -19,6 +19,13 @@ header.page-cover video {
     z-index: 3;
 }
 
+img#award-ribbon {
+    position: absolute;
+    z-index: 4;
+    width: 264px;
+    margin-left: -16px;
+}
+
 video {
     width: 100%;
     height: 100vh;
@@ -51,7 +58,8 @@ footer {
     z-index: -3;
     opacity: 0.1;
     margin-top: -121px;
-    max-width: 90%;
+    max-width: 95%;
+    left: 0%;
 }
 
 .background-img-landing>img {
@@ -84,7 +92,7 @@ footer {
     font-size: 1.5em;
 }
 
-@media only screen and (max-width: 911px) {
+@media only screen and (max-width: 991px) {
     footer {
         margin-top: 600px;
     }
@@ -95,5 +103,9 @@ footer {
 
     #long-text {
         font-size: 1em;
+    }
+
+    img#award-ribbon {
+        display: none;
     }
 }

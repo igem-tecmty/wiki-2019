@@ -4,6 +4,8 @@ var portraitHeight =
 $(".portrait-container").height(Math.min(window.screen.width, portraitHeight));
 $("video").height(Math.min(window.screen.width, portraitHeight));
 
+$("img#award-ribbon").animate({ marginTop: "0%", opacity: 1 }, 800);
+
 $(window).scroll(() => checkHomeElement());
 
 function checkHomeElement() {

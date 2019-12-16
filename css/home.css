@@ -26,6 +26,13 @@ img#award-ribbon {
     margin-left: -16px;
 }
 
+img#award-ribbon-mobile {
+    position: absolute;
+    z-index: 4;
+    width: 64px;
+    margin-left: -7px;
+}
+
 video {
     width: 100%;
     height: 100vh;

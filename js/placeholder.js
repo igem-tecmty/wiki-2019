@@ -1,3 +1,6 @@
+$("header.page-cover").height(
+  Math.min(window.innerWidth, $("header.page-cover").height())
+);
 var portraitHeight = $("header.page-cover").height();
 checkPortraitHeight();
 
@@ -38,15 +41,16 @@ function createIndex() {
 function checkPortraitHeight() {
   let toMove = $(document).scrollTop() / 5;
   if (window.innerWidth <= 576) toMove = 0;
-  $("header").css({
+  /*$("header.page-cover").css({
     "background-position-y": `calc(50% - ${toMove}px)`
-  });
+  });*/
 }
 
 function checkHeaderColor() {
   const opacity =
     $(document).scrollTop() /
-    (Math.min(window.screen.width, portraitHeight) - $("nav").height());
+    (Math.min(window.innerWidth, portraitHeight) -
+      $("header.top-menu").height());
   $("header.top-menu").css({
     "background-color": `rgba(6, 15, 41, ${opacity})`
   });

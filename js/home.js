@@ -1,8 +1,8 @@
 var portraitHeight =
   $("header.top-menu").data("height") || $(".landing-video").height();
 
-$(".portrait-container").height(Math.min(window.screen.width, portraitHeight));
-$("video").height(Math.min(window.screen.width, portraitHeight));
+$(".portrait-container").height(Math.min(window.innerWidth, portraitHeight));
+$("video").height(Math.min(window.innerWidth, portraitHeight));
 
 if (window.innerWidth >= 992) {
   $("img#award-ribbon").animate({ marginTop: "0%", opacity: 1 }, 800);
